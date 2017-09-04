@@ -16,6 +16,7 @@ System: Fedora 26
 
 Test Table
 ----------
-==========  ===========
-Left Side   Right Side
-==========  ===========
+| Left Header | Right Header |
+| ----------- | ------------ |
+| Left Content | Just a longer description |
+| Left Content 2 | Just a longer description to see formatting. |
