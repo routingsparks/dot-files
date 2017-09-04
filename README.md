@@ -6,7 +6,7 @@ System: Fedora 26
 ## <a name='toc'>Table of Contents</a>
   1. [bash dot-files](#bashconfig)
   2. [vim dot-files](#vimconfig)
-  3. [Plugins](plugins)
+  3. [dot-config usage](#usage)
 
 [[⬆]](#toc) <a name='bashconfig'>Bash Dot Files:</a>   
   * [Vim Configs](https://github.com/routingsparks/dot-files/tree/master/vim-configs)
@@ -14,9 +14,9 @@ System: Fedora 26
 [[⬆]](#toc) <a name='vimconfig'>Vim Dot Files:</a>
   * [Vim Configs](https://github.com/routingsparks/dot-files/blob/master/vim-configs/README.md)
 
-Test Table
-----------
-| Left Header | Right Header |
-| ----------- | ------------ |
-| Left Content | Just a longer description |
-| Left Content 2 | Just a longer description to see formatting. |
+Dot Config Usage
+----------------
+| Dot Config | Usage |
+| ---------- | ----- |
+| bashrc | ~/.bashrc |
+| bash_profile | ~/.bash_profile |
