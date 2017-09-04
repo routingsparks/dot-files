@@ -1,0 +1,39 @@
+[global_config]
+  inactive_color_offset = 0.802469135802
+  title_font = Cantarell 10
+  title_inactive_bg_color = "#555753"
+  title_inactive_fg_color = "#ffffff"
+  title_transmit_bg_color = "#555753"
+  title_use_system_font = False
+[keybindings]
+  close_term = <Shift>Left
+  close_window = <Primary><Shift>q
+  split_horiz = <Shift>Down
+  split_vert = <Shift>Right
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 55886a9e-0414-499a-a19e-a052ba4ae24d
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 0:24
+      size = 1233, 571
+      title = sparky@fedorabox:~
+      type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = 55886a9e-0414-499a-a19e-a052ba4ae24d
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Monospace 10
+    use_system_font = False
