@@ -1,6 +1,7 @@
 Dot Config Files
 ================
 A backup repository of all of my dot files for easy set-up and reference.
+
 System: Fedora 26
 
 ## <a name='toc'>Table of Contents</a>
@@ -13,10 +14,3 @@ System: Fedora 26
 
 [[⬆]](#toc) <a name='vimconfig'>Vim Dot Files:</a>
   * [Vim Configs](https://github.com/routingsparks/dot-files/blob/master/vim-configs/README.md)
-
-Dot Config Usage
-----------------
-| Dot Config | Usage |
-| ---------- | ----- |
-| bashrc | ~/.bashrc |
-| bash_profile | ~/.bash_profile |
