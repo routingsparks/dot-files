@@ -10,7 +10,7 @@ System: Fedora 26
   3. [dot-config usage](#usage)
 
 [[⬆]](#toc) <a name='bashconfig'>Bash Dot Files:</a>   
-  * [Vim Configs](https://github.com/routingsparks/dot-files/tree/master/vim-configs)
+  * [bash dot-files](https://github.com/routingsparks/dot-files/tree/master/bash-configs)
 
 [[⬆]](#toc) <a name='vimconfig'>Vim Dot Files:</a>
-  * [Vim Configs](https://github.com/routingsparks/dot-files/blob/master/vim-configs/README.md)
+  * [vim dot-files](https://github.com/routingsparks/dot-files/blob/master/vim-configs/README.md)
