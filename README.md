@@ -13,4 +13,4 @@ System: Fedora 26
   * [bash dot-files](https://github.com/routingsparks/dot-files/tree/master/bash-configs)
 
 [[⬆]](#toc) <a name='vimconfig'>Vim Dot Files:</a>
-  * [vim dot-files](https://github.com/routingsparks/dot-files/blob/master/vim-configs/README.md)
+  * [vim dot-files](https://github.com/routingsparks/dot-files/tree/master/vim-configs)
