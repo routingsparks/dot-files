@@ -8,25 +8,24 @@
 
 general {
 	colors = true
-	color_good = "#BBBBBB"
-	color_bad = "#CC1616"
-	color_degraded = "#55858E"
+#	color_good = "#BBBBBB"
+	color_good = "#00FF00"
+#	color_bad = "#CC1616"
+	color_bad = "#FF0000"
+#	color_degraded = "#55858E"
+	color_degraded = "#FFFF00"
 	interval = 2
 }
 
 order += "volume master"
 order += "load"
 order += "cpu_usage"
-order += "cpu_temperature 0"
-order += "cpu_temperature 1"
-order += "cpu_temperature 2"
-order += "cpu_temperature 3"
 order += "disk /"
-order += "disk /media/media"
-order += "ethernet eth0"
+order += "disk /home"
+order += "ethernet ens3"
+order += "run_watch DHCP"
 order += "tztime local"
 #order += "ipv6"
-#order += "run_watch DHCP"
 #order += "run_watch VPN"
 #order += "wireless wlan0"
 
@@ -36,7 +35,7 @@ volume master {
 	mixer = "Master"
 	mixer_idx = 0
 	# termsyn font
-	format = "À %volume "
+	format = "Volume: %volume "
 }
 
 load {
@@ -49,55 +48,41 @@ cpu_usage {
 	format = "%usage "
 }
 
-cpu_temperature 0 {
-	format = " ± %degrees°"
-	path = "/sys/devices/platform/coretemp.0/temp2_input"
-	max_threshold = 95
-}
 
-cpu_temperature 1 {
-	format = "%degrees°"
-	path = "/sys/devices/platform/coretemp.0/temp3_input"
-	max_threshold = 95
-}
-
-cpu_temperature 2 {
-	format = "%degrees°"
-	path = "/sys/devices/platform/coretemp.0/temp4_input"
-	max_threshold = 95
-}
-
-cpu_temperature 3 {
-	format = "%degrees° "
-	path = "/sys/devices/platform/coretemp.0/temp5_input"
-	max_threshold = 95
-}
-
+#disk "/" {
+#	format = " ¨ %avail:/ " 
+#}
 disk "/" {
-	format = " ¨ %avail:/ " 
+#	format = "%used/%total"
+	format = "root: %percentage_used"
 }
 
-disk "/media/media" {
-	format = " ¨ %avail:m "
+disk "/home"{
+#	format = "%used/%total"
+	format = "home: %percentage_used"
 }
 
-wireless wlan0 {
-	format_up = " W: (%quality at %essid) %ip "
-	format_down = " ☡ WiFi "
-}
+#wireless wlan0 {
+#	format_up = " W: (%quality at %essid) %ip "
+#	format_down = " ☡ WiFi "
+#}
 
-ethernet eth0 {
+ethernet ens3 {
 	# if you use %speed, i3status requires root privileges
 #	format_up =  " Ω: %ip  "
 #	format_down = " ∅ eth0  "
 
 	# termsyn font
-	format_up =  " ­ %ip "
-	format_down = " Ð eth0 "
+#	format_up =  " ­ %ip "
+#	format_down = " Ð ens3 "
+	
+	format_up = "E: %ip"
+	format_down = "E: down"
 }
 
 run_watch DHCP {
-	pidfile = "/var/run/dhclient*.pid"
+#	pidfile = "/var/run/dhclient*.pid"
+	pidfile = "/var/run/dhcpcd*.pid"
 }
 
 run_watch VPN {
@@ -107,5 +92,6 @@ run_watch VPN {
 tztime local {
 #	format = " %h-%d %H:%M ☰ "
 	# termsyn font
-	format = " %h-%d É %H:%M  ¸ ÈÈÈ È "
+#	format = " %h-%d É %H:%M  ¸ ÈÈÈ È "
+	format = " %h %d, %Y %r"
 }
