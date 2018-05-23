@@ -1,1 +1,7 @@
 Put the following files into ~/.config
+    - .i3
+    - .i3status
+Put the following files into ~/
+    - .mutt
+    - .xinitrc
+    - .Xresources
