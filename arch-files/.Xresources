@@ -1,45 +1,66 @@
-! urxvt
+! ====================================================================
+! urxvt config file
+! ====================================================================
 
-URxvt*geometry:                115x40
+URxvt.geometry:                115x40
+
+! ====================================================================
+! The settings below define the font for the terminal.
+! Fonts
+! ================================
+! Ubuntu Mono
+URxvt.font: xft:UbuntuMono:pixelsize=14:antialias=true:hinting=true
+URxvt.boldFont: xft:UbuntuMono:bold:pixelsize=14:antialias=false:hinting=true
+! ================================
+!Liberation Mono
 !URxvt*font: xft:Liberation Mono:pixelsize=14:antialias=false:hinting=true
-URxvt*font: xft:Inconsolata:pixelsize=14:antialias=true:hinting=true
-URxvt*boldFont: xft:Inconsolata:bold:pixelsize=14:antialias=false:hinting=true
 !URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=14:antialias=false:hinting=true
-URxvt*depth:                24
-URxvt*borderless: 1
-URxvt*scrollBar:            false
-URxvt*saveLines:  2000
-URxvt.transparent:      true
-URxvt*.shading: 10
+! ================================
+!Inconsolata
+!URxvt*font: xft:Inconsolata:pixelsize=14:antialias=true:hinting=true
+!URxvt*boldFont: xft:Inconsolata:bold:pixelsize=14:antialias=false:hinting=true
+! ====================================================================
+
+URxvt.depth:                24
+URxvt.borderless: 	    1
+URxvt.scrollBar:            false
+URxvt.saveLines:  	    2000
+URxvt.transparent:          true
+URxvt.shading:	 	    10
 
 ! Meta modifier for keybindings
 !URxvt.modifier: super
 
-!! perl extensions
+! ====================================================================
+! The settings below are defining the perl extensions.
+! perl extensions
 URxvt.perl-ext:             default,url-select,clipboard
-
+! ================================
 ! url-select (part of urxvt-perls package)
 URxvt.keysym.M-u:           perl:url-select:select_next
 URxvt.url-select.autocopy:  true
 URxvt.url-select.button:    2
-URxvt.url-select.launcher:  chromium
+URxvt.url-select.launcher:  firefox
 URxvt.url-select.underline: true
-
-! Nastavuje kopirovani
+! ================================
+! clipboard configurations
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+! ====================================================================
 
 ! disable the stupid ctrl+shift 'feature'
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
-!urxvt color scheme:
-
+! ====================================================================
+! urxvt color scheme:
+! ================================
 URxvt*background: #2B2B2B
 URxvt*foreground: #DEDEDE
-
 URxvt*colorUL: #86a2b0
-
+! ================================
+! Below defines colors
+! ================================
 ! black
 URxvt*color0  : #2E3436
 URxvt*color8  : #555753
@@ -64,3 +85,4 @@ URxvt*color14 : #34E2E2
 ! white
 URxvt*color7  : #D3D7CF
 URxvt*color15 : #EEEEEC
+! ====================================================================
