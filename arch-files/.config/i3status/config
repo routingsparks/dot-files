@@ -35,17 +35,18 @@ volume master {
 	mixer = "Master"
 	mixer_idx = 0
 	# termsyn font
-	format = "Volume: %volume "
+	format = "volume: %volume "
 }
 
 load {
 #	format = " Δ: %1min "
 	# termsyn font
-	format = " Î %1min"
+#	format = " Î %1min"
+	format = "avg load: %1min"
 }
 
 cpu_usage {
-	format = "%usage "
+	format = "cpu: %usage "
 }
 
 
@@ -54,12 +55,12 @@ cpu_usage {
 #}
 disk "/" {
 #	format = "%used/%total"
-	format = "root: %percentage_used"
+	format = "root: %percentage_used full"
 }
 
 disk "/home"{
 #	format = "%used/%total"
-	format = "home: %percentage_used"
+	format = "home: %percentage_used full"
 }
 
 #wireless wlan0 {
@@ -76,7 +77,7 @@ ethernet ens3 {
 #	format_up =  " ­ %ip "
 #	format_down = " Ð ens3 "
 	
-	format_up = "E: %ip"
+	format_up = "E: %ip (%speed)"
 	format_down = "E: down"
 }
 

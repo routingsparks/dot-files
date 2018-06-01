@@ -6,9 +6,9 @@ import os.path
 
 from i3pystatus import Status
 from i3pystatus.updates import pacman, cower
+#from i3pystatus.weather import weathercom
 
-
-status = Status()
+status = Status(logfile='$HOME/tmp/i3pystatus.log')
 
 # Displays clock like this:
 # Tue 30 Jul 11:59:46 PM KW31
@@ -31,14 +31,14 @@ status.register("updates",
     format = "Updates: {count}",
     format_no_updates = "",
     on_leftclick="termite --geometry=1200x600 --title=updates -e 'pacaur --needed --noconfirm --noedit -Syu'",
-    backends = [pacman.Pacman(), cower.Cower()])
+    backends = [pacman.Pacman(), cower.Cower()],)
 
 status.register("pulseaudio",
 #    color_unmuted='#98C379',
     color_unmuted="#FFFFFF",
     color_muted='#E06C75',
     format_muted='vol: [muted]',
-    format="vol: {volume}%")
+    format="vol: {volume}%",)
 
 #status.register("network",
 #    interface="eno1",
@@ -67,21 +67,21 @@ status.register("network",
 #    backlight="intel_backlight",)
 
 
-status.register("battery",
-    battery_ident="BAT0",
-    interval=5,
-    format="{status} {percentage:.0f}%",
-    alert=True,
-    alert_percentage=15,
-    color="#FFFFFF",
-    critical_color="#FF1919",
-    charging_color="#E5E500",
-    full_color="#D19A66",
-    status={
-        "DIS": " ",
-        "CHR": "  ",
-        "FULL": "   ",
-},)
+#status.register("battery",
+#    battery_ident="BAT0",
+#    interval=5,
+#    format="{status} {percentage:.0f}%",
+#    alert=True,
+#    alert_percentage=15,
+#    color="#FFFFFF",
+#    critical_color="#FF1919",
+#    charging_color="#E5E500",
+#    full_color="#D19A66",
+#    status={
+#        "DIS": " ",
+#        "CHR": "  ",
+#        "FULL": "   ",
+#},)
 
 #status.register("temp",
 #	color="#78EAF2",
@@ -144,6 +144,46 @@ status.register("mpd",
         "pause": " ",
         "play": " ",
         "stop": " ",
-    },)
+    },
+)
+
+#status.register('weather',
+#    location_code="12767458",
+#    location_code="USVA0345",
+#    location_code="23666:4:US",
+#    units="imperial",
+#    format="{current_temp}",
+#    interval="20",
+#    backend=weathercom.Weathercom(
+#    location_code='USVA0345',
+#    location_code="23666:4:US",
+#    units='imperial',
+#), 
+#)
+
+#status.register('weather',
+#    format='{condition} {current_temp}{temp_unit}',
+#    colorize=True,
+#    hints={'markup': 'pango'},
+#    backend=weathercom.Weathercom(
+#        location_code='23666:4:US',
+#        locale='en-US',
+#        units='metric',
+#    ),
+#)
+
+#status.register(
+#    'weather',
+#    format='{current_temp}',
+#    colorize=True,
+#    interval=900,    
+#    hints={'markup': 'pango'},
+#    backend=weathercom.Weathercom(
+#         location_code='23666:4:US',
+#         units='imperial',
+#         forecast=True,
+#         update_error='<span color="#ff0000">!</span>',
+#    ),
+#)
 
 status.run()

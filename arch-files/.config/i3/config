@@ -39,7 +39,8 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id rofi -show run
 
 # change focus
 bindsym $mod+j focus left
@@ -99,7 +100,7 @@ set $ws1 "www"
 set $ws2 "term"
 set $ws3 "mail"
 set $ws4 "chat"
-set $ws5 "5"
+set $ws5 "file"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -173,33 +174,33 @@ default_border pixel 1
 #hide_edge_borders smart
 
 # assign programs specific workspace.
-assign [class="^URxvt$"] term
+assign [class="Firefox"] www
+#assign [class="^URxvt$"] term
+assign [class="URxvt" instance="ranger"] file
+assign [class="URxvt"] term
 
 #i3-gaps config
-gaps inner 15
+gaps inner 10
 gaps outer 0
 
 # Start i3bar to display a workspace bar 
 
 bar {
-#        status_command i3status -c ~/.config/i3status/config
-	status_command python ~/.config/i3/i3pystatus.conf
-	position bottom 
+        status_command i3status -c ~/.config/i3/i3status/config
+#        status_command python ~/.config/i3/i3pystatus.conf
+#        status_command i3blocks -c ~/.config/i3/i3blocks/config
+	font pango:Ubuntu, Awesome 8 
+        position bottom 
 }
 
 # ===================================================================
 # custom keybindings
 # ===================================================================
 # Ranger
-bindsym $mod+z exec i3-sensible-terminal -e ranger
-#
+bindsym $mod+z exec --no-startup-id i3-msg && exec i3-sensible-terminal -name ranger -e ranger
 #
 # ====================================================================
 # Things that need to execute upon starting i3
-# ===========================
-# Set background
 exec --no-startup-id /usr/bin/feh --bg-fill $HOME/Pictures/d8fwfxf.png
-# ===========================
-# Start compton compositor
 exec --no-startup-id /usr/bin/compton --config /home/sparky/.config/compton.conf -b
-# ===========================
+#exec --no-startup-id sleep 3 && urxvt -name ranger -e ranger
