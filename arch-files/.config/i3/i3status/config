@@ -22,26 +22,22 @@ order += "load"
 order += "cpu_usage"
 order += "disk /"
 order += "disk /home"
-order += "ethernet ens3"
+order += "wireless wlo1"
+order += "ethernet eno1"
 order += "run_watch DHCP"
+order += "battery 0"
 order += "tztime local"
-#order += "ipv6"
 #order += "run_watch VPN"
-#order += "wireless wlan0"
 
 volume master {
-#	format = " ♪: %volume  " 
-	device = "default"
+    device = "pulse:0"
 	mixer = "Master"
 	mixer_idx = 0
-	# termsyn font
-	format = "volume: %volume "
+	format = "vol: %volume "
+    format_muted = " "
 }
 
 load {
-#	format = " Δ: %1min "
-	# termsyn font
-#	format = " Î %1min"
 	format = "avg load: %1min"
 }
 
@@ -49,10 +45,6 @@ cpu_usage {
 	format = "cpu: %usage "
 }
 
-
-#disk "/" {
-#	format = " ¨ %avail:/ " 
-#}
 disk "/" {
 #	format = "%used/%total"
 	format = "root: %percentage_used full"
@@ -63,19 +55,14 @@ disk "/home"{
 	format = "home: %percentage_used full"
 }
 
-#wireless wlan0 {
-#	format_up = " W: (%quality at %essid) %ip "
-#	format_down = " ☡ WiFi "
-#}
+wireless wlo1 {
+	format_up = " W: %ip ( %essid at %quality ) "
+	format_down = " W: down " 
+}
 
-ethernet ens3 {
+ethernet eno1 {
 	# if you use %speed, i3status requires root privileges
 #	format_up =  " Ω: %ip  "
-#	format_down = " ∅ eth0  "
-
-	# termsyn font
-#	format_up =  " ­ %ip "
-#	format_down = " Ð ens3 "
 	
 	format_up = "E: %ip (%speed)"
 	format_down = "E: down"
@@ -90,9 +77,20 @@ run_watch VPN {
 	pidfile = "/var/run/vpnc/pid"
 }
 
+battery 0 {
+    format = "%status %percentage %remaining"
+    format_down = ""
+    last_full_capacity = true
+    integer_battery_capacity = true
+    low_threshold = 15
+    threshold_type = percentage
+    hide_seconds = true
+    status_chr = " "
+    status_bat = " "
+    status_unk = " "
+    status_full = " "
+}
+
 tztime local {
-#	format = " %h-%d %H:%M ☰ "
-	# termsyn font
-#	format = " %h-%d É %H:%M  ¸ ÈÈÈ È "
 	format = " %h %d, %Y %r"
 }
