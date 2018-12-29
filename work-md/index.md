@@ -1,6 +1,6 @@
 # Test Heading 1
 
 ## Test Heading 2
-* [foo](foo)
+* [foo](foo.md)
 * [bar](#bar)
 * 
