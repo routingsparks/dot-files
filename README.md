@@ -2,7 +2,7 @@ Dot Config Files
 ================
 A backup repository of all of my dot files for easy set-up and reference.
 
-System: Fedora 26
+System: Arch
 
 ## <a name='toc'>Table of Contents</a>
   1. [bash dot-files](https://github.com/routingsparks/dot-files/tree/master/bash)
