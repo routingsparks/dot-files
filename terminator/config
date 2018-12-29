@@ -21,7 +21,7 @@
       parent = ""
       position = 0:24
       size = 1233, 571
-      title = sparky@fedorabox:~
+      title = sparky@arch-box:~
       type = Window
     [[[terminal1]]]
       order = 0
@@ -35,5 +35,5 @@
     background_darkness = 0.8
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Monospace 10
+    font = Monospace 9
     use_system_font = False
