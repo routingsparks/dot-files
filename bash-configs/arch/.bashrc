@@ -45,8 +45,22 @@ alias h='history | grep'
 alias syshosts='cat /etc/hosts'
 alias reload='.  ~/.bashrc'
 alias stig='/usr/java/jdk1.8.0_181-amd64/jre/bin/java -jar ~/Downloads/STIGViewer-2.7.1.jar'
+########################################
+# youtube-dl aliases
+########################################
 alias ytdl-video='youtube-dl --output "%(title)s.%(ext)s" -i -f mp4'
 alias ytdl-playlist='youtube-dl --output "%(title)s.%(ext)s" -i -f mp4 --yes-playlist'
 alias ytdl-music='youtube-dl --output "%(title)s.%(ext)s" -x --audio-format mp3 --audio-quality 0'
+########################################
+# vimwiki aliases
+########################################
 alias vimwiki-personal='vim $HOME/vimwiki/personal-md/index.md'
 alias vimwiki-work='vim $HOME/vimwiki/work-md/index.md'
+########################################
+# git aliases
+########################################
+alias ga='git add .'
+alias gc='git commit -a -m'
+alias gp='git push'
+
+
