@@ -45,6 +45,7 @@ alias h='history | grep'
 alias syshosts='cat /etc/hosts'
 alias reload='.  ~/.bashrc'
 alias stig='/usr/java/jdk1.8.0_181-amd64/jre/bin/java -jar ~/Downloads/STIGViewer-2.7.1.jar'
+alias pt='/opt/packettracer.sh &'
 ########################################
 # youtube-dl aliases
 ########################################
