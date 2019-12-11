@@ -17,15 +17,16 @@ general {
 	interval = 2
 }
 
-order += "volume master"
+#order += "volume master"
 order += "load"
 order += "cpu_usage"
 order += "disk /"
-order += "disk /home"
-order += "wireless wlo1"
-order += "ethernet eno1"
+#rder += "disk /home"
+order += "memory"
+order += "wireless wlp3s0"
+order += "ethernet enp0s31f6"
 order += "run_watch DHCP"
-order += "battery 0"
+order += "battery 1"
 order += "tztime local"
 #order += "run_watch VPN"
 
@@ -46,24 +47,28 @@ cpu_usage {
 }
 
 disk "/" {
-#	format = "%used/%total"
-	format = "root: %percentage_used full"
+	format = "HDD: %used / %total"
+#	format = "root: %percentage_used full"
 }
 
-disk "/home"{
-#	format = "%used/%total"
-	format = "home: %percentage_used full"
+memory {
+    format = "MEM: %used / %total "
+
 }
 
-wireless wlo1 {
+#disk "/home"{
+#	format = "%used / %total"
+#	format = "home: %percentage_used full"
+#}
+
+wireless wlp3s0 {
 	format_up = " W: %ip ( %essid at %quality ) "
 	format_down = " W: down " 
 }
 
-ethernet eno1 {
+ethernet enp0s31f6 {
 	# if you use %speed, i3status requires root privileges
-#	format_up =  " Ω: %ip  "
-	
+#	format_up =  " Ω: %ip  "	
 	format_up = "E: %ip (%speed)"
 	format_down = "E: down"
 }
@@ -73,11 +78,11 @@ run_watch DHCP {
 	pidfile = "/var/run/dhcpcd*.pid"
 }
 
-run_watch VPN {
-	pidfile = "/var/run/vpnc/pid"
-}
+#run_watch VPN {
+#	pidfile = "/var/run/vpnc/pid"
+#}
 
-battery 0 {
+battery 1 {
     format = "%status %percentage %remaining"
     format_down = ""
     last_full_capacity = true
@@ -85,12 +90,12 @@ battery 0 {
     low_threshold = 15
     threshold_type = percentage
     hide_seconds = true
-    status_chr = " "
-    status_bat = " "
-    status_unk = " "
-    status_full = " "
+#    status_chr = " "
+#    status_bat = " "
+#    status_unk = " "
+#    status_full = " "
 }
 
 tztime local {
-	format = " %h %d, %Y %r"
+	format = " %h %d, %Y %I:%M %p"
 }

@@ -87,11 +87,11 @@ bindsym $mod+a focus parent
 #set $ws1 "2"
 set $ws1 "term"
 set $ws2 "www"
-set $ws3 "vm"
+set $ws3 "code"
 set $ws4 "file"
 set $ws5 "mail"
 set $ws6 "chat"
-set $ws7 "7"
+set $ws7 "vm"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
@@ -163,11 +163,13 @@ default_border pixel 1
 #hide_edge_borders smart
 
 # assign programs specific workspace.
-assign [class="Firefox"] www
+#assign [class="Firefox"] www
+assign [class="Google-chrome"] www
 #assign [class="^URxvt$"] term
 assign [class="URxvt" instance="ranger"] file
 assign [class="URxvt"] term
-assign [class="virt-manager"] vm
+assign [class="Virt-manager"] vm
+assign [class="Code"] code
 
 
 #i3-gaps config
@@ -220,7 +222,8 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 ### Startup Applications ###
-exec --no-startup-id /usr/bin/feh --bg-fill $HOME/Pictures/d8fwfxf.png
+exec --no-startup-id /usr/bin/feh --bg-fill $HOME/pictures/wallpapers/snowy-coastal-city.jpg
 exec --no-startup-id /usr/bin/compton --config /home/sparky/.config/compton.conf -b
 exec --no-startup-id numlockx on
-exec --no-startup-id redshift
+#exec --no-startup-id redshift
+exec --no-startup-id udiskie -ans &"
