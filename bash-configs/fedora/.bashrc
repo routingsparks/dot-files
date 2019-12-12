@@ -58,6 +58,8 @@ alias ll='ls -alh --color=auto'
 alias h='history | grep'
 alias syshosts='cat /etc/hosts'
 alias reload='.  ~/.bashrc'
+alias r="ranger ~/"
+alias clip="xsel --clipboard"
 ########################################
 # youtube-dl aliases
 ########################################
@@ -75,6 +77,9 @@ alias vimwiki-work='vim $HOME/vimwiki/work-md/index.md'
 alias ga='git add .'
 alias gc='git commit -a -m'
 alias gp='git push'
+########################################
+# audio-output aliases
+########################################
+alias audio-hdmi="pactl set-card-profile 0 output:hdmi-stereo-extra1"
+alias audio-laptop="pactl set-card-profile 0 output:analog-stereo"
 
-alias r="ranger ~/"
-alias clip="xsel --clipboard"
