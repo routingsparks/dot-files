@@ -37,6 +37,16 @@ export PATH=$HOME/bin/:$PATH
 export EDITOR=vim
 
 ###############################################################################
+# Set Terminal
+###############################################################################
+export urxvt256c
+
+###############################################################################
+# Set WeeChat configuration file
+###############################################################################
+WEECHAT_HOME=$HOME/.config/
+
+###############################################################################
 # Set PS1
 ###############################################################################
 export PS1="\[\033[38;5;10m\][\u\[\]\[\033[38;5;15m\]@\[\]\[\033[38;5;10m\]\h\[\]\[\033[38;5;15m\] \[\]\[\033[38;5;13m\]\W\[\]\[\033[38;5;10m\]]\[\]\[\033[38;5;15m\]\$ \[\]"
@@ -44,10 +54,11 @@ export PS1="\[\033[38;5;10m\][\u\[\]\[\033[38;5;15m\]@\[\]\[\033[38;5;10m\]\h\[\
 ###############################################################################
 # Configure Python VirtualEnvWrapper
 ###############################################################################
-#export WORKON_HOME=$HOME/.virtualenvs
-#export PROJECT_HOME=$HOME/projects/python
-#source /usr/bin/virtualenvwrapper.sh
-
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/git-repos/projects/python
+export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 ###############################################################################
 # User specific aliases and functions
@@ -55,31 +66,45 @@ export PS1="\[\033[38;5;10m\][\u\[\]\[\033[38;5;15m\]@\[\]\[\033[38;5;10m\]\h\[\
 alias vi='vim'
 alias ls='ls --color=auto'
 alias ll='ls -alh --color=auto'
+alias lh='ls -lh --color=auto'
 alias h='history | grep'
 alias syshosts='cat /etc/hosts'
 alias reload='.  ~/.bashrc'
 alias r="ranger ~/"
 alias clip="xsel --clipboard"
+
 ########################################
 # youtube-dl aliases
 ########################################
 alias ytdl-video='youtube-dl --output "%(title)s.%(ext)s" -i -f mp4'
 alias ytdl-playlist='youtube-dl --output "%(title)s.%(ext)s" -i -f mp4 --yes-playlist'
 alias ytdl-music='youtube-dl --output "%(title)s.%(ext)s" -x --audio-format mp3 --audio-quality 0'
+
 ########################################
 # vimwiki aliases
 ########################################
 alias vimwiki-personal='vim $HOME/vimwiki/personal-md/index.md'
 alias vimwiki-work='vim $HOME/vimwiki/work-md/index.md'
+
 ########################################
 # git aliases
 ########################################
 alias ga='git add .'
 alias gc='git commit -a -m'
 alias gp='git push'
+
 ########################################
 # audio-output aliases
 ########################################
 alias audio-hdmi="pactl set-card-profile 0 output:hdmi-stereo-extra1"
 alias audio-laptop="pactl set-card-profile 0 output:analog-stereo"
 
+########################################
+# weechat aliases
+########################################
+alias weechat="weechat -d $HOME/.config/weechat"
+
+########################################
+# screenrc aliases
+########################################
+alias screen="screen -c $HOME/.config/screenrc"
