@@ -1,0 +1,94 @@
+# Created  20200211
+# Updated: 20200212
+
+set -g base-index 1
+setw -g pane-base-index 1
+
+# Change prefix key
+unbind C-b
+set -g prefix C-a
+
+# Automatically set window title
+set-window-option -g automatic-rename on
+set-option -g set-titles on
+set -g renumber-windows on
+
+set -g default-terminal screen-256color
+set -g status-keys vi
+set -g history-limit 10000
+
+setw -g mode-keys vi
+#setw -g mode-mouse off
+set -g mouse on
+setw -g monitor-activity on
+
+bind-key v split-window -h
+bind-key s split-window -v
+
+bind-key J resize-pane -D 5
+bind-key K resize-pane -U 5
+bind-key H resize-pane -L 5
+bind-key L resize-pane -R 5
+
+bind-key M-j resize-pane -D
+bind-key M-k resize-pane -U
+bind-key M-h resize-pane -L
+bind-key M-l resize-pane -R
+
+# Vim style pane selection
+bind h select-pane -L
+bind j select-pane -D 
+bind k select-pane -U
+bind l select-pane -R
+
+# Use Alt-vim keys without prefix key to switch panes
+bind -n M-h select-pane -L
+bind -n M-j select-pane -D 
+bind -n M-k select-pane -U
+bind -n M-l select-pane -R
+
+# Use Alt-arrow keys without prefix key to switch panes
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+
+# Shift arrow to switch windows
+bind -n S-Left  previous-window
+bind -n S-Right next-window
+
+# No delay for escape key press
+set -sg escape-time 0
+
+# Reload tmux config
+bind r source-file ~/.tmux.conf \; display "Reloaded config"
+
+# buffers
+bind b list-buffers  # list paste buffers
+bind p paste-buffer  # paste from the top paste buffer
+bind P choose-buffer # choose which buffer to paste from
+
+# THEME
+##########################################################################################
+# Saved for backwards compatability
+##########################################################################################
+#set-window-option -g window-status-fg white #base0 - inactive window
+#set-window-option -g window-status-bg black
+#set-window-option -g window-status-current-fg colour202 #orange - active window
+#set-window-option -g window-status-current-bg black
+#set-window-option -g window-status-attr dim
+#set-window-option -g window-status-current-attr dim
+#set -g status-bg black
+#set -g status-fg white
+#set-option -g message-bg black #base02
+#set-option -g message-fg brightred #orange
+##########################################################################################
+setw -g status-style none,bg="black",fg="white"
+setw -g window-status-current-style none,bg="black",fg="colour202" #orange
+set -g status-interval 5
+set -g status-right '[ #(hostname) ] [ %Y-%b-%d ]' #[ %H:%M UTC ]
+#set -g status-right-length 70
+set -g status-right-length 50
+set -g status-left-length 30
+set -g status-left '[ #S ]'
+set -g status-justify centre
