@@ -3,13 +3,28 @@
 ###############################################################################
 # sparky's .bashrc
 # created:  20190204
-# modified: 20191209
+# modified: 20200208
 ###############################################################################
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
+
+
+
+###############################################################################
+# Start Tmux at shell init
+###############################################################################
+if [[ -z "$TMUX" ]] ;then
+    ID="$( tmux ls | grep -vm1 attached | cut -d: -f1 )" # get the id of a deattached session
+    if [[ -z "$ID" ]] ;then # if not available create a new one
+        tmux new-session
+    else
+        tmux attach-session -t "$ID" # if available attach to it
+    fi
+fi
+
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
@@ -39,12 +54,7 @@ export EDITOR=vim
 ###############################################################################
 # Set Terminal
 ###############################################################################
-export urxvt256c
-
-###############################################################################
-# Set WeeChat configuration file
-###############################################################################
-WEECHAT_HOME=$HOME/.config/
+#export urxvt256c
 
 ###############################################################################
 # Define functions
@@ -62,7 +72,6 @@ function task_count {
 ###############################################################################
 #export PS1="\[\033[38;5;10m\][\u\[\]\[\033[38;5;15m\]@\[\]\[\033[38;5;10m\]\h\[\]\[\033[38;5;15m\] \[\]\[\033[38;5;13m\]\W\[\]\[\033[38;5;10m\]]\[\]\[\033[38;5;15m\]\$ \[\]"
 export PS1="\[\033[38;5;10m\][\u\[\]\[\033[38;5;15m\]@\[\]\[\033[38;5;10m\]\h\[\]\[\033[38;5;15m\] \[\]\[\033[38;5;13m\]\W\[\]\[\033[38;5;10m\]]\[\]\[\033[38;5;15m\]\$(task_count) \[\]"
-#export PS1="\$(task_count)"
 
 ##############################################################################
 # Configure Python VirtualEnvWrapper
@@ -85,6 +94,7 @@ alias syshosts='cat /etc/hosts'
 alias reload='.  ~/.bashrc'
 alias r="ranger ~/"
 alias clip="xsel --clipboard"
+alias cal='cal -m'
 
 ########################################
 # youtube-dl aliases
@@ -98,6 +108,8 @@ alias ytdl-music='youtube-dl --output "%(title)s.%(ext)s" -x --audio-format mp3 
 ########################################
 alias vimwiki-personal='vim $HOME/vimwiki/personal-md/index.md'
 alias vimwiki-work='vim $HOME/vimwiki/work-md/index.md'
+alias vimwiki-school='vim $HOME/vimwiki/school-md/index.md'
+
 
 ########################################
 # git aliases
@@ -115,6 +127,7 @@ alias audio-laptop="pactl set-card-profile 0 output:analog-stereo"
 ########################################
 # weechat aliases
 ########################################
+WEECHAT_HOME=$HOME/.config/
 alias weechat="weechat -d $HOME/.config/weechat"
 
 ########################################
@@ -133,4 +146,8 @@ tickle (){
 }
 alias tick=tickle
 alias think='tickle +1d'
-
+alias tn='task +next'
+alias ti='task in'
+alias tl='task list'
+alias td='task +DUE'
+alias tod='task +OVERDUE'
