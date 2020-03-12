@@ -20,10 +20,10 @@
 $#
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1584055669,,"q"
 :wq!
 |2,0,1584055447,,"wq!"
-:q
-|2,0,1584003130,,"q"
 :w
 |2,0,1583883496,,"w"
 :wq~
@@ -311,36 +311,54 @@ $#
 |3,1,36,0,1,0,1584002341,"y"
 
 # File marks:
-'0  31  0  ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
-|4,48,31,0,1584055447,"~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh"
-'1  1  0  ~/.config/rofi/config
-|4,49,1,0,1584003130,"~/.config/rofi/config"
-'2  225  90  ~/git-repos/dot-files/i3-configs/config
-|4,50,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
-'3  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,51,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
+'0  1  0  ~/git-repos/dot-files/package-lists/package_list-20200312.txt
+|4,48,1,0,1584055669,"~/git-repos/dot-files/package-lists/package_list-20200312.txt"
+'1  31  0  ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
+|4,49,31,0,1584055447,"~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh"
+'2  1  0  ~/.config/rofi/config
+|4,50,1,0,1584003130,"~/.config/rofi/config"
+'3  225  90  ~/git-repos/dot-files/i3-configs/config
+|4,51,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
 '4  234  0  ~/git-repos/dot-files/i3-configs/config
 |4,52,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
-'5  435  0  ~/.config/weechat/weechat.conf
-|4,53,435,0,1583971175,"~/.config/weechat/weechat.conf"
-'6  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,54,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
-'7  107  34  ~/.bashrc
-|4,55,107,34,1583969263,"~/.bashrc"
-'8  107  15  ~/.bashrc
-|4,56,107,15,1583969233,"~/.bashrc"
-'9  13  0  /tmp/crontab.5gDVcy
-|4,57,13,0,1583886204,"/tmp/crontab.5gDVcy"
+'5  234  0  ~/git-repos/dot-files/i3-configs/config
+|4,53,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
+'6  435  0  ~/.config/weechat/weechat.conf
+|4,54,435,0,1583971175,"~/.config/weechat/weechat.conf"
+'7  13  0  ~/git-repos/projects/python/todoist/test-add.py
+|4,55,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
+'8  107  34  ~/.bashrc
+|4,56,107,34,1583969263,"~/.bashrc"
+'9  107  15  ~/.bashrc
+|4,57,107,15,1583969233,"~/.bashrc"
 
 # Jumplist (newest first):
+-'  1  0  ~/git-repos/dot-files/package-lists/package_list-20200312.txt
+|4,39,1,0,1584055669,"~/git-repos/dot-files/package-lists/package_list-20200312.txt"
 -'  31  0  ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
 |4,39,31,0,1584055447,"~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh"
+-'  31  0  ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
+|4,39,31,0,1584055447,"~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh"
+-'  1  0  ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
+|4,39,1,0,1584055419,"~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh"
 -'  1  0  ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
 |4,39,1,0,1584055419,"~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh"
 -'  1  0  ~/.config/rofi/config
 |4,39,1,0,1584003130,"~/.config/rofi/config"
 -'  1  0  ~/.config/rofi/config
 |4,39,1,0,1584003130,"~/.config/rofi/config"
+-'  1  0  ~/.config/rofi/config
+|4,39,1,0,1584003130,"~/.config/rofi/config"
+-'  1  0  ~/.config/rofi/config
+|4,39,1,0,1584003130,"~/.config/rofi/config"
+-'  225  90  ~/git-repos/dot-files/i3-configs/config
+|4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
+-'  225  90  ~/git-repos/dot-files/i3-configs/config
+|4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
+-'  225  90  ~/git-repos/dot-files/i3-configs/config
+|4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
+-'  225  90  ~/git-repos/dot-files/i3-configs/config
+|4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
 -'  225  90  ~/git-repos/dot-files/i3-configs/config
 |4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
 -'  225  90  ~/git-repos/dot-files/i3-configs/config
@@ -357,6 +375,22 @@ $#
 |4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
 -'  234  0  ~/git-repos/dot-files/i3-configs/config
 |4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
+-'  234  0  ~/git-repos/dot-files/i3-configs/config
+|4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
+-'  234  0  ~/git-repos/dot-files/i3-configs/config
+|4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
+-'  234  0  ~/git-repos/dot-files/i3-configs/config
+|4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
+-'  234  0  ~/git-repos/dot-files/i3-configs/config
+|4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
+-'  234  0  ~/git-repos/dot-files/i3-configs/config
+|4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
+-'  234  0  ~/git-repos/dot-files/i3-configs/config
+|4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
+-'  234  0  ~/git-repos/dot-files/i3-configs/config
+|4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
+-'  234  0  ~/git-repos/dot-files/i3-configs/config
+|4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
 -'  234  0  ~/git-repos/dot-files/i3-configs/config
 |4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
 -'  234  0  ~/git-repos/dot-files/i3-configs/config
@@ -397,6 +431,70 @@ $#
 |4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
 -'  435  0  ~/.config/weechat/weechat.conf
 |4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  435  0  ~/.config/weechat/weechat.conf
+|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
+-'  135  0  ~/.config/weechat/weechat.conf
+|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
 -'  135  0  ~/.config/weechat/weechat.conf
 |4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
 -'  135  0  ~/.config/weechat/weechat.conf
@@ -435,106 +533,12 @@ $#
 |4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
 -'  13  0  ~/git-repos/projects/python/todoist/test-add.py
 |4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
--'  27  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,27,0,1583969447,"~/git-repos/projects/python/todoist/test-add.py"
 
 # History of marks within files (newest to oldest):
+
+> ~/git-repos/dot-files/package-lists/package_list-20200312.txt
+	*	1584055669	0
+	"	1	0
 
 > ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
 	*	1584055446	0
@@ -2013,9 +2017,3 @@ $#
 > ~/git-repos/ansible/playbooks/test-book/roles/common/tasks/main.yml
 	*	1577846079	0
 	"	1	0
-
-> ~/git-repos/ansible/playbooks/NERD_tree_2
-	*	1577845521	0
-	"	20	0
-	.	1	0
-	+	1	0
