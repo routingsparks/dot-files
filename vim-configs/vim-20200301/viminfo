@@ -11,33 +11,35 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/mod+shift
+~Msle0~/\<15\>
 
 # Last Substitute Search Pattern:
 ~MSle0&^
 
 # Last Substitute String:
-$#
+$
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1584055669,,"q"
 :wq!
-|2,0,1584055447,,"wq!"
+|2,0,1584320332,,"wq!"
+:noh
+|2,0,1584318148,,"noh"
+:q
+|2,0,1584317567,,"q"
 :w
-|2,0,1583883496,,"w"
+|2,0,1584291843,,"w"
+:q!
+|2,0,1584269674,,"q!"
+:PlugInstall
+|2,0,1584268103,,"PlugInstall"
+:PlugClean
+|2,0,1584268098,,"PlugClean"
+:wqQ
+|2,0,1584146077,,"wqQ"
 :wq~
 |2,0,1583828019,,"wq~"
-:q!
-|2,0,1583800876,,"q!"
-:noh
-|2,0,1583619608,,"noh"
 :i##
 |2,0,1583548094,,"i##"
-:PlugInstall
-|2,0,1583544554,,"PlugInstall"
-:PlugClean
-|2,0,1583544545,,"PlugClean"
 :PlugUpgrade
 |2,0,1583544540,,"PlugUpgrade"
 :28,47s/^/#
@@ -202,6 +204,12 @@ $#
 |2,0,1576682436,,"tabmove                \" moves tabs,tm"
 
 # Search String History (newest to oldest):
+? \<15\>
+|2,1,1584318145,,"\\<15\\>"
+? @$
+|2,1,1584091095,,"@$"
+? \<if\>
+|2,1,1584090459,,"\\<if\\>"
 ?/rofi
 |2,1,1584001923,47,"rofi"
 ?/count
@@ -234,8 +242,6 @@ $#
 |2,1,1581110598,47,"task"
 ?/[
 |2,1,1581109706,47,"["
-? \<15\>
-|2,1,1577905592,,"\\<15\\>"
 ? \<tar\>
 |2,1,1577847188,,"\\<tar\\>"
 ?/status
@@ -254,18 +260,20 @@ $#
 |2,1,1576844879,47,"noh"
 ? \<echo\>
 |2,1,1576844875,,"\\<echo\\>"
-? @$
-|2,1,1576683651,,"@$"
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
 @yes
-|2,3,1583548089,,"yes"
+|2,3,1584271499,,"yes"
 @y
-|2,3,1583544548,,"y"
+|2,3,1584271257,,"y"
 @no
-|2,3,1582017451,,"no"
+|2,3,1584271223,,"no"
+@bi
+|2,3,1584268345,,"bi"
+@n
+|2,3,1584268238,,"n"
 @/home/sparky/git-repos/ansible/playbooks/test-book/roles/test-role
 |2,3,1577845266,,"/home/sparky/git-repos/ansible/playbooks/test-book/roles/test-role"
 @1
@@ -276,456 +284,487 @@ $#
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	15 12 */2 * *   $HOME/git-repos/scripts/bash/system/config-backup.sh
-|3,0,0,1,1,0,1583885597,"15 12 */2 * *   $HOME/git-repos/scripts/bash/system/config-backup.sh"
+""0	LINE	0
+	15 12 * * * $HOME/git-repos/scripts/bash/system/config-backup.sh
+|3,1,0,1,1,0,1584318158,"15 12 * * * $HOME/git-repos/scripts/bash/system/config-backup.sh"
 "1	LINE	0
-	status_time = default
-|3,0,1,1,1,0,1583971166,"status_time = default"
+	
+|3,0,1,1,1,0,1584271728,""
 "2	LINE	0
-	status_number = yellow
-|3,0,2,1,1,0,1583971165,"status_number = yellow"
+	
+|3,0,2,1,1,0,1584271683,""
 "3	LINE	0
-	status_nicklist_count = default
-|3,0,3,1,1,0,1583971165,"status_nicklist_count = default"
+	    * [assignment 04](assignment-04.md)
+|3,0,3,1,1,0,1584271639,"    * [assignment 04](assignment-04.md)"
 "4	LINE	0
-	status_name_ssl = lightgreen
-|3,0,4,1,1,0,1583971164,"status_name_ssl = lightgreen"
+	    * assignment-03
+|3,0,4,1,1,0,1584271639,"    * assignment-03"
 "5	LINE	0
-	status_name = white
-|3,0,5,1,1,0,1583971164,"status_name = white"
+	    * assignment-02
+|3,0,5,1,1,0,1584271639,"    * assignment-02"
 "6	LINE	0
-	status_mouse = green
-|3,0,6,1,1,0,1583971164,"status_mouse = green"
+	    * assignment-01
+|3,0,6,1,1,0,1584271638,"    * assignment-01"
 "7	LINE	0
-	status_more = yellow
-|3,0,7,1,1,0,1583971164,"status_more = yellow"
+	### Assignments
+|3,0,7,1,1,0,1584271638,"### Assignments"
 "8	LINE	0
-	status_filter = green
-|3,0,8,1,1,0,1583971164,"status_filter = green"
+	
+|3,0,8,1,1,0,1584271637,""
 "9	LINE	0
-	status_data_private = lightgreen
-|3,0,9,1,1,0,1583971164,"status_data_private = lightgreen"
-""-	CHAR	0
-	y
-|3,1,36,0,1,0,1584002341,"y"
+	
+|3,0,9,1,1,0,1584271637,""
+"-	CHAR	0
+	t
+|3,0,36,0,1,0,1584269615,"t"
 
 # File marks:
-'0  1  0  ~/git-repos/dot-files/package-lists/package_list-20200312.txt
-|4,48,1,0,1584055669,"~/git-repos/dot-files/package-lists/package_list-20200312.txt"
-'1  31  0  ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
-|4,49,31,0,1584055447,"~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh"
-'2  1  0  ~/.config/rofi/config
-|4,50,1,0,1584003130,"~/.config/rofi/config"
-'3  225  90  ~/git-repos/dot-files/i3-configs/config
-|4,51,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
-'4  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,52,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
-'5  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,53,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
-'6  435  0  ~/.config/weechat/weechat.conf
-|4,54,435,0,1583971175,"~/.config/weechat/weechat.conf"
-'7  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,55,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
-'8  107  34  ~/.bashrc
-|4,56,107,34,1583969263,"~/.bashrc"
-'9  107  15  ~/.bashrc
-|4,57,107,15,1583969233,"~/.bashrc"
+'0  1  16  ~/git-repos/git-tutorial/hotfix.md
+|4,48,1,16,1584320332,"~/git-repos/git-tutorial/hotfix.md"
+'1  1  23  ~/git-repos/git-tutorial/linux-blog-post.md
+|4,49,1,23,1584319945,"~/git-repos/git-tutorial/linux-blog-post.md"
+'2  13  59  /tmp/crontab.7WXRYb
+|4,50,13,59,1584318175,"/tmp/crontab.7WXRYb"
+'3  38  4  ~/git-repos/vimwiki/personal-md/index.md
+|4,51,38,4,1584317567,"~/git-repos/vimwiki/personal-md/index.md"
+'4  1  0  /tmp/crontab.KtaJMq
+|4,52,1,0,1584316574,"/tmp/crontab.KtaJMq"
+'5  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,53,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+'6  1  0  ~/git-repos/vimwiki/personal-md/school/classes/classes-index.md
+|4,54,1,0,1584270469,"~/git-repos/vimwiki/personal-md/school/classes/classes-index.md"
+'7  1  0  ~/git-repos/vimwiki/personal-md/school/classes/classes-index.md
+|4,55,1,0,1584270469,"~/git-repos/vimwiki/personal-md/school/classes/classes-index.md"
+'8  3  13  ~/git-repos/vimwiki/personal-md/college/classes-index.md
+|4,56,3,13,1584270340,"~/git-repos/vimwiki/personal-md/college/classes-index.md"
+'9  9  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,57,9,6,1584270095,"~/git-repos/vimwiki/personal-md/index.md"
 
 # Jumplist (newest first):
--'  1  0  ~/git-repos/dot-files/package-lists/package_list-20200312.txt
-|4,39,1,0,1584055669,"~/git-repos/dot-files/package-lists/package_list-20200312.txt"
--'  31  0  ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
-|4,39,31,0,1584055447,"~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh"
--'  31  0  ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
-|4,39,31,0,1584055447,"~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh"
--'  1  0  ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
-|4,39,1,0,1584055419,"~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh"
--'  1  0  ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
-|4,39,1,0,1584055419,"~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh"
--'  1  0  ~/.config/rofi/config
-|4,39,1,0,1584003130,"~/.config/rofi/config"
--'  1  0  ~/.config/rofi/config
-|4,39,1,0,1584003130,"~/.config/rofi/config"
--'  1  0  ~/.config/rofi/config
-|4,39,1,0,1584003130,"~/.config/rofi/config"
--'  1  0  ~/.config/rofi/config
-|4,39,1,0,1584003130,"~/.config/rofi/config"
--'  225  90  ~/git-repos/dot-files/i3-configs/config
-|4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
--'  225  90  ~/git-repos/dot-files/i3-configs/config
-|4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
--'  225  90  ~/git-repos/dot-files/i3-configs/config
-|4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
--'  225  90  ~/git-repos/dot-files/i3-configs/config
-|4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
--'  225  90  ~/git-repos/dot-files/i3-configs/config
-|4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
--'  225  90  ~/git-repos/dot-files/i3-configs/config
-|4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
--'  225  90  ~/git-repos/dot-files/i3-configs/config
-|4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
--'  225  90  ~/git-repos/dot-files/i3-configs/config
-|4,39,225,90,1584002356,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584002149,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
--'  234  0  ~/git-repos/dot-files/i3-configs/config
-|4,39,234,0,1584001923,"~/git-repos/dot-files/i3-configs/config"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  435  0  ~/.config/weechat/weechat.conf
-|4,39,435,0,1583971175,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  135  0  ~/.config/weechat/weechat.conf
-|4,39,135,0,1583970938,"~/.config/weechat/weechat.conf"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
--'  13  0  ~/git-repos/projects/python/todoist/test-add.py
-|4,39,13,0,1583969788,"~/git-repos/projects/python/todoist/test-add.py"
+-'  1  16  ~/git-repos/git-tutorial/hotfix.md
+|4,39,1,16,1584320332,"~/git-repos/git-tutorial/hotfix.md"
+-'  1  23  ~/git-repos/git-tutorial/linux-blog-post.md
+|4,39,1,23,1584319945,"~/git-repos/git-tutorial/linux-blog-post.md"
+-'  1  23  ~/git-repos/git-tutorial/linux-blog-post.md
+|4,39,1,23,1584319945,"~/git-repos/git-tutorial/linux-blog-post.md"
+-'  13  59  /tmp/crontab.7WXRYb
+|4,39,13,59,1584318175,"/tmp/crontab.7WXRYb"
+-'  13  59  /tmp/crontab.7WXRYb
+|4,39,13,59,1584318175,"/tmp/crontab.7WXRYb"
+-'  13  59  /tmp/crontab.7WXRYb
+|4,39,13,59,1584318175,"/tmp/crontab.7WXRYb"
+-'  13  59  /tmp/crontab.7WXRYb
+|4,39,13,59,1584318175,"/tmp/crontab.7WXRYb"
+-'  10  0  /tmp/crontab.7WXRYb
+|4,39,10,0,1584318145,"/tmp/crontab.7WXRYb"
+-'  10  0  /tmp/crontab.7WXRYb
+|4,39,10,0,1584318145,"/tmp/crontab.7WXRYb"
+-'  10  0  /tmp/crontab.7WXRYb
+|4,39,10,0,1584318145,"/tmp/crontab.7WXRYb"
+-'  10  0  /tmp/crontab.7WXRYb
+|4,39,10,0,1584318145,"/tmp/crontab.7WXRYb"
+-'  1  0  /tmp/crontab.7WXRYb
+|4,39,1,0,1584318061,"/tmp/crontab.7WXRYb"
+-'  1  0  /tmp/crontab.7WXRYb
+|4,39,1,0,1584318061,"/tmp/crontab.7WXRYb"
+-'  1  0  /tmp/crontab.7WXRYb
+|4,39,1,0,1584318061,"/tmp/crontab.7WXRYb"
+-'  1  0  /tmp/crontab.7WXRYb
+|4,39,1,0,1584318061,"/tmp/crontab.7WXRYb"
+-'  38  4  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,4,1584317567,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  4  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,4,1584317567,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  4  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,4,1584317567,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  4  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,4,1584317567,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  4  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,4,1584317567,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  4  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,4,1584317567,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  4  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,4,1584317567,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  4  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,4,1584317567,"~/git-repos/vimwiki/personal-md/index.md"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  1  0  /tmp/crontab.KtaJMq
+|4,39,1,0,1584316574,"/tmp/crontab.KtaJMq"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  46  18  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,46,18,1584294203,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  38  6  ~/git-repos/vimwiki/personal-md/index.md
+|4,39,38,6,1584294164,"~/git-repos/vimwiki/personal-md/index.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
+-'  27  0  ~/git-repos/vimwiki/personal-md/blog/topics.md
+|4,39,27,0,1584294163,"~/git-repos/vimwiki/personal-md/blog/topics.md"
 
 # History of marks within files (newest to oldest):
 
-> ~/git-repos/dot-files/package-lists/package_list-20200312.txt
-	*	1584055669	0
-	"	1	0
+> ~/git-repos/git-tutorial/hotfix.md
+	*	1584320331	0
+	"	1	16
+	^	1	17
+	.	1	16
+	+	1	16
 
-> ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
-	*	1584055446	0
-	"	31	0
-	^	31	1
-	.	31	0
-	+	29	0
-	+	30	0
-	+	31	0
+> ~/git-repos/git-tutorial/linux-blog-post.md
+	*	1584319944	0
+	"	1	23
+	^	1	24
+	.	1	23
+	+	1	23
 
-> ~/.config/rofi/config
-	*	1584003129	0
-	"	1	0
-
-> ~/git-repos/dot-files/i3-configs/config
-	*	1584002353	0
-	"	225	90
-	^	225	91
-	.	225	90
-	+	250	37
-	+	232	29
-	+	233	0
-	+	250	15
-	+	234	23
-	+	229	0
-	+	234	18
-	+	225	90
-
-> ~/.config/weechat/weechat.conf
-	*	1583971169	0
-	"	435	0
-	.	435	0
-	+	1	1
-	+	136	90
-	+	435	0
-	+	142	9
-	+	433	20
-	+	435	0
-
-> ~/git-repos/projects/python/todoist/test-add.py
-	*	1583969788	0
-	"	13	0
-	^	13	1
-	.	13	0
-	+	5	0
-	+	28	0
-	+	13	0
-
-> ~/.bashrc
-	*	1583969262	0
-	"	107	34
-	^	107	35
-	.	107	34
-	+	66	0
-	+	67	0
-	+	68	0
-	+	11	5
-	+	150	11
-	+	63	40
-	+	73	0
-	+	74	0
-	+	73	0
-	+	74	122
-	+	73	0
-	+	74	0
-	+	73	0
-	+	74	0
-	+	75	77
-	+	75	28
-	+	75	188
-	+	74	0
-	+	75	0
-	+	73	0
-	+	62	0
-	+	63	0
-	+	64	0
-	+	65	0
-	+	66	0
-	+	67	0
-	+	68	0
-	+	74	0
-	+	73	0
-	+	74	0
-	+	75	12
-	+	63	44
-	+	75	0
-	+	74	0
-	+	75	0
-	+	70	0
-	+	62	0
-	+	63	0
-	+	64	0
-	+	65	0
-	+	66	0
-	+	67	0
-	+	68	0
-	+	64	53
-	+	66	16
-	+	64	52
-	+	6	19
-	+	57	0
-	+	153	17
-	+	26	0
-	+	20	0
-	+	20	93
-	+	22	24
-	+	23	8
-	+	24	64
-	+	25	0
-	+	100	0
-	+	99	17
-	+	154	8
-	+	155	19
-	+	156	24
-	+	59	0
-	+	133	0
-	+	59	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	18	0
-	+	17	25
-	+	19	0
-	+	27	0
-	+	75	0
-	+	116	0
-	+	115	45
-	+	65	7
-	+	66	0
-	+	65	0
-	+	65	56
-	+	65	0
-	+	82	0
-	+	84	24
-	+	82	26
-	+	140	47
-	+	145	0
-	+	163	0
-	+	106	43
-	+	107	0
-	+	106	43
-	+	64	0
-	+	65	0
-	+	66	0
-	+	67	0
-	+	68	0
-	+	69	0
-	+	70	0
-	+	128	20
-	+	140	0
-	+	122	0
-	+	121	0
-	+	107	34
-
-> /tmp/crontab.5gDVcy
-	*	1583886203	0
-	"	13	0
-	.	14	0
-	+	14	0
-
-> /tmp/crontab.anaTsZ
-	*	1583885907	0
-	"	14	0
-	^	14	1
-	.	14	0
-	+	14	0
-
-> /tmp/crontab.GTqPwT
-	*	1583885676	0
-	"	13	0
-	^	13	1
-	.	13	0
-	+	10	67
-	+	11	64
+> /tmp/crontab.7WXRYb
+	*	1584318174	0
+	"	13	59
+	^	13	60
+	.	13	59
+	+	12	63
 	+	10	0
-	+	14	0
+	+	11	0
+	+	13	59
+
+> ~/git-repos/vimwiki/personal-md/index.md
+	*	1584317566	0
+	"	38	4
+	^	8	47
+	.	8	47
+	+	19	54
+	+	20	0
+	+	6	9
+	+	7	12
+	+	7	13
+	+	9	0
+	+	7	31
+	+	9	36
+	+	7	21
+	+	9	36
+	+	9	37
+	+	9	0
+	+	8	47
+
+> /tmp/crontab.KtaJMq
+	*	1584316570	0
+	"	1	0
+
+> ~/git-repos/vimwiki/personal-md/blog/topics.md
+	*	1584294202	0
+	"	46	18
+	^	46	19
+	.	46	18
+	+	40	0
+	+	41	22
+	+	42	30
+	+	43	21
+	+	44	15
+	+	45	15
+	+	46	18
+
+> ~/git-repos/vimwiki/personal-md/productivity/gtd/gtd-index.md
+	*	1584291843	0
+	"	4	5
+	^	4	6
+	.	4	5
+	+	1	0
+	+	7	22
+	+	8	0
+	+	9	0
+	+	5	0
+	+	6	0
+	+	3	12
+	+	4	49
+	+	6	13
+	+	7	31
+	+	4	5
+
+> ~/git-repos/vimwiki/personal-md/productivity/gtd/reference/someday-maybe.md
+	*	1584291833	0
+	"	1	0
+
+> ~/git-repos/vimwiki/personal-md/technology/languages/python/python-index.md
+	*	1584291733	0
+	"	3	6
+
+> ~/git-repos/vimwiki/personal-md/todo-list-main.md
+	*	1584291715	0
+	"	1	0
+
+> ~/git-repos/vimwiki/personal-md/technology/software.md
+	*	1584291709	0
+	"	1	0
+
+> ~/git-repos/vimwiki/personal-md/school/classes/classes-index.md
+	*	1584291667	0
+	"	4	4
+	^	9	6
+	.	9	6
+	+	4	26
+	+	5	0
+	+	4	42
+	+	5	0
+	+	4	17
+	+	5	41
+	+	6	40
+	+	6	42
+	+	7	0
+	+	8	13
+	+	9	5
+	+	4	11
+	+	5	11
+	+	6	11
+	+	9	6
+
+> ~/git-repos/vimwiki/personal-md/school/va-information.md
+	*	1584291659	0
+	"	1	0
+
+> ~/git-repos/vimwiki/personal-md/school/classes/biol102/biol102-index.md
+	*	1584271742	0
+	"	1	27
+	^	1	28
+	.	1	27
+	+	7	0
+	+	1	27
+
+> ~/git-repos/vimwiki/personal-md/school/classes/biol101/biol101-index.md
+	*	1584271724	0
+	"	8	30
+	^	8	31
+	.	1	39
+	+	2	0
+	+	7	10
+	+	8	31
+	+	9	29
+	+	10	14
+	+	11	0
 	+	12	0
-	+	13	0
+	+	6	0
+	+	3	12
+	+	4	17
+	+	5	15
+	+	1	39
+
+> ~/git-repos/vimwiki/personal-md/school/classes/wrtg394/wrtg394-index.md
+	*	1584271705	0
+	"	7	0
+	^	7	0
+	.	7	0
+	+	1	0
+	+	7	0
+	+	1	0
+	+	6	0
+	+	1	32
+	+	7	0
+
+> ~/git-repos/vimwiki/personal-md/biol-101.md
+	*	1584271019	0
+	"	1	0
+
+> ~/git-repos/vimwiki/personal-md/college/classes-index.md
+	*	1584270340	0
+	"	3	13
+	^	4	14
+	.	6	13
+	+	5	14
+	+	6	13
+
+> ~/git-repos/vimwiki/personal-md/classes/classes-index.md
+	*	1584269963	0
+	"	4	0
+	^	4	0
+	.	4	0
+	+	1	23
+	+	2	0
+	+	3	15
+	+	4	0
+
+> ~/git-repos/vimwiki/personal-md/productivity/gtd/projects/security-system.md
+	*	1584269570	0
+	"	5	10
+	^	5	11
+	.	5	10
+	+	2	0
+	+	3	22
+	+	3	20
+	+	4	19
+	+	5	10
+
+> ~/git-repos/task-warrior/.git/hooks/commit-msg.sample
+	*	1584268485	0
+	"	1	0
+
+> ~/git-repos/vimwiki/personal-md/productivity/gtd/someday-maybe.md
+	*	1584268388	0
+	"	3	0
+	^	3	0
+	.	3	0
+	+	2	0
+	+	3	0
+
+> ~/git-repos/vimwiki/personal-md/productivity/gtd.md
+	*	1584268177	0
+	"	4	55
+	^	4	56
+	.	5	0
+	+	1	18
+	+	2	0
+	+	3	22
+	+	4	56
+	+	5	0
+
+> ~/documents/docker/openproject/docker-compose.yml
+	*	1584234708	0
+	"	90	0
 
 > ~/bin/config-backup.sh
-	*	1583885466	0
-	"	61	0
-	^	59	1
-	.	31	0
-	+	73	0
-	+	75	0
-	+	71	24
+	*	1584146217	0
+	"	69	0
+	^	69	1
+	.	56	0
 	+	55	23
 	+	56	23
 	+	47	34
@@ -823,6 +862,230 @@ $#
 	+	86	0
 	+	87	0
 	+	31	0
+	+	24	0
+	+	25	0
+	+	56	0
+
+> ~/bin/backup-clean.sh
+	*	1584146137	0
+	"	20	0
+	^	5	35
+	.	5	34
+	+	13	0
+	+	7	0
+	+	6	0
+	+	13	0
+	+	7	23
+	+	6	0
+	+	8	34
+	+	9	36
+	+	8	37
+	+	10	38
+	+	8	39
+	+	10	39
+	+	11	0
+	+	6	0
+	+	13	0
+	+	4	1
+	+	5	34
+
+> /tmp/crontab.sg9RJO
+	*	1584145913	0
+	"	1	0
+
+> ~/.bashrc
+	*	1584091197	0
+	"	161	0
+	^	162	0
+	.	161	0
+	+	67	0
+	+	68	0
+	+	74	0
+	+	73	0
+	+	74	0
+	+	75	12
+	+	63	44
+	+	75	0
+	+	74	0
+	+	75	0
+	+	70	0
+	+	62	0
+	+	63	0
+	+	64	0
+	+	65	0
+	+	66	0
+	+	67	0
+	+	68	0
+	+	64	53
+	+	66	16
+	+	64	52
+	+	6	19
+	+	57	0
+	+	153	17
+	+	26	0
+	+	20	0
+	+	20	93
+	+	22	24
+	+	23	8
+	+	24	64
+	+	25	0
+	+	100	0
+	+	99	17
+	+	154	8
+	+	155	19
+	+	156	24
+	+	59	0
+	+	133	0
+	+	59	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	18	0
+	+	17	25
+	+	19	0
+	+	27	0
+	+	75	0
+	+	116	0
+	+	115	45
+	+	65	7
+	+	66	0
+	+	65	0
+	+	65	56
+	+	65	0
+	+	82	0
+	+	84	24
+	+	82	26
+	+	140	47
+	+	145	0
+	+	163	0
+	+	106	43
+	+	107	0
+	+	106	43
+	+	64	0
+	+	65	0
+	+	66	0
+	+	67	0
+	+	68	0
+	+	69	0
+	+	70	0
+	+	128	20
+	+	140	0
+	+	122	0
+	+	121	0
+	+	107	34
+	+	14	0
+	+	15	0
+	+	16	0
+	+	91	0
+	+	87	0
+	+	64	0
+	+	65	0
+	+	66	0
+	+	67	0
+	+	68	0
+	+	69	0
+	+	70	0
+	+	149	0
+	+	150	0
+	+	151	0
+	+	152	0
+	+	153	0
+	+	154	0
+	+	155	0
+	+	156	0
+	+	157	0
+	+	158	0
+	+	159	0
+	+	160	0
+	+	161	0
+
+> ~/.bashrc.bak
+	*	1584090563	0
+	"	1	0
+
+> ~/.bash_profile
+	*	1584090422	0
+	"	1	0
+
+> ~/.bash_profile.bak
+	*	1584090404	0
+	"	1	0
+
+> ~/git-repos/dot-files/package-lists/package_list-20200312.txt
+	*	1584055669	0
+	"	1	0
+
+> ~/git-repos/scripts/bash/personal-system-maintenance/setup-softlinks.sh
+	*	1584055446	0
+	"	31	0
+	^	31	1
+	.	31	0
+	+	29	0
+	+	30	0
+	+	31	0
+
+> ~/.config/rofi/config
+	*	1584003129	0
+	"	1	0
+
+> ~/git-repos/dot-files/i3-configs/config
+	*	1584002353	0
+	"	225	90
+	^	225	91
+	.	225	90
+	+	250	37
+	+	232	29
+	+	233	0
+	+	250	15
+	+	234	23
+	+	229	0
+	+	234	18
+	+	225	90
+
+> ~/.config/weechat/weechat.conf
+	*	1583971169	0
+	"	435	0
+	.	435	0
+	+	1	1
+	+	136	90
+	+	435	0
+	+	142	9
+	+	433	20
+	+	435	0
+
+> ~/git-repos/projects/python/todoist/test-add.py
+	*	1583969788	0
+	"	13	0
+	^	13	1
+	.	13	0
+	+	5	0
+	+	28	0
+	+	13	0
+
+> /tmp/crontab.5gDVcy
+	*	1583886203	0
+	"	13	0
+	.	14	0
+	+	14	0
+
+> /tmp/crontab.anaTsZ
+	*	1583885907	0
+	"	14	0
+	^	14	1
+	.	14	0
+	+	14	0
+
+> /tmp/crontab.GTqPwT
+	*	1583885676	0
+	"	13	0
+	^	13	1
+	.	13	0
+	+	10	67
+	+	11	64
+	+	10	0
+	+	14	0
+	+	12	0
+	+	13	0
 
 > ~/git-repos/scripts/bash/system/config-backup.sh
 	*	1583885375	0
@@ -1078,10 +1341,6 @@ $#
 	+	99	0
 	+	21	20
 	+	103	12
-
-> ~/git-repos/vimwiki/personal-md/index.md
-	*	1583549068	0
-	"	1	0
 
 > ~/git-repos/vimwiki/work-md/index.md
 	*	1583549054	0
@@ -1357,26 +1616,6 @@ $#
 	.	9	0
 	+	9	0
 
-> ~/bin/backup-clean.sh
-	*	1582481625	0
-	"	11	0
-	.	12	0
-	+	12	0
-	+	6	0
-	+	5	0
-	+	12	0
-	+	6	23
-	+	5	0
-	+	7	34
-	+	8	36
-	+	7	37
-	+	9	38
-	+	7	39
-	+	9	39
-	+	10	0
-	+	5	0
-	+	12	0
-
 > /tmp/crontab.VoCtl7
 	*	1582480007	0
 	"	1	0
@@ -1647,373 +1886,4 @@ $#
 
 > ~/vimwiki/personal-md/network-engineering.md
 	*	1581989054	0
-	"	1	0
-
-> ~/vimwiki/personal-md/blog-page.md
-	*	1581988971	0
-	"	1	0
-
-> ~/vimwiki/personal-md/system-engineering.md
-	*	1581988575	0
-	"	2	0
-	^	6	10
-	.	6	9
-	+	2	0
-	+	3	21
-	+	3	32
-	+	6	16
-	+	7	15
-	+	8	71
-	+	8	70
-	+	8	69
-	+	3	32
-	+	4	20
-	+	4	32
-	+	5	0
-	+	8	54
-	+	5	20
-	+	6	0
-	+	4	35
-	+	8	54
-	+	3	66
-	+	4	0
-	+	4	12
-	+	5	0
-	+	4	41
-	+	4	42
-	+	4	62
-	+	4	54
-	+	5	42
-	+	6	0
-	+	7	0
-	+	6	38
-	+	7	44
-	+	7	30
-	+	8	19
-	+	7	55
-	+	8	52
-	+	9	0
-	+	4	25
-	+	3	21
-	+	3	25
-	+	2	0
-	+	3	22
-	+	4	12
-	+	5	16
-	+	6	20
-	+	7	16
-	+	8	16
-	+	9	12
-	+	10	12
-	+	11	10
-	+	12	16
-	+	5	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	11	0
-	+	12	0
-	+	5	38
-	+	6	46
-	+	7	38
-	+	8	38
-	+	11	36
-	+	12	48
-	+	6	9
-
-> ~/vimwiki/personal-md/syseng-automation.md
-	*	1581988363	0
-	"	6	0
-	^	6	11
-	.	6	10
-	+	2	0
-	+	3	11
-	+	3	22
-	+	4	14
-	+	5	11
-	+	7	0
-	+	8	8
-	+	9	14
-	+	10	10
-	+	4	0
-	+	6	10
-
-> ~/.vim/vimrc
-	*	1581987782	0
-	"	151	36
-	^	160	44
-	.	151	36
-	+	111	57
-	+	110	73
-	+	112	58
-	+	78	2
-	+	112	41
-	+	112	75
-	+	112	77
-	+	112	44
-	+	112	13
-	+	112	40
-	+	112	61
-	+	98	30
-	+	152	0
-	+	154	0
-	+	152	0
-	+	99	39
-	+	155	27
-	+	21	33
-	+	156	79
-	+	99	14
-	+	157	0
-	+	157	39
-	+	157	19
-	+	101	0
-	+	99	66
-	+	99	0
-	+	157	0
-	+	158	55
-	+	159	18
-	+	46	61
-	+	101	69
-	+	162	397
-	+	161	54
-	+	162	78
-	+	162	26
-	+	162	25
-	+	162	23
-	+	162	27
-	+	162	24
-	+	162	0
-	+	162	48
-	+	162	28
-	+	162	0
-	+	162	20
-	+	162	26
-	+	162	27
-	+	162	0
-	+	82	0
-	+	119	0
-	+	46	60
-	+	46	0
-	+	49	0
-	+	46	60
-	+	46	0
-	+	45	0
-	+	44	0
-	+	162	20
-	+	162	9
-	+	162	27
-	+	162	0
-	+	162	27
-	+	162	0
-	+	162	30
-	+	162	13
-	+	162	0
-	+	101	0
-	+	103	20
-	+	44	0
-	+	45	0
-	+	82	0
-	+	91	0
-	+	82	0
-	+	91	0
-	+	92	1
-	+	112	0
-	+	163	0
-	+	45	63
-	+	46	0
-	+	45	10
-	+	46	60
-	+	48	0
-	+	46	21
-	+	45	0
-	+	46	0
-	+	163	0
-	+	163	24
-	+	163	0
-	+	48	0
-	+	46	56
-	+	163	24
-	+	163	0
-	+	151	0
-	+	150	9
-	+	150	34
-	+	151	43
-	+	150	0
-	+	151	36
-
-> ~/vimwiki/personal-md/classes/biol102.md
-	*	1581987726	0
-	"	1	0
-
-> ~/vimwiki/school-md/index.md
-	*	1581902248	0
-	"	7	6
-	.	4	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	3	20
-	+	4	32
-	+	4	0
-
-> ~/vimwiki/school-md/s2020-wrtg394.md
-	*	1581890588	0
-	"	5	5
-	^	5	45
-	.	5	44
-	+	1	23
-	+	2	11
-	+	3	0
-	+	4	21
-	+	5	44
-
-> ~/vimwiki/school-md/wrtg394-assignment-04.md
-	*	1581890587	0
-	"	6	8
-	^	6	14
-	.	2	0
-	+	2	3
-	+	2	17
-	+	2	12
-	+	2	19
-	+	2	17
-	+	2	14
-	+	2	17
-	+	2	0
-	+	2	14
-	+	2	17
-	+	5	28
-	+	6	0
-	+	2	0
-	+	6	14
-	+	4	0
-	+	3	0
-	+	2	0
-
-> ~/vimwiki/school-md/s2020-biol101.md
-	*	1581890584	0
-	"	1	0
-
-> ~/vimwiki/school-md/school-classes.md
-	*	1581890556	0
-	"	4	0
-	.	4	0
-	+	2	0
-	+	3	21
-	+	4	0
-	+	4	19
-	+	4	31
-	+	4	0
-	+	4	28
-	+	4	0
-
-> ~/vimwiki/personal-md/school.md
-	*	1581876795	0
-	"	1	0
-
-> ~/documents/college/classes/s2020-wrtg-394/05-assignments/assignment-04/NERD_tree_1
-	*	1581818391	0
-	"	4	9
-	.	1	0
-	+	1	0
-
-> ~/bin/review.sh
-	*	1581370151	0
-	"	23	0
-	^	23	0
-	.	22	16
-	+	22	16
-
-> ~/git-repos/dot-files/test-dir/vim-configs/README.md
-	*	1581249617	0
-	"	23	30
-	^	23	31
-	.	23	30
-	+	22	0
-	+	23	30
-
-> ~/git-repos/dot-files/test-dir/vim-configs/NERD_tree_1
-	*	1581249555	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.bash
-	*	1581110386	0
-	"	1	0
-
-> ~/NERD_tree_1
-	*	1581109601	0
-	"	1	1
-	.	1	0
-	+	1	0
-
-> ~/documents/college/classes/s2020-biol-102/02-discussions/week-04/perrone-week-04-initial.txt
-	*	1580695698	0
-	"	16	0
-	^	16	0
-	.	16	0
-	+	15	9
-	+	12	200
-	+	3	109
-	+	4	104
-	+	5	106
-	+	8	98
-	+	9	102
-	+	12	104
-	+	16	0
-
-> ~/bin/NERD_tree_1
-	*	1577905849	0
-	"	6	11
-	.	1	0
-	+	1	0
-
-> ~/bin/cron-backup.sh
-	*	1577905849	0
-	"	1	0
-
-> /tmp/crontab.6k7nBr
-	*	1577905726	0
-	"	12	0
-	.	12	0
-	+	12	0
-
-> /tmp/crontab.AaAlbn
-	*	1577905604	0
-	"	13	0
-	^	13	1
-	.	13	0
-	+	12	0
-	+	13	0
-
-> /tmp/crontab.xaYhz5
-	*	1577905523	0
-	"	14	0
-	.	13	41
-	+	13	41
-	i	1	0
-
-> /tmp/crontab.i4yW1q
-	*	1577905510	0
-	"	1	0
-
-> ~/git-repos/ansible/playbooks/test-book/roles/test/tasks/second-task.yml
-	*	1577846386	0
-	"	1	0
-
-> ~/git-repos/ansible/playbooks/test-book/roles/test/tasks/main.yml
-	*	1577846382	0
-	"	9	3
-	^	9	4
-	.	9	4
-	+	1	0
-	+	4	0
-	+	1	3
-	+	3	2
-	+	9	4
-
-> ~/git-repos/ansible/playbooks/test-book/roles/common/tasks/main.yml
-	*	1577846079	0
 	"	1	0

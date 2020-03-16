@@ -11,9 +11,9 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-    exec startx
-fi
+#if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+#    exec startx
+#fi
 
 ###############################################################################
 # Start Tmux at shell init
@@ -84,11 +84,11 @@ export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
 ########################################
 # Enable this on Fedora
 ########################################
-#source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
 ########################################
 # Enable this on Arch
 ########################################
-source /usr/bin/virtualenvwrapper_lazy.sh
+#source /usr/bin/virtualenvwrapper_lazy.sh
 
 ###############################################################################
 # User specific aliases and functions
@@ -103,7 +103,6 @@ alias reload='.  ~/.bashrc'
 alias r="ranger ~/"
 alias clip="xsel --clipboard"
 alias cal='cal -m'
-alias lock='i3lock -k --datestr="%B %d, %Y" -e'
 alias projects='cd $HOME/documents/programming/python'
 
 ########################################
