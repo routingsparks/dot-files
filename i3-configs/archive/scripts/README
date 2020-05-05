@@ -1,0 +1,24 @@
+Put the following files into ~/.config/i3/
+    -i3
+        - config (file)
+        - fonts (directory)
+        - i3blocks (directory)
+        - i3pystatus.conf (file)
+        - i3pystatus.conf.bak (file)
+        - i3status (directory)
+        - scripts (directory)
+
+Put the following into ~/.config
+    -compton-config
+        - compton.conf
+
+Put the following files into ~/
+    - xorg-config
+        - .xinitrc
+        - .Xresources
+
+Edit /etc/profile to add line to autostart startx.
+# autostart systemd default session on tty1.
+if [[ "$(tty)" == '/dev/tty1' ]];
+exec startx
+fi 

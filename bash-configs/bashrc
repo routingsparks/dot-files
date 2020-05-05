@@ -11,9 +11,12 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-#if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-#    exec startx
-#fi
+###############################################################################
+# Start startx at shell init
+###############################################################################
+if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+    exec startx
+fi
 
 ###############################################################################
 # Start Tmux at shell init
@@ -54,6 +57,11 @@ export PATH=$HOME/bin/:$PATH
 export EDITOR=vim
 
 ###############################################################################
+# Disable annoying beep
+###############################################################################
+xset -b
+
+###############################################################################
 # Set Terminal
 ###############################################################################
 #export urxvt256c
@@ -84,11 +92,11 @@ export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
 ########################################
 # Enable this on Fedora
 ########################################
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 ########################################
 # Enable this on Arch
 ########################################
-#source /usr/bin/virtualenvwrapper_lazy.sh
+source /usr/bin/virtualenvwrapper_lazy.sh
 
 ###############################################################################
 # User specific aliases and functions
