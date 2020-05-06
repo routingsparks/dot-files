@@ -1,7 +1,7 @@
 ###################################################
 # i3 Configuration File
 # Created: 2020-05-04
-# Updated? 2020-05-05
+# Updated? 2020-05-06
 ###################################################
 
 ###################################################
@@ -80,8 +80,10 @@ bindsym $mod+Shift+Right move right
 ###################################################
 # Screen split orientation
 ###################################################
-bindsym $mod+h split h #Split horizontially
-bindsym $mod+v split v #Split vertically
+# Split horizontially
+bindsym $mod+h split h
+# Split vertically
+bindsym $mod+v split v
 
 ###################################################
 # Enter full screen mode on focused container
@@ -277,8 +279,10 @@ bindsym XF86AudioPrev exec playerctl previous
 ###################################################
 # Define screen brightness controls
 ###################################################
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+# Increase screen brightntess by 20%
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20
+# Decrease screen brightness by 20%
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 ###################################################
 # Define startup applications
