@@ -105,6 +105,7 @@ alias vi='vim'
 alias ls='ls --color=auto'
 alias ll='ls -alh --color=auto'
 alias lh='ls -lh --color=auto'
+alias grep='grep --color=auto'
 alias h='history | grep'
 alias syshosts='cat /etc/hosts'
 alias reload='.  ~/.bashrc'
@@ -167,3 +168,8 @@ alias ti='task in'
 alias tl='task list'
 alias td='task +DUE'
 alias tod='task +OVERDUE'
+
+########################################
+# directory aliases
+########################################
+alias ansible-directory='cd $HOME/documents/ansible/playbooks'

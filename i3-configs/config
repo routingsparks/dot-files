@@ -218,7 +218,7 @@ default_border pixel 1
 #assign [class="URxvt" instance="ranger"] file
 assign [class="URxvt"] term
 assign [class="Virt-manager"] vm
-assign [class="Code"] code
+assign [class="code-oss"] code
 assign [class="Chromium"] www
 
 ###################################################
