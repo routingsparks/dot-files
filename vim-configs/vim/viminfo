@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<fi\>
+~MSle0~/\<fi\>
 
 # Last Substitute Search Pattern:
 ~MSle0&^
@@ -20,24 +20,24 @@
 $
 
 # Command Line History (newest to oldest):
+:wq!
+|2,0,1589292148,,"wq!"
+:w
+|2,0,1589291036,,"w"
+:q
+|2,0,1589290769,,"q"
+:PlugInstall
+|2,0,1589286560,,"PlugInstall"
+:PlugClean
+|2,0,1589286554,,"PlugClean"
 :q!
 |2,0,1589017648,,"q!"
-:q
-|2,0,1589016761,,"q"
-:wq!
-|2,0,1589016753,,"wq!"
-:w
-|2,0,1588954214,,"w"
 :wqQ
 |2,0,1588812044,,"wqQ"
 :noh
 |2,0,1588756950,,"noh"
 :vsplit firewalld.yml
 |2,0,1588724453,,"vsplit firewalld.yml"
-:PlugInstall
-|2,0,1588721655,,"PlugInstall"
-:PlugClean
-|2,0,1588721650,,"PlugClean"
 :wq
 |2,0,1588641754,,"wq"
 :wq~
@@ -208,18 +208,18 @@ $
 |2,0,1576682436,,"tabmove                \" moves tabs,tm"
 
 # Search String History (newest to oldest):
+?/feh
+|2,1,1589290340,47,"feh"
+? @$
+|2,1,1589281419,,"@$"
 ? \<fi\>
 |2,1,1588756947,,"\\<fi\\>"
 ?/+h
 |2,1,1588754283,47,"+h"
 ? \<local\>
 |2,1,1588723755,,"\\<local\\>"
-?/feh
-|2,1,1588641602,47,"feh"
 ? \<15\>
 |2,1,1584318145,,"\\<15\\>"
-? @$
-|2,1,1584091095,,"@$"
 ? \<if\>
 |2,1,1584090459,,"\\<if\\>"
 ?/rofi
@@ -277,7 +277,7 @@ $
 
 # Input Line History (newest to oldest):
 @y
-|2,3,1588721651,,"y"
+|2,3,1589286556,,"y"
 @:y
 |2,3,1588721643,,":y"
 @yes
@@ -299,266 +299,523 @@ $
 
 # Registers:
 "0	LINE	0
-	########################################
-	# task warrior
-	########################################
-|3,0,0,1,3,0,1588949185,"########################################","# task warrior","########################################"
+	if [[ $(cat /etc/os-release | grep -i 'fedora') = *fedora* ]]; then
+|3,0,0,1,1,0,1589292000,"if [[ $(cat /etc/os-release | grep -i 'fedora') = *fedora* ]]; then"
 ""1	LINE	0
-	    #when:
-|3,1,1,1,1,0,1588953860,"    #when:"
+	########################################
+|3,1,1,1,1,0,1589292092,"########################################"
 "2	LINE	0
-	    - ansible_facts['distribution_major_version'] == "7"
-|3,0,2,1,1,0,1588953860,"    - ansible_facts['distribution_major_version'] == \"7\""
+	# Enable this on Arch
+|3,0,2,1,1,0,1589292091,"# Enable this on Arch"
 "3	LINE	0
-	    - common
-|3,0,3,1,1,0,1588950831,"    - common"
+	########################################
+|3,0,3,1,1,0,1589292091,"########################################"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1588949529,""
+	# Refact and try to remember how I did that if statement
+|3,0,4,1,1,0,1589292091,"# Refact and try to remember how I did that if statement"
 "5	LINE	0
-	    echo "Created directory"
-|3,0,5,1,1,0,1588758974,"    echo \"Created directory\""
+	########################################
+|3,0,5,1,1,0,1589292090,"########################################"
 "6	LINE	0
-	#echo $ANSIBLE_DIR/$ANSIBLE_PLAYBOOK
-|3,0,6,1,1,0,1588758970,"#echo $ANSIBLE_DIR/$ANSIBLE_PLAYBOOK"
+	# Enable this on Fedora
+|3,0,6,1,1,0,1589292090,"# Enable this on Fedora"
 "7	LINE	0
-	#echo $ANSIBLE_PLAYBOOK
-|3,0,7,1,1,0,1588758969,"#echo $ANSIBLE_PLAYBOOK"
+	########################################
+|3,0,7,1,1,0,1589292089,"########################################"
 "8	LINE	0
-	echo $ANSIBLE_WORKING_DIR
-|3,0,8,1,1,0,1588758969,"echo $ANSIBLE_WORKING_DIR"
+	    echo ""
+|3,0,8,1,1,0,1589292087,"    echo \"\""
 "9	LINE	0
-	
-|3,0,9,1,1,0,1588758962,""
+	#source /usr/local/bin/virtualenvwrapper.sh
+|3,0,9,1,1,0,1589292078,"#source /usr/local/bin/virtualenvwrapper.sh"
 "-	CHAR	0
-	 
-|3,0,36,0,1,0,1588949773," "
+	l
+|3,0,36,0,1,0,1589292058,"l"
 
 # File marks:
-'0  61  64  ~/bin/config-backup.sh
-|4,48,61,64,1589017648,"~/bin/config-backup.sh"
-'1  1  0  ~/development/dot-files/weechat-configs/NERD_tree_1
-|4,49,1,0,1589016761,"~/development/dot-files/weechat-configs/NERD_tree_1"
-'2  4  0  ~/development/dot-files/weechat-configs/README.md
-|4,50,4,0,1589016753,"~/development/dot-files/weechat-configs/README.md"
-'3  69  4  ~/bin/config-backup.sh
-|4,51,69,4,1589016114,"~/bin/config-backup.sh"
-'4  68  4  ~/bin/config-backup.sh
-|4,52,68,4,1589016114,"~/bin/config-backup.sh"
-'5  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,53,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
-'6  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,54,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
-'7  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,55,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
-'8  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,56,7,0,1588957429,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
-'9  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,57,7,0,1588957406,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
+'0  114  0  ~/.bashrc
+|4,48,114,0,1589292148,"~/.bashrc"
+'1  100  0  ~/.bashrc
+|4,49,100,0,1589292099,"~/.bashrc"
+'2  100  0  ~/.bashrc
+|4,50,100,0,1589292099,"~/.bashrc"
+'3  5  54  ~/bin/test.sh
+|4,51,5,54,1589291846,"~/bin/test.sh"
+'4  5  55  ~/bin/test.sh
+|4,52,5,55,1589291834,"~/bin/test.sh"
+'5  9  0  ~/bin/test.sh
+|4,53,9,0,1589291820,"~/bin/test.sh"
+'6  9  0  ~/bin/test.sh
+|4,54,9,0,1589291820,"~/bin/test.sh"
+'7  9  0  ~/bin/test.sh
+|4,55,9,0,1589291820,"~/bin/test.sh"
+'8  9  0  ~/bin/test.sh
+|4,56,9,0,1589291820,"~/bin/test.sh"
+'9  6  18  ~/bin/test.sh
+|4,57,6,18,1589291811,"~/bin/test.sh"
 
 # Jumplist (newest first):
--'  61  64  ~/bin/config-backup.sh
-|4,39,61,64,1589017648,"~/bin/config-backup.sh"
--'  69  4  ~/bin/config-backup.sh
-|4,39,69,4,1589017078,"~/bin/config-backup.sh"
--'  1  0  ~/development/dot-files/weechat-configs/NERD_tree_1
-|4,39,1,0,1589016761,"~/development/dot-files/weechat-configs/NERD_tree_1"
--'  1  0  ~/development/dot-files/weechat-configs/NERD_tree_1
-|4,39,1,0,1589016761,"~/development/dot-files/weechat-configs/NERD_tree_1"
--'  34  2  ~/development/dot-files/weechat-configs/NERD_tree_1
-|4,39,34,2,1589016759,"~/development/dot-files/weechat-configs/NERD_tree_1"
--'  34  2  ~/development/dot-files/weechat-configs/NERD_tree_1
-|4,39,34,2,1589016759,"~/development/dot-files/weechat-configs/NERD_tree_1"
--'  4  0  ~/development/dot-files/weechat-configs/README.md
-|4,39,4,0,1589016753,"~/development/dot-files/weechat-configs/README.md"
--'  4  0  ~/development/dot-files/weechat-configs/README.md
-|4,39,4,0,1589016753,"~/development/dot-files/weechat-configs/README.md"
--'  4  0  ~/development/dot-files/weechat-configs/README.md
-|4,39,4,0,1589016753,"~/development/dot-files/weechat-configs/README.md"
--'  4  0  ~/development/dot-files/weechat-configs/README.md
-|4,39,4,0,1589016753,"~/development/dot-files/weechat-configs/README.md"
--'  1  0  ~/development/dot-files/weechat-configs/README.md
-|4,39,1,0,1589016288,"~/development/dot-files/weechat-configs/README.md"
--'  1  0  ~/development/dot-files/weechat-configs/README.md
-|4,39,1,0,1589016288,"~/development/dot-files/weechat-configs/README.md"
--'  1  0  ~/development/dot-files/weechat-configs/README.md
-|4,39,1,0,1589016288,"~/development/dot-files/weechat-configs/README.md"
--'  1  0  ~/development/dot-files/weechat-configs/README.md
-|4,39,1,0,1589016288,"~/development/dot-files/weechat-configs/README.md"
--'  68  4  ~/bin/config-backup.sh
-|4,39,68,4,1589016114,"~/bin/config-backup.sh"
--'  68  4  ~/bin/config-backup.sh
-|4,39,68,4,1589016114,"~/bin/config-backup.sh"
--'  68  4  ~/bin/config-backup.sh
-|4,39,68,4,1589016114,"~/bin/config-backup.sh"
--'  68  4  ~/bin/config-backup.sh
-|4,39,68,4,1589016114,"~/bin/config-backup.sh"
--'  63  0  ~/bin/config-backup.sh
-|4,39,63,0,1589016112,"~/bin/config-backup.sh"
--'  62  0  ~/bin/config-backup.sh
-|4,39,62,0,1589016112,"~/bin/config-backup.sh"
--'  62  0  ~/bin/config-backup.sh
-|4,39,62,0,1589016112,"~/bin/config-backup.sh"
--'  62  0  ~/bin/config-backup.sh
-|4,39,62,0,1589016112,"~/bin/config-backup.sh"
--'  62  0  ~/bin/config-backup.sh
-|4,39,62,0,1589016112,"~/bin/config-backup.sh"
--'  90  0  ~/bin/config-backup.sh
-|4,39,90,0,1589015992,"~/bin/config-backup.sh"
--'  89  0  ~/bin/config-backup.sh
-|4,39,89,0,1589015992,"~/bin/config-backup.sh"
--'  89  0  ~/bin/config-backup.sh
-|4,39,89,0,1589015992,"~/bin/config-backup.sh"
--'  89  0  ~/bin/config-backup.sh
-|4,39,89,0,1589015992,"~/bin/config-backup.sh"
--'  89  0  ~/bin/config-backup.sh
-|4,39,89,0,1589015992,"~/bin/config-backup.sh"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588966670,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  10  7  ~/development/ansible/playbooks/ad-integration/site.yml
-|4,39,10,7,1588966667,"~/development/ansible/playbooks/ad-integration/site.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  12  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-|4,39,12,4,1588959220,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588957429,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588957429,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588957429,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588957429,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588957429,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588957429,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588957429,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
--'  7  0  ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-|4,39,7,0,1588957429,"~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml"
+-'  114  0  ~/.bashrc
+|4,39,114,0,1589292148,"~/.bashrc"
+-'  100  0  ~/.bashrc
+|4,39,100,0,1589292143,"~/.bashrc"
+-'  100  0  ~/.bashrc
+|4,39,100,0,1589292099,"~/.bashrc"
+-'  88  0  ~/.bashrc
+|4,39,88,0,1589291865,"~/.bashrc"
+-'  88  0  ~/.bashrc
+|4,39,88,0,1589291865,"~/.bashrc"
+-'  5  54  ~/bin/test.sh
+|4,39,5,54,1589291846,"~/bin/test.sh"
+-'  5  54  ~/bin/test.sh
+|4,39,5,54,1589291846,"~/bin/test.sh"
+-'  5  54  ~/bin/test.sh
+|4,39,5,54,1589291846,"~/bin/test.sh"
+-'  5  54  ~/bin/test.sh
+|4,39,5,54,1589291846,"~/bin/test.sh"
+-'  5  55  ~/bin/test.sh
+|4,39,5,55,1589291834,"~/bin/test.sh"
+-'  5  55  ~/bin/test.sh
+|4,39,5,55,1589291834,"~/bin/test.sh"
+-'  5  55  ~/bin/test.sh
+|4,39,5,55,1589291834,"~/bin/test.sh"
+-'  5  55  ~/bin/test.sh
+|4,39,5,55,1589291834,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291823,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291823,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291823,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291823,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291823,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291823,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291823,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291823,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291820,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291820,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291820,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291820,"~/bin/test.sh"
+-'  6  4  ~/bin/test.sh
+|4,39,6,4,1589291815,"~/bin/test.sh"
+-'  6  4  ~/bin/test.sh
+|4,39,6,4,1589291815,"~/bin/test.sh"
+-'  6  4  ~/bin/test.sh
+|4,39,6,4,1589291815,"~/bin/test.sh"
+-'  6  4  ~/bin/test.sh
+|4,39,6,4,1589291815,"~/bin/test.sh"
+-'  6  4  ~/bin/test.sh
+|4,39,6,4,1589291815,"~/bin/test.sh"
+-'  6  4  ~/bin/test.sh
+|4,39,6,4,1589291815,"~/bin/test.sh"
+-'  6  4  ~/bin/test.sh
+|4,39,6,4,1589291815,"~/bin/test.sh"
+-'  6  4  ~/bin/test.sh
+|4,39,6,4,1589291815,"~/bin/test.sh"
+-'  6  4  ~/bin/test.sh
+|4,39,6,4,1589291815,"~/bin/test.sh"
+-'  6  4  ~/bin/test.sh
+|4,39,6,4,1589291815,"~/bin/test.sh"
+-'  6  4  ~/bin/test.sh
+|4,39,6,4,1589291815,"~/bin/test.sh"
+-'  6  4  ~/bin/test.sh
+|4,39,6,4,1589291815,"~/bin/test.sh"
+-'  6  18  ~/bin/test.sh
+|4,39,6,18,1589291811,"~/bin/test.sh"
+-'  6  18  ~/bin/test.sh
+|4,39,6,18,1589291811,"~/bin/test.sh"
+-'  6  18  ~/bin/test.sh
+|4,39,6,18,1589291811,"~/bin/test.sh"
+-'  6  18  ~/bin/test.sh
+|4,39,6,18,1589291811,"~/bin/test.sh"
+-'  5  1  ~/bin/test.sh
+|4,39,5,1,1589291787,"~/bin/test.sh"
+-'  5  1  ~/bin/test.sh
+|4,39,5,1,1589291787,"~/bin/test.sh"
+-'  5  1  ~/bin/test.sh
+|4,39,5,1,1589291787,"~/bin/test.sh"
+-'  5  1  ~/bin/test.sh
+|4,39,5,1,1589291787,"~/bin/test.sh"
+-'  5  1  ~/bin/test.sh
+|4,39,5,1,1589291787,"~/bin/test.sh"
+-'  5  1  ~/bin/test.sh
+|4,39,5,1,1589291787,"~/bin/test.sh"
+-'  5  1  ~/bin/test.sh
+|4,39,5,1,1589291787,"~/bin/test.sh"
+-'  5  1  ~/bin/test.sh
+|4,39,5,1,1589291787,"~/bin/test.sh"
+-'  5  43  ~/bin/test.sh
+|4,39,5,43,1589291390,"~/bin/test.sh"
+-'  5  43  ~/bin/test.sh
+|4,39,5,43,1589291390,"~/bin/test.sh"
+-'  5  43  ~/bin/test.sh
+|4,39,5,43,1589291390,"~/bin/test.sh"
+-'  5  43  ~/bin/test.sh
+|4,39,5,43,1589291390,"~/bin/test.sh"
+-'  5  24  ~/bin/test.sh
+|4,39,5,24,1589291320,"~/bin/test.sh"
+-'  5  24  ~/bin/test.sh
+|4,39,5,24,1589291320,"~/bin/test.sh"
+-'  5  24  ~/bin/test.sh
+|4,39,5,24,1589291320,"~/bin/test.sh"
+-'  5  24  ~/bin/test.sh
+|4,39,5,24,1589291320,"~/bin/test.sh"
+-'  5  22  ~/bin/test.sh
+|4,39,5,22,1589291297,"~/bin/test.sh"
+-'  5  22  ~/bin/test.sh
+|4,39,5,22,1589291297,"~/bin/test.sh"
+-'  5  22  ~/bin/test.sh
+|4,39,5,22,1589291297,"~/bin/test.sh"
+-'  5  22  ~/bin/test.sh
+|4,39,5,22,1589291297,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  0  ~/bin/test.sh
+|4,39,9,0,1589291277,"~/bin/test.sh"
+-'  9  1  ~/bin/test.sh
+|4,39,9,1,1589291272,"~/bin/test.sh"
+-'  9  1  ~/bin/test.sh
+|4,39,9,1,1589291272,"~/bin/test.sh"
+-'  9  1  ~/bin/test.sh
+|4,39,9,1,1589291272,"~/bin/test.sh"
+-'  9  1  ~/bin/test.sh
+|4,39,9,1,1589291272,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
+-'  3  4  ~/bin/test.sh
+|4,39,3,4,1589291015,"~/bin/test.sh"
 
 # History of marks within files (newest to oldest):
+
+> ~/.bashrc
+	*	1589292147	0
+	"	114	0
+	^	100	0
+	.	100	0
+	+	30	0
+	+	83	0
+	+	125	0
+	+	124	45
+	+	73	7
+	+	74	0
+	+	73	0
+	+	73	56
+	+	73	0
+	+	90	0
+	+	92	24
+	+	90	26
+	+	149	47
+	+	154	0
+	+	175	0
+	+	115	43
+	+	116	0
+	+	115	43
+	+	72	0
+	+	73	0
+	+	74	0
+	+	75	0
+	+	76	0
+	+	77	0
+	+	78	0
+	+	137	20
+	+	149	0
+	+	131	0
+	+	130	0
+	+	116	34
+	+	17	0
+	+	18	0
+	+	19	0
+	+	92	0
+	+	72	0
+	+	73	0
+	+	74	0
+	+	75	0
+	+	76	0
+	+	77	0
+	+	78	0
+	+	158	0
+	+	159	0
+	+	160	0
+	+	161	0
+	+	162	0
+	+	163	0
+	+	164	0
+	+	165	0
+	+	166	0
+	+	167	0
+	+	168	0
+	+	169	0
+	+	170	0
+	+	254	0
+	+	92	0
+	+	59	0
+	+	63	0
+	+	62	6
+	+	60	22
+	+	17	0
+	+	18	0
+	+	19	0
+	+	14	0
+	+	15	13
+	+	171	0
+	+	172	0
+	+	173	18
+	+	175	60
+	+	108	30
+	+	92	55
+	+	17	0
+	+	18	0
+	+	19	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	84	0
+	+	95	67
+	+	97	65
+	+	97	0
+	+	97	4
+	+	97	54
+	+	97	10
+	+	99	0
+	+	97	0
+	+	93	0
+	+	95	1
+	+	92	0
+	+	93	63
+	+	94	0
+	+	95	0
+	+	92	0
+	+	95	69
+	+	96	0
+	+	97	0
+	+	92	0
+	+	100	0
+
+> ~/bin/test.sh
+	*	1589291846	0
+	"	5	54
+	^	5	56
+	.	5	54
+	+	3	24
+	+	3	0
+	+	5	0
+	+	5	4
+	+	5	64
+	+	9	0
+	+	3	19
+	+	5	22
+	+	3	27
+	+	5	29
+	+	3	44
+	+	5	43
+	+	10	1
+	+	3	48
+	+	5	103
+	+	5	49
+	+	3	58
+	+	6	19
+	+	10	0
+	+	5	54
+
+> ~/.config/i3/config
+	*	1589290340	0
+	"	220	0
+	^	221	23
+	.	221	22
+	+	93	0
+	+	94	0
+	+	100	0
+	+	103	0
+	+	101	43
+	+	108	0
+	+	105	0
+	+	106	14
+	+	108	0
+	+	110	0
+	+	111	31
+	+	110	0
+	+	115	0
+	+	116	19
+	+	115	0
+	+	120	0
+	+	121	36
+	+	124	0
+	+	122	10
+	+	135	0
+	+	136	20
+	+	137	0
+	+	138	0
+	+	149	0
+	+	152	0
+	+	150	36
+	+	149	37
+	+	163	0
+	+	168	0
+	+	174	0
+	+	179	0
+	+	208	0
+	+	166	0
+	+	164	15
+	+	168	0
+	+	169	21
+	+	170	58
+	+	174	0
+	+	175	0
+	+	179	0
+	+	180	31
+	+	208	2
+	+	208	0
+	+	208	16
+	+	208	0
+	+	209	30
+	+	211	0
+	+	208	0
+	+	214	0
+	+	208	0
+	+	216	56
+	+	218	0
+	+	224	0
+	+	225	14
+	+	227	0
+	+	230	0
+	+	231	45
+	+	234	0
+	+	232	33
+	+	242	0
+	+	243	35
+	+	245	0
+	+	247	0
+	+	250	0
+	+	248	43
+	+	250	0
+	+	248	0
+	+	249	1
+	+	237	64
+	+	238	0
+	+	253	0
+	+	254	29
+	+	256	0
+	+	263	0
+	+	271	0
+	+	279	0
+	+	287	0
+	+	272	39
+	+	271	0
+	+	264	46
+	+	266	0
+	+	288	29
+	+	287	0
+	+	279	0
+	+	280	34
+	+	296	0
+	+	297	0
+	+	298	32
+	+	300	0
+	+	4	10
+	+	83	20
+	+	84	22
+	+	85	17
+	+	86	22
+	+	282	35
+	+	284	34
+	+	283	51
+	+	285	53
+	+	4	20
+	+	221	22
+
+> /tmp/crontab.KvDkP8
+	*	1589290039	0
+	"	13	28
+	^	13	29
+	.	13	28
+	+	12	28
+	+	13	28
+
+> /tmp/crontab.AbHxI1
+	*	1589287102	0
+	"	1	0
+
+> /media/usb/test.txt
+	*	1589282695	0
+	"	1	3
+	^	1	4
+	.	1	3
+	+	1	3
+
+> ~/development/dot-files/i3-configs/i3status/config
+	*	1589281433	0
+	"	1	0
 
 > ~/bin/config-backup.sh
 	*	1589017647	0
@@ -801,112 +1058,6 @@ $
 	*	1588951147	0
 	"	1	0
 
-> ~/.bashrc
-	*	1588950916	0
-	"	108	29
-	^	108	30
-	.	108	30
-	+	76	0
-	+	72	53
-	+	74	16
-	+	72	52
-	+	6	19
-	+	65	0
-	+	162	17
-	+	29	0
-	+	23	0
-	+	23	93
-	+	25	24
-	+	26	8
-	+	27	64
-	+	28	0
-	+	109	0
-	+	107	17
-	+	163	8
-	+	164	19
-	+	165	24
-	+	67	0
-	+	142	0
-	+	67	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	21	0
-	+	20	25
-	+	22	0
-	+	30	0
-	+	83	0
-	+	125	0
-	+	124	45
-	+	73	7
-	+	74	0
-	+	73	0
-	+	73	56
-	+	73	0
-	+	90	0
-	+	92	24
-	+	90	26
-	+	149	47
-	+	154	0
-	+	175	0
-	+	115	43
-	+	116	0
-	+	115	43
-	+	72	0
-	+	73	0
-	+	74	0
-	+	75	0
-	+	76	0
-	+	77	0
-	+	78	0
-	+	137	20
-	+	149	0
-	+	131	0
-	+	130	0
-	+	116	34
-	+	17	0
-	+	18	0
-	+	19	0
-	+	99	0
-	+	95	0
-	+	72	0
-	+	73	0
-	+	74	0
-	+	75	0
-	+	76	0
-	+	77	0
-	+	78	0
-	+	158	0
-	+	159	0
-	+	160	0
-	+	161	0
-	+	162	0
-	+	163	0
-	+	164	0
-	+	165	0
-	+	166	0
-	+	167	0
-	+	168	0
-	+	169	0
-	+	170	0
-	+	254	0
-	+	95	0
-	+	99	0
-	+	59	0
-	+	63	0
-	+	62	6
-	+	60	22
-	+	17	0
-	+	18	0
-	+	19	0
-	+	14	0
-	+	15	13
-	+	171	0
-	+	172	0
-	+	173	18
-	+	175	60
-	+	108	30
-
 > ~/development/ansible/playbooks/ad-integration/production
 	*	1588949726	0
 	"	2	12
@@ -929,112 +1080,6 @@ $
 > ~/development/ansible/playbooks/fresh-install/hosts
 	*	1588949599	0
 	"	1	0
-
-> ~/.config/i3/config
-	*	1588812045	0
-	"	220	22
-	^	221	23
-	.	221	22
-	+	93	0
-	+	94	0
-	+	100	0
-	+	103	0
-	+	101	43
-	+	108	0
-	+	105	0
-	+	106	14
-	+	108	0
-	+	110	0
-	+	111	31
-	+	110	0
-	+	115	0
-	+	116	19
-	+	115	0
-	+	120	0
-	+	121	36
-	+	124	0
-	+	122	10
-	+	135	0
-	+	136	20
-	+	137	0
-	+	138	0
-	+	149	0
-	+	152	0
-	+	150	36
-	+	149	37
-	+	163	0
-	+	168	0
-	+	174	0
-	+	179	0
-	+	208	0
-	+	166	0
-	+	164	15
-	+	168	0
-	+	169	21
-	+	170	58
-	+	174	0
-	+	175	0
-	+	179	0
-	+	180	31
-	+	208	2
-	+	208	0
-	+	208	16
-	+	208	0
-	+	209	30
-	+	211	0
-	+	208	0
-	+	214	0
-	+	208	0
-	+	216	56
-	+	218	0
-	+	224	0
-	+	225	14
-	+	227	0
-	+	230	0
-	+	231	45
-	+	234	0
-	+	232	33
-	+	242	0
-	+	243	35
-	+	245	0
-	+	247	0
-	+	250	0
-	+	248	43
-	+	250	0
-	+	248	0
-	+	249	1
-	+	237	64
-	+	238	0
-	+	253	0
-	+	254	29
-	+	256	0
-	+	263	0
-	+	271	0
-	+	279	0
-	+	287	0
-	+	272	39
-	+	271	0
-	+	264	46
-	+	266	0
-	+	288	29
-	+	287	0
-	+	279	0
-	+	280	34
-	+	296	0
-	+	297	0
-	+	298	32
-	+	300	0
-	+	4	10
-	+	83	20
-	+	84	22
-	+	85	17
-	+	86	22
-	+	282	35
-	+	284	34
-	+	283	51
-	+	285	53
-	+	4	20
-	+	221	22
 
 > ~/development/ansible/scripts/playbook-create.sh
 	*	1588759127	0
@@ -1849,163 +1894,3 @@ $
 	+	16	0
 	+	17	0
 	+	52	13
-
-> ~/git-repos/projects/python/taskwarrior-git/taskwarrior-git.py
-	*	1583663395	0
-	"	16	0
-	^	16	0
-	.	7	68
-	+	29	0
-	+	3	8
-	+	18	57
-	+	29	0
-	+	29	11
-	+	18	0
-	+	29	0
-	+	19	0
-	+	21	76
-	+	20	55
-	+	21	60
-	+	28	0
-	+	21	3
-	+	29	0
-	+	21	35
-	+	26	17
-	+	24	15
-	+	24	17
-	+	25	4
-	+	20	35
-	+	23	15
-	+	20	34
-	+	23	16
-	+	7	6
-	+	15	0
-	+	13	67
-	+	11	15
-	+	11	65
-	+	12	1
-	+	12	65
-	+	13	1
-	+	13	34
-	+	9	68
-	+	7	68
-
-> ~/git-repos/projects/python/ansible-playbook-prep/playbook-folder.py
-	*	1583662744	0
-	"	1	0
-	^	1	1
-	.	1	0
-	+	3	0
-	+	2	0
-	+	1	0
-
-> ~/git-repos/task-warrior/.task/hooks/on-exit_git.py
-	*	1583634003	0
-	"	35	2
-
-> ~/git-repos/task-warrior/hooks/on-exit_git.py
-	*	1583631761	0
-	"	38	62
-	^	38	63
-	.	38	62
-	+	1	21
-	+	38	62
-
-> ~/bin/setup-softlinks.sh
-	*	1583583544	0
-	"	103	12
-	^	103	13
-	.	103	12
-	+	100	46
-	+	100	11
-	+	99	17
-	+	100	0
-	+	99	25
-	+	100	27
-	+	100	0
-	+	3	79
-	+	9	0
-	+	10	0
-	+	12	0
-	+	14	0
-	+	20	0
-	+	42	0
-	+	55	0
-	+	70	0
-	+	83	0
-	+	99	0
-	+	8	25
-	+	10	0
-	+	12	10
-	+	19	0
-	+	99	0
-	+	14	0
-	+	19	0
-	+	20	0
-	+	99	0
-	+	38	0
-	+	99	0
-	+	23	0
-	+	99	0
-	+	38	0
-	+	40	0
-	+	38	0
-	+	99	0
-	+	38	0
-	+	100	0
-	+	99	0
-	+	38	0
-	+	26	4
-	+	38	0
-	+	26	5
-	+	26	40
-	+	26	4
-	+	34	37
-	+	38	0
-	+	27	0
-	+	26	40
-	+	29	3
-	+	38	0
-	+	29	4
-	+	29	2
-	+	38	0
-	+	32	0
-	+	33	0
-	+	35	0
-	+	38	0
-	+	40	0
-	+	38	0
-	+	40	0
-	+	53	0
-	+	43	26
-	+	52	0
-	+	21	15
-	+	21	22
-	+	43	21
-	+	99	0
-	+	45	0
-	+	50	2
-	+	51	0
-	+	50	1
-	+	68	0
-	+	67	1
-	+	67	0
-	+	66	0
-	+	99	0
-	+	58	0
-	+	67	0
-	+	68	0
-	+	81	0
-	+	80	0
-	+	99	0
-	+	73	0
-	+	80	0
-	+	97	0
-	+	95	0
-	+	99	0
-	+	86	0
-	+	85	0
-	+	94	0
-	+	99	0
-	+	21	20
-	+	103	12

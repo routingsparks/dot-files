@@ -89,14 +89,14 @@ export PS1="\[\033[38;5;10m\][\u\[\]\[\033[38;5;15m\]@\[\]\[\033[38;5;10m\]\h\[\
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/git-repos/projects/python
 export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
-########################################
-# Enable this on Fedora
-########################################
-#source /usr/local/bin/virtualenvwrapper.sh
-########################################
-# Enable this on Arch
-########################################
-source /usr/bin/virtualenvwrapper_lazy.sh
+
+if [[ $(cat /etc/os-release | grep -i 'arch') = *arch* ]]; then
+    source /usr/bin/virtualenvwrapper_lazy.sh
+elif [[ $(cat /etc/os-release | grep -i 'fedora') = *fedora* ]]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+else:
+    echo "Manually set path for python virtual environment wrapper"
+fi
 
 ###############################################################################
 # User specific aliases and functions
