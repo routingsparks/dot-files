@@ -87,7 +87,7 @@ export PS1="\[\033[38;5;10m\][\u\[\]\[\033[38;5;15m\]@\[\]\[\033[38;5;10m\]\h\[\
 # Configure Python VirtualEnvWrapper
 ###############################################################################
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/git-repos/projects/python
+export PROJECT_HOME=$HOME/development/projects/python
 export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
 
 if [[ $(cat /etc/os-release | grep -i 'arch') = *arch* ]]; then
