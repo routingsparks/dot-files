@@ -1,0 +1,879 @@
+2020-05-05 09:22:01	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #archlinux
+2020-05-05 09:22:01	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-05-05 09:22:01	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Sun, 16 Feb 2020 21:03:05
+2020-05-05 09:22:01	--	Channel #archlinux: 1851 nicks (3 ops, 0 voices, 1848 normals)
+2020-05-05 09:22:02	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2020-05-05 09:22:09	coltkirk	initramfs... the wiki is good, i think i just have to update it manually
+2020-05-05 09:22:36	cache_return	maybe this: https://github.com/uobikiemukot/yaft
+2020-05-05 09:22:37	@phrik	Title: GitHub - uobikiemukot/yaft: yet another framebuffer terminal (at github.com)
+2020-05-05 09:22:44	<--	morphheus (~Morphheus@unaffiliated/morphheus) has quit (Ping timeout: 246 seconds)
+2020-05-05 09:22:57	-->	main (~main@unaffiliated/main) has joined #archlinux
+2020-05-05 09:23:25	-->	arayashiki (~k@201.75.121.98) has joined #archlinux
+2020-05-05 09:23:53	-->	ShadowKyogre (~ShadowKyo@unaffiliated/shadowkyogre) has joined #archlinux
+2020-05-05 09:23:57	-->	VinnySauce (~VinnySauc@2a00:23c6:9c0b:fc00:b01c:b5dc:e5c1:8be4) has joined #archlinux
+2020-05-05 09:24:14	<--	yourfate (~yourfate@unaffiliated/yourfate) has quit (Ping timeout: 240 seconds)
+2020-05-05 09:24:14	VinnySauce	Hi all, any idea why firefox is opening and immediately zombie-fying?
+2020-05-05 09:24:30	-->	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has joined #archlinux
+2020-05-05 09:25:27	-->	aravk33 (~aravk33@157.50.61.86) has joined #archlinux
+2020-05-05 09:25:43	<--	binTrl (~binaryTra@2409:4064:2ea4:3dab:4847:383a:2664:8c3d) has quit (Ping timeout: 260 seconds)
+2020-05-05 09:26:09	VinnySauce	can't get rid of the zombie processes either, they all seem to be owned by init
+2020-05-05 09:26:15	h4rd3n3D	coltkirk:  I have no idea what a pacman initramfs hook is... `mkinitcpio -P linux` rebuilds the initramfs for all my kernels and their dkms packages, including nvidia-dkms
+2020-05-05 09:27:31	<--	georgios (~george@unaffiliated/anaphaxeton) has quit (Quit: Konversation terminated!)
+2020-05-05 09:27:34	VinnySauce	even kill -9 <pid> doesn't do it
+2020-05-05 09:28:02	earnestly	You can't kill zombies
+2020-05-05 09:28:16	VinnySauce	righto
+2020-05-05 09:28:33	<--	TimeTrap (~TimeTrap@2601:44:c280:def:20c9:3359:8cef:4391) has quit (Remote host closed the connection)
+2020-05-05 09:28:44	-->	TimeTrap_ (~TimeTrap@c-68-82-53-117.hsd1.pa.comcast.net) has joined #archlinux
+2020-05-05 09:29:00	VinnySauce	just tried reinstalling firefox, still refuses to open
+2020-05-05 09:29:08	VinnySauce	the process immediately becomes a zombie
+2020-05-05 09:29:39	<--	ShadowKyogre (~ShadowKyo@unaffiliated/shadowkyogre) has left #archlinux
+2020-05-05 09:29:46	--	steven is now known as nobody
+2020-05-05 09:29:57	--	nobody is now known as steven
+2020-05-05 09:30:01	h4rd3n3D	VinnySauce: per normal, fully update and reboot
+2020-05-05 09:30:22	VinnySauce	but chromium has been compiling for 4 hours :(
+2020-05-05 09:30:22	<--	TimeTrap_ (~TimeTrap@c-68-82-53-117.hsd1.pa.comcast.net) has quit (Read error: Connection reset by peer)
+2020-05-05 09:30:44	-->	ShadowKyogre (~ShadowKyo@unaffiliated/shadowkyogre) has joined #archlinux
+2020-05-05 09:30:53	VinnySauce	is there a way to pause the compilation?
+2020-05-05 09:31:01	coltkirk	oh nice h4rd3n3D, I'll put that in a little shell script so I won't forget it
+2020-05-05 09:31:03	VinnySauce	it's in the CXX stage now
+2020-05-05 09:31:15	<--	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has quit (Ping timeout: 272 seconds)
+2020-05-05 09:31:15	VinnySauce	well, ninja is running*
+2020-05-05 09:32:22	h4rd3n3D	VinnySauce:  regular chromimum or the ungoogled-xxx AUR?
+2020-05-05 09:32:43	<--	luxeve (~luxeve@2001:8003:228a:8201:88:9c5a:8807:d6dd) has quit (Ping timeout: 260 seconds)
+2020-05-05 09:32:44	VinnySauce	it's chromium-vaapi
+2020-05-05 09:33:05	h4rd3n3D	k - don't know that one
+2020-05-05 09:33:07	jkwnki	grawity: dvim theres a way to bind mount a folder into document root of nginx docker image. it works. but then the idea of a container is violated right?
+2020-05-05 09:33:15	VinnySauce	just chromium with VAAPI support for HW-accelerated video
+2020-05-05 09:33:27	grawity	¯\_(ツ)_/¯ that's literally what you asked though
+2020-05-05 09:33:38	grawity	it wouldn't be any better if you used a symlink that points outside the container
+2020-05-05 09:33:48	<--	HEX0 (~HEX0@unaffiliated/hex0) has quit (Quit: WeeChat 2.8)
+2020-05-05 09:33:49	VinnySauce	need chromium for work but my PC is really not powerful enough to compile it every time. used to use the -bin before it was removed
+2020-05-05 09:33:57	jkwnki	ok grawity :)
+2020-05-05 09:33:58	-->	daekdroom (~daekdroom@unaffiliated/daekdroom) has joined #archlinux
+2020-05-05 09:34:04	VinnySauce	anyone know of a binary for chromium-vaapi somewhere?
+2020-05-05 09:35:41	<--	aravk33 (~aravk33@157.50.61.86) has quit (Ping timeout: 246 seconds)
+2020-05-05 09:35:52	<--	wbrawner (~wbrawner@165.22.166.190) has quit (Quit: The Lounge - https://thelounge.chat)
+2020-05-05 09:36:30	-->	wbrawner (~wbrawner@165.22.166.190) has joined #archlinux
+2020-05-05 09:36:48	<--	Ar|stote|is (~quassel@2a02:587:9a08:f936:d8f8:f8ff:febf:1da6) has quit (Ping timeout: 260 seconds)
+2020-05-05 09:37:03	-->	WinterStar (WinterStar@gateway/vpn/mullvad/winterstar) has joined #archlinux
+2020-05-05 09:37:12	sheep	jkwnki: isn't this what the -v argument of docker run is for?
+2020-05-05 09:37:34	jkwnki	yes sheep
+2020-05-05 09:37:37	<--	lonaowna (~lonaowna@2a02:a212:9281:2480:6438:661b:c8f9:d33f) has quit (Ping timeout: 244 seconds)
+2020-05-05 09:37:43	<--	IceLight (~WinterSta@dhcp-077-249-227-200.chello.nl) has quit (Ping timeout: 260 seconds)
+2020-05-05 09:37:46	-->	binTrl (~binaryTra@2409:4064:2ea4:3dab:115d:1ac1:5044:cdbd) has joined #archlinux
+2020-05-05 09:37:48	-->	aravk33 (~aravk33@43.225.167.154) has joined #archlinux
+2020-05-05 09:37:58	<--	arayashiki (~k@201.75.121.98) has quit (Ping timeout: 260 seconds)
+2020-05-05 09:38:10	<--	Nefertari (~Nefertiti@unaffiliated/nefertiti) has quit (Quit: ........)
+2020-05-05 09:38:32	-->	Eduard_Munteanu (~Eduard_Mu@5-12-253-147.residential.rdsnet.ro) has joined #archlinux
+2020-05-05 09:38:46	<--	ShadowKyogre (~ShadowKyo@unaffiliated/shadowkyogre) has left #archlinux
+2020-05-05 09:39:16	seankhliao	VinnySauce: check all 86 unofficial user repos? https://wiki.archlinux.org/index.php/Unofficial_user_repositories
+2020-05-05 09:39:16	@phrik	Title: Unofficial user repositories - ArchWiki (at wiki.archlinux.org)
+2020-05-05 09:39:26	VinnySauce	there's one in archlinuxcn
+2020-05-05 09:39:29	<--	AT-x310 (~AT-x310@atoulouse-657-1-8-214.w86-222.abo.wanadoo.fr) has quit (Ping timeout: 272 seconds)
+2020-05-05 09:40:18	<--	eliotome3000 (~eliotime@190.237.43.172) has quit (Remote host closed the connection)
+2020-05-05 09:40:23	-->	vinesh (~Thunderbi@124.123.114.60) has joined #archlinux
+2020-05-05 09:40:33	-->	ShadowKyogre (~ShadowKyo@unaffiliated/shadowkyogre) has joined #archlinux
+2020-05-05 09:40:38	-->	AT-x310 (~AT-x310@atoulouse-657-1-8-214.w86-222.abo.wanadoo.fr) has joined #archlinux
+2020-05-05 09:40:49	-->	eliotome3000 (~eliotime@190.237.43.172) has joined #archlinux
+2020-05-05 09:41:09	-->	feirlane (~feirlane@unaffiliated/feirlane) has joined #archlinux
+2020-05-05 09:41:17	-->	Ar|stote|is (~quassel@2a02:587:9a05:d898:d8f8:f8ff:febf:1da6) has joined #archlinux
+2020-05-05 09:41:19	-->	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has joined #archlinux
+2020-05-05 09:43:48	Hello71	VinnySauce: echo w > /proc/sysrq-trigger
+2020-05-05 09:43:52	Hello71	; dmesg
+2020-05-05 09:44:36	-->	mowcat (~mowcat@cpc105070-sgyl40-2-0-cust722.18-2.cable.virginm.net) has joined #archlinux
+2020-05-05 09:45:45	<--	VinnySauce (~VinnySauc@2a00:23c6:9c0b:fc00:b01c:b5dc:e5c1:8be4) has quit (Quit: Leaving)
+2020-05-05 09:46:48	-->	ice9 (~ice9@unaffiliated/ice9) has joined #archlinux
+2020-05-05 09:47:05	<--	TheFuzzball (~TheFuzzba@81.2.178.36) has quit (Ping timeout: 272 seconds)
+2020-05-05 09:47:19	-->	SergeantBiggs (~SergeantB@ip5b41d85a.dynamic.kabel-deutschland.de) has joined #archlinux
+2020-05-05 09:47:20	-->	mavi (~mavi@gateway/tor-sasl/mavi) has joined #archlinux
+2020-05-05 09:47:26	ice9	i'm running the latest gnome-shell and sometimes when waking up the laptop, X crashes, any idea?
+2020-05-05 09:47:34	-->	Megver83 (~Icedove@pc-88-170-100-190.cm.vtr.net) has joined #archlinux
+2020-05-05 09:47:43	-->	morphheus (~Morphheus@unaffiliated/morphheus) has joined #archlinux
+2020-05-05 09:47:46	NetSysFire	ice9: paste Xorg.log
+2020-05-05 09:47:59	ice9	it happens after a sleep, there is no errors in the log file
+2020-05-05 09:48:00	NetSysFire	your journal may also contain some information
+2020-05-05 09:49:22	-->	kameloso (~kameloso@2001:41d0:2:80b4::) has joined #archlinux
+2020-05-05 09:49:36	<--	feirlane (~feirlane@unaffiliated/feirlane) has quit (Ping timeout: 258 seconds)
+2020-05-05 09:49:43	<--	zro_ (~zro@wikimedia/zro) has quit (Ping timeout: 256 seconds)
+2020-05-05 09:49:53	<--	kameloso (~kameloso@2001:41d0:2:80b4::) has quit (Client Quit)
+2020-05-05 09:50:03	<--	blep (~user@gateway/tor-sasl/blep) has quit (Ping timeout: 240 seconds)
+2020-05-05 09:51:34	-->	zro_ (~zro@wikimedia/zro) has joined #archlinux
+2020-05-05 09:52:08	-->	kameloso (~kameloso@2001:41d0:2:80b4::) has joined #archlinux
+2020-05-05 09:52:14	-->	blep (~user@gateway/tor-sasl/blep) has joined #archlinux
+2020-05-05 09:53:11	-->	xoan5 (~xoan@unaffiliated/xoan) has joined #archlinux
+2020-05-05 09:54:17	-->	cgundersson (~christian@195.216.38.78) has joined #archlinux
+2020-05-05 09:55:38	<--	xoan (~xoan@unaffiliated/xoan) has quit (Ping timeout: 246 seconds)
+2020-05-05 09:55:38	--	xoan5 is now known as xoan
+2020-05-05 09:56:49	-->	yans (~yans@unaffiliated/yinsen) has joined #archlinux
+2020-05-05 09:57:47	<--	chozen_ (~chozen@209.159.234.75) has quit (Ping timeout: 260 seconds)
+2020-05-05 09:58:22	-->	feirlane (~feirlane@unaffiliated/feirlane) has joined #archlinux
+2020-05-05 09:59:02	<--	cgundersson (~christian@195.216.38.78) has quit (Ping timeout: 264 seconds)
+2020-05-05 09:59:27	<--	fusion809 (~fusion809@2001:8003:f059:1200:947e:9c67:815c:bcfa) has quit (Remote host closed the connection)
+2020-05-05 10:01:13	-->	fweht (uid404746@gateway/web/irccloud.com/x-lmhbjrushoihoiog) has joined #archlinux
+2020-05-05 10:01:17	-->	nullthevoid (~nullthevo@gateway/tor-sasl/nullthevoid) has joined #archlinux
+2020-05-05 10:04:18	-->	junelul (60fc37c3@pool-96-252-55-195.bstnma.fios.verizon.net) has joined #archlinux
+2020-05-05 10:04:45	junelul	anyone know a solution for the dhcpcd stop job taking the full duration when i reboot or shot down?
+2020-05-05 10:05:01	-->	testhuman (uid182017@gateway/web/irccloud.com/x-bmenodmcuctpcxbu) has joined #archlinux
+2020-05-05 10:05:45	-->	Betal (~Betal@unaffiliated/betal) has joined #archlinux
+2020-05-05 10:05:48	<--	feirlane (~feirlane@unaffiliated/feirlane) has quit (Ping timeout: 256 seconds)
+2020-05-05 10:06:17	<--	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has quit (Quit: mcquinn)
+2020-05-05 10:06:21	Celmor[m]	what could I do with a "dead" browser? parent process is in state D and its childs are zombies now: https://puu.sh/FGyFA/4dac77b27a.png
+2020-05-05 10:06:29	-->	\\Mr_C\\ (~mrc@cpe-75-187-191-230.neo.res.rr.com) has joined #archlinux
+2020-05-05 10:06:30	-->	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has joined #archlinux
+2020-05-05 10:06:33	<--	inglor (~quassel@141.0.156.136) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-05-05 10:06:51	-->	inglor (~quassel@141.0.156.136) has joined #archlinux
+2020-05-05 10:06:55	Namarrgon	besides rebooting you can do nothing about it
+2020-05-05 10:07:04	NetSysFire	junelul: its a bug as far as i know
+2020-05-05 10:07:19	NetSysFire	related to a wrong PIDFile location in the service unit
+2020-05-05 10:07:34	seankhliao	junelul: set a shorter timout*sec?
+2020-05-05 10:07:40	Scimmia	junelul: easiest solution is to switch to something else. dhcpcd has been causing all kinds of problems
+2020-05-05 10:07:45	seankhliao	s/timout/timeout
+2020-05-05 10:07:52	NetSysFire	!#archlinux2
+2020-05-05 10:07:53	@phrik	Having issues with software X? Just use software Y instead and be a happier person! You won't regret it.
+2020-05-05 10:08:02	junelul	alright thank you
+2020-05-05 10:08:30	-->	feirlane (~feirlane@unaffiliated/feirlane) has joined #archlinux
+2020-05-05 10:09:05	brian|lfs	I prefer Z myself
+2020-05-05 10:09:17	<--	wabuo (~wisejacka@47-72-252-204.dsl.dyn.ihug.co.nz) has quit (Ping timeout: 246 seconds)
+2020-05-05 10:10:32	NetSysFire	i dont like dhcpcd either
+2020-05-05 10:10:54	Scimmia	when the software in question has been a constant source of problems lately, yeah, switching is a viable option
+2020-05-05 10:11:10	NetSysFire	sometimes it is
+2020-05-05 10:11:10	Scimmia	people are even having problems booting the ISO
+2020-05-05 10:11:18	NetSysFire	what? its so bad already?
+2020-05-05 10:12:01	junelul	i had to install arch for my brother yesterday. the iso boot went to the mapping table
+2020-05-05 10:12:30	junelul	i did figure it out but it was pretty weird to see
+2020-05-05 10:12:31	NetSysFire	i still have an old iso which works well
+2020-05-05 10:12:33	dreisner	why would you install arch for someone else? :|
+2020-05-05 10:12:51	-->	doomlist3 (~user@117.200.12.92) has joined #archlinux
+2020-05-05 10:12:56	junelul	he wanted to try it out
+2020-05-05 10:13:26	NetSysFire	the point of "trying arch" is to do everything yourself
+2020-05-05 10:14:17	NetSysFire	in this case if your brother is unable to do it on his own, i wouldnt recommend him to run arch
+2020-05-05 10:15:07	brian|lfs	hey if you configure everything for him then he breaks it hes on his own
+2020-05-05 10:15:08	<--	aombk2 (~aombk@unaffiliated/aombk) has quit (Read error: Connection reset by peer)
+2020-05-05 10:15:24	-->	Lantorax (~Lantorax@cpe-76-90-138-212.socal.res.rr.com) has joined #archlinux
+2020-05-05 10:15:38	NetSysFire	nah, wie will ask junelul
+2020-05-05 10:15:40	-->	frvr (~florea@89.44.192.131) has joined #archlinux
+2020-05-05 10:15:40	NetSysFire	*hie
+2020-05-05 10:15:41	CubeTheThird	the only thing I cheated on when installing arch was that I used a different tool to partition before doing any of the rest of the install
+2020-05-05 10:15:42	NetSysFire	*he
+2020-05-05 10:15:45	NetSysFire	wow cant type toda
+2020-05-05 10:15:46	NetSysFire	y
+2020-05-05 10:15:48	<--	Megver83 (~Icedove@pc-88-170-100-190.cm.vtr.net) has quit (Remote host closed the connection)
+2020-05-05 10:16:18	-->	Megver83 (~Icedove@pc-88-170-100-190.cm.vtr.net) has joined #archlinux
+2020-05-05 10:16:31	junelul	thats right. also I did explain the installation to him. And i made him practice piping text instead of using an editor.
+2020-05-05 10:16:40	NetSysFire	i am still cheating, i use an install script. its my own though
+2020-05-05 10:16:43	<--	ShadowKyogre (~ShadowKyo@unaffiliated/shadowkyogre) has left #archlinux
+2020-05-05 10:16:50	NetSysFire	sometimes an editor is more useful
+2020-05-05 10:17:01	NetSysFire	for syntax highlighting etc
+2020-05-05 10:17:25	Scimmia	piping and editing have nothing to do with each other
+2020-05-05 10:17:39	-->	laurent85 (~laurent@2001:41d0:2:c7f:face::2) has joined #archlinux
+2020-05-05 10:18:03	<--	ncuxo (~ncuxo@ip-109-40-128-212.web.vodafone.de) has quit (Ping timeout: 256 seconds)
+2020-05-05 10:18:04	<--	heuzen (~frische-T@94.252.122.97) has quit (Quit: WeeChat 2.8)
+2020-05-05 10:18:13	<--	feirlane (~feirlane@unaffiliated/feirlane) has quit (Ping timeout: 260 seconds)
+2020-05-05 10:19:04	-->	ncuxo (~ncuxo@ip-109-40-129-57.web.vodafone.de) has joined #archlinux
+2020-05-05 10:19:23	<--	thateternal (~thatetern@67.22.196.196) has quit (Ping timeout: 272 seconds)
+2020-05-05 10:20:13	-->	heuzen (~frische-T@94.252.122.97) has joined #archlinux
+2020-05-05 10:20:25	Celmor[m]	guess I'll just have to do the windows solution of rebooting
+2020-05-05 10:21:47	MacGyver	There's a package (actually, a few packages) for which the upstream site URL has been hijacked to malware. Should probably be changed to the sourceforge URL for the project. Project in question is g15tools; with libg15, libg15-render and g15daemon.
+2020-05-05 10:21:56	MacGyver	Is that worthy of a bugreport?
+2020-05-05 10:22:05	MacGyver	s/to malware/to serve malware/
+2020-05-05 10:22:23	MacGyver	(The project has been dead for over 10 years but it's still sufficiently useful.
+2020-05-05 10:22:24	MacGyver	)
+2020-05-05 10:22:33	<--	chris64 (~chris@unaffiliated/chris64) has quit (Remote host closed the connection)
+2020-05-05 10:22:50	udev_error	MacGyver: I'd report it to the maintainer. Is it still being maintained?
+2020-05-05 10:23:23	MacGyver	They have maintainers and packagers, yes.
+2020-05-05 10:23:56	-->	feirlane (~feirlane@unaffiliated/feirlane) has joined #archlinux
+2020-05-05 10:24:10	udev_error	MacGyver: Then report it to the maintainer
+2020-05-05 10:24:31	-->	JohnML (~john1@ip-178-202-6-107.hsi09.unitymediagroup.de) has joined #archlinux
+2020-05-05 10:24:38	<--	junelul (60fc37c3@pool-96-252-55-195.bstnma.fios.verizon.net) has quit (Remote host closed the connection)
+2020-05-05 10:24:45	Scimmia	MacGyver: yes, worthy of a bug report
+2020-05-05 10:25:10	-->	johefernan (~ck3t@unaffiliated/johefernan) has joined #archlinux
+2020-05-05 10:25:33	-->	BazookaToof (~bob@gateway/tor-sasl/bazookatooth) has joined #archlinux
+2020-05-05 10:25:59	<--	gehidore (~username@unaffiliated/man) has quit (Ping timeout: 272 seconds)
+2020-05-05 10:26:31	-->	gehidore (~username@unaffiliated/man) has joined #archlinux
+2020-05-05 10:27:31	-->	chris64 (~chris@unaffiliated/chris64) has joined #archlinux
+2020-05-05 10:28:03	<--	BazookaTooth (~bob@gateway/tor-sasl/bazookatooth) has quit (Ping timeout: 240 seconds)
+2020-05-05 10:28:06	MacGyver	Task Type would be "general gripe" then I guess? :P
+2020-05-05 10:29:39	<--	fukawi2 (~quassel@archlinux/support/fukawi2) has quit (Quit: Going offline.)
+2020-05-05 10:29:47	-->	fukawi2 (~quassel@archlinux/support/fukawi2) has joined #archlinux
+2020-05-05 10:30:21	<--	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2020-05-05 10:30:25	-->	danso (~dan@2001:1970:52e7:d000:96b8:6dff:feb3:c009) has joined #archlinux
+2020-05-05 10:36:52	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #archlinux
+2020-05-05 10:36:52	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-05-05 10:36:52	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Sun, 16 Feb 2020 21:03:05
+2020-05-05 10:36:52	--	Channel #archlinux: 1866 nicks (3 ops, 0 voices, 1863 normals)
+2020-05-05 10:36:54	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2020-05-05 10:36:55	-->	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has joined #archlinux
+2020-05-05 10:37:33	Scimmia	!give avapxia as
+2020-05-05 10:37:33	@phrik	avapxia: Arch Sucks™
+2020-05-05 10:37:47	-->	binTrl (~binaryTra@2409:4064:211e:874c:14b0:2c8:74b2:573a) has joined #archlinux
+2020-05-05 10:38:37	aphirst	arch is great except when it doesn't work
+2020-05-05 10:38:44	aphirst	and it's usually your fault except when it isn't
+2020-05-05 10:39:45	avapxia	aphirst: I actually kinda like breaking my personal arch, it feel like a puzzle
+2020-05-05 10:39:53	burakcank	When I install evdev driver for my bluetooth mouse, which is referred to as "pointer" I guess, which driver prevails ?
+2020-05-05 10:39:54	<--	feirlane (~feirlane@unaffiliated/feirlane) has quit (Ping timeout: 240 seconds)
+2020-05-05 10:39:57	<--	AnySomebody (~AnySomebo@p200300C287468947A16412FD734A37FA.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2020-05-05 10:40:10	aphirst	burakcank, the one with bigger horns and access to calories
+2020-05-05 10:40:16	-->	AnySomebody (~AnySomebo@p200300C287468947A16412FD734A37FA.dip0.t-ipconnect.de) has joined #archlinux
+2020-05-05 10:40:26	<--	zro_ (~zro@wikimedia/zro) has quit (Ping timeout: 264 seconds)
+2020-05-05 10:40:28	burakcank	aphirst: which one is that :)
+2020-05-05 10:40:49	-->	gulphole (~Gulphole@46.39.53.238) has joined #archlinux
+2020-05-05 10:41:35	-->	feirlane (~feirlane@unaffiliated/feirlane) has joined #archlinux
+2020-05-05 10:41:54	<--	treehug88 (~textual@pool-71-105-170-196.nycmny.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2020-05-05 10:42:06	NetSysFire	the ancient texts (Xorg.log) may contain more information
+2020-05-05 10:42:07	-->	Megver84 (~Icedove@pc-88-170-100-190.cm.vtr.net) has joined #archlinux
+2020-05-05 10:42:26	-->	zro_ (~zro@wikimedia/zro) has joined #archlinux
+2020-05-05 10:42:26	<--	laurent85 (~laurent@2001:41d0:2:c7f:face::2) has quit (Quit: Konversation terminated!)
+2020-05-05 10:42:46	NetSysFire	they always help finding out which one is the Chosen One
+2020-05-05 10:44:05	<--	Megver83 (~Icedove@pc-88-170-100-190.cm.vtr.net) has quit (Ping timeout: 272 seconds)
+2020-05-05 10:44:05	--	Megver84 is now known as Megver83
+2020-05-05 10:44:23	-->	eippw (~ice@gateway/tor-sasl/eippw) has joined #archlinux
+2020-05-05 10:44:41	<--	alerque (~caleb@176.43.187.80) has quit (Ping timeout: 256 seconds)
+2020-05-05 10:46:51	-->	alerque (~caleb@5.47.69.61) has joined #archlinux
+2020-05-05 10:48:13	-->	leptium (~textual@2800:200:f010:b6e:6453:1f18:e388:5abe) has joined #archlinux
+2020-05-05 10:48:31	<--	kelnoky (~shao@ip1f1222c4.dynamic.kabel-deutschland.de) has quit (Quit: WeeChat 2.8)
+2020-05-05 10:48:33	<--	eippw (~ice@gateway/tor-sasl/eippw) has quit (Quit: eippw)
+2020-05-05 10:48:46	-->	eippw (~ice@gateway/tor-sasl/eippw) has joined #archlinux
+2020-05-05 10:51:38	-->	cgundersson (~christian@195.216.38.78) has joined #archlinux
+2020-05-05 10:51:50	<--	Zauberfisch (~Zauberfis@unaffiliated/zauberfisch) has quit (Ping timeout: 264 seconds)
+2020-05-05 10:51:53	burakcank	grep -e "Using input driver " Xorg.0.log actually answered my question thanks NetSysFire.
+2020-05-05 10:52:20	-->	georgios (~george@unaffiliated/anaphaxeton) has joined #archlinux
+2020-05-05 10:52:40	burakcank	I guess .conf files in /etc/X11/xorg.conf.d/ overwrite what have been read before.
+2020-05-05 10:52:56	<--	mikkeloscar (~F1skr@unaffiliated/f1skr) has quit (Read error: Connection reset by peer)
+2020-05-05 10:53:30	-->	mikkeloscar (~F1skr@unaffiliated/f1skr) has joined #archlinux
+2020-05-05 10:53:53	<--	nulleip (~luiz@179.215.126.112) has left #archlinux
+2020-05-05 10:54:03	<--	karel (~quassel@unaffiliated/karel) has quit (Quit: bye bye)
+2020-05-05 10:55:12	-->	Andrew-H3 (~andrew-h3@c-98-236-76-86.hsd1.wv.comcast.net) has joined #archlinux
+2020-05-05 10:55:34	-->	HaxNet (~HaxNet@131.106.46.227) has joined #archlinux
+2020-05-05 10:55:34	<--	HaxNet (~HaxNet@131.106.46.227) has quit (Client Quit)
+2020-05-05 10:55:39	<--	ice9 (~ice9@unaffiliated/ice9) has quit (Ping timeout: 260 seconds)
+2020-05-05 10:55:59	<--	JohnML (~john1@ip-178-202-6-107.hsi09.unitymediagroup.de) has quit (Remote host closed the connection)
+2020-05-05 10:56:19	<--	QuarkMuncher (~sebastian@0x573d50cc.static.cust.fastspeed.dk) has quit (Quit: WeeChat 2.8)
+2020-05-05 10:56:23	<--	jkwnki (~jkwnki@p200300CD472B60001E1BB5FFFE7A47F7.dip0.t-ipconnect.de) has quit (Ping timeout: 272 seconds)
+2020-05-05 10:57:10	-->	JohnML (~john1@ip-178-202-6-107.hsi09.unitymediagroup.de) has joined #archlinux
+2020-05-05 10:58:04	<--	ShadowKyogre (~ShadowKyo@unaffiliated/shadowkyogre) has left #archlinux
+2020-05-05 10:58:14	-->	casjay (~Thunderbi@cpe-24-194-148-155.nycap.res.rr.com) has joined #archlinux
+2020-05-05 10:58:38	<--	hekarath (~hekarath@66.45.255.44) has quit (Ping timeout: 246 seconds)
+2020-05-05 10:59:18	-->	Darkmatter66 (~Darkmatte@37.237.208.32) has joined #archlinux
+2020-05-05 11:00:02	<--	Darkmatter66_ (~Darkmatte@37.237.208.28) has quit (Ping timeout: 246 seconds)
+2020-05-05 11:00:09	--	piie is now known as piiE
+2020-05-05 11:00:16	<--	knfr (~kf@menta.anetz.net) has quit (Quit: knfr)
+2020-05-05 11:00:26	<--	AnySomebody (~AnySomebo@p200300C287468947A16412FD734A37FA.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2020-05-05 11:00:49	-->	AnySomebody (~AnySomebo@p200300C287468947A16412FD734A37FA.dip0.t-ipconnect.de) has joined #archlinux
+2020-05-05 11:01:11	<--	feirlane (~feirlane@unaffiliated/feirlane) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:01:30	<--	yshui (~yshui@cpc158779-hari22-2-0-cust230.20-2.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2020-05-05 11:02:20	<--	denisse (~spaceCat@gateway/tor-sasl/alephzer0) has quit (Remote host closed the connection)
+2020-05-05 11:02:27	-->	nulleip (~luiz@179.215.126.112) has joined #archlinux
+2020-05-05 11:02:40	-->	alephZer0 (~spaceCat@gateway/tor-sasl/alephzer0) has joined #archlinux
+2020-05-05 11:03:22	<--	burakcank (~burakcank@95.70.185.73) has quit (Quit: WeeChat 2.8)
+2020-05-05 11:03:28	repo	ah
+2020-05-05 11:03:31	repo	ups
+2020-05-05 11:04:06	-->	wir3 (~wir3@185.200.118.102) has joined #archlinux
+2020-05-05 11:04:11	-->	knfr (~kf@menta.anetz.net) has joined #archlinux
+2020-05-05 11:05:24	<--	dendazen (~dendazen@pool-72-76-93-243.nwrknj.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2020-05-05 11:06:03	-->	dendazen (~dendazen@pool-72-76-93-243.nwrknj.fios.verizon.net) has joined #archlinux
+2020-05-05 11:06:34	wir3	Pulseaudio suddenly stopped working after I updated last night. Seemingly after upating the kernel. Has anyone else had this issue? I've gone through usual debugging steps like resetting pulseaudio, deleting configs, etc. Pavucontrol just says "establishing connection to PulseAudio" but other than that, nothing happens.
+2020-05-05 11:06:50	<--	AK5Z (~goatman@unaffiliated/goatman) has quit (Ping timeout: 264 seconds)
+2020-05-05 11:06:59	-->	Goatman (~goatman@unaffiliated/goatman) has joined #archlinux
+2020-05-05 11:07:19	<--	morphheus (~Morphheus@unaffiliated/morphheus) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:07:50	wir3	!paste
+2020-05-05 11:07:51	@phrik	Paste short snippets (up to 3 lines) in channel. Please do NOT use pastebin.com or paste.ubuntu.com -- some good, sane paste services are http://ix.io, https://paste.rs, https://bpaste.net and https://gist.github.com. See !ix or !rs for an easy way to paste from a pipe.
+2020-05-05 11:07:59	<--	sharktamer (~sharktame@cpc157207-watf11-2-0-cust5.15-2.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2020-05-05 11:08:04	-->	burakcank (~burakcank@95.70.185.73) has joined #archlinux
+2020-05-05 11:08:13	-->	sharktamer (~sharktame@cpc157207-watf11-2-0-cust5.15-2.cable.virginm.net) has joined #archlinux
+2020-05-05 11:09:14	-->	yans (~yans@unaffiliated/yinsen) has joined #archlinux
+2020-05-05 11:09:43	<--	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2020-05-05 11:10:29	-->	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has joined #archlinux
+2020-05-05 11:10:57	-->	b0tanik (~b0tanik@134.249.122.244) has joined #archlinux
+2020-05-05 11:11:08	mkoskar	wir3: anything in journal? have you restart machine? (you should either way after upgrading kernel)
+2020-05-05 11:11:08	<--	mnemonic (~semeion@unaffiliated/semeion) has quit (Quit: WeeChat 2.8)
+2020-05-05 11:11:08	<--	eippw (~ice@gateway/tor-sasl/eippw) has quit (Remote host closed the connection)
+2020-05-05 11:11:21	rpav	ah, that reminds me, after pulseaudio made my laptop unusable and required a reboot, i wanted to get rid of it entirely everywhere
+2020-05-05 11:11:55	<--	Elodin (~weechat@unaffiliated/padawan) has quit (Quit: WeeChat 2.8)
+2020-05-05 11:12:00	mkoskar	a bit overreaction
+2020-05-05 11:12:02	-->	eippw (~ice@gateway/tor-sasl/eippw) has joined #archlinux
+2020-05-05 11:12:05	<--	eippw (~ice@gateway/tor-sasl/eippw) has quit (Remote host closed the connection)
+2020-05-05 11:12:11	<--	nycex (~nycex@gateway/tor-sasl/nycex) has quit (Remote host closed the connection)
+2020-05-05 11:12:13	<--	rkreis (~robin@unaffiliated/rkreis) has quit (Ping timeout: 272 seconds)
+2020-05-05 11:12:17	mkoskar	*unusable* how?
+2020-05-05 11:13:06	-->	eippw (~ice@gateway/tor-sasl/eippw) has joined #archlinux
+2020-05-05 11:13:29	<--	coet-i3 (~asellares@213.195.117.129) has quit (Quit: WeeChat 2.8)
+2020-05-05 11:13:39	<--	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2020-05-05 11:13:41	<--	doomlist3 (~user@117.200.12.92) has quit (Ping timeout: 246 seconds)
+2020-05-05 11:13:58	rpav	entirely unresponsive and unable to do anything (even moving the mouse was slow, unable to change to a vt, etc), due to setting realtime something or other, i'd have to go check the log entry again
+2020-05-05 11:15:05	-->	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has joined #archlinux
+2020-05-05 11:15:08	wir3	There's a lot of "pulseaudio.service: Main process exited, code=exited, status=1/FAILURE" "State 'stop-sigterm' time out. Killing."
+2020-05-05 11:16:27	<--	AnySomebody (~AnySomebo@p200300C287468947A16412FD734A37FA.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2020-05-05 11:17:30	wir3	http://ix.io/2kTq
+2020-05-05 11:17:38	<--	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2020-05-05 11:18:06	<--	KaseiWang (~KaseiWang@gateway/tor-sasl/kaseiwang) has quit (Remote host closed the connection)
+2020-05-05 11:18:31	<--	kageru (~kageru@2a04:4540:6f10:ec00:206f:abf:296b:2989) has quit (Ping timeout: 265 seconds)
+2020-05-05 11:18:38	-->	KaseiWang (~KaseiWang@gateway/tor-sasl/kaseiwang) has joined #archlinux
+2020-05-05 11:18:53	-->	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has joined #archlinux
+2020-05-05 11:18:57	-->	aombk (~aombk@unaffiliated/aombk) has joined #archlinux
+2020-05-05 11:22:43	<--	aravk33 (~aravk33@43.225.167.154) has quit (Ping timeout: 272 seconds)
+2020-05-05 11:23:15	-->	aravk33 (~aravk33@2409:4072:117:1f8c:9590:828f:d41d:b989) has joined #archlinux
+2020-05-05 11:23:39	<--	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2020-05-05 11:24:36	wir3	http://ix.io/2kTt - Errr ignore that last one :D
+2020-05-05 11:25:00	cache_return	wait a minute. I thought my thing was on /dev/tty1 but w says tty is "pts/0"
+2020-05-05 11:25:11	<--	gulphole (~Gulphole@46.39.53.238) has quit (Quit: Leaving)
+2020-05-05 11:25:14	cache_return	where _is_ pts/0?
+2020-05-05 11:25:18	-->	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has joined #archlinux
+2020-05-05 11:25:58	<--	jtle (~quassel@jtle.dk) has quit (Quit: jtle)
+2020-05-05 11:26:27	-->	rkreis (~robin@unaffiliated/rkreis) has joined #archlinux
+2020-05-05 11:26:40	lambda	cache_return: pts are pseudoterminals
+2020-05-05 11:26:41	-->	tomty89 (~user@123202047155.ctinets.com) has joined #archlinux
+2020-05-05 11:27:03	<--	eippw (~ice@gateway/tor-sasl/eippw) has quit (Quit: eippw)
+2020-05-05 11:27:20	<--	andril (~andril@c-66-229-99-96.hsd1.fl.comcast.net) has quit (Ping timeout: 246 seconds)
+2020-05-05 11:27:32	mkoskar	wir3: "Daemon already running." ... you prob started it manually too!? just restart the whole computer
+2020-05-05 11:28:21	-->	Elodin (~weechat@unaffiliated/padawan) has joined #archlinux
+2020-05-05 11:28:30	cache_return	lambda: can I echo to it?
+2020-05-05 11:28:32	-->	feirlane (~feirlane@unaffiliated/feirlane) has joined #archlinux
+2020-05-05 11:28:41	<--	Elodin (~weechat@unaffiliated/padawan) has quit (Client Quit)
+2020-05-05 11:28:54	wir3	I've restarted multiple times, I tried the new LTS kernel too, same result.
+2020-05-05 11:28:57	-->	nycex (~nycex@gateway/tor-sasl/nycex) has joined #archlinux
+2020-05-05 11:28:59	-->	citazen (~citazen@ip70-178-141-33.ks.ks.cox.net) has joined #archlinux
+2020-05-05 11:29:10	citazen	long time no see fam o/
+2020-05-05 11:29:12	lambda	cache_return: sure
+2020-05-05 11:29:22	-->	jtle (~quassel@jtle.dk) has joined #archlinux
+2020-05-05 11:29:22	wir3	I think that daemon already running was when I tried to see pulseaudio -vvv to see any error, etc.
+2020-05-05 11:29:31	-->	Elodin (~weechat@unaffiliated/padawan) has joined #archlinux
+2020-05-05 11:29:34	wir3	And tried pulseaudio -k and some other shizz from wiki.
+2020-05-05 11:30:03	citazen	trying to install this ghidra and asking me for my java path. dont know it. but somehoe i do have java-8-openjdk. how to find my directory path?
+2020-05-05 11:30:07	wir3	very sad day
+2020-05-05 11:30:36	cache_return	lambda: so... where is it? Where do I point the >?
+2020-05-05 11:30:44	lambda	cache_return: /dev/pts/0
+2020-05-05 11:30:54	teraflops	citazen: pacman -Ql the package
+2020-05-05 11:31:17	teraflops	or which java
+2020-05-05 11:32:00	cache_return	lambda: lol. Yes. There it is.
+2020-05-05 11:32:12	-->	delusionallogic_ (~delusiona@176-23-98-104-cable.dk.customer.tdc.net) has joined #archlinux
+2020-05-05 11:32:34	mkoskar	wir3: pgrep pulseaudio  ... kill all of them then systemctl start pulseaudio
+2020-05-05 11:32:59	wir3	with --user?
+2020-05-05 11:33:09	mkoskar	ah ye, forgot
+2020-05-05 11:33:47	citazen	ok this dont make sense at all
+2020-05-05 11:33:48	citazen	archlinux-java status
+2020-05-05 11:33:48	citazen	Available Java environments: java-8-openjdk (default)
+2020-05-05 11:33:58	citazen	pacman -Ql java-8-openjdk
+2020-05-05 11:33:58	citazen	error: package 'java-8-openjdk' was not found
+2020-05-05 11:34:17	lambda	citazen: pacman -Qs openjdk
+2020-05-05 11:34:59	citazen	local/jdk8-openjdk 8.u242-1 OpenJDK Java 8 development kit
+2020-05-05 11:34:59	citazen	local/jre8-openjdk 8.u242-1 OpenJDK Java 8 full runtime environment
+2020-05-05 11:34:59	citazen	local/jre8-openjdk-headless 8.u242-1 OpenJDK Java 8 headless runtime environment
+2020-05-05 11:35:51	teraflops	citazen: maybe you set that up via archlinux-java and then you uninstalled it? ikd if archlinux-java reconfigures itself
+2020-05-05 11:35:56	cache_return	lambda: well, it was worth a try
+2020-05-05 11:36:41	-->	criti (~Thunderbi@2604:6000:130d:146:b537:258c:789d:284c) has joined #archlinux
+2020-05-05 11:36:52	<--	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:37:06	citazen	so i should just reinstall?
+2020-05-05 11:37:09	-->	GuiltySpark343 (~GuiltySpa@unaffiliated/guiltyspark343) has joined #archlinux
+2020-05-05 11:37:31	teraflops	just use archlinux-java to point to the installed version
+2020-05-05 11:37:51	Scimmia	citazen: no, it's obviously right there, you just posted the info showing it's isntalled
+2020-05-05 11:38:32	Scimmia	teraflops: it already is
+2020-05-05 11:38:51	-->	eippw (~ice@gateway/tor-sasl/eippw) has joined #archlinux
+2020-05-05 11:38:53	<--	feirlane (~feirlane@unaffiliated/feirlane) has quit (Ping timeout: 246 seconds)
+2020-05-05 11:39:14	teraflops	sorry I misread my cat is driving me crazy
+2020-05-05 11:39:43	<--	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:41:07	-->	feirlane (~feirlane@unaffiliated/feirlane) has joined #archlinux
+2020-05-05 11:41:08	<--	duckinatorr (~duckinato@unaffiliated/duckinator) has quit (Quit: Leaving)
+2020-05-05 11:41:14	citazen	ok Scimmia, but can i ask how do i find the file path. do i have a local folder?
+2020-05-05 11:41:23	<--	blep (~user@gateway/tor-sasl/blep) has quit (Ping timeout: 240 seconds)
+2020-05-05 11:41:38	citazen	i dont see a local folder on the system, is it hidden or am i just off on this
+2020-05-05 11:41:40	-->	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has joined #archlinux
+2020-05-05 11:42:22	<--	alerque (~caleb@5.47.69.61) has quit (Read error: Connection reset by peer)
+2020-05-05 11:43:10	teraflops	citazen: you have local/jdk8-openjdk so pacman -Ql it
+2020-05-05 11:43:36	-->	autofsckk (~autofsckk@unaffiliated/autofsckk) has joined #archlinux
+2020-05-05 11:43:42	-->	ProductionOP (~Productio@169.85.203.62.dynamic.wline.res.cust.swisscom.ch) has joined #archlinux
+2020-05-05 11:44:05	-->	jujudusud (~julien@2a01:cb1c:807c:b200:5151:8b8d:967b:b232) has joined #archlinux
+2020-05-05 11:44:14	-->	leogallego (~leogalleg@146-16-245-190.fibertel.com.ar) has joined #archlinux
+2020-05-05 11:44:43	Scimmia	you could also use the default archlinux-java sets, I believe it's at /usr/lib/jvm/default/
+2020-05-05 11:44:50	citazen	does this look right Scimmia /usr/lib/jvm/java-8-openjdk/
+2020-05-05 11:45:55	-->	akiva (~akiva@d50-92-125-120.bchsia.telus.net) has joined #archlinux
+2020-05-05 11:45:57	earnestly	grawity: https://github.com/Perl/perl5/issues/17692
+2020-05-05 11:45:59	@phrik	Title: Chained comparison evaluates tied scalar twice · Issue #17692 · Perl/perl5 · GitHub (at github.com)
+2020-05-05 11:46:38	<--	mozhaaak1 (mozhaaak@gateway/vpn/privateinternetaccess/mozhaaak) has quit (Quit: WeeChat 2.8)
+2020-05-05 11:46:46	<--	cotko (~cotko@93-103-115-77.dynamic.t-2.net) has quit (Read error: Connection reset by peer)
+2020-05-05 11:47:13	<--	AT-x310 (~AT-x310@atoulouse-657-1-8-214.w86-222.abo.wanadoo.fr) has quit (Quit: See you soon :))
+2020-05-05 11:47:39	citazen	well thats BS, when i enter the path i get this message now
+2020-05-05 11:47:40	citazen	Java version 1.8.0_242 (64-bit) is outside of supported range: [11+ 64-bit]
+2020-05-05 11:48:02	<--	wir3 (~wir3@185.200.118.102) has quit (Quit: Lost terminal)
+2020-05-05 11:48:03	<--	cgundersson (~christian@195.216.38.78) has quit (Ping timeout: 272 seconds)
+2020-05-05 11:48:10	citazen	do i need to rollback, install a different version, or change to other jdk
+2020-05-05 11:48:11	-->	alerque (~caleb@176.43.187.80) has joined #archlinux
+2020-05-05 11:48:21	-->	cotko (~cotko@93-103-115-77.dynamic.t-2.net) has joined #archlinux
+2020-05-05 11:48:47	<--	delusionallogic_ (~delusiona@176-23-98-104-cable.dk.customer.tdc.net) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:48:56	lambda	citazen: just install jdk11+
+2020-05-05 11:49:48	citazen	ok let me try that
+2020-05-05 11:50:21	<--	greatday (~xd@212-186-5-68.cable.dynamic.surfer.at) has quit (Quit: leaving)
+2020-05-05 11:50:37	<--	aombk (~aombk@unaffiliated/aombk) has quit (Read error: Connection reset by peer)
+2020-05-05 11:50:42	-->	kageru (~kageru@2a04:4540:6f10:ec00:206f:abf:296b:2989) has joined #archlinux
+2020-05-05 11:50:53	-->	jayren (~jmain@69.41.201.40) has joined #archlinux
+2020-05-05 11:51:02	<--	balrog (~balrog@unaffiliated/balrog) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:51:35	Scimmia	you are on an ancient version, that error shouldn't be a surprise
+2020-05-05 11:51:46	-->	junelul (60fc37c3@pool-96-252-55-195.bstnma.fios.verizon.net) has joined #archlinux
+2020-05-05 11:52:26	<--	feirlane (~feirlane@unaffiliated/feirlane) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:52:33	-->	aombk (~aombk@unaffiliated/aombk) has joined #archlinux
+2020-05-05 11:52:33	citazen	jdk11-openjdk
+2020-05-05 11:52:36	citazen	installing now
+2020-05-05 11:52:52	-->	ice9 (~ice9@unaffiliated/ice9) has joined #archlinux
+2020-05-05 11:53:36	junelul	I uninstalled dhcpcd, and I setup systemd-networkd and the internet worked. But when I reinstalled the entire system and enabled networkd there, it didn't work. I also had to enable systemd-resolved for it to work. So Im wondering why it worked without systemd-resolved before
+2020-05-05 11:53:36	-->	blep (~user@gateway/tor-sasl/blep) has joined #archlinux
+2020-05-05 11:53:51	-->	feirlane (~feirlane@unaffiliated/feirlane) has joined #archlinux
+2020-05-05 11:54:03	citazen	Saved changes to /home/citazen/.ghidra/.ghidra_9.1.2_PUBLIC/java_home.save
+2020-05-05 11:54:19	citazen	TYANK YOU GUYS I GOT THE GUI RUNNING NOW
+2020-05-05 11:54:20	Scimmia	if you are manually managing /etc/resolv.conf, you won't require systemd-resolved
+2020-05-05 11:54:30	Hello71	idk how you will figure out how to use ghidra
+2020-05-05 11:54:58	-->	ShalokShalom (b9110d05@gateway/web/cgi-irc/kiwiirc.com/ip.185.17.13.5) has joined #archlinux
+2020-05-05 11:55:04	Hello71	if you cannot even pacman -Ss java
+2020-05-05 11:55:19	junelul	did dhcpcd manage it?
+2020-05-05 11:55:35	-->	balrog (~balrog@unaffiliated/balrog) has joined #archlinux
+2020-05-05 11:55:41	Scimmia	yes
+2020-05-05 11:57:23	<--	mirk0 (~mirko@unaffiliated/-mirko-/x-2946915) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:57:32	-->	orivej (orivej@gateway/vpn/mullvad/orivej) has joined #archlinux
+2020-05-05 11:57:35	-->	abdulocracy5 (~abdulocra@79.191.215.172.ipv4.supernova.orange.pl) has joined #archlinux
+2020-05-05 11:58:00	eippw	Any one have the issue when booting up that xorg/gnome only displays half a screen? I have to open an tty and pacman -S gnome and reboot to fix every time
+2020-05-05 11:58:14	<--	jayren (~jmain@69.41.201.40) has quit (Quit: WeeChat 2.8)
+2020-05-05 11:58:58	-->	rhearmas (~Thunderbi@2604:6000:130d:146:e195:1f9e:9a5e:aa1a) has joined #archlinux
+2020-05-05 11:59:00	-->	lonaowna (~lonaowna@2a02:a212:9281:2480:6438:661b:c8f9:d33f) has joined #archlinux
+2020-05-05 11:59:11	<--	leptium (~textual@2800:200:f010:b6e:6453:1f18:e388:5abe) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-05-05 11:59:27	<--	criti (~Thunderbi@2604:6000:130d:146:b537:258c:789d:284c) has quit (Ping timeout: 240 seconds)
+2020-05-05 11:59:27	--	rhearmas is now known as criti
+2020-05-05 11:59:30	-->	mcquinn (~Thunderbi@p5482C34C.dip0.t-ipconnect.de) has joined #archlinux
+2020-05-05 11:59:43	<--	abdulocracy (~abdulocra@79.191.215.172.ipv4.supernova.orange.pl) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:59:43	--	abdulocracy5 is now known as abdulocracy
+2020-05-05 11:59:50	--	maccraft is now known as macc24
+2020-05-05 12:00:08	<--	citazen (~citazen@ip70-178-141-33.ks.ks.cox.net) has quit (Quit: Lost terminal)
+2020-05-05 12:00:16	<--	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has quit (Ping timeout: 256 seconds)
+2020-05-05 12:00:21	Hello71	you're going to have to be a lot more specific
+2020-05-05 12:01:05	teraflops	yeah also pacman -S gnome and reboot to fix … that's very odd
+2020-05-05 12:01:57	-->	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has joined #archlinux
+2020-05-05 12:02:14	CubeTheThird	as in the gnome group? so you're reinstalling all of the gnome packages just to fix it. Might want to try narrowing it down at least
+2020-05-05 12:02:14	<--	nulleip (~luiz@179.215.126.112) has quit (Read error: Connection reset by peer)
+2020-05-05 12:02:14	eippw	yes it is odd -- It is like I have to update / overwrite something in reagard to xorg. I'll give my system details
+2020-05-05 12:03:09	-->	_CrustY (~crusty@aftr-62-216-204-111.dynamic.mnet-online.de) has joined #archlinux
+2020-05-05 12:03:46	<--	zkrx (~quassel@adsl-178-39-206-222.adslplus.ch) has quit (Ping timeout: 258 seconds)
+2020-05-05 12:03:47	eippw	it's not a full download everytime.  Linux  5.4.38-1-lts #1 SMP Sat, 02 May 2020 19:12:10 +0000 x86_64 GNU/Linux
+2020-05-05 12:04:02	-->	Senketsu (~Senny@245.190.62.94.rev.vodafone.pt) has joined #archlinux
+2020-05-05 12:04:02	-->	dunningk (~qwe@unaffiliated/kunningd) has joined #archlinux
+2020-05-05 12:05:11	<--	kunningd (~qwe@unaffiliated/kunningd) has quit (Ping timeout: 260 seconds)
+2020-05-05 12:05:19	teraflops	eippw: are you sure just rebooting is not fixing the issue?
+2020-05-05 12:05:55	teraflops	fixes the issue^
+2020-05-05 12:05:55	<--	georgios (~george@unaffiliated/anaphaxeton) has quit (Read error: Connection reset by peer)
+2020-05-05 12:06:08	eippw	Only the top 1/3 of my screed has the  -- using lxdm as a login manager
+2020-05-05 12:06:23	-->	georgios (~george@unaffiliated/anaphaxeton) has joined #archlinux
+2020-05-05 12:06:32	teraflops	I'd use gdm
+2020-05-05 12:06:49	eippw	yes, when i reboot is when this happens. It also happens on a full shutdown and/or a reboot but not every single time but most every time
+2020-05-05 12:07:02	eippw	I can try gdm
+2020-05-05 12:07:18	-->	grazzolini (grazzolini@archlinux/developer/grazzolini) has joined #archlinux
+2020-05-05 12:07:29	-->	AnySomebody (~AnySomebo@p200300C287468947A16412FD734A37FA.dip0.t-ipconnect.de) has joined #archlinux
+2020-05-05 12:07:45	<--	knfr (~kf@menta.anetz.net) has quit (Quit: knfr)
+2020-05-05 12:08:07	-->	r-k (~r-k@122.162.255.110) has joined #archlinux
+2020-05-05 12:08:38	<--	katie_- (~katie_@c-va-bc1c2fc474-50822-1.tingfiber.com) has quit (Quit: \o)
+2020-05-05 12:08:44	eippw	teraflops -- I'll give gdm a shot and see if this stops. If no fix when i switch I'll chime back in
+2020-05-05 12:08:55	teraflops	sure
+2020-05-05 12:08:57	-->	katie_ (~katie_@c-va-bc1c2fc474-50822-1.tingfiber.com) has joined #archlinux
+2020-05-05 12:09:00	<--	Impulsif (impulsif@unaffiliated/impulsif) has quit (Quit: IRCNow and Forever!)
+2020-05-05 12:09:26	<--	dunningk (~qwe@unaffiliated/kunningd) has quit (Quit: WeeChat 2.8)
+2020-05-05 12:09:44	-->	kunningd (~qwe@unaffiliated/kunningd) has joined #archlinux
+2020-05-05 12:09:48	Scimmia	eippw: what do you mean it's not a full download every time? It shouldn't be downloading anything at all
+2020-05-05 12:10:14	<--	nullthevoid (~nullthevo@gateway/tor-sasl/nullthevoid) has quit (Remote host closed the connection)
+2020-05-05 12:10:16	<--	sedlav (~strive@unaffiliated/strive/x-8457361) has left #archlinux ("= """)
+2020-05-05 12:10:20	<--	autofsckk (~autofsckk@unaffiliated/autofsckk) has quit (Quit: Lost terminal)
+2020-05-05 12:10:38	-->	nullthevoid (~nullthevo@gateway/tor-sasl/nullthevoid) has joined #archlinux
+2020-05-05 12:11:56	eippw	Scimmia -- it does not download anything as far as I can see, I only have the top portion of the screen. It looks like it just reinstalls
+2020-05-05 12:12:01	-->	cfoch (uid153227@gateway/web/irccloud.com/x-wzmoqtnncxcfusvj) has joined #archlinux
+2020-05-05 12:12:25	eippw	Scimmia: it does not download anything as far as I can see, I only have the top portion of the screen. It looks like it just reinstalls
+2020-05-05 12:13:26	<--	ShalokShalom (b9110d05@gateway/web/cgi-irc/kiwiirc.com/ip.185.17.13.5) has quit (Ping timeout: 264 seconds)
+2020-05-05 12:13:40	<--	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has quit (Quit: Leaving.)
+2020-05-05 12:13:45	-->	myalpaca (~myalpaca@180-145-48-123f1.osk2.eonet.ne.jp) has joined #archlinux
+2020-05-05 12:13:53	<--	earnestly (~Earnestly@unaffiliated/earnestly) has quit (Ping timeout: 246 seconds)
+2020-05-05 12:14:01	<--	fercell (~ferr@88-119-248-102.static.zebra.lt) has quit (Quit: WeeChat 2.8)
+2020-05-05 12:14:14	-->	cgundersson (~christian@195.216.38.78) has joined #archlinux
+2020-05-05 12:14:43	-->	earnestly (~Earnestly@unaffiliated/earnestly) has joined #archlinux
+2020-05-05 12:14:50	<--	zro_ (~zro@wikimedia/zro) has quit (Ping timeout: 256 seconds)
+2020-05-05 12:15:50	<--	burakcank (~burakcank@95.70.185.73) has quit (Quit: WeeChat 2.8)
+2020-05-05 12:16:00	-->	zro_ (~zro@wikimedia/zro) has joined #archlinux
+2020-05-05 12:16:25	<--	junelul (60fc37c3@pool-96-252-55-195.bstnma.fios.verizon.net) has quit (Remote host closed the connection)
+2020-05-05 12:16:28	-->	burakcank (~burakcank@95.70.185.73) has joined #archlinux
+2020-05-05 12:16:34	-->	SteveDeFacto (~SteveDeFa@ip-184-218-137-83.phnxaz.spcsdns.net) has joined #archlinux
+2020-05-05 12:16:44	-->	SteveDeFacto_ (~quassel@ip-184-218-137-83.phnxaz.spcsdns.net) has joined #archlinux
+2020-05-05 12:17:05	-->	Cirrus_Minor (~Cirrus_Mi@CAcert/Cirrus-Minor) has joined #archlinux
+2020-05-05 12:17:27	<--	aravk33 (~aravk33@2409:4072:117:1f8c:9590:828f:d41d:b989) has quit (Ping timeout: 272 seconds)
+2020-05-05 12:18:34	<--	mexen (~mexen@165.56.63.218) has quit (Ping timeout: 240 seconds)
+2020-05-05 12:18:45	<--	burakcank (~burakcank@95.70.185.73) has quit (Client Quit)
+2020-05-05 12:18:52	-->	aravk33 (~aravk33@43.225.167.154) has joined #archlinux
+2020-05-05 12:18:57	-->	sudoforge (~sudoforge@cpepool8acmts1-40.sanbrunocable.com) has joined #archlinux
+2020-05-05 12:19:19	-->	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has joined #archlinux
+2020-05-05 12:20:07	-->	burakcank (~burakcank@95.70.185.73) has joined #archlinux
+2020-05-05 12:20:59	<--	cgundersson (~christian@195.216.38.78) has quit (Ping timeout: 272 seconds)
+2020-05-05 12:21:43	-->	cgundersson (~christian@195.216.38.78) has joined #archlinux
+2020-05-05 12:22:14	<--	ice9 (~ice9@unaffiliated/ice9) has quit (Ping timeout: 240 seconds)
+2020-05-05 12:23:03	<--	burakcank (~burakcank@95.70.185.73) has quit (Client Quit)
+2020-05-05 12:23:14	-->	mexen (~mexen@165.56.63.217) has joined #archlinux
+2020-05-05 12:23:30	<--	KindOne (kindone@freenode/father-christmas/kindone) has quit (Quit: K-Lined)
+2020-05-05 12:23:34	-->	berton_ (~berton@181.220.84.90) has joined #archlinux
+2020-05-05 19:19:54	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #archlinux
+2020-05-05 19:19:54	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-05-05 19:19:54	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Sun, 16 Feb 2020 21:03:05
+2020-05-05 19:19:55	--	Channel #archlinux: 1817 nicks (3 ops, 0 voices, 1814 normals)
+2020-05-05 19:19:55	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2020-05-05 19:20:31	SolarAquarion	felixonmars|Z: hi?
+2020-05-05 19:20:41	SolarAquarion	arojas: hi
+2020-05-06 19:52:15	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #archlinux
+2020-05-06 19:52:15	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-05-06 19:52:15	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Sun, 16 Feb 2020 21:03:05
+2020-05-06 19:52:16	--	Channel #archlinux: 1806 nicks (3 ops, 0 voices, 1803 normals)
+2020-05-06 19:52:16	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2020-05-06 19:53:04	-->	Yomi (~yomi@ip68-109-112-37.ri.ri.cox.net) has joined #archlinux
+2020-05-06 19:53:51	-->	SteveDeF1 (~SteveDeFa@ip-184-218-137-83.phnxaz.spcsdns.net) has joined #archlinux
+2020-05-06 19:54:07	-->	Ruuchan (~Ruuchan@unaffiliated/ruuchan) has joined #archlinux
+2020-05-06 19:55:46	<--	scrumplex (~quassel@p200300D27715A80000000000000002DE.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2020-05-06 19:55:51	-->	jkwnki (~jkwnki@p200300CD472B60001E1BB5FFFE7A47F7.dip0.t-ipconnect.de) has joined #archlinux
+2020-05-06 19:56:09	-->	u_u (~owo@137.118.221.173) has joined #archlinux
+2020-05-06 19:56:27	<--	myalpaca (~myalpaca@180-145-48-123f1.osk2.eonet.ne.jp) has quit (Quit: Leaving)
+2020-05-06 19:56:32	<--	aykut_ (~aykut@unaffiliated/aykut) has quit (Quit: I will never be a memory)
+2020-05-06 19:57:09	<--	aravk33 (~aravk33@43.225.167.154) has quit (Ping timeout: 272 seconds)
+2020-05-06 19:57:52	-->	d4nky (~keith@S0106802aa88eb867.wp.shawcable.net) has joined #archlinux
+2020-05-06 19:58:29	-->	aykut (~aykut@unaffiliated/aykut) has joined #archlinux
+2020-05-06 19:58:45	-->	aravk33 (~aravk33@2409:4072:649e:8ff:300d:376c:1aaf:403d) has joined #archlinux
+2020-05-06 19:59:03	<--	AJ_Z0 (~AJ_Z0@pdpc/supporter/professional/ajz0) has quit (Ping timeout: 272 seconds)
+2020-05-06 19:59:43	-->	forgon (~forgon@unaffiliated/commander-cody/x-9618197) has joined #archlinux
+2020-05-08 15:39:08	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #archlinux
+2020-05-08 15:39:08	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-05-08 15:39:08	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Sun, 16 Feb 2020 21:03:05
+2020-05-08 15:39:08	--	Channel #archlinux: 1861 nicks (2 ops, 0 voices, 1859 normals)
+2020-05-08 15:39:08	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2020-05-08 15:39:10	-->	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #archlinux
+2020-05-08 15:39:33	thurstylark	!bug 66535
+2020-05-08 15:39:33	@phrik	https://bugs.archlinux.org/task/66535
+2020-05-08 15:39:47	<--	wilhelm418 (~wilhelm@102.135.241.76) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:40:12	 *	thurstylark will get it eventually
+2020-05-08 15:40:19	-->	curvv (~quetzlcoa@unaffiliated/curvv) has joined #archlinux
+2020-05-08 15:40:22	mkoskar	SteveDeFacto: did you solve it?
+2020-05-08 15:40:27	<--	SteveDeFacto (~SteveDeFa@ip-173-140-251-107.brbnca.spcsdns.net) has quit (Client Quit)
+2020-05-08 15:40:55	-->	SteveDeFacto (~SteveDeFa@ip-173-140-251-107.brbnca.spcsdns.net) has joined #archlinux
+2020-05-08 15:41:17	-->	SteveDeFacto_ (~quassel@ip-173-140-251-107.brbnca.spcsdns.net) has joined #archlinux
+2020-05-08 15:41:29	NyB	thurstylark: thanks! that covers my issue. I did not actually notice the others in the one boot I tried...
+2020-05-08 15:42:04	<--	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has quit (Client Quit)
+2020-05-08 15:42:42	-->	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #archlinux
+2020-05-08 15:42:43	<--	ajshell1 (32ead752@gateway/web/cgi-irc/kiwiirc.com/ip.50.234.215.82) has quit (Quit: Connection closed)
+2020-05-08 15:42:57	<--	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has quit (Client Quit)
+2020-05-08 15:43:11	-->	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #archlinux
+2020-05-08 15:44:17	<--	frvr (~florea@89.44.192.131) has quit (Remote host closed the connection)
+2020-05-08 15:45:06	thurstylark	https://git.archlinux.org/archiso.git/tree/configs/releng/efiboot/loader/loader.conf?id=c16612401e2db36ae5437df2c77999d45f47d39f#n2
+2020-05-08 15:45:08	@phrik	Title: loader.conf « loader « efiboot « releng « configs - archiso.git - The official archiso scripts repo (at git.archlinux.org)
+2020-05-08 15:45:26	<--	SteveDeFacto_ (~quassel@ip-173-140-251-107.brbnca.spcsdns.net) has quit (Remote host closed the connection)
+2020-05-08 15:45:28	<--	SteveDeFacto (~SteveDeFa@ip-173-140-251-107.brbnca.spcsdns.net) has quit (Client Quit)
+2020-05-08 15:46:04	h4rd3n3D	NyB:  wtf is up with Live Mode only?  Why not crank up your brain and install real Arch?
+2020-05-08 15:46:24	-->	||arifaX (~Commodore@unaffiliated/arifax/x-427475) has joined #archlinux
+2020-05-08 15:46:39	--	ugjka_ is now known as ugjka
+2020-05-08 15:46:50	-->	SteveDeFacto (~SteveDeFa@ip-173-140-251-107.brbnca.spcsdns.net) has joined #archlinux
+2020-05-08 15:46:50	-->	flori4nk (~flori4nk@wikipedia/Flori4nK) has joined #archlinux
+2020-05-08 15:46:51	mkoskar	SteveDeFacto_: I've installed that pulseaudio-modules-bt-git myself, so it detect e.g,. my phone as a2dp_source_aptx_hd but it's kinda terrible, lot of "Cannot set requested source latency" and then "[aptx_hd @ 0x562ef39937c0] Synchronization error" going on/off ┐(ツ)┌
+2020-05-08 15:47:00	-->	SteveDeFacto_ (~quassel@ip-173-140-251-107.brbnca.spcsdns.net) has joined #archlinux
+2020-05-08 15:47:08	<--	eippw (~ice@gateway/tor-sasl/eippw) has quit (Quit: eippw)
+2020-05-08 15:47:31	NyB	h4rd3n3D: because I have another "real" distribution that I use?
+2020-05-08 15:47:56	mkoskar	SteveDeFacto: ^ did you see that message just now
+2020-05-08 15:48:06	<--	desmu (~desmu@2a02:908:391:8260:3c1:9333:2bd5:4202) has quit (Ping timeout: 240 seconds)
+2020-05-08 15:48:07	<--	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has quit (Quit: WeeChat 2.8)
+2020-05-08 15:48:47	h4rd3n3D	NyB: lols - most of us have used/run whatever you are now running for many years ;p
+2020-05-08 15:48:59	mkoskar	meh, anyway tl;dr it's quite unusable
+2020-05-08 15:49:46	<--	SanskritFritz (~quassel@2E8B404F.catv.pool.telekom.hu) has quit (Quit: leaving...)
+2020-05-08 15:49:52	 *	thurstylark wonders how arch is any less "real" than any other linux distro, or even linux install...
+2020-05-08 15:50:17	<--	jkwnki (~jkwnki@2a02:908:1216:f00:1e1b:b5ff:fe7a:47f7) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:50:23	NetSysFire	ah, a distro war again
+2020-05-08 15:50:34	NoImNotNineVolt	thurstylark: by being a rolling release
+2020-05-08 15:50:38	-->	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #archlinux
+2020-05-08 15:50:39	NyB	thurstylark: I used the word "real" in reference to h4rd3n3D's "real" comment
+2020-05-08 15:50:49	thurstylark	ahh
+2020-05-08 15:50:50	-->	GI_Jack (~GI_Jack@pdpc/supporter/active/gi-jack) has joined #archlinux
+2020-05-08 15:51:05	NyB	otherwise I'd probably use arch if I were to start using Linux now
+2020-05-08 15:51:05	<--	f0rs3ti (~f0rs3ti@pivpn/maintainer/f0rs3ti) has quit (Quit: I've been here, a long long time ago in a far far away ... whatever  .. i am gone)
+2020-05-08 15:51:50	NyB	as it is, I just have way too much that would have to change if I were to move to something that is not RPM based
+2020-05-08 15:51:54	-->	f0rs3ti (~f0rs3ti@pivpn/maintainer/f0rs3ti) has joined #archlinux
+2020-05-08 15:52:11	King_DuckZ	NetSysFire: you made my day with that :D
+2020-05-08 15:52:15	h4rd3n3D	ah - a Fed Boy ;p
+2020-05-08 15:52:57	NyB	more like Mandrake
+2020-05-08 15:53:13	NyB	never really liked RH/Fedora
+2020-05-08 15:53:18	<--	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has quit (Client Quit)
+2020-05-08 15:53:25	strata	Fedora Agent! Put your hands where I can see them!
+2020-05-08 15:53:38	<--	ShadowKyogre (~ShadowKyo@unaffiliated/shadowkyogre) has left #archlinux
+2020-05-08 15:53:41	<--	SteveDeFacto_ (~quassel@ip-173-140-251-107.brbnca.spcsdns.net) has quit (Remote host closed the connection)
+2020-05-08 15:53:42	<--	SteveDeFacto (~SteveDeFa@ip-173-140-251-107.brbnca.spcsdns.net) has quit (Quit: WeeChat 2.8)
+2020-05-08 15:53:44	NyB	I've mostly used Mandrake & derivatives at home and SuSE/Debian at work
+2020-05-08 15:53:47	King_DuckZ	my first distro was mandriva :)
+2020-05-08 15:54:21	-->	SanskritFritz (~quassel@2E8B404F.catv.pool.telekom.hu) has joined #archlinux
+2020-05-08 15:54:46	<--	RudyValencia (rudy@unaffiliated/rudyvalencia) has quit (Ping timeout: 240 seconds)
+2020-05-08 15:54:51	-->	SteveDeFacto (~SteveDeFa@ip-173-140-251-107.brbnca.spcsdns.net) has joined #archlinux
+2020-05-08 15:54:51	NyB	I'm using Mageia these days + a bunch of custom packages (you know, for when I was it was a rolling distro :-p)
+2020-05-08 15:54:56	-->	SteveDeFacto_ (~quassel@ip-173-140-251-107.brbnca.spcsdns.net) has joined #archlinux
+2020-05-08 15:55:01	NyB	s/was/wish/
+2020-05-08 15:55:04	-->	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #archlinux
+2020-05-08 15:55:07	<--	kendfinger (~kendfinge@li1139-149.members.linode.com) has quit (Ping timeout: 256 seconds)
+2020-05-08 15:55:17	King_DuckZ	NyB: is it still going? I think it got discontinued shortly after the fork
+2020-05-08 15:55:27	<--	sehro (~sehro@pdpc/supporter/active/sehro) has quit (Ping timeout: 258 seconds)
+2020-05-08 15:55:28	<--	Kamilion (kamilion@botters/Kamilion) has quit (Ping timeout: 258 seconds)
+2020-05-08 15:55:30	 *	mongy uses Muhjaro
+2020-05-08 15:55:44	<--	LBlaboon (LBlaboon@nanoha.bradleylaboon.com) has quit (Ping timeout: 246 seconds)
+2020-05-08 15:55:47	<--	GI_Jack (~GI_Jack@pdpc/supporter/active/gi-jack) has quit (Remote host closed the connection)
+2020-05-08 15:55:52	NyB	mageia is still fairly active
+2020-05-08 15:55:56	<--	haagch (~quassel@frickel.club) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-05-08 15:56:05	<--	poxifone (kamek@botters/deathspawn) has quit (Ping timeout: 246 seconds)
+2020-05-08 15:56:05	<--	batrick (batrick@nmap/developer/batrick) has quit (Ping timeout: 246 seconds)
+2020-05-08 15:56:05	<--	jdost (~jeff@li211-146.members.linode.com) has quit (Ping timeout: 246 seconds)
+2020-05-08 15:56:15	kevincs	Never heard of muhjaro, fork of manjaro I take it?
+2020-05-08 15:56:23	<--	madalu (~madalu@gateway/tor-sasl/madalu) has quit (Ping timeout: 240 seconds)
+2020-05-08 15:56:41	<--	thurstylark (thurstylar@unaffiliated/thurstylark) has quit (Ping timeout: 244 seconds)
+2020-05-08 15:56:43	King_DuckZ	oh nice to hear! but I moved to arch and gentoo, I'm pretty much satisfied for now
+2020-05-08 15:56:49	-->	haagch (~quassel@frickel.club) has joined #archlinux
+2020-05-08 15:56:57	NetSysFire	my very first distro was a debian 7 without gui lol
+2020-05-08 15:56:57	<--	jmtran (~keeheeee@swift/swiftfree/jmtran) has quit (Ping timeout: 276 seconds)
+2020-05-08 15:56:59	<--	batdog (~batdog@lnsq.elkins.co) has quit (Ping timeout: 258 seconds)
+2020-05-08 15:57:01	<--	phlux (phlux@unaffiliated/phlux) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:57:01	<--	poxifide (deathspawn@botters/deathspawn) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:57:02	NetSysFire	i ssh'ed into it via windows 7
+2020-05-08 15:57:02	<--	f0rs3ti (~f0rs3ti@pivpn/maintainer/f0rs3ti) has quit (Quit: I've been here, a long long time ago in a far far away ... whatever  .. i am gone)
+2020-05-08 15:57:04	<--	SteveDeFacto_ (~quassel@ip-173-140-251-107.brbnca.spcsdns.net) has quit (Remote host closed the connection)
+2020-05-08 15:57:05	-->	dD_ (~ddshore@187-178-206-150.dynamic.axtel.net) has joined #archlinux
+2020-05-08 15:57:09	<--	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has quit (Client Quit)
+2020-05-08 15:57:09	dD_	Hi, my computer froze and I rebooted, and now it freezes every time I unencrypt my hdd (after I choose the kernel I'm booting).  I can move to another session with (ctrl + alt + F2 and log in through the command line, however X won't start.  I get a couple of errors, one of them is a syntax error on my bash_profile (which I haven't changed).   When I try to just startx I get an error loading
+2020-05-08 15:57:11	dD_	libnettle.so.7 saying there-s no such file or directory.
+2020-05-08 15:57:12	<--	Lymia (lymia@magical.girl.lyrical.lymia.moe) has quit (Ping timeout: 244 seconds)
+2020-05-08 15:57:13	<--	petris (~quassel@docker01.dallas.linode.host.petris.net) has quit (Ping timeout: 264 seconds)
+2020-05-08 15:57:16	<--	SteveDeFacto (~SteveDeFa@ip-173-140-251-107.brbnca.spcsdns.net) has quit (Client Quit)
+2020-05-08 15:57:28	h4rd3n3D	yeah - openSuSE has always been on my VM go-to list
+2020-05-08 15:57:36	-->	SteveDeFacto (~SteveDeFa@ip-173-140-251-107.brbnca.spcsdns.net) has joined #archlinux
+2020-05-08 15:57:42	-->	ShadowKyogre (~ShadowKyo@unaffiliated/shadowkyogre) has joined #archlinux
+2020-05-08 15:57:50	<--	SteveDeFacto (~SteveDeFa@ip-173-140-251-107.brbnca.spcsdns.net) has quit (Client Quit)
+2020-05-08 15:57:52	<--	Maxattax (~max@50-195-160-193-static.hfc.comcastbusiness.net) has quit (Quit: WeeChat 2.8)
+2020-05-08 15:58:02	NyB	dD_: any filesystem errors in dmesg?
+2020-05-08 15:58:05	<--	CarloWood (~Run@unaffiliated/run) has quit (Remote host closed the connection)
+2020-05-08 15:58:06	mongy	nah, just my little arch roll, that's rubbish, yet better than manjaro, so muhjaro :)
+2020-05-08 15:58:08	dD_	NyB: one sec
+2020-05-08 15:58:24	<--	ShadowKyogre (~ShadowKyo@unaffiliated/shadowkyogre) has left #archlinux
+2020-05-08 15:58:28	grawity	such things happen when you upgrade only half your packages
+2020-05-08 15:58:29	-->	CarloWood (~Run@unaffiliated/run) has joined #archlinux
+2020-05-08 15:58:45	-->	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #archlinux
+2020-05-08 15:58:58	NyB	my first Linux was SuSE 5.something. 5.9 maybe? Man, how time flies...
+2020-05-08 15:59:00	dD_	NyB: um, not sure.  What should I grep for?
+2020-05-08 15:59:00	<--	Halian (~halian@unaffiliated/halian) has quit (Quit: HABEEB IT!)
+2020-05-08 15:59:33	NyB	dD_: "error" maybe?
+2020-05-08 15:59:34	King_DuckZ	dD_: maybe just "error" idk
+2020-05-08 15:59:44	King_DuckZ	ninja'ed
+2020-05-08 15:59:48	NyB	:-D
+2020-05-08 15:59:57	kevincs	dD_: anything in journal or dmesg?
+2020-05-08 16:00:07	<--	soft_concrete (uid323143@gateway/web/irccloud.com/x-quccxqohngjanhaz) has quit
+2020-05-08 16:00:10	-->	SteveDeFacto (~SteveDeFa@ip-173-140-251-107.brbnca.spcsdns.net) has joined #archlinux
+2020-05-08 16:00:21	-->	SteveDeFacto_ (~quassel@ip-173-140-251-107.brbnca.spcsdns.net) has joined #archlinux
+2020-05-08 16:01:27	dD_	dmesg | grep error  gets me this: termbin.com/z5vm
+2020-05-08 16:01:51	CarloWood	I don't understand, I just ran: 'sudo usermod -a -G audio carlo', logged out - logged back in.. and 'groups' still doesn't show audio as group?
+2020-05-08 16:01:57	NetSysFire	dD_: i recommend pasting your journal, not only a random part which contains "error"
+2020-05-08 16:02:02	-->	chuvke[m] (chuvkematr@gateway/shell/matrix.org/x-typbzimrzcxoaxhf) has joined #archlinux
+2020-05-08 16:02:08	NetSysFire	many errors may not contain "error"
+2020-05-08 16:02:22	grawity	CarloWood: remind me, why do you *need* the "audio" group?
+2020-05-08 16:02:33	CarloWood	For running
+2020-05-08 16:03:00	CarloWood	speaker-test
+2020-05-08 16:03:11	dD_	my bash profile gives me this: termbin.com/j99m, I tried removing the colon and changing it to a single bracket but still won't work
+2020-05-08 16:03:34	<--	verbose (~verbose@185.229.59.123) has quit (Quit: WeeChat 2.8)
+2020-05-08 16:03:53	NyB	ouch ouch ouch...
+2020-05-08 16:03:55	CarloWood	# strace speaker-test -c 2 2>&1 | grep '^open.*= 4$'
+2020-05-08 16:03:55	CarloWood	openat(AT_FDCWD, "/dev/snd/pcmC1D0p", O_RDWR|O_NONBLOCK|O_CLOEXEC) = 4
+2020-05-08 16:04:07	CarloWood	# ls -l /dev/snd/pcmC1D0p
+2020-05-08 16:04:07	CarloWood	crw-rw----+ 1 root audio 116, 11 May  8 21:51 /dev/snd/pcmC1D0p
+2020-05-08 16:04:07	NyB	dD_: plese quote those variables and try again
+2020-05-08 16:04:14	-->	ajshell1 (32ead752@gateway/web/cgi-irc/kiwiirc.com/ip.50.234.215.82) has joined #archlinux
+2020-05-08 16:04:23	<--	Other (~Other@gateway/tor-sasl/ritalinona) has quit (Ping timeout: 240 seconds)
+2020-05-08 16:04:41	<--	segurb (~segurb@unaffiliated/segurb) has quit (Quit: https://i.imgur.com/xrUtDu3.gif)
+2020-05-08 16:05:00	dD_	journal: termbin.com/drqcv
+2020-05-08 16:05:14	King_DuckZ	my server has rebooted just fine btw :) thanks for the help
+2020-05-08 16:05:22	ajshell1	So, I just saw this form recently (https://sysarmy.com/misc/alfa.pdf), and I don't understand why "I put my swap file in /tmp" is on the this list. What happens when you do that?
+2020-05-24 20:57:13	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #archlinux
+2020-05-24 20:57:13	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-05-24 20:57:13	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Sun, 16 Feb 2020 21:03:05
+2020-05-24 20:57:14	--	Channel #archlinux: 1855 nicks (2 ops, 0 voices, 1853 normals)
+2020-05-24 20:57:14	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2020-05-24 20:58:06	Shapeshifter	Hi. I'm having trouble playing back 4K video clips recorded using my Canon pocket camera. Here's its mediainfo output: http://ix.io/2ngF My laptop: Intel Ice Lake with Iris Plus graphics. vainfo: http://ix.io/2ngG playback in mpv: http://ix.io/2ngI vlc and mplayer struggle even more to play the file, mpv is just very choppy. I have no problem playing back 4K video on youtube in firefox. Any hints?
+2020-05-24 20:58:16	<--	drdata (~dre_@122-59-29-254-fibre.sparkbb.co.nz) has quit (Quit: Leaving)
+2020-05-24 20:58:39	Shapeshifter	Oh and I'm on wayland but the problem is the same on X11.
+2020-05-24 21:00:31	<--	mnrmnaugh (~mnrmnaugh@unaffiliated/mnrmnaugh) has quit (Ping timeout: 256 seconds)
+2020-05-24 21:04:04	<--	sepehrdad (sepehrdad@gateway/vpn/protonvpn/sepehrdad) has quit (Ping timeout: 256 seconds)
+2020-05-24 21:04:10	-->	JCcn (dddc895f@gateway/web/cgi-irc/kiwiirc.com/ip.221.220.137.95) has joined #archlinux
+2020-05-24 21:04:16	<--	JCcn (dddc895f@gateway/web/cgi-irc/kiwiirc.com/ip.221.220.137.95) has left #archlinux
+2020-05-24 21:07:05	<--	coruja (~coruja@unaffiliated/coruja) has quit (Remote host closed the connection)
+2020-05-24 21:07:29	-->	sepehrdad (sepehrdad@gateway/vpn/protonvpn/sepehrdad) has joined #archlinux
+2020-05-24 21:07:39	<--	kevincs (quassel@gateway/vpn/privateinternetaccess/kevincs) has quit (Remote host closed the connection)
+2020-05-24 21:07:51	-->	coruja (~coruja@unaffiliated/coruja) has joined #archlinux
+2020-05-24 21:09:18	-->	JCcn (dddc895f@gateway/web/cgi-irc/kiwiirc.com/ip.221.220.137.95) has joined #archlinux
+2020-05-24 21:09:23	<--	JCcn (dddc895f@gateway/web/cgi-irc/kiwiirc.com/ip.221.220.137.95) has left #archlinux
+2020-05-24 21:09:27	-->	chepaz (~chepaz@195.245.21.62) has joined #archlinux
+2020-05-24 21:09:58	-->	kevincs (quassel@gateway/vpn/privateinternetaccess/kevincs) has joined #archlinux
+2020-05-24 21:10:12	-->	Kryptron_ (~Kryptron@unaffiliated/kryptron) has joined #archlinux
+2020-05-24 21:10:16	<--	dqsii (~dqsii@69.167.27.118) has quit (Ping timeout: 246 seconds)
+2020-05-24 21:10:43	<--	KindOne (kindone@freenode/father-christmas/kindone) has quit (Ping timeout: 272 seconds)
+2020-05-24 21:10:43	-->	dqsii (~dqsii@69.167.28.45) has joined #archlinux
+2020-05-24 21:11:05	<--	darkstardevx (darkstarde@gateway/vpn/privateinternetaccess/darkstardevx) has quit (Remote host closed the connection)
+2020-05-24 21:11:29	<--	Soo_Slow (Soo_Slow@gateway/vpn/privateinternetaccess/sooslow/x-31376162) has quit (Quit: Soo_Slow)
+2020-05-24 21:12:13	<--	LKoen (~LKoen___@81.255.219.130) has quit (Remote host closed the connection)
+2020-05-24 21:12:44	<--	Kryptron (~Kryptron@unaffiliated/kryptron) has quit (Ping timeout: 258 seconds)
+2020-05-24 21:12:44	<--	chep4z (~chepaz@195.245.22.189) has quit (Ping timeout: 258 seconds)
+2020-05-24 21:14:22	-->	DoXer (~DoXer67@p5b265846.dip0.t-ipconnect.de) has joined #archlinux
+2020-05-24 21:15:24	<--	mefistofeles (~mefistofe@unaffiliated/mefistofeles) has quit (Ping timeout: 256 seconds)
+2020-05-24 21:16:32	<--	sepehrdad (sepehrdad@gateway/vpn/protonvpn/sepehrdad) has quit (Ping timeout: 256 seconds)
+2020-05-24 21:16:56	<--	chozen_ (~chozen@209.159.234.75) has quit (Ping timeout: 256 seconds)
+2020-05-24 21:17:13	-->	darkstardevx (darkstarde@gateway/vpn/privateinternetaccess/darkstardevx) has joined #archlinux
+2020-05-24 21:18:03	<--	DoXer67 (~DoXer67@p2e52dd20.dip0.t-ipconnect.de) has quit (Ping timeout: 272 seconds)
+2020-05-24 21:18:58	<--	freswa (~freswa@p200300c52f2d2c02b95ff2066e826634.dip0.t-ipconnect.de) has quit (Quit: freswa)
+2020-05-24 21:19:01	-->	mefistofeles (~mefistofe@unaffiliated/mefistofeles) has joined #archlinux
+2020-05-24 21:19:10	<--	kunningd (~qwe@unaffiliated/kunningd) has quit (Ping timeout: 265 seconds)
+2020-05-24 21:21:57	-->	Megver83 (~Icedove@pc-88-170-100-190.cm.vtr.net) has joined #archlinux
+2020-05-24 21:24:18	<--	pickfire (~ivan@unaffiliated/pickfire) has quit (Ping timeout: 260 seconds)
+2020-05-24 21:24:51	<--	strata (~strata@gateway/tor-sasl/xdr) has quit (Remote host closed the connection)
+2020-05-24 21:25:34	<--	baton (~pierre@lfbn-ncy-1-904-173.w90-101.abo.wanadoo.fr) has quit (Quit: leaving)
+2020-05-24 21:25:43	-->	baton (~pierre@lfbn-ncy-1-904-173.w90-101.abo.wanadoo.fr) has joined #archlinux
+2020-05-24 21:26:01	-->	pickfire (~ivan@unaffiliated/pickfire) has joined #archlinux
+2020-05-24 21:26:29	-->	cbmcgee (~cbmcgee@c-73-53-22-45.hsd1.wa.comcast.net) has joined #archlinux
+2020-05-24 21:26:46	-->	yshui (~yshui@cpc158779-hari22-2-0-cust230.20-2.cable.virginm.net) has joined #archlinux
+2020-05-24 21:27:41	<--	cbmcgee (~cbmcgee@c-73-53-22-45.hsd1.wa.comcast.net) has quit (Client Quit)
+2020-05-24 21:27:44	-->	strata (~strata@gateway/tor-sasl/xdr) has joined #archlinux
+2020-05-24 21:29:08	-->	KindOne (kindone@freenode/father-christmas/kindone) has joined #archlinux
+2020-05-24 21:31:13	-->	floatingman (~dnewman@c-69-139-119-74.hsd1.tn.comcast.net) has joined #archlinux
+2020-05-24 21:31:59	-->	sepehrdad (sepehrdad@gateway/vpn/protonvpn/sepehrdad) has joined #archlinux
+2020-05-24 21:34:07	<--	baton (~pierre@lfbn-ncy-1-904-173.w90-101.abo.wanadoo.fr) has quit (Quit: leaving)
+2020-05-24 21:34:19	-->	baton (~pierre@lfbn-ncy-1-904-173.w90-101.abo.wanadoo.fr) has joined #archlinux
+2020-05-24 21:36:22	<--	damon (~damon@207-153-11-46.fttp.usinternet.com) has quit (Ping timeout: 256 seconds)
+2020-05-24 21:38:19	-->	wordsToLiveBy (~wordsToLi@unaffiliated/wordstoliveby) has joined #archlinux
+2020-05-24 21:39:00	m00n	anyone here recommend bitwarden over pass or vice versa? Trying to decide between the two
+2020-05-24 21:39:22	<--	mrbanie (~mrbanie@unaffiliated/mrbanie) has quit (Ping timeout: 260 seconds)
+2020-05-24 21:40:13	<--	DCyrax (~DCyrax@91-156-248-84.elisa-laajakaista.fi) has quit (Ping timeout: 272 seconds)
+2020-05-24 21:41:54	<--	orivej (orivej@gateway/vpn/mullvad/orivej) has quit (Ping timeout: 240 seconds)
+2020-05-24 21:42:08	-->	ugjka (~ugjka@m90-128-43-48.cust.tele2.lv) has joined #archlinux
+2020-05-24 21:42:25	-->	darkstardev13 (darkstarde@gateway/vpn/privateinternetaccess/darkstardevx) has joined #archlinux
+2020-05-24 21:42:26	-->	orivej (orivej@gateway/vpn/mullvad/orivej) has joined #archlinux
+2020-05-24 21:43:08	<--	strata (~strata@gateway/tor-sasl/xdr) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-05-24 21:43:25	-->	strata (~strata@gateway/tor-sasl/xdr) has joined #archlinux
+2020-05-24 21:44:37	m00n	either id setup a hosted bitwarden and switch to that across all devices or ill continue to use firefox as my pw syncer and just import passwords from that to pass regularly
+2020-05-24 21:44:43	m00n	has anyone setup a similar workflow?
+2020-05-24 21:45:16	<--	logicp (~logicp@otwaon1073w-grc-04-184-144-79-188.dsl.bell.ca) has quit (Ping timeout: 272 seconds)
+2020-05-24 21:46:28	 *	scgtrp uses keepassxc + syncthing
+2020-05-24 21:47:15	-->	yunhao94 (~yunhao94@183.197.160.13) has joined #archlinux
+2020-05-24 21:48:16	<--	ZaB|SHC| (~Zaphod_Be@ipbcc2352a.dynamic.kabel-deutschland.de) has quit (Ping timeout: 256 seconds)
+2020-05-24 21:48:43	<--	rkreis (~robin@unaffiliated/rkreis) has quit (Ping timeout: 272 seconds)
+2020-05-24 21:49:39	<--	darkstardevx (darkstarde@gateway/vpn/privateinternetaccess/darkstardevx) has quit (Remote host closed the connection)
+2020-05-24 21:49:49	<--	darkstardev13 (darkstarde@gateway/vpn/privateinternetaccess/darkstardevx) has quit (Remote host closed the connection)
+2020-05-24 21:50:10	-->	ZaB|SHC| (~Zaphod_Be@ipbcc2352a.dynamic.kabel-deutschland.de) has joined #archlinux
+2020-05-24 21:50:37	<--	Ar|stote|is (~quassel@2a02:587:9a08:d756:d8f8:f8ff:febf:1da6) has quit (Ping timeout: 272 seconds)
+2020-05-24 21:52:00	-->	hardfalcon__ (~hardfalco@2a01:c23:740a:a103:d16d:477a:7034:ddad) has joined #archlinux
+2020-05-24 21:52:36	<--	venmx (~bertie@host86-130-218-210.range86-130.btcentralplus.com) has quit (Ping timeout: 258 seconds)
+2020-05-25 06:44:10	--	irc: disconnected from server
+2020-05-25 06:44:38	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #archlinux
+2020-05-25 06:44:38	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-05-25 06:44:38	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Sun, 16 Feb 2020 21:03:05
+2020-05-25 06:44:38	--	Channel #archlinux: 1896 nicks (2 ops, 0 voices, 1894 normals)
+2020-05-25 06:44:44	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2020-05-25 06:45:06	-->	aasutosh (~aa@27.34.104.118) has joined #archlinux
+2020-05-25 06:45:54	<--	theorangeone (~quassel@host81-143-201-103.in-addr.btopenworld.com) has quit (Read error: Connection reset by peer)
+2020-05-25 06:47:15	-->	vistefan1 (~Thunderbi@2.56.212.158) has joined #archlinux
+2020-05-25 06:47:47	-->	Volgaar (~volgaar@104.66.13.93.rev.sfr.net) has joined #archlinux
+2020-05-25 06:48:02	<--	aasutossh (~aa@27.34.68.198) has quit (Ping timeout: 272 seconds)
+2020-05-25 06:48:30	<--	vistefan (~Thunderbi@185.63.217.124) has quit (Ping timeout: 260 seconds)
+2020-05-25 06:48:31	--	vistefan1 is now known as vistefan
+2020-05-25 06:48:42	<--	SergioCabral (~SergioCab@104.208.247.58) has quit (Quit: Leaving)
+2020-05-25 06:49:20	<--	sharktamer (~sharktame@cpc157207-watf11-2-0-cust5.15-2.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2020-05-25 06:50:14	-->	agjacome (~agjacome@229.red-81-32-112.dynamicip.rima-tde.net) has joined #archlinux
+2020-05-25 06:50:20	-->	sharktamer (~sharktame@cpc157207-watf11-2-0-cust5.15-2.cable.virginm.net) has joined #archlinux
+2020-05-25 06:50:29	-->	theorangeone (~quassel@host81-143-201-103.in-addr.btopenworld.com) has joined #archlinux
+2020-05-25 06:51:32	-->	piokozi (~pio@66.242.187.81.in-addr.arpa) has joined #archlinux
+2020-05-25 06:52:45	-->	d9k_ (~d9k@85-131-103-132.bb.dnainternet.fi) has joined #archlinux
+2020-05-25 06:52:52	<--	orivej (orivej@gateway/vpn/mullvad/orivej) has quit (Quit: No Ping reply in 180 seconds.)
+2020-05-25 06:53:01	--	ponyrider is now known as ghostrider
+2020-05-25 06:53:20	<--	d9k (~d9k@178-55-222-117.bb.dnainternet.fi) has quit (Killed (beckett.freenode.net (Nickname regained by services)))
+2020-05-25 06:53:20	--	d9k_ is now known as d9k
+2020-05-25 06:53:33	<--	bubi67 (~klo_jnk@139.47.24.94) has quit (Quit: Leaving.)
+2020-05-25 06:54:03	-->	SergioCabral (~SergioCab@104.208.247.58) has joined #archlinux
+2020-05-25 06:54:11	-->	orivej (orivej@gateway/vpn/mullvad/orivej) has joined #archlinux
+2020-05-25 06:54:55	<--	SergioCabral (~SergioCab@104.208.247.58) has quit (Remote host closed the connection)
+2020-05-25 06:55:04	-->	akemrir (~akemrir@user-5-173-29-173.play-internet.pl) has joined #archlinux
+2020-05-25 06:55:18	-->	SergioCabral (~SergioCab@104.208.247.58) has joined #archlinux
+2020-05-25 06:55:34	-->	Scotty_Trees (~Scotty_Tr@user-24-96-5-46.knology.net) has joined #archlinux
+2020-05-25 06:56:32	-->	johancb (~johan@2a02:810d:ec0:a194:e434:f48c:a42a:4516) has joined #archlinux
+2020-05-25 06:56:48	-->	igemnace (~igemnace@112.202.193.163) has joined #archlinux
+2020-05-25 06:57:04	-->	hansol (~hansol@178.239.116.142) has joined #archlinux
+2020-05-25 06:57:33	akemrir	hi, where I can find how to connect to vpn using strongswan in netctl? I have certificates and settings, but I don't know where to start.
+2020-05-25 06:57:55	grawity	start with... not using netctl for this task
+2020-05-25 06:58:05	sheep	I don't think netctl has integration with strongswan
+2020-05-25 06:58:14	ghostrider	why netctl hate? curious
+2020-05-25 06:58:51	akemrir	too complicated on netctl? openconnect was very easy to tunnel on tun interface
+2020-05-25 06:59:00	akemrir	with netctl of course
+2020-05-25 06:59:11	grawity	you know, when you jump to conclusions like that...
+2020-05-25 06:59:16	sheep	how did you set up openconnect with nectl?
+2020-05-25 06:59:50	sheep	is netctl itself managing the openconnect connection?
+2020-05-25 07:00:22	grawity	IMHO, strongswan (IPSec) is a bit of a confusing mess in general, and it really doesn't help that it wasn't ever built with tunnel-type VPNs in mind – that's kinda bolted on, or I'd even say "stuck on with chewing-gum"
+2020-05-25 07:00:48	grawity	so if you directly write a swanctl.conf then at least you can make use of strongswan's regular documentation and IRC channel
+2020-05-25 07:01:07	<--	nkuld4 (~nkuld4@2601:447:8100:ce0:af7a:1c40:84f8:e6f7) has quit (Ping timeout: 260 seconds)
+2020-05-25 07:01:14	<--	SergioCabral (~SergioCab@104.208.247.58) has quit (Remote host closed the connection)
+2020-05-25 07:01:20	grawity	hmm, actually maybe you could use charon-cmd as a CLI tool similar to openconnect
+2020-05-25 07:01:30	<--	cfoch (uid153227@gateway/web/irccloud.com/x-hvzeznhpymrcbqrg) has quit (Quit: Connection closed for inactivity)
+2020-05-25 07:02:13	-->	SergioCabral (~SergioCab@104.208.247.58) has joined #archlinux
+2020-05-25 07:02:29	akemrir	sheep: https://pastebin.com/HfGHAUxk
+2020-05-25 07:02:30	@EMIYA	repasted ⇒ https://0x0.st/ip9b.txt
+2020-05-25 07:02:30	@phrik	Title: Description='VPN connection' Interface=tun1 Connection=tuntap Mode=tun #User - Pastebin.com (at pastebin.com)
+2020-05-25 07:02:54	sheep	iirc strongswan doesn't create a separate interface
+2020-05-25 07:03:02	grawity	that's one of the issues
+2020-05-25 07:03:17	grawity	you *could* make it use xfrmi interfaces somehow, but probably not via charon-cmd
+2020-05-25 07:03:46	akemrir	yeah, I don't have a choice with server, I'am on client side only
+2020-05-25 07:04:16	-->	nkuld4 (~nkuld4@2601:447:8100:ce0:af7a:1c40:84f8:e6f7) has joined #archlinux
+2020-05-25 07:05:36	akemrir	so swanctl.conf + charon-cmd , I'll dig into this, thanks for suggestion
+2020-05-25 07:06:25	sheep	you may want to consider networkmanager
+2020-05-25 07:06:31	akemrir	and yes, netctl is managing connection allowing for me to connect to hosts on vpn
+2020-05-25 07:07:27	akemrir	I've seen addon for networkmanager, maybe that would do the job, I'll took this into account too
+2020-05-25 07:07:39	-->	Ruuchan (~Ruuchan@unaffiliated/ruuchan) has joined #archlinux
+2020-05-25 07:08:23	<--	mcquinn (~Thunderbi@p200300c54f1be300673725d74f640be1.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2020-05-25 07:08:37	akemrir	thanks
+2020-05-25 07:08:40	<--	madalu (~madalu@gateway/tor-sasl/madalu) has quit (Remote host closed the connection)
+2020-05-26 19:15:56	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #archlinux
+2020-05-26 19:15:56	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-05-26 19:15:56	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Sun, 16 Feb 2020 21:03:05
+2020-05-26 19:15:56	--	Channel #archlinux: 1825 nicks (2 ops, 0 voices, 1823 normals)
+2020-05-26 19:15:57	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2020-05-26 19:16:11	mingdao	pandeiro: `pacman -Syu`
+2020-05-26 19:16:36	pandeiro	Yeah I did a `pacman -Syu`
+2020-05-26 19:16:53	pandeiro	However I changed mirrors and did another, and there is a whole new changeset to download
+2020-05-26 19:17:07	thurstylark	some mirrors are faster than others
+2020-05-26 19:17:15	pandeiro	In between, in addition to changing mirrors, I also did `pacman-db-upgrade`
+2020-05-26 19:17:22	<--	xelra (~xelra@unaffiliated/xelra) has quit (Remote host closed the connection)
+2020-05-26 19:17:27	pandeiro	...but I have no idea what that actually does :D
+2020-05-26 19:17:36	<--	cfoch (~cfoch@190.233.166.68) has quit (Remote host closed the connection)
+2020-05-26 19:18:06	-->	cfoch (~cfoch@190.233.166.68) has joined #archlinux
+2020-05-26 19:18:07	-->	xelra (~xelra@unaffiliated/xelra) has joined #archlinux
+2020-05-26 19:18:29	<--	joey (~joey@gateway/tor-sasl/joey7e4/x-06108907) has quit (Remote host closed the connection)
+2020-05-26 19:18:39	-->	scunc (~scunc@173-27-28-177.client.mchsi.com) has joined #archlinux
+2020-05-26 19:19:04	<--	nitdega (~nitdega@2600:1700:3570:fa7c:9208:6591:7c8c:3218) has quit (Quit: ZNC - 1.6.0 - http://znc.in)
+2020-05-26 19:19:55	pandeiro	Is it necessary to run `pacman-db-upgrade` to ensure one has the latest package list?
+2020-05-26 19:20:13	mingdao	pandeiro: `pacman-db-upgrade --help`
+2020-05-26 19:20:31	pandeiro	I'm just confused that the version resolution on an out-of-date mirror would point to a package that mirror doesn't have
+2020-05-26 19:21:04	<--	scunc (~scunc@173-27-28-177.client.mchsi.com) has quit (Quit: Leaving)
+2020-05-26 19:23:13	-->	thegala (~mirko@93-143-34-220.adsl.net.t-com.hr) has joined #archlinux
+2020-05-26 19:24:04	<--	aphirst (~aphirst@unaffiliated/aphirst) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-05-26 19:24:25	-->	aphirst (~aphirst@unaffiliated/aphirst) has joined #archlinux
+2020-05-26 19:24:33	<--	andril (~andril@c-66-229-99-96.hsd1.fl.comcast.net) has quit (Ping timeout: 256 seconds)
+2020-05-26 19:24:38	<--	christoph_ (~christoph@37.209.46.140) has quit (Ping timeout: 260 seconds)
+2020-05-26 19:25:24	<--	macc24 (~random@unaffiliated/maccraft) has quit (Quit: WeeChat 2.8)
+2020-05-26 19:26:49	<--	drocan (~drocan@176.43.216.10) has quit (Ping timeout: 256 seconds)
+2020-05-26 19:27:12	-->	CheeseEBoi (~CheeseEBo@024-177-241-119.res.spectrum.com) has joined #archlinux
+2020-05-26 19:27:13	-->	sevu (~sevu@2a01:c23:5c43:ee00:781d:24ff:fed2:5c17) has joined #archlinux
+2020-05-26 19:27:26	-->	damon (~damon@207-153-11-46.fttp.usinternet.com) has joined #archlinux
+2020-05-26 19:28:26	thurstylark	f1refly: can you post `pacmd list sinks` before and after triggering the error state?
+2020-05-26 19:29:31	<--	shiki (~sevu@x4dbf80ee.dyn.telefonica.de) has quit (Ping timeout: 272 seconds)
+2020-05-26 19:30:36	<--	Forsaken87 (~quassel@2a02:908:186c:a6a0:c121:c8f9:5ae8:2899) has quit (Ping timeout: 246 seconds)
+2020-05-26 19:30:55	-->	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has joined #archlinux
+2020-05-26 19:31:10	-->	joey (~joey@gateway/tor-sasl/joey7e4/x-06108907) has joined #archlinux
+2020-05-26 19:31:32	f1refly	thurstylark: I'm afraid no, I can't suspend at the moment as I've multiple dd jobs running that will last for several more hours
+2020-05-26 19:31:38	<--	venmx (~bertie@5ec1cd80.skybroadband.com) has quit (Quit: leaving)
+2020-05-26 19:31:47	-->	nitdega (~nitdega@2600:1700:3570:fa7c:9208:6591:7c8c:3218) has joined #archlinux
+2020-05-26 19:32:01	-->	venmx (~bertie@5ec1cd80.skybroadband.com) has joined #archlinux
+2020-05-26 19:32:04	<--	Senketsu (~Senny@2001:818:e8af:b900:a4d:1ad7:ddb2:6bf3) has quit (Quit: WeeChat 2.8)
+2020-05-26 19:32:06	thurstylark	f1refly: ahh. Are there still zombie sinks that show up in pacmd list sinks?
+2020-05-26 19:32:27	-->	igemnace (~igemnace@112.202.193.163) has joined #archlinux
+2020-05-26 19:32:53	-->	Senketsu (~Senny@2001:818:e8af:b900:a4d:1ad7:ddb2:6bf3) has joined #archlinux
+2020-05-26 19:33:06	<--	venmx (~bertie@5ec1cd80.skybroadband.com) has quit (Client Quit)
+2020-05-26 19:34:41	<--	pandeiro (17f1ca5a@cpe-23-241-202-90.socal.res.rr.com) has quit (Remote host closed the connection)
+2020-05-26 19:34:59	<--	h4rd3n3D (~weechat@gateway/tor-sasl/h4rd3n3d) has quit (Remote host closed the connection)
+2020-05-26 19:35:14	<--	digitalbot (~bot@static-host-74-221-181-105.epbinternet.com) has quit (Ping timeout: 256 seconds)
+2020-05-26 19:35:24	<--	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has quit (Quit: Leaving.)

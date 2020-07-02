@@ -1,0 +1,418 @@
+2020-05-05 10:37:34	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined ##linux
+2020-05-05 10:37:34	--	Topic for ##linux is "Channel website: https://freenode.linux.community -- Pastebin: "<command> | nc termbin.com 9999" (please don't use pastebin.com) -- Need an op? Join ##linux-ops"
+2020-05-05 10:37:34	--	Topic set by sauvin on Mon, 30 Mar 2020 03:56:02
+2020-05-05 10:37:35	--	Channel ##linux: 1850 nicks (0 ops, 0 voices, 1850 normals)
+2020-05-05 10:37:35	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2020-05-05 10:37:35	--	URL for ##linux: https://freenode.linux.community
+2020-05-05 10:37:36	--	Channel created on Fri, 09 Feb 2001 18:16:24
+2020-05-05 10:37:47	-->	binTrl (~binaryTra@2409:4064:211e:874c:14b0:2c8:74b2:573a) has joined ##linux
+2020-05-05 10:37:59	<--	lockywolf (~lockywolf@116.230.183.64) has quit (Remote host closed the connection)
+2020-05-05 10:38:00	<--	fdora1986 (4e0b08f9@gateway/web/cgi-irc/kiwiirc.com/ip.78.11.8.249) has quit (Quit: Connection closed)
+2020-05-05 10:38:01	<--	Guest20_ (~textual@103.215.168.1) has quit (Quit: ZZZzzz…)
+2020-05-05 10:38:07	-->	tieinv (~username@unaffiliated/tieinv) has joined ##linux
+2020-05-05 10:38:10	peetaur	Aktive: what kind of hardware is it?
+2020-05-05 10:38:12	Dan39	peetaur: i think your syntax is a bit backwards
+2020-05-05 10:38:18	-->	lockywolf (~lockywolf@116.230.183.64) has joined ##linux
+2020-05-05 10:38:21	paulcarroty	X11 currently in bugfix-only mode
+2020-05-05 10:38:31	Aktive	this is not suppose to happen
+2020-05-05 10:38:32	BadBob	I was a student at MIT and I was a guinea-pig for early X.  They had networked workstations all over campus.  They were harder to use than PCs but - they were Unix workstations!
+2020-05-05 10:38:33	peetaur	Dan39: how?  "set down" and "dev enp5s0" can go in whichever order
+2020-05-05 10:38:38	Aktive	should I do autoneg off ?
+2020-05-05 10:38:42	Aktive	and set it my self ?
+2020-05-05 10:38:48	BadBob	some of those early X apps were really rough
+2020-05-05 10:38:56	last1	is 2000 iops over nfs considered a lot of iops these days or not ?
+2020-05-05 10:38:59	peetaur	Aktive: you can try but if the other hardware only supports 100, then all you'll get with auto neg off is a failed connection instead of a slow one
+2020-05-05 10:39:07	last1	writes/sec that is
+2020-05-05 10:39:07	Dan39	peetaur: oh, i always saw it like `ip link set enp1s0 up` instead
+2020-05-05 10:39:18	Aktive	so how can I do autoneg off ?
+2020-05-05 10:39:30	Aktive	othtool - enp5s0  autoneg off ?
+2020-05-05 10:39:30	CrystalMath	codeaholic: this is meant to primarily be for fans of the PC VGA hardware interface
+2020-05-05 10:39:31	Dan39	that's the way the help says, so that's what i've always used
+2020-05-05 10:39:34	-->	AABatteries (~AABatteri@79.191.79.65.ipv4.supernova.orange.pl) has joined ##linux
+2020-05-05 10:39:41	Aktive	*ethtool -s enp5s0 autoneg off ?
+2020-05-05 10:39:42	CrystalMath	codeaholic: such as myself
+2020-05-05 10:39:43	-->	felix_221986 (4e0b08f9@gateway/web/cgi-irc/kiwiirc.com/ip.78.11.8.249) has joined ##linux
+2020-05-05 10:39:49	<--	chomwitt (~chomwitt@2a02:587:dc44:b700:89c6:fec0:103d:816f) has quit (Remote host closed the connection)
+2020-05-05 10:39:57	<--	AnySomebody (~AnySomebo@p200300C287468947A16412FD734A37FA.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2020-05-05 10:40:11	peetaur	Dan39: well apparently that command is valid too...I always write "dev"
+2020-05-05 10:40:16	-->	AnySomebody (~AnySomebo@p200300C287468947A16412FD734A37FA.dip0.t-ipconnect.de) has joined ##linux
+2020-05-05 10:40:24	<--	lockywolf (~lockywolf@116.230.183.64) has quit (Remote host closed the connection)
+2020-05-05 10:40:37	-->	chomwitt (~chomwitt@2a02:587:dc44:b700:dd60:7673:1676:a91b) has joined ##linux
+2020-05-05 10:40:39	Dan39	peetaur: still, `ip link set dev enp1s0 up` vs you had `ip link set up dev enp1s0`
+2020-05-05 10:40:53	-->	lockywolf (~lockywolf@116.230.183.64) has joined ##linux
+2020-05-05 10:40:54	-->	nabil_ (~nabil@203.106.53.115) has joined ##linux
+2020-05-05 10:41:15	peetaur	heh that's a strange syntax...somehow that seems valid too
+2020-05-05 10:41:28	Dan39	both work, ok
+2020-05-05 10:41:53	Dan39	sorry i assumed it wouldn't...
+2020-05-05 10:41:54	<--	treehug88 (~textual@pool-71-105-170-196.nycmny.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2020-05-05 10:42:25	-->	Descartes (~chatzilla@S0106f0f2493c2d93.th.shawcable.net) has joined ##linux
+2020-05-05 10:42:43	<--	systemdPlusLinux (~systemdPl@ip98-165-150-197.ph.ph.cox.net) has quit (Ping timeout: 260 seconds)
+2020-05-05 10:43:14	-->	frmus (~frmus@unaffiliated/frmus) has joined ##linux
+2020-05-05 10:43:28	 *	triceratux does a pacman install of xedit & it brings down the athena widgets :)
+2020-05-05 10:43:36	-->	systemdPlusLinux (~systemdPl@ip98-165-150-197.ph.ph.cox.net) has joined ##linux
+2020-05-05 10:44:15	<--	nightowl1 (~nightowl1@193.192.112.162) has quit (Quit: Leaving)
+2020-05-05 10:44:24	CrystalMath	xedit is nice, but not better than gvim :P
+2020-05-05 10:44:29	CrystalMath	is there an xvim?
+2020-05-05 10:44:32	CrystalMath	that would be awesome
+2020-05-05 10:44:32	FloridaMan	*angel loses wings*
+2020-05-05 10:44:43	<--	sunn (sunn@gateway/vpn/privateinternetaccess/sunn) has quit (Ping timeout: 272 seconds)
+2020-05-05 10:45:19	-->	SAngeli (~SAngeli@185.11.224.6) has joined ##linux
+2020-05-05 10:45:33	peetaur	well I said one thing wrong...I said it can go in any order, but actually not for "set"... set is like a subcommand rather than an argument.
+2020-05-05 10:45:53	FloridaMan	LIES. I knew it.
+2020-05-05 10:45:55	peetaur	so set (or list, add, del, etc.) is first
+2020-05-05 10:46:11	-->	Guest20 (~textual@192.146.154.3) has joined ##linux
+2020-05-05 10:46:25	-->	sunn (~sunn@cpc97878-walt21-2-0-cust10.13-2.cable.virginm.net) has joined ##linux
+2020-05-05 10:47:47	<--	webusr (~WebUser@some.moron.cc) has quit (Quit: User Excited)
+2020-05-05 10:48:16	<--	Aktive (~aktive@86.81.29.172) has quit (Read error: Connection reset by peer)
+2020-05-05 10:48:21	<--	dedowsdi (~dedowsdi@183.192.228.63) has quit (Quit: WeeChat 1.9.1)
+2020-05-05 10:48:30	-->	Guest20_ (~textual@103.215.168.1) has joined ##linux
+2020-05-05 10:49:08	-->	Aktive (~aktive@86.81.29.172) has joined ##linux
+2020-05-05 10:49:12	-->	webusr (~WebUser@some.moron.cc) has joined ##linux
+2020-05-05 10:49:12	Aktive	it worked
+2020-05-05 10:49:13	-->	enko (~enko@unaffiliated/enko) has joined ##linux
+2020-05-05 10:49:28	Aktive	ye ahaha
+2020-05-05 10:49:32	last1	I am trying to debug a high load issue, cpu is 97% idle so it must be the disk drives, right ? but with iostat -x -d I see all of them at near 0% util
+2020-05-05 10:49:35	peetaur	pastebin ethtool output again? why should that work? :D
+2020-05-05 10:49:37	last1	what else can cause the high load ?
+2020-05-05 10:49:43	<--	chomwitt (~chomwitt@2a02:587:dc44:b700:dd60:7673:1676:a91b) has quit (Ping timeout: 260 seconds)
+2020-05-05 10:50:22	<--	hyper_dave (~hyper_dav@196.188.242.167) has quit (Ping timeout: 260 seconds)
+2020-05-05 10:50:48	<--	FloridaMan (~FloridaMa@75.76.62.33) has quit (Remote host closed the connection)
+2020-05-05 10:50:49	Aktive	55 MB/s
+2020-05-05 10:50:51	peetaur	last1: ps aux | grep D
+2020-05-05 10:50:57	Aktive	61 !
+2020-05-05 10:50:59	<--	Guest20 (~textual@192.146.154.3) has quit (Ping timeout: 256 seconds)
+2020-05-05 10:51:06	-->	chomwitt (~chomwitt@2a02:587:dc44:b700:189c:534:a300:83d3) has joined ##linux
+2020-05-05 10:51:15	peetaur	last1: load is basically just the average number of processes that are waiting for something (io, network, disk, hung NFS connection, etc.)
+2020-05-05 10:51:30	<--	czwolf (~Cz@2607:5300:60:1176::1) has quit (Ping timeout: 244 seconds)
+2020-05-05 10:51:36	last1	alright, so how can I determine where the load is coming from ?
+2020-05-05 10:51:47	-->	n0nr4nd (~n0nr4nd@167-179-161-252.a7b3a1.bne.nbn.aussiebb.net) has joined ##linux
+2020-05-05 10:52:01	peetaur	last1: that's what  `ps aux | grep D`  was for ... list those processes
+2020-05-05 10:52:59	last1	let me see, this is an output from iostat: https://pastebin.com/nitMJNKA
+2020-05-05 10:53:05	last1	it doesn't seem bad, right ?
+2020-05-05 10:53:48	<--	nulleip (~luiz@179.215.126.112) has left ##linux
+2020-05-05 10:53:50	peetaur	what is fioa? it's pretty loaded...if it's a virtual device, it might show fake %util maybe
+2020-05-05 10:54:03	<--	webusr (~WebUser@some.moron.cc) has quit (Quit: User Excited)
+2020-05-05 10:54:12	peetaur	like bcache always seems to show either 0% or 100% ... even if it's just slowly flushing a non-full normal cache to disk as it does 99% of the time, it says 100%
+2020-05-05 10:54:19	-->	oxek (qjvl@gateway/vpn/privateinternetaccess/oxek) has joined ##linux
+2020-05-05 10:54:26	last1	fioa is a fusion-io card
+2020-05-05 10:54:37	last1	theoretically it can take 100k+ iops
+2020-05-05 10:55:12	-->	Andrew-H3 (~andrew-h3@c-98-236-76-86.hsd1.wv.comcast.net) has joined ##linux
+2020-05-05 10:55:23	-->	Beam_Inn_ (~Beam_Inn@unaffiliated/beam-inn/x-3943829) has joined ##linux
+2020-05-05 10:55:34	-->	HaxNet (~HaxNet@131.106.46.227) has joined ##linux
+2020-05-05 10:55:34	-->	Rozha (~leonid@i.am.fromhell.lv) has joined ##linux
+2020-05-05 10:55:34	<--	HaxNet (~HaxNet@131.106.46.227) has quit (Client Quit)
+2020-05-05 10:55:35	last1	https://pastebin.com/8hH9wwJt for the ps aux
+2020-05-05 10:55:39	<--	ice9 (~ice9@unaffiliated/ice9) has quit (Ping timeout: 260 seconds)
+2020-05-05 10:55:43	-->	webusr (~WebUser@some.moron.cc) has joined ##linux
+2020-05-05 10:56:15	last1	not sure what that txg_sync is
+2020-05-05 10:56:23	<--	jkwnki (~jkwnki@p200300CD472B60001E1BB5FFFE7A47F7.dip0.t-ipconnect.de) has quit (Ping timeout: 272 seconds)
+2020-05-05 10:56:44	-->	abraxxas (~abraxxas@p200300E7073687007D4E4813DA70CE86.dip0.t-ipconnect.de) has joined ##linux
+2020-05-05 10:57:55	-->	ledeni (~ledeni@fedora/ledeni) has joined ##linux
+2020-05-05 10:57:57	triceratux	BadBob: the xedit manpage says it all :) "RESTRICTIONS Xedit is not a replacement to Emacs. COPYRIGHT Copyright 1988, Digital Equipment Corporation."
+2020-05-05 10:58:04	<--	B_m_N (~Beam_Inn@unaffiliated/beam-inn/x-3943829) has quit (Read error: Connection reset by peer)
+2020-05-05 10:58:08	--	Beam_Inn_ is now known as B_m_N
+2020-05-05 10:58:15	-->	casjay (~Thunderbi@cpe-24-194-148-155.nycap.res.rr.com) has joined ##linux
+2020-05-05 10:58:19	-->	BOKALDO (~BOKALDO@87.110.102.49) has joined ##linux
+2020-05-05 10:58:22	-->	vimart (~vimart@148.252.128.39) has joined ##linux
+2020-05-05 10:58:28	<--	chomwitt (~chomwitt@2a02:587:dc44:b700:189c:534:a300:83d3) has quit (Ping timeout: 260 seconds)
+2020-05-05 10:58:28	-->	justsomeguy (~justsomeg@unaffiliated/--/x-3805311) has joined ##linux
+2020-05-05 10:58:30	<--	ijens (~ijens@unaffiliated/ijens) has quit (Remote host closed the connection)
+2020-05-05 10:58:42	peetaur	last1: some kernel thread
+2020-05-05 10:58:42	-->	methyl__ (~methyl@2601:249:100:49:68f8:42f0:4250:df9c) has joined ##linux
+2020-05-05 10:58:52	peetaur	so ...that looks like load ought to be around 1, not high
+2020-05-05 10:59:04	-->	DarwinElf (d@fsf/member/darwin) has joined ##linux
+2020-05-05 10:59:32	-->	chomwitt (~chomwitt@2a02:587:dc44:b700:5456:44d6:7eb:cff6) has joined ##linux
+2020-05-05 10:59:36	-->	tonythomas (uid25971@wikimedia/-01tonythomas) has joined ##linux
+2020-05-05 11:00:27	<--	AnySomebody (~AnySomebo@p200300C287468947A16412FD734A37FA.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2020-05-05 11:00:49	-->	AnySomebody (~AnySomebo@p200300C287468947A16412FD734A37FA.dip0.t-ipconnect.de) has joined ##linux
+2020-05-05 11:01:30	<--	yshui (~yshui@cpc158779-hari22-2-0-cust230.20-2.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2020-05-05 11:02:11	-->	nulleip (~luiz@179.215.126.112) has joined ##linux
+2020-05-05 11:02:23	-->	czwolf (~Cz@2607:5300:60:1176::1) has joined ##linux
+2020-05-05 11:02:28	<--	methyl_ (~methyl@89.187.182.97) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:02:29	oxek	Has there ever been a documented case of any large distro distributing malware in its main repos (not user contributed repos)?
+2020-05-05 11:02:30	-->	fmcs_ (~fmcs@2a00:23c5:ed92:b100:8401:749a:ad2d:707) has joined ##linux
+2020-05-05 11:02:33	phogg	triceratux: surprisingly xedit responds to a subset of emacs keybindings. I never tried it before. That's a nice change.
+2020-05-05 11:03:11	<--	webusr (~WebUser@some.moron.cc) has quit (Quit: User Excited)
+2020-05-05 11:03:28	phogg	it even has a real kill ring
+2020-05-05 11:03:42	triceratux	rofl
+2020-05-05 11:04:07	<--	chomwitt (~chomwitt@2a02:587:dc44:b700:5456:44d6:7eb:cff6) has quit (Ping timeout: 240 seconds)
+2020-05-05 11:04:08	triceratux	it understands stuff in .Xresources. its configurable o.O
+2020-05-05 11:04:24	-->	brool (~grendel@2600:1700:7d20:ae60:218f:1c53:761e:9a78) has joined ##linux
+2020-05-05 11:04:28	phogg	triceratux: AND it has an ed/vi -like command mode
+2020-05-05 11:04:39	makr8100	<oxek> Has there ever been a documented case of any large distro distributing malware in its main repos (not user contributed repos)?
+2020-05-05 11:04:44	makr8100	yeah, openssh :P
+2020-05-05 11:04:47	phogg	surprisingly reasonable for a throwaway demo editor
+2020-05-05 11:05:17	<--	v64 (~v64@2607:f7a0:2:4::a07e) has quit (Quit: reebot)
+2020-05-05 11:05:21	phogg	if you put the scrollbar on the other side and move the status bar to the bottom of the window it's almost a modern application
+2020-05-05 11:05:24	<--	dendazen (~dendazen@pool-72-76-93-243.nwrknj.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2020-05-05 11:05:53	<--	fmcs (~fmcs@2a00:23c5:ed92:b100:8401:749a:ad2d:707) has quit (Ping timeout: 272 seconds)
+2020-05-05 11:05:55	-->	chomwitt (~chomwitt@2a02:587:dc44:b700:80c6:b045:7ea9:7dc3) has joined ##linux
+2020-05-05 11:06:03	-->	dendazen (~dendazen@pool-72-76-93-243.nwrknj.fios.verizon.net) has joined ##linux
+2020-05-05 11:06:09	triceratux	they dont write em like that anymore
+2020-05-05 11:06:19	phogg	sure they do, they call them spacemacs
+2020-05-05 11:06:35	-->	User49 (~FieldSobe@unaffiliated/user49) has joined ##linux
+2020-05-05 11:06:44	phogg	or do you mean ugly? People make plenty of ugly things today
+2020-05-05 11:06:50	<--	AK5Z (~goatman@unaffiliated/goatman) has quit (Ping timeout: 264 seconds)
+2020-05-05 11:06:59	-->	Goatman (~goatman@unaffiliated/goatman) has joined ##linux
+2020-05-05 11:07:02	phogg	in fact the xedit UI is almost modern in how flat and finger-friendly it looks
+2020-05-05 11:07:19	brutser	i dont understand this, if i install same installation on laptop (debian+openbox), user directories are created, such as documents, downloads etc. - but, neither xdg-utils or xdg-user-dirs is installed. -- if i do the same install on kvm guest, NO user dirs are created and the only way to force this is to install xdg-user-dirs package, at least,
+2020-05-05 11:07:19	brutser	that's my only way to force it :p
+2020-05-05 11:07:33	brutser	so what is creating the user dirs on the laptop and not on the virtual machine?
+2020-05-05 11:07:39	rascul	oh xedit has syntax highlighting
+2020-05-05 11:07:56	rascul	and auto indenting and stuff
+2020-05-05 11:08:08	<--	FieldSobers (~FieldSobe@unaffiliated/user49) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:08:14	phogg	wow, so it does
+2020-05-05 11:08:29	rascul	i've never used it, i thought it was always a crappy notebook
+2020-05-05 11:08:34	rascul	er, notepad replacement
+2020-05-05 11:08:43	phogg	it also does brace/paren highlighting
+2020-05-05 11:08:47	rascul	yep i noticed
+2020-05-05 11:08:48	<--	czwolf (~Cz@2607:5300:60:1176::1) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:08:58	phogg	I had no idea it was this featureful
+2020-05-05 11:09:14	-->	yans (~yans@unaffiliated/yinsen) has joined ##linux
+2020-05-05 11:09:39	phogg	I don't see a way to mark a region except with the mouse. So that's still a dealbreaker.
+2020-05-05 11:10:10	-->	HighMemoryDaemon (~HighMemor@071-088-032-095.res.spectrum.com) has joined ##linux
+2020-05-05 11:10:14	phogg	but in a world where I have X installed but not emacs I could live with it. For a while.
+2020-05-05 11:10:21	-->	moistoreos (~moist_ore@99-160-143-51.lightspeed.nsvltn.sbcglobal.net) has joined ##linux
+2020-05-05 11:10:27	-->	webusr (~WebUser@some.moron.cc) has joined ##linux
+2020-05-05 11:11:08	<--	mnemonic (~semeion@unaffiliated/semeion) has quit (Quit: WeeChat 2.8)
+2020-05-05 11:11:39	CrystalMath	okay
+2020-05-05 11:11:43	CrystalMath	now gvim is vim.athena :)
+2020-05-05 11:11:52	-->	outofsorts (~outofsort@184.75.223.219) has joined ##linux
+2020-05-05 11:12:47	<--	felix_221986 (4e0b08f9@gateway/web/cgi-irc/kiwiirc.com/ip.78.11.8.249) has quit (Quit: Connection closed)
+2020-05-05 11:13:03	<--	chomwitt (~chomwitt@2a02:587:dc44:b700:80c6:b045:7ea9:7dc3) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:13:34	<--	thiras_ (~thiras@unaffiliated/thiras) has quit (Remote host closed the connection)
+2020-05-05 11:13:41	<--	doomlist3 (~user@117.200.12.92) has quit (Ping timeout: 246 seconds)
+2020-05-05 11:14:22	-->	chomwitt (~chomwitt@2a02:587:dc44:b700:39ea:6fac:4c2a:2de9) has joined ##linux
+2020-05-05 11:14:27	-->	czwolf (~Cz@2607:5300:60:1176::1) has joined ##linux
+2020-05-05 11:15:17	<--	outofsorts_ (~outofsort@184.75.223.219) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:15:19	<--	yuljk (~yuljk@unaffiliated/yuljk) has quit (Quit: %Adieu! I have too grieved a heart to take a tedious leave.%)
+2020-05-05 11:15:40	-->	thiras (~thiras@unaffiliated/thiras) has joined ##linux
+2020-05-05 11:15:42	-->	yuljk (~yuljk@unaffiliated/yuljk) has joined ##linux
+2020-05-05 11:15:42	CrystalMath	i'm getting rid of GTK and replacing it with athena apps
+2020-05-05 11:15:53	-->	omer681 (~omer681@unaffiliated/omer681) has joined ##linux
+2020-05-05 11:15:55	phogg	that will save some RAM
+2020-05-05 11:15:58	dubiago	<3
+2020-05-05 11:16:18	omer681	what's the "0-4" part in "linux 3.2.0-4"? I can only find "3.2" on the linux kernel website
+2020-05-05 11:16:21	phogg	is there still an athena web browser? I forget what it was called. Supported HTML3, though.
+2020-05-05 11:16:27	<--	AnySomebody (~AnySomebo@p200300C287468947A16412FD734A37FA.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2020-05-05 11:16:37	phogg	omer681: 3.2.0 is the version, -4 is likely a packaging revision
+2020-05-05 11:16:53	phogg	omer681: and 3.2 is the same as 3.2.0
+2020-05-05 11:16:59	<--	AlbeiEdward (~Thunderbi@2a02:2f0b:880f:7100:c5d8:f0ea:d105:45ce) has quit (Remote host closed the connection)
+2020-05-05 11:17:01	CrystalMath	phogg: sometimes i browse with Netscape 1.0
+2020-05-05 11:17:05	<--	HighMemoryDaemon (~HighMemor@071-088-032-095.res.spectrum.com) has quit (Quit: HighMemoryDaemon)
+2020-05-05 11:17:08	omer681	phogg: so if I want to compile a module, will downloading the 3.2 sources be enough?
+2020-05-05 11:17:20	CrystalMath	phogg: that's on Windows though, the latest sane version of Windows
+2020-05-05 11:17:25	CrystalMath	phogg: Windows 3.1 :)
+2020-05-05 11:17:57	Albright	Hmm, this Ubuntu server doesn't seem to have a `file` tool. Is that a BSD-ism? Is there a Linux equivalent?
+2020-05-05 11:18:10	-->	outofsorts_ (~outofsort@184.75.223.219) has joined ##linux
+2020-05-05 11:19:25	<--	outofsorts (~outofsort@184.75.223.219) has quit (Ping timeout: 264 seconds)
+2020-05-05 11:19:25	<--	etsum (~miguar@185.21.217.29) has quit (Ping timeout: 264 seconds)
+2020-05-05 11:19:28	<--	chomwitt (~chomwitt@2a02:587:dc44:b700:39ea:6fac:4c2a:2de9) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:19:30	-->	kfrench (~kfrench@2601:142:4201:730:29ae:4df2:91b3:85e9) has joined ##linux
+2020-05-05 11:19:30	ananke	Albright: install it
+2020-05-05 11:19:34	-->	hyper_dave (~hyper_dav@196.188.242.167) has joined ##linux
+2020-05-05 11:20:11	ananke	Albright: it's called 'file' and is present on virtually every distro
+2020-05-05 11:20:38	<--	sunn (~sunn@cpc97878-walt21-2-0-cust10.13-2.cable.virginm.net) has quit (Ping timeout: 264 seconds)
+2020-05-05 11:20:41	-->	chomwitt (~chomwitt@2a02:587:dc44:b700:d4ab:6ba4:c05c:895c) has joined ##linux
+2020-05-05 11:20:59	<--	cryptopsy (~cryptopsy@unaffiliated/cryptopsy) has quit (Quit: cryptopsy)
+2020-05-05 11:21:12	-->	etsum (~miguar@185.21.217.29) has joined ##linux
+2020-05-05 11:22:02	brutser	i dont understand this, if i install same installation on laptop (debian+openbox), user directories are created, such as documents, downloads etc. - but, neither xdg-utils or xdg-user-dirs is installed. -- if i do the same install on kvm guest, NO user dirs are created and the only way to force this is to install xdg-user-dirs package, at least,
+2020-05-05 11:22:02	brutser	that's my only way to force it :p
+2020-05-05 11:22:26	brutser	i also notice on the vm, there is no /etc/xdg/user-dirs.default - this is created on the laptop's install
+2020-05-05 11:22:37	brutser	it's exact the same install script(s), no difference
+2020-05-05 11:22:46	<--	TomyWork (~TomyLobo@p200300E80F19BF0091A525A4F8991FFC.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2020-05-05 11:23:19	brutser	so what process would "decide" to create the default user dirs and why would it not create them inside the vm, but creates them on physical laptop?
+2020-05-05 11:23:33	<--	czwolf (~Cz@2607:5300:60:1176::1) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:23:44	<--	thanche (3ed8cf56@gateway/web/cgi-irc/kiwiirc.com/ip.62.216.207.86) has quit (Quit: Connection closed)
+2020-05-05 11:23:53	-->	artificial_unint (~nate@162.218.217.134) has joined ##linux
+2020-05-05 11:24:19	<--	vimart (~vimart@148.252.128.39) has quit (Quit: WeeChat 1.9.1)
+2020-05-05 11:24:29	<--	akoana (~ah@089144219204.atnat0028.highway.a1.net) has left ##linux ("Leaving")
+2020-05-05 11:24:53	<--	BluesKaj (Blues@gateway/vpn/privateinternetaccess/blueskaj) has quit (Ping timeout: 246 seconds)
+2020-05-05 11:25:15	<--	Aktive (~aktive@86.81.29.172) has quit (Quit: Leaving)
+2020-05-05 11:25:24	-->	kel_ (~eduardo@unaffiliated/kel/x-9886314) has joined ##linux
+2020-05-05 11:25:58	<--	jtle (~quassel@jtle.dk) has quit (Quit: jtle)
+2020-05-05 11:26:26	-->	BluesKaj (~Blues@unaffiliated/blueskaj) has joined ##linux
+2020-05-05 11:26:27	<--	chomwitt (~chomwitt@2a02:587:dc44:b700:d4ab:6ba4:c05c:895c) has quit (Ping timeout: 240 seconds)
+2020-05-05 11:26:38	-->	tomty89 (~user@123202047155.ctinets.com) has joined ##linux
+2020-05-05 11:26:50	rascul	brutser what's in /etc/skel ?
+2020-05-05 11:26:54	<--	x-warrior_ (~x-warrior@unaffiliated/x-warrior) has quit (Quit: ZNC 1.7.x-git-847-5132ea98 - https://znc.in)
+2020-05-05 11:27:04	rascul	any directories like what you're looking for?
+2020-05-05 11:27:20	-->	x-warrior (~x-warrior@unaffiliated/x-warrior) has joined ##linux
+2020-05-05 11:27:29	Oldiesmann	Question... Just bought an SSD to replace a HDD in my laptop. The laptop has a 128GB SDD (where Windows is installed) and a 1TB HDD (where I put Linux, but I'm also leaving half of it for a D drive in Windows, though there's nothing on the Windows partition of that drive at the moment). Would it be better to use dd to clone the drive, or dedicated cloning software?
+2020-05-05 11:27:38	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:27:44	-->	czwolf (~Cz@2607:5300:60:1176::1) has joined ##linux
+2020-05-05 11:28:14	<--	x-warrior (~x-warrior@unaffiliated/x-warrior) has quit (Client Quit)
+2020-05-05 11:29:02	<--	madh2orat (~matt@47.149.49.61) has quit (Quit: Making like a tree...)
+2020-05-05 11:29:27	-->	chomwitt (~chomwitt@2a02:587:dc44:b700:e51c:dddf:6183:2f42) has joined ##linux
+2020-05-05 11:30:00	brutser	rascul: ok let me check
+2020-05-05 11:30:23	peetaur	Oldiesmann: if you aren't resizing, changing boot from MBR to UEFI, etc. then anything ought to work
+2020-05-05 11:30:35	Oldiesmann	Ok
+2020-05-05 11:30:46	peetaur	Oldiesmann: worst case, after dd, you parted on it and it says something is wrong, so you say "yes" to fix, and then run the windows dvd to do auto repair (up to 2 times)
+2020-05-05 11:31:02	-->	MikZyth (~MikZyth@85.115.224.138) has joined ##linux
+2020-05-05 11:31:11	<--	ejr (~ejr@178.165.131.56.wireless.dyn.drei.com) has quit (Quit: leaving)
+2020-05-05 11:31:13	-->	x-warrior (~x-warrior@unaffiliated/x-warrior) has joined ##linux
+2020-05-05 11:31:23	-->	cnnx (~cizzi@unaffiliated/cnnx) has joined ##linux
+2020-05-05 11:31:53	-->	outofsorts (~outofsort@184.75.223.219) has joined ##linux
+2020-05-05 11:32:13	<--	Fjord (~Fjord@c-73-229-254-36.hsd1.co.comcast.net) has quit (Ping timeout: 272 seconds)
+2020-05-05 11:32:14	-->	Fjord2 (~Fjord@c-73-229-254-36.hsd1.co.comcast.net) has joined ##linux
+2020-05-05 11:32:14	cnnx	one of my course questions is asking me what dmesg shows about floppy disk, but if i do dmesg | grep fd on any of my systems i dont get an entry cause i dont have a physical floppy drive, is there a way to simulate a floppy drive from virtualbox debian vm?
+2020-05-05 11:32:21	cnnx	i dont see a floppy disc option
+2020-05-05 11:32:44	<--	lakitu (~lakitu@unaffiliated/lakitu) has quit (Read error: Connection reset by peer)
+2020-05-05 11:33:14	-->	jtle (~quassel@jtle.dk) has joined ##linux
+2020-05-05 11:33:39	-->	lakitu (~lakitu@unaffiliated/lakitu) has joined ##linux
+2020-05-05 11:34:07	<--	outofsorts_ (~outofsort@184.75.223.219) has quit (Ping timeout: 272 seconds)
+2020-05-05 11:34:20	-->	afx_ (~matrixirc@adsl-123.79.107.187.tellas.gr) has joined ##linux
+2020-05-05 11:34:59	-->	fmcs (~fmcs@host86-134-122-31.range86-134.btcentralplus.com) has joined ##linux
+2020-05-05 11:36:41	-->	criti (~Thunderbi@2604:6000:130d:146:b537:258c:789d:284c) has joined ##linux
+2020-05-05 11:37:23	peetaur	cnnx: qemu probably still supports floppy ... I remember a CVE on floppy drives only like 2 years ago
+2020-05-05 11:37:46	cnnx	do any of you have like an external floppy drive?
+2020-05-05 11:37:55	cnnx	i just need the output of dmesg|grep fd or something
+2020-05-05 11:38:03	cnnx	i think i have a 20 year old laptop
+2020-05-05 11:38:07	<--	chomwitt (~chomwitt@2a02:587:dc44:b700:e51c:dddf:6183:2f42) has quit (Ping timeout: 240 seconds)
+2020-05-05 11:38:08	cnnx	with internal drive
+2020-05-05 11:38:11	<--	fmcs_ (~fmcs@2a00:23c5:ed92:b100:8401:749a:ad2d:707) has quit (Ping timeout: 272 seconds)
+2020-05-05 11:38:22	-->	qlixed (~qlixed@2800:810:471:8078::1000) has joined ##linux
+2020-05-05 11:38:38	BadBob	cnnx:  i got rid of a lot of old hardware,  i still have a few floppy disks lying around but nothing to read them with :(
+2020-05-05 11:38:47	BadBob	(there's nothing important on them, i'm sure)
+2020-05-05 11:38:54	cnnx	ok
+2020-05-05 11:39:20	<--	Guest20_ (~textual@103.215.168.1) has quit (Quit: ZZZzzz…)
+2020-05-05 11:39:25	<--	kel_ (~eduardo@unaffiliated/kel/x-9886314) has quit (Remote host closed the connection)
+2020-05-05 11:39:36	<--	tds (~tds@lounge.srv.home.timstallard.me.uk) has quit (Quit: Ping timeout (120 seconds))
+2020-05-05 11:39:45	-->	Silmarilion (~Silmarili@87.116.176.50) has joined ##linux
+2020-05-05 11:39:49	<--	edthix (b7ab7ba4@gateway/web/cgi-irc/kiwiirc.com/ip.183.171.123.164) has quit (Ping timeout: 264 seconds)
+2020-05-05 11:39:58	-->	tds (~tds@lounge.srv.home.timstallard.me.uk) has joined ##linux
+2020-05-05 11:40:08	-->	caterfxo (~caterfxo@unaffiliated/caterfxo) has joined ##linux
+2020-05-05 11:40:12	-->	chomwitt (~chomwitt@2a02:587:dc44:b700:c47f:7ad8:7439:e179) has joined ##linux
+2020-05-05 11:40:23	-->	Guest20 (~textual@103.215.168.1) has joined ##linux
+2020-05-05 11:41:52	--	caterfxo is now known as Guest66327
+2020-05-05 11:41:57	-->	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has joined ##linux
+2020-05-05 11:42:21	brutser	rascul: /etc/skel contains exact same in vm and laptop install
+2020-05-05 11:42:33	brutser	just the defaults
+2020-05-05 11:42:34	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined ##linux
+2020-05-05 11:42:35	-->	PhizzyNoodlePie (~phillip@77.44.49.73) has joined ##linux
+2020-05-05 11:43:11	brutser	i am not really looking for directories, but more for the reason why those xdg user dirs are created on the laptop, but not on the VM
+2020-05-05 11:43:22	brutser	with exactly the same installation
+2020-05-05 11:43:48	--	afx_ is now known as Guest89250
+2020-05-05 11:44:38	<--	razvand (~razvand@62.121.83.2) has quit (Ping timeout: 264 seconds)
+2020-05-05 11:45:32	<--	Guest20 (~textual@103.215.168.1) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:45:32	<--	Guest66327 (~caterfxo@unaffiliated/caterfxo) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:46:03	-->	yonder (~yonder@unaffiliated/yonder) has joined ##linux
+2020-05-05 11:47:13	<--	AT-x310 (~AT-x310@atoulouse-657-1-8-214.w86-222.abo.wanadoo.fr) has quit (Quit: See you soon :))
+2020-05-05 11:47:27	<--	chomwitt (~chomwitt@2a02:587:dc44:b700:c47f:7ad8:7439:e179) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:47:36	-->	hydrolab (~Thunderbi@176.221.5.28) has joined ##linux
+2020-05-05 11:47:39	-->	outofsorts_ (~outofsort@184.75.223.219) has joined ##linux
+2020-05-05 11:48:04	<--	cd (~cd@unaffiliated/cd) has quit (Quit: cd)
+2020-05-05 11:48:14	Manouchehri	oh nice, lvm can do a resize of the filesystem too! TILO
+2020-05-05 11:48:16	Manouchehri	*TIL
+2020-05-05 11:48:16	Manouchehri	lvresize --resizefs --size SIZE /dev/vg/vg_data
+2020-05-05 11:48:47	<--	hydrolab (~Thunderbi@176.221.5.28) has quit (Client Quit)
+2020-05-05 11:49:19	<--	Ignacy (~Ignacy@84-52-246.143.3p.ntebredband.no) has quit (Ping timeout: 272 seconds)
+2020-05-05 11:49:57	<--	outofsorts (~outofsort@184.75.223.219) has quit (Ping timeout: 272 seconds)
+2020-05-05 11:49:57	<--	chimbles (~colin@071-045-064-020.res.spectrum.com) has left ##linux ("WeeChat 2.3")
+2020-05-05 11:51:45	<--	InfernalFlameZA (~InfernalF@105.242.68.179) has quit (Quit: Leaving)
+2020-05-05 11:51:50	<--	sporiff (sporiff@gateway/vpn/mullvad/sporiff) has quit (Ping timeout: 264 seconds)
+2020-05-05 11:52:21	<--	sphenxes (~sphenxes@5.180.62.49) has quit (Quit: Leaving)
+2020-05-05 11:52:51	<--	wootehfoot (~wootehfoo@unaffiliated/wootehfoot) has quit (Read error: Connection reset by peer)
+2020-05-05 11:52:52	-->	ice9 (~ice9@unaffiliated/ice9) has joined ##linux
+2020-05-05 11:53:18	Descartes	Should I check my Software sources or add any PPAs before running apt-get update on a Linux Mint Live CD?
+2020-05-05 11:54:59	-->	ShalokShalom (b9110d05@gateway/web/cgi-irc/kiwiirc.com/ip.185.17.13.5) has joined ##linux
+2020-05-05 11:55:02	-->	chomwitt (~chomwitt@2a02:587:dc44:b700:4015:8d3b:779f:eb68) has joined ##linux
+2020-05-05 11:56:18	invra	how to change and deal with gtk themes in awesomewm? i use a couple of gtk apps and they look quite retro, windows 95 style
+2020-05-05 11:56:30	-->	pressure679 (~naamik@194.177.250.82) has joined ##linux
+2020-05-05 11:56:58	-->	Beam_Inn_ (~Beam_Inn@unaffiliated/beam-inn/x-3943829) has joined ##linux
+2020-05-05 11:57:23	<--	mirk0 (~mirko@unaffiliated/-mirko-/x-2946915) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:57:31	-->	abdulocracy5 (~abdulocra@79.191.215.172.ipv4.supernova.orange.pl) has joined ##linux
+2020-05-05 11:57:41	-->	SleekUser (~SleekUser@2600:8802:3100:776::2) has joined ##linux
+2020-05-05 11:58:52	<--	cosimone (~cosimone@2001:b07:ae5:db26:9520:741c:a5e9:2223) has quit (Read error: Connection reset by peer)
+2020-05-05 11:58:58	-->	rhearmas (~Thunderbi@2604:6000:130d:146:e195:1f9e:9a5e:aa1a) has joined ##linux
+2020-05-05 11:59:03	-->	cosimone (~cosimone@2001:b07:ae5:db26:9520:741c:a5e9:2223) has joined ##linux
+2020-05-05 11:59:25	phogg	invra: used to be you could get a program called gtk-theme-switcher. Maybe you still can.
+2020-05-05 11:59:27	<--	criti (~Thunderbi@2604:6000:130d:146:b537:258c:789d:284c) has quit (Ping timeout: 240 seconds)
+2020-05-05 11:59:27	--	rhearmas is now known as criti
+2020-05-05 11:59:28	<--	B_m_N (~Beam_Inn@unaffiliated/beam-inn/x-3943829) has quit (Read error: Connection reset by peer)
+2020-05-05 11:59:33	--	Beam_Inn_ is now known as B_m_N
+2020-05-05 11:59:43	<--	abdulocracy (~abdulocra@79.191.215.172.ipv4.supernova.orange.pl) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:59:43	--	abdulocracy5 is now known as abdulocracy
+2020-05-05 11:59:50	--	maccraft is now known as macc24
+2020-05-05 12:00:50	-->	sporiff (~sporiff@89.238.132.37) has joined ##linux
+2020-05-05 12:00:54	<--	czesmir (~stefan@ege150.neoplus.adsl.tpnet.pl) has quit (Quit: Lost terminal)
+2020-05-05 12:01:33	-->	Ignacy (~Ignacy@185.244.214.243) has joined ##linux
+2020-05-05 12:01:59	<--	xue_ros (~xue@83.68.73.232) has quit (Ping timeout: 272 seconds)
+2020-05-05 12:02:02	-->	akdev (~akdev@toroon0628w-lp140-05-70-26-158-88.dsl.bell.ca) has joined ##linux
+2020-05-05 12:02:14	<--	nulleip (~luiz@179.215.126.112) has quit (Read error: Connection reset by peer)
+2020-05-05 12:02:56	-->	outofsorts (~outofsort@184.75.223.219) has joined ##linux
+2020-05-05 12:03:13	<--	chomwitt (~chomwitt@2a02:587:dc44:b700:4015:8d3b:779f:eb68) has quit (Ping timeout: 260 seconds)
+2020-05-05 12:03:16	<--	treeview (~treeview@71.65.230.142) has quit (Remote host closed the connection)
+2020-05-05 12:03:30	brutser	ok, so it seems on the vm, the package xdg-user-dirs-update is NOT installed, but it is installed on the physical laptop - thought install script run on both systems are IDENTICAL
+2020-05-05 12:03:32	-->	baby (~baby@c-73-61-86-80.hsd1.nh.comcast.net) has joined ##linux
+2020-05-05 12:04:09	brutser	so is some of the packages i install checking hardware then and somehow think that the vm install is some server installation and does not need xdg user dirs?
+2020-05-05 12:04:18	-->	dunningk (~qwe@unaffiliated/kunningd) has joined ##linux
+2020-05-05 12:04:25	<--	outofsorts_ (~outofsort@184.75.223.219) has quit (Ping timeout: 264 seconds)
+2020-05-05 12:04:26	-->	chomwitt (~chomwitt@2a02:587:dc44:b700:44a4:caf7:423d:7997) has joined ##linux
+2020-05-05 12:04:39	-->	sideshow (73a4c9f4@115.164.201.244) has joined ##linux
+2020-05-05 12:04:46	brutser	i guess the easiest solution would be to force the install of xdg stuff, so i can be sure it's always installed no matter waht
+2020-05-05 12:04:57	brutser	but i just very curious why this happens
+2020-05-05 12:05:11	<--	kunningd (~qwe@unaffiliated/kunningd) has quit (Ping timeout: 260 seconds)
+2020-05-05 12:05:55	-->	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has joined ##linux
+2020-05-05 12:06:10	<--	frmus (~frmus@unaffiliated/frmus) has quit (Quit: Leaving)
+2020-05-05 12:06:13	<--	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has quit (Max SendQ exceeded)
+2020-05-05 12:06:14	<--	totem4 (~totem4@net-93-147-12-220.cust.vodafonedsl.it) has quit (Quit: leaving)
+2020-05-05 12:06:15	-->	Guest20 (~textual@103.215.168.1) has joined ##linux
+2020-05-05 12:06:44	--	SchwulAndSwole is now known as Jaffa_Kree
+2020-05-05 12:07:29	-->	AnySomebody (~AnySomebo@p200300C287468947A16412FD734A37FA.dip0.t-ipconnect.de) has joined ##linux
+2020-05-05 12:07:31	-->	MBS (~MBS@2601:282:a00:2340:d43c:e565:888c:b9b7) has joined ##linux
+2020-05-05 12:08:21	<--	sideshow (73a4c9f4@115.164.201.244) has quit (Remote host closed the connection)
+2020-05-05 12:08:47	-->	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has joined ##linux
+2020-05-05 12:09:00	<--	Impulsif (impulsif@unaffiliated/impulsif) has quit (Quit: IRCNow and Forever!)
+2020-05-05 12:09:07	<--	chomwitt (~chomwitt@2a02:587:dc44:b700:44a4:caf7:423d:7997) has quit (Ping timeout: 240 seconds)
+2020-05-05 12:09:24	<--	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has quit (Max SendQ exceeded)
+2020-05-05 12:09:26	<--	dunningk (~qwe@unaffiliated/kunningd) has quit (Quit: WeeChat 2.8)
+2020-05-05 12:09:34	<--	akdev (~akdev@toroon0628w-lp140-05-70-26-158-88.dsl.bell.ca) has quit (Ping timeout: 240 seconds)
+2020-05-05 12:09:38	-->	Impulsif (impulsif@unaffiliated/impulsif) has joined ##linux
+2020-05-05 12:09:40	<--	velix (~velix@unaffiliated/velix) has left ##linux ("Leaving")
+2020-05-05 12:09:49	<--	KnoP (~KnoP@business-176-095-149-105.static.arcor-ip.net) has quit (Ping timeout: 264 seconds)
+2020-05-05 12:10:00	-->	kunningd (~qwe@unaffiliated/kunningd) has joined ##linux
+2020-05-05 12:10:16	-->	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has joined ##linux
+2020-05-05 12:10:35	<--	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has quit (Max SendQ exceeded)
+2020-05-05 12:10:49	-->	chomwitt (~chomwitt@2a02:587:dc44:b700:8d4:95ec:7b2d:f108) has joined ##linux
+2020-05-05 12:11:09	-->	secntech (~secntech@unaffiliated/secntech) has joined ##linux
+2020-05-05 12:11:20	-->	hackinghorn (~hackingho@unaffiliated/hackinghorn) has joined ##linux
+2020-05-05 12:11:27	-->	ijens (~ijens@unaffiliated/ijens) has joined ##linux
+2020-05-05 12:13:26	<--	ShalokShalom (b9110d05@gateway/web/cgi-irc/kiwiirc.com/ip.185.17.13.5) has quit (Ping timeout: 264 seconds)
+2020-05-05 12:13:40	<--	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has quit (Quit: Leaving.)
+2020-05-05 12:14:13	<--	luc4 (~luca@ip-28-60.sn2.clouditalia.com) has quit (Quit: luc4)
+2020-05-05 12:16:15	<--	raed (~raed@unaffiliated/raed) has quit (Quit: raed)
+2020-05-05 12:16:32	<--	keep (keep@gateway/vpn/privateinternetaccess/keep) has left ##linux
+2020-05-05 12:17:05	-->	Cirrus_Minor (~Cirrus_Mi@CAcert/Cirrus-Minor) has joined ##linux
+2020-05-05 12:17:08	-->	raed (~raed@unaffiliated/raed) has joined ##linux
+2020-05-05 12:17:09	-->	outofsorts_ (~outofsort@184.75.223.219) has joined ##linux
+2020-05-05 12:17:27	<--	chomwitt (~chomwitt@2a02:587:dc44:b700:8d4:95ec:7b2d:f108) has quit (Ping timeout: 240 seconds)
+2020-05-05 12:17:34	-->	razvand (~razvand@62.121.83.2) has joined ##linux
+2020-05-05 12:18:23	invra	phogg:  and for icons and cursors?
+2020-05-05 12:18:39	-->	FloridaMan (~FloridaMa@75.76.62.33) has joined ##linux
+2020-05-05 12:19:08	<--	outofsorts (~outofsort@184.75.223.219) has quit (Ping timeout: 246 seconds)
+2020-05-05 12:19:14	-->	chomwitt (~chomwitt@2a02:587:dc44:b700:60a7:f2a4:3131:f499) has joined ##linux
+2020-05-05 12:19:19	-->	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has joined ##linux
+2020-05-05 12:19:24	--	kreyren_ is now known as kreyren
+2020-05-05 12:19:28	-->	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has joined ##linux
+2020-05-05 12:19:38	kreyren	The speeeedd of gentoo reviews, the speeeeeedddd https://github.com/gentoo/gentoo/pull/12524#event-3303942109
+2020-05-05 12:19:53	-->	ktownlove (~Thunderbi@2601:844:8180:8c10:4e1:1b53:cdf9:1de0) has joined ##linux
+2020-05-05 12:20:01	<--	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has quit (Max SendQ exceeded)
+2020-05-05 12:20:06	<--	zChris_ (~zChris@unaffiliated/zchris) has quit (Quit: ZNC 1.7.4 - https://znc.in)
+2020-05-05 12:20:32	<--	ktownlove (~Thunderbi@2601:844:8180:8c10:4e1:1b53:cdf9:1de0) has quit (Remote host closed the connection)
+2020-05-05 12:20:48	<--	PhizzyNoodlePie (~phillip@77.44.49.73) has quit (Remote host closed the connection)
+2020-05-05 12:20:53	-->	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has joined ##linux
+2020-05-05 12:20:58	-->	ktownlove (~Thunderbi@2601:844:8180:8c10:4e1:1b53:cdf9:1de0) has joined ##linux
+2020-05-05 12:21:10	<--	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has quit (Remote host closed the connection)
+2020-05-05 12:21:16	<--	BluesKaj (~Blues@unaffiliated/blueskaj) has quit (Quit: Konversation terminated!)
+2020-05-05 12:21:32	-->	enriooooooo (~nanoz@unaffiliated/nanoz) has joined ##linux
+2020-05-05 12:21:44	<--	secntech (~secntech@unaffiliated/secntech) has quit (Quit: Leaving)
+2020-05-05 12:22:10	-->	PhizzyNoodlePie (~phillip@77.44.49.73) has joined ##linux
+2020-05-05 12:22:14	<--	ice9 (~ice9@unaffiliated/ice9) has quit (Ping timeout: 240 seconds)
+2020-05-05 12:22:18	<--	PhizzyNoodlePie (~phillip@77.44.49.73) has quit (Remote host closed the connection)
+2020-05-05 12:22:28	-->	noctambulo (~Gplr00t@186-185-196-201.genericrev.telcel.net.ve) has joined ##linux
+2020-05-05 12:22:43	makr8100	Word has it that if you use Gentoo long enough, the efficiency of your system will eventually allow you to recoup the time spent compiling it to begin with.  How long does it take?  The experts are still out on this one.
+2020-05-05 12:22:49	FloridaMan	that's a fairly easy review
+2020-05-05 12:22:56	FloridaMan	but fast reviews aren't necessarily good
+2020-05-05 12:23:30	<--	KindOne (kindone@freenode/father-christmas/kindone) has quit (Quit: K-Lined)
+2020-05-05 12:23:30	FloridaMan	makr8100: it's akin to buying solar panels 10 years ago to save on your power bill

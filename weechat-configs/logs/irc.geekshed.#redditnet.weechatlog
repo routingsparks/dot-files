@@ -1,0 +1,632 @@
+2020-05-05 09:21:08	-->	routingsparks (~sparky@protectedhost-6A0D9A68.nrflva.fios.verizon.net) has joined #RedditNet
+2020-05-05 09:21:08	--	Topic for #RedditNet is "/r/amateurradio on Reddit | /join #hamfest and hang onto your wallet | stats: http://bit.ly/2H9oUcc | Please wash your hands before entering! | Once someone is DEOPed, No Re-OPS or ban"
+2020-05-05 09:21:08	--	Topic set by NT1K on Fri, 10 Apr 2020 13:58:45
+2020-05-05 09:21:08	--	Channel #RedditNet: 229 nicks (96 ops, 3 halfops, 13 voices, 117 normals)
+2020-05-05 09:21:10	--	Channel created on Mon, 22 Jul 2013 15:04:12
+2020-05-05 09:22:25	@KK0ECT	4 new confirms rolled in
+2020-05-05 09:22:39	@KK0ECT	BVI, Greece, San andres island, Uruguay
+2020-05-05 09:23:05	+kn3b	san andres must have uploaded a batch
+2020-05-05 09:23:10	+kn3b	because i got that confirm too
+2020-05-05 09:23:19	+kn3b	also i worked south cook islands last night
+2020-05-05 09:23:20	@KK0ECT	yea
+2020-05-05 09:23:20	+kn3b	but no lotw
+2020-05-05 09:23:23	@KK0ECT	rr
+2020-05-05 09:23:38	+kn3b	gotta send a card before the guy dies
+2020-05-05 09:24:14	+kn3b	there are only 7 licensed hams in south cook according to e51bq
+2020-05-05 09:26:34	+DL5GU	nice, what mode and band?
+2020-05-05 09:26:49	+kn3b	15m ft8
+2020-05-05 09:26:54	+kn3b	was open late
+2020-05-05 09:27:22	kennylevinsen	LB1TI: yes, I have written a fair share of rust.
+2020-05-05 09:27:56	<--	n1ta (n1ta@CCCA9769.FBF8657B.C14905E0.IP) has quit (Quit: Connection closed)
+2020-05-05 09:27:57	+DL5GU	is anyone here using js8?
+2020-05-05 09:28:05	kennylevinsen	(one thing I really miss when writing rust is go's `go doc` tool. Getting quick documentation on the terminal is awesome.)
+2020-05-05 09:28:24	+kn3b	i have one js8call qso i think with CG3MAL
+2020-05-05 09:28:39	+kn3b	im trying to get dxcc and all my band WAS with ft8
+2020-05-05 09:28:48	<--	KN2TOD (~TFlash@protectedhost-F9FB4DDD.hsd1.ga.comcast.net) has quit (Client exited)
+2020-05-05 09:29:00	+DL5GU	I'd like to use it more, because it feels a bit more human and ragchewy than ft8
+2020-05-05 09:30:19	@UnderwaterHockey	https://www.livescience.com/murder-hornets-in-washington-state.html
+2020-05-05 09:30:20	@qrm	"Monstrous 'murder hornets' have reached the US" https://j.mp/2YDnoJE — Native to Asia, the giant insects rip off the heads of honeybees by the thousands.
+2020-05-05 09:30:25	@UnderwaterHockey	They look harmless enough
+2020-05-05 09:30:55	+kn3b	the term murder hornet is discriminatory
+2020-05-05 09:31:30	@UnderwaterHockey	Is Head Ripping Hornets better?
+2020-05-05 09:32:08	@w0cdt	great band name
+2020-05-05 09:32:20	@w0cdt	murder hornet and the killer bees
+2020-05-05 09:33:09	@UnderwaterHockey	And the headless bees
+2020-05-05 09:33:11	+DL5GU	Finally the US has the biggest hornets, the most tremendous hornets, fine people these hornets
+2020-05-05 09:33:14	+kn3b	heres the title track off our new album, anaphylactic shock
+2020-05-05 09:33:32	+locust	Nearly-Headless Bees
+2020-05-05 09:33:38	+DL5GU	First single: Your head will roll
+2020-05-05 09:34:18	@w0cdt	when japan sends their hornets, they're not sending their best
+2020-05-05 09:35:05	+locust	at least the japanese tentacles don't fly
+2020-05-05 09:39:02	@qrm	[reddit] Is this wire antenna supposed to be short circuit or is it broken? by /u/VisualSecurity7: https://redd.it/gdxu3x
+2020-05-05 09:39:51	@ns7i	MONTHLY
+2020-05-05 09:39:53	@ns7i	COMPANY
+2020-05-05 09:39:55	@ns7i	UPDATE
+2020-05-05 09:39:57	@ns7i	WEEEEEEEEEEEEEEEEEEEe
+2020-05-05 09:40:01	+locust	ERMAHGERD
+2020-05-05 09:40:14	@ns7i	not fired yet
+2020-05-05 09:40:42	@w0cdt	good luck!
+2020-05-05 09:48:25	@KK0ECT	wait
+2020-05-05 09:48:31	@KK0ECT	is ubunut 20.04 released ?
+2020-05-05 09:48:50	KC1MYI	the ubuest nut
+2020-05-05 09:49:10	N0AW	morning hams
+2020-05-05 09:49:12	N0AW	yes
+2020-05-05 09:49:22	N0AW	I'm on 20.04 right now eric
+2020-05-05 09:49:22	+DL5GU	wait, there's more than arch?
+2020-05-05 09:49:32	N0AW	although I ran into a bad bug
+2020-05-05 09:49:54	N0AW	20.04 + tightvncserver means that you don't get window decorations if you use VNC
+2020-05-05 09:50:03	@KK0ECT	N0AW: did you just update like this week?
+2020-05-05 09:50:07	@KK0ECT	or is it a clean install?
+2020-05-05 09:50:19	N0AW	I updated maybe last Wed or Thu
+2020-05-05 09:50:22	@KK0ECT	i litereally JUST installed this machine clean slate with 18.04 like 2 weeks ago
+2020-05-05 09:50:29	N0AW	lol
+2020-05-05 09:50:35	@KK0ECT	blerf
+2020-05-05 09:50:41	N0AW	do-upgrade-....something
+2020-05-05 09:50:47	@KK0ECT	yeah dist-upgrade
+2020-05-05 09:50:57	@KK0ECT	i wont do it at the start of the workday on tuesday
+2020-05-05 09:50:58	+DL5GU	why not use xRDP?
+2020-05-05 09:50:59	@KK0ECT	maybe on friday
+2020-05-05 09:51:10	N0AW	there's a separate command that will update your apt.sources and all that too
+2020-05-05 09:51:24	N0AW	do-release-upgrade
+2020-05-05 09:51:26	@w0cdt	KK0ECT: you could wait a bit until the first point release
+2020-05-05 09:51:45	@KK0ECT	yeah (shrug) i mean its not like i am looking for any bleeding edge stuff atm
+2020-05-05 09:51:55	@KK0ECT	just annoying that i literally just finished setting this box up
+2020-05-05 09:51:57	@KK0ECT	on 18.04
+2020-05-05 09:51:58	N0AW	generally, it seemed fine, just that one stupid bug
+2020-05-05 09:52:11	N0AW	been trying to test out kc2g's linux flex tools and that sucked
+2020-05-05 09:52:37	@w0cdt	I'd be interested in what the experience is with the new apt/zfs snapshot integration
+2020-05-05 09:52:45	 *	DL5GU recommends manjaro for linux desktop
+2020-05-05 09:52:47	N0AW	huh... zfs?
+2020-05-05 09:52:53	@w0cdt	yes
+2020-05-05 09:52:57	N0AW	nice...
+2020-05-05 09:53:08	@w0cdt	and apt takes a fs snapshot during updates
+2020-05-05 09:53:16	N0AW	I'm going to have to dig out my failed NAS build, and see if I can figure out what is wrong with it
+2020-05-05 09:53:17	@w0cdt	so you can roll back if something goes wrong
+2020-05-05 09:53:20	@w0cdt	sort of like zypper/btrfs
+2020-05-05 09:53:26	@KC1AWV	why not mx?
+2020-05-05 09:53:51	@w0cdt	pacman is a shit package manager, change my mind
+2020-05-05 09:54:05	+DL5GU	yeah, pacman ain't great
+2020-05-05 09:54:31	@KK0ECT	w0cdt: right i was looking at that and id basically have to wipe and re-install if i wanted to do zfs
+2020-05-05 09:54:39	@KK0ECT	which is annoying
+2020-05-05 09:54:48	+DL5GU	I liked pamac
+2020-05-05 09:55:31	@w0cdt	KK0ECT: I'd definitely wait a year, it's still very new
+2020-05-05 09:55:37	@KK0ECT	yeah
+2020-05-05 09:55:46	N0AW	a year?
+2020-05-05 09:56:04	N0AW	oh for zfs, yeah
+2020-05-05 09:56:10	N0AW	that's a big change
+2020-05-05 09:56:14	@w0cdt	I don't know how well Canonical is going to be at maintaining zfs patches in-kernel
+2020-05-05 09:56:16	N0AW	that would be a reformat and new install
+2020-05-05 09:56:27	@w0cdt	given Canonical's love of NIH syndrome followed by abandonment
+2020-05-05 09:57:26	@ns7i	i'm on 20.04
+2020-05-05 09:59:32	@UnderwaterHockey	No sure people would react well to these.  https://icedearthmerch.com/119676/Plagues-of-Babylon-Album-Back-Art-Mask-Accessory
+2020-05-05 09:59:34	@qrm	"Plagues of Babylon Album Back Art Mask " https://j.mp/3fn8DAz — Iced Earth Official Merchandise Store
+2020-05-05 09:59:38	+w9km	gm
+2020-05-05 09:59:38	+DL5GU	Oh, 20.04 also works on the pi4! then i will use that for driving my remote qth
+2020-05-05 10:01:37	+N4ADK	oh damn i'm an hour early to my zoom
+2020-05-05 10:01:58	@UnderwaterHockey	Eager Beaver
+2020-05-05 10:06:12	-->	Snowbat (~kvirc@CFEA11FB.DF7C391D.8C96B188.IP) has joined #RedditNet
+2020-05-05 10:09:11	@KK0ECT	yeah - pi support is nice
+2020-05-05 10:10:02	+DL5GU	Just read that it doesn't properly support the iGPU of the pi, so no 2d/3D acceleration
+2020-05-05 10:10:11	+DL5GU	but that info might be wrong
+2020-05-05 10:11:49	%K1NZ	toby https://i.redd.it/2y3u75s7krw41.png
+2020-05-05 10:12:07	-->	Andros (~Andros@9CDAC343.A7EA2C9A.B3099026.IP) has joined #RedditNet
+2020-05-05 10:12:07	@toby	K1NZ: :D :D
+2020-05-05 10:12:11	@toby	K1NZ: good one.
+2020-05-05 10:14:42	-->	KN2TOD (~TFlash@protectedhost-F9FB4DDD.hsd1.ga.comcast.net) has joined #RedditNet
+2020-05-05 10:19:02	@qrm	[reddit] Want to work satellites from my shack. Antenna recommendations? by /u/theholyblack: https://redd.it/gdyir7
+2020-05-05 10:25:05	@isiph	'eh, if you want ZFS, just run FreeBSD (or I suppose OpenBSD.)
+2020-05-05 10:29:34	@Hogie	solaris
+2020-05-05 10:29:43	%K1NZ	MS-DOS
+2020-05-05 10:29:55	@W5XF	PC-DOS
+2020-05-05 10:30:19	kennylevinsen	Plan9
+2020-05-05 10:30:28	@W5XF	I like plan9 :p
+2020-05-05 10:30:37	@W5XF	MAKE ALL THE THINGS FILES!
+2020-05-05 10:38:13	-->	routingsparks (~sparky@protectedhost-6A0D9A68.nrflva.fios.verizon.net) has joined #RedditNet
+2020-05-05 10:38:13	--	Topic for #RedditNet is "/r/amateurradio on Reddit | /join #hamfest and hang onto your wallet | stats: http://bit.ly/2H9oUcc | Please wash your hands before entering! | Once someone is DEOPed, No Re-OPS or ban"
+2020-05-05 10:38:13	--	Topic set by NT1K on Fri, 10 Apr 2020 13:58:45
+2020-05-05 10:38:14	--	Channel #RedditNet: 229 nicks (96 ops, 3 halfops, 13 voices, 117 normals)
+2020-05-05 10:38:15	--	Channel created on Mon, 22 Jul 2013 15:04:12
+2020-05-05 10:38:30	@NQ4T	i just don't have any idea what i'd do with a plan9 vm
+2020-05-05 10:38:35	-->	Andros (~Andros@9CDAC343.A7EA2C9A.B3099026.IP) has joined #RedditNet
+2020-05-05 10:39:02	@qrm	[reddit] What's the latest regulation on FCC licensees transmitting in Mexico? by /u/LOLteacher: https://redd.it/gdytx2
+2020-05-05 10:41:16	kennylevinsen	plan9 just has a much better filesystem abstraction, and the way you can overlay things is much more convenient.
+2020-05-05 10:41:18	+w9km	Why I like 6m - the propagation can be everywhere, but in Delaware. :)
+2020-05-05 10:41:48	kennylevinsen	For example, you don't have $PATH. You have a single folder, /bin. Need more stuff accessible? Stack more things on top of it with a bind mount.
+2020-05-05 10:42:55	@NQ4T	i've played with it
+2020-05-05 10:42:57	@NQ4T	it was...weird
+2020-05-05 10:43:19	@KC1AWV	i am nigerian prince. pls send monies
+2020-05-05 10:45:52	 *	NQ4T poops in a box and sends it to KC1AWV 
+2020-05-05 10:46:11	@KC1AWV	free fertilizer, nice
+2020-05-05 10:46:37	 *	NQ4T kills all your plants
+2020-05-05 10:47:01	@KC1AWV	making room for more, nice
+2020-05-05 10:47:15	-->	KJ3N (~admin@protectedhost-25C00A12.phlapa.fios.verizon.net) has joined #RedditNet
+2020-05-05 10:47:23	 *	NQ4T goes back to babysitting file transfers
+2020-05-05 10:47:25	 *	KC1AWV will always see the positive light
+2020-05-05 10:47:46	@NQ4T	so...all my remote storage sucks
+2020-05-05 10:47:51	<--	K5VTD (~K5VTD@protectedhost-81A75120.satx.res.rr.com) has quit (Quit: Connection closed)
+2020-05-05 10:47:52	@KC1AWV	yay!
+2020-05-05 10:47:59	@KC1AWV	excuse to buy more local
+2020-05-05 10:48:03	@NQ4T	just...too damn slow
+2020-05-05 10:48:26	@NQ4T	i had to make a 600gb partition on the servers main drive so i could push data to it over the network
+2020-05-05 10:48:33	@NQ4T	then let the NAS copy to the remote
+2020-05-05 10:48:38	@KC1AWV	oof
+2020-05-05 10:48:41	@NQ4T	because my remote storage has remote storage
+2020-05-05 10:48:49	@KC1AWV	sometimes it's better to sneakernet it
+2020-05-05 10:49:11	@NQ4T	i broke usb support
+2020-05-05 10:49:16	@NQ4T	when i hacked the OS
+2020-05-05 10:49:21	@NQ4T	the USB ports don't work
+2020-05-05 10:49:26	@NQ4T	so i can't just plug a drive in
+2020-05-05 10:49:34	@KC1AWV	well done young padawan
+2020-05-05 10:49:57	-->	K5VTD (~K5VTD@protectedhost-81A75120.satx.res.rr.com) has joined #RedditNet
+2020-05-05 10:54:13	+w9km	50.095 CQ CW
+2020-05-05 10:54:49	+w9km	point south now
+2020-05-05 10:55:04	-->	Andrew-H3 (~Andrew-H3@protectedhost-3F330E25.hsd1.wv.comcast.net) has joined #RedditNet
+2020-05-05 10:57:38	-->	andrew_h3 (~Andrew-H3@protectedhost-3F330E25.hsd1.wv.comcast.net) has joined #RedditNet
+2020-05-05 10:57:40	<--	Andrew-H3 (~Andrew-H3@protectedhost-3F330E25.hsd1.wv.comcast.net) has quit (Quit: Andrew-H3)
+2020-05-05 10:58:57	<--	andrew_h3 (~Andrew-H3@protectedhost-3F330E25.hsd1.wv.comcast.net) has quit (Quit: andrew_h3)
+2020-05-05 10:59:14	-->	Andrew-H3 (~Andrew-H3@protectedhost-3F330E25.hsd1.wv.comcast.net) has joined #RedditNet
+2020-05-05 10:59:32	+locust	https://www.youtube.com/embed/zjJGQcC9TZ8
+2020-05-05 10:59:33	@qrm	"I made Poki a captain hat - YouTube"
+2020-05-05 11:01:30	+w9km	pointing East now
+2020-05-05 11:02:59	@KC1AWV	that lady is so ginger it hurts
+2020-05-05 11:03:35	<--	WZ4Q (~WZ4Q@protectedhost-B9039C20.dc.dc.cox.net) has quit (Broken pipe)
+2020-05-05 11:07:06	<--	razterer (~Thunderbi@protectedhost-44F9D61F.cgn.dynamic.surfer.at) has quit (Quit: razterer)
+2020-05-05 11:07:13	-->	razterer (~Thunderbi@protectedhost-44F9D61F.cgn.dynamic.surfer.at) has joined #RedditNet
+2020-05-05 11:17:59	-->	b0tz (~b0tz@66B3A324.1135B824.7188F43C.IP) has joined #RedditNet
+2020-05-05 11:19:01	@qrm	[reddit] Is a LNA amplifier needed to receive better with HackRF? Or would I get better results just by having the right antenna? by /u/allexj: https://redd.it/gdzl7y
+2020-05-05 11:21:06	@KK0ECT	"United Airlines COO says employees should 'seriously consider' voluntary separation from the airline"" ... lol how about fuck you united coo
+2020-05-05 11:21:35	@MrCircuitMatt	howdies Crossbar
+2020-05-05 11:21:37	@MrCircuitMatt	Crossbar: you got a minute?
+2020-05-05 11:22:21	-->	W1PAC (~patrick.w@protectedhost-7E0D08E3.bstnma.fios.verizon.net) has joined #RedditNet
+2020-05-05 11:22:22	--	Mode #RedditNet [+v W1PAC] by ChanServ
+2020-05-05 11:22:26	+W1PAC	!stocks
+2020-05-05 11:22:36	+W1PAC	!stock
+2020-05-05 11:22:37	@qrm	no data returned: DJIA
+2020-05-05 11:22:41	@n0rua	stonks
+2020-05-05 11:22:46	KC1MYI	they gawn
+2020-05-05 11:22:58	+W1PAC	lol
+2020-05-05 11:23:51	<--	razterer (~Thunderbi@protectedhost-44F9D61F.cgn.dynamic.surfer.at) has quit (Broken pipe)
+2020-05-05 11:24:44	<--	b0tz (~b0tz@66B3A324.1135B824.7188F43C.IP) has quit (Operation timed out)
+2020-05-05 11:24:52	+locust	https://i.imgur.com/Lct1N2D.jpg
+2020-05-05 11:24:52	@qrm	 "Untitled" 62971 views /r/meme [828x546] (41kB) preview: http://i.imgur.com/Lct1N2Dl.jpg
+2020-05-05 11:26:55	<--	K5VTD (~K5VTD@protectedhost-81A75120.satx.res.rr.com) has quit (Quit: Ping timeout (120 seconds))
+2020-05-05 11:28:17	-->	K5VTD (K5VTD@protectedhost-81A75120.satx.res.rr.com) has joined #RedditNet
+2020-05-05 11:35:03	@qrm	[reddit] Does a bent rubber duck antenna have reduced performance? by /u/NC45L: https://redd.it/gdzwq6
+2020-05-05 11:41:02	-->	WZ4Q (~WZ4Q@protectedhost-B9039C20.dc.dc.cox.net) has joined #RedditNet
+2020-05-05 11:41:36	+w9km	!solar
+2020-05-05 11:41:37	@qrm	Conditions as of 05 May 2020 1541 GMT: SFI=69 SN=0 A=6 K=1
+2020-05-05 11:41:41	+w9km	meh
+2020-05-05 11:41:59	+locust	!btc
+2020-05-05 11:42:00	@qrm	BTCUSD ↑8,893.32423724 +0.496085% qty 4953967 BTC/24h (44,057,237,067 USD/24h) MktCap 163,310,336,299 USD
+2020-05-05 11:42:03	+locust	o.O
+2020-05-05 11:42:18	@k2iw	ive been bad
+2020-05-05 11:42:26	@k2iw	my gpu is wonky, having issues with my main desktop
+2020-05-05 11:42:39	@k2iw	and been busy appeasing people at work
+2020-05-05 11:43:06	+w9km	people at work is unnecessary evil
+2020-05-05 11:43:32	@k2iw	here is a cat pic
+2020-05-05 11:43:32	@k2iw	https://i.redd.it/lkfq236t0xw41.jpg
+2020-05-05 11:43:40	+w9km	:)
+2020-05-05 11:43:51	@k2iw	Im going to mask up and go across the street from work and drag my office workstation home
+2020-05-05 11:43:54	@k2iw	and maybe get taco bell
+2020-05-05 11:43:59	+w9km	k2iw, have you seen how my cat inspected my elevation rotor yest.?
+2020-05-05 11:44:04	@k2iw	oooooo no plz share
+2020-05-05 11:44:07	@k2iw	sorry ive been bad with irc lately
+2020-05-05 11:45:11	-->	razterer (~Thunderbi@protectedhost-44F9D61F.cgn.dynamic.surfer.at) has joined #RedditNet
+2020-05-05 11:45:11	+kn3b	k2iw i got s cook islands last night on 15m
+2020-05-05 11:45:13	+locust	"no ragerts" -- kitty
+2020-05-05 11:45:17	@k2iw	fuck
+2020-05-05 11:45:19	+w9km	https://photos.app.goo.gl/YJEfQkw3Ccy32A4MA
+2020-05-05 11:45:20	@qrm	"3 new photos by Andriy Rokhmanov"
+2020-05-05 11:45:21	@k2iw	im actually jelly Brad
+2020-05-05 11:45:23	@k2iw	thats fb dx
+2020-05-05 11:45:30	+w9km	its actually 2 videos
+2020-05-05 11:45:31	+kn3b	yeah but no lotw
+2020-05-05 11:45:33	+kn3b	have to send card
+2020-05-05 11:45:51	+w9km	island of cooks! yum
+2020-05-05 11:46:25	@k2iw	w9km: man oh man your cat certainly didnt know what to think about that
+2020-05-05 11:46:27	@k2iw	lol
+2020-05-05 11:46:35	@k2iw	nicely done, getting it ready for sat passes?
+2020-05-05 11:46:52	@k2iw	theres only like two dudes in the south cooks
+2020-05-05 11:47:00	@k2iw	i know who you got, I forget his call though
+2020-05-05 11:47:06	+w9km	I am collecting all my courage to put this thing on top of my mast. I have 6m antenna there already.
+2020-05-05 11:47:07	@k2iw	he mailed me a card that got waterlogged on the way, lol
+2020-05-05 11:47:14	+kn3b	!call e51bq
+2020-05-05 11:47:15	@qrm	E51BQ: South Cook Islands: Bob Walker -- rarobob@outlook.com -- born 1947 -- 1 class -- IOTA: OC-013 -- prev ZL2BNB -- QSL: Please see Biography for QSL information [M] -- Box 166 Avarua,; Rarotonga; South Cook Islands -- BG08cs [src: user] -- 10984.0 km, 249° from FN11lf
+2020-05-05 11:47:27	@k2iw	yea
+2020-05-05 11:47:41	%K1NZ	there's also that czech dude that does extended holidays down there
+2020-05-05 11:47:42	@k2iw	he will mail you a card, ive been wanting to work him again as k2iw to get another card for both kd2iww and k2iw
+2020-05-05 11:47:48	%K1NZ	!call e51dwc
+2020-05-05 11:47:49	@qrm	E51DWC: South Cook Islands: Milan OK1DWC -- ok1dwc@contesting.com -- A class -- IOTA: OC-013 -- aliases: OK1DWC -- QSL: All right info only here on this page and Clublog. [LEM] -- P. O. BOX 22; Nachod 547 01; Czech Republic -- BG08cs [src: user] -- 11380.8 km, 252° from FN32uc
+2020-05-05 11:48:09	@k2iw	i swear we need a group text or something for sexy spots
+2020-05-05 11:48:31	@k2iw	i got some SA on 12/10, nothing too exciting
+2020-05-05 11:48:45	@k2iw	errr last night, not now
+2020-05-05 11:48:46	@k2iw	so dont spin
+2020-05-05 11:48:59	+kn3b	ohio faded in for a minute on 6m
+2020-05-05 11:49:00	+kn3b	but he gon
+2020-05-05 11:49:02	@k2iw	no specials at taco bell today even though cinco de mayo
+2020-05-05 11:49:03	@k2iw	boo
+2020-05-05 11:49:12	+kn3b	taco bell isnt mexican food
+2020-05-05 11:49:26	@W5XF	hell most mexican food isn't mexican food
+2020-05-05 11:49:28	+w9km	RBM is acting up
+2020-05-05 11:49:40	<--	razterer (~Thunderbi@protectedhost-44F9D61F.cgn.dynamic.surfer.at) has left #RedditNet
+2020-05-05 11:49:44	@k2iw	the better mexican styled place in town closed for covid
+2020-05-05 11:49:56	@k2iw	the one that isnt as good is still open for takeout but i dont like them as much to actually bother
+2020-05-05 11:50:12	@k2iw	but sometimes I just want something hard and cheesy covered in sauce ya feel me fam
+2020-05-05 11:50:16	@W5XF	We've had the hardest time finding decent mexican around atlanta
+2020-05-05 11:50:28	 *	kn3b pours cheese all over 
+2020-05-05 11:50:45	@k2iw	meat lettuce tomato and cheeeeeeeeeeeeese
+2020-05-05 11:50:51	@k2iw	its raining tacoooos
+2020-05-05 11:50:52	@k2iw	im basically 7
+2020-05-05 11:50:53	@k2iw	ok
+2020-05-05 11:50:55	DL6MHC	https://archive.org/details/73-magazine?tab=collection
+2020-05-05 11:50:56	@qrm	"73 Magazine (Amateur Radio Today) : Free Texts : Free Download, Borrow and Streaming : Internet Archive" https://j.mp/2YAk69V — 73 Magazine (also known as 73 Amateur Radio Today) (OCLC 22239204) was a United States-based amateur radio magazine that was published from 1960 to 2003. It was known for its strong emphasis on technical articles and for the lengthy editorials in each issue by its founder and publisher, Wayne...
+2020-05-05 11:51:03	<--	KJ3N (~admin@protectedhost-25C00A12.phlapa.fios.verizon.net) has quit (Operation timed out)
+2020-05-05 11:51:03	@k2iw	this 7 year old has to go to work to get a desktop
+2020-05-05 11:51:10	@k2iw	so i can either use it at home or rip out its gpu
+2020-05-05 11:51:12	@W5XF	It's sad when this .. https://www.fritolay.com/products/tostitos-restaurant-style-salsa .. is better than what most places make themselves
+2020-05-05 11:51:13	@qrm	"TOSTITOS® Restaurant Style Salsa | FritoLay" https://j.mp/3b5zvBY — From summer barbecues to family gatherings to time spent relaxing at the end of a long day, Frito-Lay snacks are part of some of life's most memorable moments. And maybe even brightens some of the most mundane. We invite you to learn more.
+2020-05-05 11:51:36	@k2iw	oh man, when I realized there was a whole world of salsa out there when I left home years ago it was life changing
+2020-05-05 11:51:51	@w0cdt	hah
+2020-05-05 11:52:00	@w0cdt	child abuse
+2020-05-05 11:52:05	@w0cdt	not growing up with decent salsa
+2020-05-05 11:52:10	@W5XF	I never thought I'd say that Mississippi had better mexican food than atlanta
+2020-05-05 11:52:22	@k2iw	ok, really have to go
+2020-05-05 11:52:25	@k2iw	ill be back later
+2020-05-05 11:52:30	 *	k2iw vibrates away
+2020-05-05 11:52:57	@w0cdt	it's totally not mexican food, but mississippi hot tamales are goddamn delicious
+2020-05-05 11:55:14	aa4jq	they are definitely their own thing
+2020-05-05 11:55:27	aa4jq	and a quirky little local foodway thing
+2020-05-05 11:55:40	@W5XF	Yes they are
+2020-05-05 11:55:49	@W5XF	Delta tamales are their own food group
+2020-05-05 11:55:52	+N4ADK	erghhh
+2020-05-05 11:55:58	+N4ADK	my digital filter code in C++ not work
+2020-05-05 11:56:04	+N4ADK	I have the equations correct.. and the coefficients.. IIR
+2020-05-05 11:56:08	+N4ADK	wtfff
+2020-05-05 11:56:26	@w0cdt	first time I went to MS and had them, having coming from NM, was a "wtf is this" moment
+2020-05-05 11:56:43	@W5XF	The delta is an interesting place
+2020-05-05 11:56:51	aa4jq	https://gardenandgun.com/articles/the-high-the-low-a-delta-original/
+2020-05-05 11:56:52	@qrm	"A Delta Original â Garden & Gun" https://j.mp/3b8zZHn — How the humble tamale came to represent a region and its people
+2020-05-05 11:57:06	@W5XF	All the railroad workers, both central american and asian
+2020-05-05 11:57:14	%W2XG	daddy would you like some sausages
+2020-05-05 11:57:16	%W2XG	daddy would you like some sausage
+2020-05-05 11:57:39	@W5XF	I also miss gas stations in Mississippi
+2020-05-05 11:58:04	@W5XF	(Also another thing I never thought I'd say) as they generally had some of the best home cooked food
+2020-05-05 12:00:03	@qrm	[reddit] Sat32 Password by /u/drudigger: https://redd.it/ge0cyg
+2020-05-05 12:00:25	+N4ADK	turkey soisage
+2020-05-05 12:04:36	@ns7i	Crossbar: ugh ynab switched to plaid
+2020-05-05 12:04:39	@ns7i	plaid sucks
+2020-05-05 12:05:07	aa4jq	hot tamales and they're red hot / yeah she got 'em for sale
+2020-05-05 12:05:17	@ns7i	bums me the fuck out
+2020-05-05 12:05:37	aa4jq	used to go to MS pretty regularly for work and never had a bad meal there, tbh
+2020-05-05 12:06:33	aa4jq	but that state is so profoundly under the shithammer
+2020-05-05 12:09:04	@k2iw	ok, im typing my nonsense from my office at work
+2020-05-05 12:09:06	@n0ya	pickled eggs and pork feet in them gas stations.
+2020-05-05 12:09:44	KC1MYI	lunch has arrived and these are some messy lookin' tacos
+2020-05-05 12:09:52	@k2iw	yum yum
+2020-05-05 12:09:53	@k2iw	im jelly
+2020-05-05 12:10:05	@qrm	[reddit] What to Look for in Headsets by /u/jhf94uje897sb: https://redd.it/ge0k7m
+2020-05-05 12:10:10	@ns7i	CG3MAL: wat do you think about ynab switching to plaid?
+2020-05-05 12:16:57	@UnderwaterHockey	He's Canadian, he has to like flannel and plaid
+2020-05-05 12:17:03	@UnderwaterHockey	It's the law
+2020-05-05 12:18:07	-->	user_2314 (~user23523@protectedhost-D91ECE23.hsd1.nh.comcast.net) has joined #RedditNet
+2020-05-05 12:18:19	<--	Waldstein (~user23523@protectedhost-D91ECE23.hsd1.nh.comcast.net) has quit (Broken pipe)
+2020-05-05 12:18:35	@UnderwaterHockey	It's almost as compulsory as it is here in Minnesota.
+2020-05-05 12:18:53	@isiph	You betcha!
+2020-05-05 12:19:18	@UnderwaterHockey	isiph knows what I'm talking about
+2020-05-05 12:19:39	@W5XF	There is a kilt store across the street from my office, always meant to go in there
+2020-05-05 12:21:41	@k2iw	ok
+2020-05-05 12:21:55	@k2iw	i grabbed what i wanted
+2020-05-05 12:22:00	@k2iw	time to power this down, brb later
+2020-05-05 19:19:39	-->	routingsparks (~sparky@protectedhost-6A0D9A68.nrflva.fios.verizon.net) has joined #RedditNet
+2020-05-05 19:19:39	--	Topic for #RedditNet is "/r/amateurradio on Reddit | /join #hamfest and hang onto your wallet | stats: http://bit.ly/2H9oUcc | Please wash your hands before entering! | Once someone is DEOPed, No Re-OPS or ban"
+2020-05-05 19:19:39	--	Topic set by NT1K on Fri, 10 Apr 2020 13:58:45
+2020-05-05 19:19:39	--	Channel #RedditNet: 229 nicks (94 ops, 3 halfops, 13 voices, 119 normals)
+2020-05-05 19:19:41	--	Channel created on Mon, 22 Jul 2013 15:04:12
+2020-05-05 19:20:12	@MrCircuitMatt	CF3MWL: yeah but I'm having a hard time sourcing any tablet that has it. Assuming this galaxy tab A doesn't have it, the next best thing is some huawei M5 lite something
+2020-05-05 19:20:39	K1SEH	!bands
+2020-05-05 19:20:39	@qrm	Bands as of 05 May 2020 2320 GMT: SFI=69 SN=0 A=6 K=1
+2020-05-05 19:20:39	@qrm	| 12m-10m | day: Poor | night: Poor |
+2020-05-05 19:20:39	@qrm	| 17m-15m | day: Poor | night: Poor |
+2020-05-05 19:20:39	@qrm	| 30m-20m | day: Poor | night: Poor |
+2020-05-05 19:20:40	@qrm	| 80m-40m | day: Fair | night: Good |
+2020-05-05 19:20:42	@isiph	I don't do any handwriting-based stuff on mine, but I don't believe the 2019 model does that at all. Maybe the 2020 does, but unless the mfgr says so, I'd guess bad marketing by the reseller on the that link.
+2020-05-05 19:20:44	@MrCircuitMatt	CF3MWL: so I'm trying to figure out whether active pressure is something I want (beyond "always nice") and then go from there
+2020-05-06 19:52:05	-->	routingsparks (~sparky@protectedhost-6A0D9A68.nrflva.fios.verizon.net) has joined #RedditNet
+2020-05-06 19:52:05	--	Topic for #RedditNet is "/r/amateurradio on Reddit | /join #hamfest and hang onto your wallet | stats: http://bit.ly/2H9oUcc | Please wash your hands before entering! | Once someone is DEOPed, No Re-OPS or ban"
+2020-05-06 19:52:05	--	Topic set by NT1K on Fri, 10 Apr 2020 13:58:45
+2020-05-06 19:52:05	--	Channel #RedditNet: 230 nicks (94 ops, 2 halfops, 13 voices, 121 normals)
+2020-05-06 19:52:05	+Delaware-DXer	ve found a bigger asshole than me. i have to work harder now.
+2020-05-06 19:52:07	--	Channel created on Mon, 22 Jul 2013 15:04:12
+2020-05-06 19:52:09	%Maz	also i just worked FG on 6
+2020-05-06 19:52:13	%Maz	ha!
+2020-05-06 19:52:17	W9VFR	Delaware-DXer: I cant wait to see what you do
+2020-05-06 19:52:22	@k2iw	!dxcc fj
+2020-05-06 19:52:24	@qrm	FJ: St. Barthelemy: NA CQ:8 ITU:11 MW:115 -- 2988.9 km, 156° from FN33cc
+2020-05-06 19:52:29	@k2iw	dont hear them, only hear aruba
+2020-05-06 19:52:54	+Delaware-DXer	W9VFR: it's going to require a lot of thinking on how to be a bigger asshole than that guy.
+2020-05-06 19:53:04	%Maz	FG8OJ is pretty loud
+2020-05-06 19:53:08	W9VFR	Send a blank card? Or just with wrong info?
+2020-05-06 19:53:18	W9VFR	Or...worse...really wrong info?
+2020-05-06 19:53:28	W9VFR	Date? Thursday 1982
+2020-05-06 19:53:31	W9VFR	Frequency: yes
+2020-05-06 19:53:40	%Maz	at least with Delaware-DXer i know what to expect
+2020-05-06 19:53:40	W9VFR	Contact: No, prefer glasses
+2020-05-06 19:53:56	W9VFR	Mode? Ham radio
+2020-05-06 19:54:09	+Delaware-DXer	Maz: right. i wear my asshole-y-ness on my sleeve. ;)
+2020-05-06 19:54:11	W9VFR	Maz: In what way?
+2020-05-06 19:54:45	+Delaware-DXer	W9VFR: yoiu've not seen my QRDead profile?
+2020-05-06 19:54:51	W9VFR	Oh, that:)
+2020-05-06 19:54:55	%Maz	jim won't work me (most of the time) and won't qsl me because we don't have compatible qsling methods
+2020-05-06 19:55:08	+Delaware-DXer	at least i tell you up front that i'm going to be a dick.
+2020-05-06 19:55:15	%Maz	but i do enjoy calling him when he calls cq dx
+2020-05-06 19:55:22	W9VFR	HA!
+2020-05-06 19:56:10	+Delaware-DXer	W9VFR: i have to find a reddit thread... hang on....
+2020-05-06 19:56:22	W9VFR	Hanging
+2020-05-06 19:56:36	+Delaware-DXer	it's from a few years ago.
+2020-05-06 19:56:57	%Maz	W2XG just worked FG on 6
+2020-05-06 19:57:27	W9VFR	!dx FG
+2020-05-06 19:58:30	W9VFR	k2iw: I think I shall use this as a QSL card photo..need to download something to add all the deets https://imgur.com/a/Hct11Fy
+2020-05-06 19:58:30	@qrm	 "Untitled" 0 views [2048x1536] (763kB)
+2020-05-06 19:59:03	W9VFR	!c19 IL
+2020-05-06 19:59:04	@qrm	State IL Covid19 tests: positive: 68,232, negative: 293,028, hospitalized now: 4,832, deaths: 2,974
+2020-05-06 19:59:17	W9VFR	!c19 USA
+2020-05-06 19:59:18	@qrm	USA: 1,258,824 confirmed cases and 74,248 deaths; +21,191 new cases; +1,977 new deaths; 206,203 total recovered.
+2020-05-06 19:59:33	W9VFR	That recovery number is very off.
+2020-05-06 19:59:51	 *	W9VFR thinks
+2020-05-08 15:38:56	-->	routingsparks (~sparky@protectedhost-6A0D9A68.nrflva.fios.verizon.net) has joined #RedditNet
+2020-05-08 15:38:56	--	Topic for #RedditNet is "/r/amateurradio on Reddit | /join #hamfest and hang onto your wallet | stats: http://bit.ly/2H9oUcc | Please wash your hands before entering! | Once someone is DEOPed, No Re-OPS or ban"
+2020-05-08 15:38:56	--	Topic set by NT1K on Fri, 10 Apr 2020 13:58:45
+2020-05-08 15:38:56	--	Channel #RedditNet: 237 nicks (93 ops, 2 halfops, 20 voices, 122 normals)
+2020-05-08 15:38:58	--	Channel created on Mon, 22 Jul 2013 15:04:12
+2020-05-08 15:39:01	@qrm	[reddit] Catching local amateur radio by /u/quixotickrazy: https://redd.it/gfzx3b
+2020-05-08 15:40:36	K1WMA	I hear the best way is to leave out a chunk of tower with a "FREE" sign on it
+2020-05-08 15:40:51	+VE6LK	standby KK0ECT i forgot about cwget. . now qrv 50.038
+2020-05-08 15:41:00	@KC1AWV	KK0ECT, http://websdr2.sdrutah.org:8902/index1a.html
+2020-05-08 15:41:01	@qrm	"Northern Utah WebSDR #2"
+2020-05-08 15:41:11	@KC1AWV	KK0ECT, has 6M
+2020-05-08 15:41:21	@KK0ECT	VE6LK:  i am sending
+2020-05-08 15:41:26	@KK0ECT	VE6LK: thanks for "listening"
+2020-05-08 15:41:59	<--	WZ4Q (~WZ4Q@protectedhost-B9039C20.dc.dc.cox.net) has quit (Broken pipe)
+2020-05-08 15:42:23	 *	K1NZ decodes irq on 30
+2020-05-08 15:42:53	@K1NZ	two of them even
+2020-05-08 15:43:07	+VE6LK	you were LOUD. lots of fading
+2020-05-08 15:43:19	@K1NZ	!call yi1qea
+2020-05-08 15:43:21	@qrm	YI1QEA: Iraq: Qusay Abdul-latif -- yi1qea@gmail.com -- born 1953 -- P.O.Box 4326; Baghdad; Iraq -- LM [approx]: [src: dxcc] -- 9441.6 km, 49° from FN32uc
+2020-05-08 15:43:27	@KK0ECT	VE6LK: ur in the log
+2020-05-08 15:43:29	@KK0ECT	thanks!
+2020-05-08 15:43:33	+VE6LK	COOL. first CW on 6m
+2020-05-08 15:43:57	@KK0ECT	VE6LK: and you can get a WW0WWV card for 6m :D
+2020-05-08 15:43:59	+VE6LK	now S1 but LOUD
+2020-05-08 15:44:23	@KK0ECT	VE6LK: if you can, will you post a spot for me?
+2020-05-08 15:44:34	+VE6LK	i think i know how to do that
+2020-05-08 15:44:41	@KK0ECT	thank you
+2020-05-08 15:45:01	<--	W9VFR (W9VFR@585BB8FC.730CF86C.9EBACA0C.IP) has quit (Quit: Connection closed)
+2020-05-08 15:45:04	-->	W9VFR (W9VFR@585BB8FC.730CF86C.9EBACA0C.IP) has joined #RedditNet
+2020-05-08 15:45:12	--	Mode #RedditNet [+v W9VFR] by ChanServ
+2020-05-08 15:46:07	+VE6LK	done
+2020-05-08 15:46:35	@KK0ECT	thanks vince!
+2020-05-08 15:46:46	+locust	https://i.imgur.com/HVEWyBW.mp4
+2020-05-08 15:46:46	@qrm	 "Untitled" 786287 views [animated] [480x854] (2236kB) [sound] preview: http://i.imgur.com/HVEWyBWl.jpg
+2020-05-08 15:47:01	+VE6LK	yw. 5nn. 73 gud luk es gud dx
+2020-05-08 15:47:09	 *	K1NZ screes at iraq
+2020-05-08 15:47:39	 *	K1NZ throws a scooby snack at locust
+2020-05-08 15:47:52	 *	AG2V eyebrates at maz
+2020-05-08 15:48:53	@K1NZ	sierra leone just popped up too
+2020-05-08 15:49:21	@KK0ECT	got another ve6 on 6m
+2020-05-08 15:56:19	@molo_K2CR	KK0ECT: what antenna for 6?
+2020-05-08 15:56:28	@KK0ECT	2 element beam up ~30'
+2020-05-08 15:56:33	@molo_K2CR	oh sweet
+2020-05-08 15:56:35	<--	KE0WWG (~maxrebo@protectedhost-CB80B2BD.theewok.net) has quit (Broken pipe)
+2020-05-08 15:56:51	@KK0ECT	no amp though - so 100w
+2020-05-08 15:57:08	@KK0ECT	put in the 10m mod on the amp, but it doesnt go bast  28mhz
+2020-05-08 15:57:13	@KK0ECT	*past
+2020-05-08 15:57:29	@KK0ECT	molo_K2CR: i have 2 element beam for all bands 20-6
+2020-05-08 15:57:38	@KK0ECT	thats how the ma-6b is configured
+2020-05-08 15:57:41	@molo_K2CR	oh cool
+2020-05-08 15:57:53	@molo_K2CR	i didn't know it went up to 6
+2020-05-08 15:58:16	@KK0ECT	yeah it has a dedicated 6m beam that hangs underneath the main boom
+2020-05-08 15:59:13	@KK0ECT	molo_K2CR: you can see it well in this pic https://images-na.ssl-images-amazon.com/images/I/81%2BS36kb%2BrL._AC_SL1500_.jpg
+2020-05-08 16:00:13	@KC1AWV	Female N pigtail panel mount
+2020-05-08 16:00:18	@KC1AWV	why is that so hard to find
+2020-05-08 16:00:48	n1ta	N stuff is surprisingly hard to find
+2020-05-08 16:01:11	@KC1AWV	I guess so lol
+2020-05-08 16:01:29	@KC1AWV	I can find pigtails, but nothing with a female panel mount on one end
+2020-05-08 16:01:59	<--	ke8jlu (~jon@protectedhost-4CF834AD.col.wideopenwest.com) has quit (Operation timed out)
+2020-05-08 16:01:59	n1ta	a panel mount on the end of a pigtail?
+2020-05-08 16:02:20	@KC1AWV	right, so I can mount the female end to a panel
+2020-05-08 16:02:27	K1WMA	It pains me to see things like RX amps and distributors that promise 1GHz+ coverage and then are all PL-259
+2020-05-08 16:02:58	n1ta	yeah that's an odd thing. You might have trouble finding that with pl259 even
+2020-05-08 16:03:28	@KC1AWV	I can find solder cup ones but I hate soldering
+2020-05-08 16:03:41	@KC1AWV	plus that means I have to cut coax
+2020-05-08 16:03:45	@KK0ECT	what makes N so much better for higher frq. stuff?
+2020-05-08 16:04:26	n1ta	less of an impedence bump (sounder mechanically)
+2020-05-08 16:04:48	n1ta	pl259s get ugly at vhf+
+2020-05-08 16:05:08	@KC1AWV	https://www.iz2uuf.net/wp/index.php/2016/01/08/pl-259-vs-n-on-430-mhz/
+2020-05-08 16:05:11	@qrm	"PL-259 vs. N on 430 MHz" https://j.mp/2yEB5xl — (Note: this article is available also in Russian, thanks to Oleg UA9UAX!) [Read also the follow-up: PL-259 vs. N, round 2: hard testing] Ham radio makers often offer two distinct connectors for the 2m/70cm port: N for the European market, SO-239 for USA/Japan and the rest of the markets. Th
+2020-05-24 20:57:03	-->	routingsparks (~sparky@protectedhost-6A0D9A68.nrflva.fios.verizon.net) has joined #RedditNet
+2020-05-24 20:57:03	--	Topic for #RedditNet is "/r/amateurradio on Reddit | /join #hamfest and hang onto your wallet | stats: http://bit.ly/2H9oUcc | Please wash your hands before entering! | Hail Satan"
+2020-05-24 20:57:03	--	Topic set by NT1K on Thu, 21 May 2020 08:29:37
+2020-05-24 20:57:03	--	Channel #RedditNet: 233 nicks (70 ops, 3 halfops, 24 voices, 136 normals)
+2020-05-24 20:57:05	--	Channel created on Mon, 22 Jul 2013 15:04:12
+2020-05-24 20:59:08	<--	w9vfr (~W9VFR@protectedhost-CE50976B.bltnilaa.metronetinc.net) has quit (Ping timeout: 960 seconds)
+2020-05-24 21:02:46	%Maz	WHOMST
+2020-05-24 21:03:01	@qrm	[reddit] A lot of my local repeaters have both IRLP and Echolink, but I just read that repeaters generally don’t have both enabled at the same time. How do I know what’s available when? Or am I misunderstanding? by /u/shadowcorp: https://redd.it/gq1a8u
+2020-05-24 21:03:26	WY7W-1	Good evening Maz
+2020-05-24 21:11:19	@k2iw	W H O M S T
+2020-05-24 21:11:39	WY7W-1	TSMOHW
+2020-05-24 21:17:25	+shotgunmoose	W
+2020-05-24 21:17:26	+shotgunmoose	H
+2020-05-24 21:17:27	+shotgunmoose	O
+2020-05-24 21:17:29	+shotgunmoose	M
+2020-05-24 21:17:30	+shotgunmoose	S
+2020-05-24 21:17:31	+shotgunmoose	T
+2020-05-24 21:18:01	@qrm	[reddit] 80-10 Home Brew End Fed by /u/RagingUrsus: https://redd.it/gq1l1h
+2020-05-24 21:18:50	@k2iw	is it bed time yet
+2020-05-24 21:19:37	<--	VA3MWL (~maste@protectedhost-F4B56946.cpe.net.cable.rogers.com) has quit (Broken pipe)
+2020-05-24 21:19:50	+shotgunmoose	cat nap time
+2020-05-24 21:20:15	Shadyman	W H O M O I S T
+2020-05-24 21:20:24	+shotgunmoose	M
+2020-05-24 21:20:26	+shotgunmoose	O
+2020-05-24 21:20:27	+shotgunmoose	I
+2020-05-24 21:20:28	+shotgunmoose	S
+2020-05-24 21:20:29	+shotgunmoose	T
+2020-05-24 21:20:34	 *	Shadyman speaks moistly.
+2020-05-24 21:21:01	-->	VA3MWL (~maste@protectedhost-F4B56946.cpe.net.cable.rogers.com) has joined #RedditNet
+2020-05-24 21:21:03	 *	shotgunmoose puts up a spit shield in front of Shadyman 
+2020-05-24 21:21:45	@k2iw	moist
+2020-05-24 21:23:11	+shotgunmoose	moost
+2020-05-24 21:28:31	+ns7i	so wats goin on in here?
+2020-05-24 21:28:52	+ns7i	todays wins: selling my switch for roughly the price i paid for it years ago, first oil change!
+2020-05-24 21:29:03	+ns7i	with a rather finnicky previous oil filter
+2020-05-24 21:31:09	+ns7i	i also sold a fog machine
+2020-05-24 21:31:13	+ns7i	and gave away an old 35mm camera
+2020-05-24 21:31:52	+ns7i	i think the only hammy thing i'm planning on selling is a buddipole
+2020-05-24 21:31:56	+ns7i	if anyone wants one get at me
+2020-05-24 21:35:25	WY7W-1	oh, sounds like a I'm moving sale
+2020-05-24 21:35:27	@k2iw	h a m s t i c k s
+2020-05-24 21:35:34	+ns7i	WY7W-1: oh it's a moving sale
+2020-05-24 21:35:37	@k2iw	ns7i: qso when
+2020-05-24 21:35:40	+ns7i	all kind of other random shit for sale
+2020-05-24 21:35:46	+ns7i	k2iw: asap
+2020-05-24 21:35:58	+ns7i	realistically? mid june
+2020-05-24 21:36:49	+ns7i	we've got to move in, my bro and family are visiting almost right after we move in, and then i'm probably going to be working a bunch to catch up for lost time
+2020-05-24 21:37:08	+ns7i	but you know i'm going to be tryin to get an antenna up ASAP
+2020-05-24 21:39:09	+ns7i	even if i'm just running an extension cord out to the yard
+2020-05-24 21:39:20	+ns7i	i think i'm going to buy a second powerwerx psu and the rackmount kit
+2020-05-24 21:39:31	+ns7i	and the other thing i "need" is an atu
+2020-05-24 21:39:42	+ns7i	i think for that i'm doin the ldg at600proii
+2020-05-24 21:40:28	+ns7i	for now i'll probably have a crimpy ladderline doublet and i'll likely replace it later with a cleaned up one
+2020-05-24 21:40:44	WY7W-1	anything is better than nothing
+2020-05-24 21:40:56	@k2iw	ns7i: wow thats quick
+2020-05-24 21:41:09	+ns7i	no idea what i'm going to do for entry
+2020-05-24 21:41:15	+ns7i	i'll need to investigate closely
+2020-05-24 21:41:22	+ns7i	worst case garage is a gimme
+2020-05-24 21:46:39	+kn3b	ge oms
+2020-05-24 21:46:54	+ns7i	heyo brad
+2020-05-24 21:46:56	+ns7i	happy sunday
+2020-05-24 21:47:26	+kn3b	happy sunday
+2020-05-24 21:48:12	+KD1LDO	happy sunday
+2020-05-24 21:48:31	 *	ns7i pours a round of IPAs for the channel
+2020-05-24 21:48:58	 *	KD1LDO shifts his fast starting point back an hour
+2020-05-24 21:51:47	+ns7i	KD1LDO: what's your fasting look like?
+2020-05-24 21:52:56	+KD1LDO	I kicked it off like.. friday morning? Went 36 hours no food. Broke fast last night with a meal that was honestly too large. Now I'm basically on one meal a day IF of 20 fasted hours and 4 eating hours.
+2020-05-24 21:53:01	@qrm	[reddit] Y'all, I did it! by /u/m5ind: https://redd.it/gq23wn
+2020-05-24 21:53:05	+KD1LDO	But I'm down six pounds, sooo.
+2020-05-25 06:44:10	--	irc: disconnected from server
+2020-05-25 06:44:25	-->	routingsparks (~sparky@protectedhost-6A0D9A68.nrflva.fios.verizon.net) has joined #RedditNet
+2020-05-25 06:44:25	--	Topic for #RedditNet is "/r/amateurradio on Reddit | /join #hamfest and hang onto your wallet | stats: http://bit.ly/2H9oUcc | Please wash your hands before entering! | Hail Satan"
+2020-05-25 06:44:25	--	Topic set by NT1K on Thu, 21 May 2020 08:29:37
+2020-05-25 06:44:25	--	Channel #RedditNet: 233 nicks (70 ops, 3 halfops, 22 voices, 138 normals)
+2020-05-25 06:44:28	--	Channel created on Mon, 22 Jul 2013 15:04:12
+2020-05-25 06:45:26	<--	_mb (uid440149@protectedhost-255FA05C.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2020-05-25 06:52:40	-->	razterer (~Thunderbi@protectedhost-44F9D61F.cgn.dynamic.surfer.at) has joined #RedditNet
+2020-05-25 06:55:49	@vk3dan	!wx
+2020-05-25 06:55:50	@qrm	Location: Lilydale VIC 3140, Australia Currently: Clear Temp: 6°C Feels like: 6°C Humidity: 92.0% Barometer: 1026hPa Visibility: 16km with 0% cloud cover. Dew point: 5°C Wind: 1.5 m/s, direction: 95° Forecast: Rain on Wednesday through next Monday.
+2020-05-25 07:06:50	<--	razterer (~Thunderbi@protectedhost-44F9D61F.cgn.dynamic.surfer.at) has quit (Quit: razterer)
+2020-05-26 19:15:44	-->	routingsparks (~sparky@protectedhost-6A0D9A68.nrflva.fios.verizon.net) has joined #RedditNet
+2020-05-26 19:15:44	--	Topic for #RedditNet is "/r/amateurradio on Reddit | /join #hamfest and hang onto your wallet | stats: http://bit.ly/2H9oUcc | Please wash your hands before entering! | Hail Satan"
+2020-05-26 19:15:44	--	Topic set by NT1K on Thu, 21 May 2020 08:29:37
+2020-05-26 19:15:44	--	Channel #RedditNet: 241 nicks (68 ops, 2 halfops, 25 voices, 146 normals)
+2020-05-26 19:15:46	--	Channel created on Mon, 22 Jul 2013 15:04:12
+2020-05-26 19:15:52	+JR2TTS	btw I got a new rpi 4b
+2020-05-26 19:16:00	+k2iw	all the ram
+2020-05-26 19:16:02	+JR2TTS	I'm building a new wxsat receiver
+2020-05-26 19:16:03	BaconRadio	ok, whoever was recommended the VARA modem... I bought it. What now?
+2020-05-26 19:16:21	%Maz	you know it's hot when the 7300 doesn't turn fans off in the decode window
+2020-05-26 19:16:39	+JR2TTS	and I'm repurposing the old 3b for a new project
+2020-05-26 19:16:59	+JR2TTS	I got an idea from Linus Tech Tips (heh)
+2020-05-26 19:17:49	+k2iw	i gotta flip the breaker and plug the ac into the other outlet
+2020-05-26 19:17:49	%Maz	COME ON PANAMA
+2020-05-26 19:17:52	+k2iw	but im cumfy now
+2020-05-26 19:17:54	+k2iw	Maz: on 12?
+2020-05-26 19:17:55	%Maz	BIG BUCKS NO WHAMMIES
+2020-05-26 19:17:58	%Maz	10
+2020-05-26 19:17:58	@kc2g	JR2TTS: sehr gut
+2020-05-26 19:17:58	+JR2TTS	take an old monitor apart and embed a pi in it, use it as kind of an all-in-one computer. Install Ham Clock: et voila, instant wall mount clock display and ham cheat cheet
+2020-05-26 19:18:00	+JR2TTS	sheet
+2020-05-26 19:18:09	+k2iw	Maz: he dicked me around for 8 minutes for a fucking 73
+2020-05-26 19:18:13	 *	k2iw baps him
+2020-05-26 19:18:18	+k2iw	i like his qrz page though
+2020-05-26 19:18:32	%Maz	he's doing the same with a 6-lander
+2020-05-26 19:18:41	%Maz	oh he doesn't hear me
+2020-05-26 19:19:11	 *	JR2TTS also got Panama as an ATNO in December as NI3B, on 15m phone
+2020-05-26 19:19:21	+JR2TTS	baaaaaaaaarely heard each other
+2020-05-26 19:19:25	%Maz	lots of traces on the band
+2020-05-26 19:19:28	+k2iw	i need all the 10m dx I can get if im ever going to get 5 band dxcc
+2020-05-26 19:19:31	+k2iw	god i hate/love 10
+2020-05-26 19:19:40	+JR2TTS	wait for 2025
+2020-05-26 19:19:47	%Maz	i wish 10 would OOOOOOOPPPPPPEEEENNNNN
+2020-05-26 19:19:53	 *	Maz baps
+2020-05-26 19:20:27	%Maz	10 is "open"
+2020-05-26 19:20:28	+k2iw	us virgin islands not hearing me
+2020-05-26 19:20:38	+k2iw	i swear on me mum if it opens next week when im home
+2020-05-26 19:20:40	%Maz	i'm being heard in the iberian
+2020-05-26 19:20:49	+JR2TTS	Maz> re: "BIG BUCKS NO WHAMMIES"... now that's an old-ass reference
+2020-05-26 19:21:07	%Maz	dude i love press your luck
+2020-05-26 19:22:00	%Maz	the most recent remake was nahbad
+2020-05-26 19:22:24	+k2iw	im just waiting for co8ly to fire up and ruin my SA experience
+2020-05-26 19:22:30	<--	W3AVP (W3AVP@protectedhost-EEBBF56.hsd1.pa.comcast.net) has quit (Quit: Connection closed)
+2020-05-26 19:22:43	+JR2TTS	I was under the assumption that game shows in America were not really viable anymore unless they had either explosions or penis references
+2020-05-26 19:23:13	+k2iw	i mean, who can afford tv these days
+2020-05-26 19:23:15	+k2iw	lol
+2020-05-26 19:23:21	<--	oh2ftg (~ftg@protectedhost-F8F27517.bb.dnainternet.fi) has quit (Operation timed out)
+2020-05-26 19:23:43	%Maz	my uncle and i are paying $145/mo to comcrap for the 3-way bundle
+2020-05-26 19:23:46	@kc2g	The gun is good. The penis is evil.
+2020-05-26 19:23:46	+k2iw	b u n d l e   a n d   s a v e
+2020-05-26 19:24:01	+JR2TTS	EEEEEEEEEEEEEK
+2020-05-26 19:24:05	@qrm	[reddit] I think I fried my radio by /u/lstepnio: https://redd.it/gr831c
+2020-05-26 19:24:09	+k2iw	f
+2020-05-26 19:24:16	+JR2TTS	in bacon fat?
+2020-05-26 19:24:52	WM4TH	Absolutely no reason to pay for cable anymore. I'm not paying for content that's 50% advertisements.
+2020-05-26 19:24:56	+k2iw	Maz: -19
+2020-05-26 19:25:13	+JR2TTS	vpn + pihole + netflix = yaaaaaaaaaaassssss
+2020-05-26 19:25:22	WM4TH	If I want to pay for a video with ads, I'll up and buy a theatre ticket
+2020-05-26 19:25:50	+k2iw	finally sint maarten
+2020-05-26 19:25:52	+k2iw	gimmie
+2020-05-26 19:25:58	+JR2TTS	ooh I got them in December
+2020-05-26 19:26:07	N0AW	k2iw: what band are ya on?
+2020-05-26 19:26:20	+k2iw	10
+2020-05-26 19:26:22	+JR2TTS	then again I got a shitload of new ones in December
+2020-05-26 19:26:38	+k2iw	Maarten is also a new one for 10
+2020-05-26 19:26:53	+JR2TTS	5 months later I'm still stoked at getting St. Helena on Christmas Day
+2020-05-26 19:26:59	+w9km	k2iw, several times last week I got nice 10m prop right after sunset
+2020-05-26 19:27:08	+k2iw	yep thats why im hanging out here instead of yelling at JA
+2020-05-26 19:27:17	+k2iw	enjoying decent size 10m ant and amp
+2020-05-26 19:27:18	+JR2TTS	^
+2020-05-26 19:27:19	+k2iw	!sun
+2020-05-26 19:27:19	@qrm	Sun az/el 291.5°/8.3°; Sun will set at 2020-05-27 00:19z (in 0h52m)
+2020-05-26 19:27:25	%Maz	fucking deaf panama
+2020-05-26 19:27:28	 *	Maz stabs
+2020-05-26 19:27:33	%Maz	also fb zach
+2020-05-26 19:27:37	 *	Maz stabs again
+2020-05-26 19:27:39	kc2els	!sun
+2020-05-26 19:27:40	@qrm	Sun az/el 254.9°/42.1°; Sun will set at 2020-05-27 03:49z (in 4h21m)
+2020-05-26 19:27:42	kc2els	Okay that's keen
+2020-05-26 19:28:08	%Maz	your 2-call confuses me every time
+2020-05-26 19:28:18	@Hogie	your 1 call confuses me every time
+2020-05-26 19:28:24	%Maz	4 more hours of sun? what?
+2020-05-26 19:28:27	+JR2TTS	I am no longer fooled by call regions
+2020-05-26 19:28:39	@Hogie	!sun
+2020-05-26 19:28:39	@qrm	Sun az/el 281.5°/22.5°; Sun will set at 2020-05-27 01:24z (in 1h55m)
+2020-05-26 19:28:40	+JR2TTS	I now know that every 3 call I hear on the air is bullshit
+2020-05-26 19:28:44	+k2iw	if its a 2 lander thats out of district its either florida or washington
+2020-05-26 19:28:48	+JR2TTS	it's always California
+2020-05-26 19:29:01	@qrm	[reddit] Help identifying cable/connector by /u/Coumor: https://redd.it/gr859v
+2020-05-26 19:29:02	@qrm	[reddit] Got my calling sign - what other registrations i should complete by /u/stumbrasdenver: https://redd.it/gr85iw
+2020-05-26 19:29:05	@qrm	[reddit] Suggestions for using my end fed antenna for receiving FM broadcast by /u/ImageJPEG: https://redd.it/gr876u
+2020-05-26 19:29:14	+JR2TTS	"calling sign"
+2020-05-26 19:29:29	+JR2TTS	welcome to hamming radio
+2020-05-26 19:29:55	+JR2TTS	greetings fellow kids
+2020-05-26 19:31:39	N0AW	ok got 10m to tune
+2020-05-26 19:31:50	+k2iw	ok
+2020-05-26 19:31:50	+k2iw	qsy 12
+2020-05-26 19:31:54	+k2iw	errr
+2020-05-26 19:32:11	+k2iw	im not getting int colorado
+2020-05-26 19:32:12	+k2iw	qsy 12
+2020-05-26 19:32:13	N0AW	lol
+2020-05-26 19:33:04	+k2iw	friend qso on new band, especially seasonal > checking for more dx
+2020-05-26 19:33:13	+k2iw	oh theres co8ly
+2020-05-26 19:33:26	+k2iw	i am hear cali on 12
+2020-05-26 19:33:29	+k2iw	*hearing
+2020-05-26 19:33:37	-->	ILLUsiON` (~hahahaha@I.Am.Addicted.To.Irc) has joined #RedditNet
+2020-05-26 19:34:01	@qrm	[reddit] Built a thing. Might be a little bit impressed with myself. by /u/donkeyhinge: https://redd.it/gr89k0

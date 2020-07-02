@@ -1,0 +1,296 @@
+2020-05-05 10:37:12	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined ##security
+2020-05-05 10:37:12	--	Topic for ##security is "Welcome to Computer, Network & Physical ##Security | #coronavirus for your daily dose of virology/immunology | Please stay on topic | Jobs: https://bit.ly/2wU0YIh"
+2020-05-05 10:37:12	--	Topic set by nate on Wed, 25 Mar 2020 10:34:15
+2020-05-05 10:37:12	--	Channel ##security: 932 nicks (5 ops, 0 voices, 927 normals)
+2020-05-05 10:37:12	--	PvNotice(ChanServ): In line with freenode channel naming policy ( http://freenode.net/policy.shtml#channelnaming ), channel management of #security has moved to ##security .... please update your autojoins! Thanks.
+2020-05-05 10:37:14	--	Channel created on Wed, 19 Jul 2006 16:49:13
+2020-05-05 10:38:01	<--	Guest20_ (~textual@103.215.168.1) has quit (Quit: ZZZzzz…)
+2020-05-05 10:39:47	velix	tmberg: Yeah, worked.
+2020-05-05 10:40:05	--	jomo_7 is now known as jomo_
+2020-05-05 10:40:26	<--	zro_ (~zro@wikimedia/zro) has quit (Ping timeout: 264 seconds)
+2020-05-05 10:41:54	<--	treehug88 (~textual@pool-71-105-170-196.nycmny.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2020-05-05 10:42:26	-->	zro_ (~zro@wikimedia/zro) has joined ##security
+2020-05-05 10:43:16	-->	DirefulSalt (DirefulSal@gateway/vpn/privateinternetaccess/direfulsalt) has joined ##security
+2020-05-05 10:44:03	-->	abenthy_ (~abenthy_@103.79.170.162) has joined ##security
+2020-05-05 10:44:15	<--	nightowl1 (~nightowl1@193.192.112.162) has quit (Quit: Leaving)
+2020-05-05 10:44:28	-->	Goyt (~Goyt@178.89.8.245) has joined ##security
+2020-05-05 10:46:02	<--	echoSMILE (~censured@unaffiliated/echosmile) has quit (Ping timeout: 246 seconds)
+2020-05-05 10:47:43	<--	trishul (~abhijital@pool-100-34-167-90.phlapa.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2020-05-05 10:50:49	 *	SymbioticFemale rages and starts shaking openbsd.org for the 6.7 update to drop
+2020-05-05 10:53:37	shadowdaemon	The fact is that we are all symbiotic organisms.
+2020-05-05 10:54:01	 *	velix is orgasmic
+2020-05-05 10:54:01	 *	shadowdaemon just felt compelled to say that.
+2020-05-05 10:54:18	 *	SymbioticFemale nods approvingly
+2020-05-05 10:54:40	<--	KidBeta (~Kidbeta@hpavc/kidbeta) has quit
+2020-05-05 10:55:39	<--	ice9 (~ice9@unaffiliated/ice9) has quit (Ping timeout: 260 seconds)
+2020-05-05 10:58:20	-->	BOKALDO (~BOKALDO@87.110.102.49) has joined ##security
+2020-05-05 10:58:30	<--	ijens (~ijens@unaffiliated/ijens) has quit (Remote host closed the connection)
+2020-05-05 11:00:09	<--	joocain2 (~joocain2@gateway/tor-sasl/joocain2) has quit (Remote host closed the connection)
+2020-05-05 11:00:51	-->	joocain2 (~joocain2@gateway/tor-sasl/joocain2) has joined ##security
+2020-05-05 11:01:47	<--	halprin (~halprin@45-16-213-131.lightspeed.elpstx.sbcglobal.net) has quit (Quit: My computer has gone to sleep.)
+2020-05-05 11:02:20	<--	denisse (~spaceCat@gateway/tor-sasl/alephzer0) has quit (Remote host closed the connection)
+2020-05-05 11:02:40	-->	alephZer0 (~spaceCat@gateway/tor-sasl/alephzer0) has joined ##security
+2020-05-05 11:05:05	-->	trishul (~abhijital@pool-100-34-167-90.phlapa.fios.verizon.net) has joined ##security
+2020-05-05 11:06:36	-->	GoldenOre (~Silverlea@unaffiliated/goldenore) has joined ##security
+2020-05-05 11:07:44	<--	Silverleaf (~Silverlea@unaffiliated/goldenore) has quit (Ping timeout: 246 seconds)
+2020-05-05 11:08:44	<--	Heart_And_Chops (~Heart_And@S0106cc2de0099182.no.shawcable.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2020-05-05 11:09:14	-->	yans (~yans@unaffiliated/yinsen) has joined ##security
+2020-05-05 11:10:58	<--	anarkat (~anarkat@gateway/tor-sasl/anarkat) has quit (Quit: anarkat)
+2020-05-05 11:11:08	<--	mnemonic (~semeion@unaffiliated/semeion) has quit (Quit: WeeChat 2.8)
+2020-05-05 11:15:19	<--	yuljk (~yuljk@unaffiliated/yuljk) has quit (Quit: %Adieu! I have too grieved a heart to take a tedious leave.%)
+2020-05-05 11:15:26	-->	nuclearg (~work@c-73-150-253-137.hsd1.nj.comcast.net) has joined ##security
+2020-05-05 11:15:39	-->	Mekely (uid294320@gateway/web/irccloud.com/x-olkjmvthesrkukvi) has joined ##security
+2020-05-05 11:15:42	-->	yuljk (~yuljk@unaffiliated/yuljk) has joined ##security
+2020-05-05 11:17:52	<--	a_west (~a_west@82-183-13-131.customers.ownit.se) has quit (Quit: Bye!)
+2020-05-05 11:18:11	-->	a_west (~a_west@2a01:3b8:1aaf:fe00:2a53:bee2:bf2b:355a) has joined ##security
+2020-05-05 11:19:25	<--	etsum (~miguar@185.21.217.29) has quit (Ping timeout: 264 seconds)
+2020-05-05 11:21:12	-->	etsum (~miguar@185.21.217.29) has joined ##security
+2020-05-05 11:27:38	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:27:38	<--	Deacyde (~Deacyde@unaffiliated/deacyde) has quit (Read error: Connection reset by peer)
+2020-05-05 11:32:13	<--	Fjord (~Fjord@c-73-229-254-36.hsd1.co.comcast.net) has quit (Ping timeout: 272 seconds)
+2020-05-05 11:32:14	-->	Fjord2 (~Fjord@c-73-229-254-36.hsd1.co.comcast.net) has joined ##security
+2020-05-05 11:40:08	-->	caterfxo (~caterfxo@unaffiliated/caterfxo) has joined ##security
+2020-05-05 11:40:21	-->	Guest20 (~textual@103.215.168.1) has joined ##security
+2020-05-05 11:41:52	--	caterfxo is now known as Guest66327
+2020-05-05 11:41:57	-->	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has joined ##security
+2020-05-05 11:42:36	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined ##security
+2020-05-05 11:42:52	-->	leizy (~leizy@2001:1c03:4308:6c00:29c6:645c:8f70:3ce4) has joined ##security
+2020-05-05 11:42:54	-->	silversword_afk_ (silverswor@gateway/vpn/privateinternetaccess/silversword) has joined ##security
+2020-05-05 11:43:36	-->	Deacyde (~Deacyde@unaffiliated/deacyde) has joined ##security
+2020-05-05 11:44:38	<--	razvand (~razvand@62.121.83.2) has quit (Ping timeout: 264 seconds)
+2020-05-05 11:44:57	-->	dmartzol (~dani@2601:249:8d80:4b60:1028:b7f0:7b35:8d59) has joined ##security
+2020-05-05 11:45:32	<--	Guest20 (~textual@103.215.168.1) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:45:32	<--	Guest66327 (~caterfxo@unaffiliated/caterfxo) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:46:05	<--	abenthy_ (~abenthy_@103.79.170.162) has quit (Remote host closed the connection)
+2020-05-05 11:46:07	-->	yonder (~yonder@unaffiliated/yonder) has joined ##security
+2020-05-05 11:46:38	-->	abenthy_ (~abenthy_@103.79.170.162) has joined ##security
+2020-05-05 11:52:52	-->	ice9 (~ice9@unaffiliated/ice9) has joined ##security
+2020-05-05 11:53:03	<--	velix (~velix@unaffiliated/velix) has left ##security ("Leaving")
+2020-05-05 11:54:34	<--	spanishsunrise (uid393013@gateway/web/irccloud.com/x-ivbjkksdkamgwnml) has quit (Quit: Connection closed for inactivity)
+2020-05-05 11:56:29	-->	pressure679 (~naamik@194.177.250.82) has joined ##security
+2020-05-05 11:57:41	-->	SleekUser (~SleekUser@2600:8802:3100:776::2) has joined ##security
+2020-05-05 11:58:04	-->	kpp[qrator_labs] (kvqratorne@gateway/shell/matrix.org/x-ypefxeoiazwxpcwv) has joined ##security
+2020-05-05 11:58:28	<--	snatcher (~user@gateway/tor-sasl/snatcher) has quit (Remote host closed the connection)
+2020-05-05 11:58:50	-->	snatcher (~user@gateway/tor-sasl/snatcher) has joined ##security
+2020-05-05 11:59:50	--	maccraft is now known as macc24
+2020-05-05 12:01:57	-->	cgi (~cgi@unaffiliated/cgi) has joined ##security
+2020-05-05 12:02:49	cgi	Is using an Load balancer between an EC2 instance (port 443/22 open) and a browser a more secure way of deploying web applications?
+2020-05-05 12:02:52	<--	spare (~user@unaffiliated/spareproject) has quit (Ping timeout: 256 seconds)
+2020-05-05 12:03:16	<--	treeview (~treeview@71.65.230.142) has quit (Remote host closed the connection)
+2020-05-05 12:04:24	-->	dunningk (~qwe@unaffiliated/kunningd) has joined ##security
+2020-05-05 12:05:11	<--	kunningd (~qwe@unaffiliated/kunningd) has quit (Ping timeout: 260 seconds)
+2020-05-05 12:05:37	-->	spareproject (~user@unaffiliated/spareproject) has joined ##security
+2020-05-05 12:05:55	-->	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has joined ##security
+2020-05-05 12:06:13	<--	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has quit (Max SendQ exceeded)
+2020-05-05 12:06:19	-->	Guest20 (~textual@103.215.168.1) has joined ##security
+2020-05-05 12:06:21	-->	qp (~grip@grepnet.org) has joined ##security
+2020-05-05 12:07:17	--	qp is now known as killswitch
+2020-05-05 12:07:58	-->	echoSMILE (~censured@unaffiliated/echosmile) has joined ##security
+2020-05-05 12:08:41	-->	r-k (~r-k@122.162.255.110) has joined ##security
+2020-05-05 12:08:47	-->	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has joined ##security
+2020-05-05 12:09:24	<--	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has quit (Max SendQ exceeded)
+2020-05-05 12:09:26	<--	dunningk (~qwe@unaffiliated/kunningd) has quit (Quit: WeeChat 2.8)
+2020-05-05 12:10:06	-->	kunningd (~qwe@unaffiliated/kunningd) has joined ##security
+2020-05-05 12:11:09	-->	secntech (~secntech@unaffiliated/secntech) has joined ##security
+2020-05-05 12:11:27	-->	ijens (~ijens@unaffiliated/ijens) has joined ##security
+2020-05-05 12:14:50	<--	zro_ (~zro@wikimedia/zro) has quit (Ping timeout: 256 seconds)
+2020-05-05 12:16:00	-->	zro_ (~zro@wikimedia/zro) has joined ##security
+2020-05-05 12:17:05	-->	lall- (~data@2400:8902::f03c:91ff:fe73:d55e) has joined ##security
+2020-05-05 12:17:34	-->	razvand (~razvand@62.121.83.2) has joined ##security
+2020-05-05 12:18:03	<--	snatcher (~user@gateway/tor-sasl/snatcher) has quit (Ping timeout: 240 seconds)
+2020-05-05 12:19:24	--	kreyren_ is now known as kreyren
+2020-05-05 12:19:28	-->	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has joined ##security
+2020-05-05 12:19:44	jabberwock	sure
+2020-05-05 12:19:51	jabberwock	but don't have 22 open on the perimeter
+2020-05-05 12:20:01	<--	X20Hunter (~X20Hunter@2409:8a38:973:a00:8840:3bc0:17ff:6) has quit (Max SendQ exceeded)
+2020-05-05 12:20:06	jabberwock	s/22/SSH/
+2020-05-05 12:20:45	-->	snatcher (~user@gateway/tor-sasl/snatcher) has joined ##security
+2020-05-05 12:21:05	cgi	jabberwock, I was hoping openssh is secure enough to depend on at 22? I use nginx on 443
+2020-05-05 12:21:24	jabberwock	cgi: every version below 7.7 was vulnerable to username enumeration
+2020-05-05 12:21:37	jabberwock	It's best to seal off things that are specific to shell access
+2020-05-05 12:21:44	<--	secntech (~secntech@unaffiliated/secntech) has quit (Quit: Leaving)
+2020-05-05 12:21:54	jabberwock	no reason to have those open to the public unless it's a honeypot and you have nothing better to do
+2020-05-05 12:22:14	<--	ice9 (~ice9@unaffiliated/ice9) has quit (Ping timeout: 240 seconds)
+2020-05-05 12:22:24	jabberwock	And < 7.7 is still widely used, and it has helped me find accounts
+2020-05-05 12:23:08	jabberwock	I'll get a breach dump and run that against SSH to find some local account and then spray the rest of the network and find all kinds of things. All because OpenSSH initially helped me determine which accounts are used on that segment
+2020-05-05 12:23:11	jabberwock	etc. and such
+2020-05-05 12:23:30	<--	KindOne (kindone@freenode/father-christmas/kindone) has quit (Quit: K-Lined)
+2020-05-05 19:19:55	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined ##security
+2020-05-05 19:19:55	--	Topic for ##security is "Welcome to Computer, Network & Physical ##Security | #coronavirus for your daily dose of virology/immunology | Please stay on topic | Jobs: https://bit.ly/2wU0YIh"
+2020-05-05 19:19:55	--	Topic set by nate on Wed, 25 Mar 2020 10:34:15
+2020-05-05 19:19:55	--	Channel ##security: 933 nicks (5 ops, 0 voices, 928 normals)
+2020-05-05 19:19:55	--	PvNotice(ChanServ): In line with freenode channel naming policy ( http://freenode.net/policy.shtml#channelnaming ), channel management of #security has moved to ##security .... please update your autojoins! Thanks.
+2020-05-05 19:19:55	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined ##security
+2020-05-05 19:20:03	--	Channel created on Wed, 19 Jul 2006 16:49:13
+2020-05-05 19:20:32	-->	lor4x (~lorax@exit-au2.corpvpn.redpiranha.net) has joined ##security
+2020-05-05 19:20:57	Jo-Anna	The thing about laws though they always have a bias there have been laws against men wearing braids to persecute Chinese and native Americans
+2020-05-06 19:52:16	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined ##security
+2020-05-06 19:52:16	--	Topic for ##security is "Welcome to Computer, Network & Physical ##Security | #coronavirus for your daily dose of virology/immunology | Please stay on topic | Jobs: https://bit.ly/2wU0YIh"
+2020-05-06 19:52:16	--	Topic set by nate on Wed, 25 Mar 2020 10:34:15
+2020-05-06 19:52:16	--	Channel ##security: 917 nicks (6 ops, 0 voices, 911 normals)
+2020-05-06 19:52:16	--	PvNotice(ChanServ): In line with freenode channel naming policy ( http://freenode.net/policy.shtml#channelnaming ), channel management of #security has moved to ##security .... please update your autojoins! Thanks.
+2020-05-06 19:52:24	--	Channel created on Wed, 19 Jul 2006 16:49:13
+2020-05-06 19:52:40	AlpacaFace	tremendous cast, and well made. but super scary lol
+2020-05-06 19:54:45	@sartan_	reality has a liberal bias
+2020-05-06 19:56:25	-->	mnflshdq (~mnflshdq@36.83.203.81) has joined ##security
+2020-05-06 19:58:56	<--	dude12312414 (~test@gateway/tor-sasl/dude12312414) has quit (Remote host closed the connection)
+2020-05-06 19:59:49	-->	u_u (~owo@137.118.221.173) has joined ##security
+2020-05-08 15:39:08	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined ##security
+2020-05-08 15:39:08	--	Topic for ##security is "Welcome to Computer, Network & Physical ##Security | #coronavirus for your daily dose of virology/immunology | Please stay on topic | Jobs: https://bit.ly/2wU0YIh"
+2020-05-08 15:39:08	--	Topic set by nate on Wed, 25 Mar 2020 10:34:15
+2020-05-08 15:39:08	--	Channel ##security: 959 nicks (5 ops, 0 voices, 954 normals)
+2020-05-08 15:39:08	--	PvNotice(ChanServ): In line with freenode channel naming policy ( http://freenode.net/policy.shtml#channelnaming ), channel management of #security has moved to ##security .... please update your autojoins! Thanks.
+2020-05-08 15:39:16	--	Channel created on Wed, 19 Jul 2006 16:49:13
+2020-05-08 15:39:39	--	kreyren_ is now known as kreyren
+2020-05-08 15:39:43	<--	roots (~trs@gateway/tor-sasl/therootshell) has quit (Ping timeout: 240 seconds)
+2020-05-08 15:40:17	<--	stnly (~stnly@ns558423.ip-139-99-122.net) has quit (Quit: Ping timeout (120 seconds))
+2020-05-08 15:40:54	-->	stnly (~stnly@ns558423.ip-139-99-122.net) has joined ##security
+2020-05-08 15:42:09	-->	cheekyHippie (~cheekyHip@host-37-190-203-80.dynamic.mm.pl) has joined ##security
+2020-05-08 15:42:19	<--	raf (~soyyo@unaffiliated/rafael-cunha/x-5167236) has quit (Read error: Connection reset by peer)
+2020-05-08 15:43:02	<--	ThePortWhisperer (~ThePortWh@unaffiliated/theportwhisperer) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:44:20	-->	roots (~trs@gateway/tor-sasl/therootshell) has joined ##security
+2020-05-08 15:45:16	<--	RedSoxFan07 (~Thunderbi@d-137-103-97-168.ct.cpe.atlanticbb.net) has quit (Ping timeout: 256 seconds)
+2020-05-08 15:45:54	-->	RedSoxFan07 (~Thunderbi@d-137-103-97-168.ct.cpe.atlanticbb.net) has joined ##security
+2020-05-08 15:46:10	<--	loganX (~logan_tmi@gateway/tor-sasl/logantmio/x-82844474) has quit (Quit: loganX)
+2020-05-08 15:47:34	-->	ThePortWhisperer (~ThePortWh@unaffiliated/theportwhisperer) has joined ##security
+2020-05-08 15:47:57	<--	leizy (~leizy@2001:1c03:4308:6c00:29c6:645c:8f70:3ce4) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:48:30	-->	gsparrow (~miki@2a01:e35:2e84:b5f0:2362:51e7:a73c:a1df) has joined ##security
+2020-05-08 15:48:52	@nate	catbeard: Shhh, it's astronomicalllllllll odds
+2020-05-08 15:48:54	@nate	>.>
+2020-05-08 15:48:57	@nate	lol
+2020-05-08 15:49:13	<--	stnly (~stnly@ns558423.ip-139-99-122.net) has quit (Ping timeout: 240 seconds)
+2020-05-08 15:49:49	<--	eXistenZ (~pectic@bzq-79-177-206-183.red.bezeqint.net) has quit (Quit: Leaving)
+2020-05-08 15:50:42	-->	stnly (~stnly@ns558423.ip-139-99-122.net) has joined ##security
+2020-05-08 15:50:49	iz	the pin used to be hashed on the magstripe, but i don't think they bother w/ that anymore
+2020-05-08 15:52:04	calmclam	mmhmm right, much more likely i won the lottery than my bank does stupid things
+2020-05-08 15:53:32	iz	lol
+2020-05-08 15:53:40	iz	so defcon is cancelled this year :b
+2020-05-08 15:53:55	calmclam	they say that every year
+2020-05-08 15:54:00	iz	haha yeah
+2020-05-08 15:54:26	calmclam	if they said it wasn't cancelled i might actually think it was cancelled
+2020-05-08 15:55:08	<--	GavinCool (~pi@2601:1c0:5500:65b::2000) has quit (Ping timeout: 244 seconds)
+2020-05-08 15:55:11	iz	the joke this year will be telling people it wasn't really cancelled and that it's just a running gag
+2020-05-08 15:55:55	@nate	iz: I don't think pin data on the hashstripe has been a thing in decades
+2020-05-08 15:56:18	@nate	I don't remember the last time I had a card that didn't let you change the pin
+2020-05-08 15:56:23	iz	yeah, i have a similar understanding about that
+2020-05-08 15:56:26	<--	cheers (user@unaffiliated/cheers) has quit (Ping timeout: 246 seconds)
+2020-05-08 15:56:36	<--	Pilate (~pilate@infoforcefeed/pilate) has quit (Ping timeout: 256 seconds)
+2020-05-08 15:56:40	<--	zopsi (~zopsi@irc.dir.ac) has quit (Ping timeout: 256 seconds)
+2020-05-08 15:56:54	<--	cruxeternus (~cruxetern@secspeed.com) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:56:55	iz	it was like pre 2000 or so when i last remember that being a thing, where you had to give them your card to change your pin
+2020-05-08 15:57:13	<--	arooni (~arooni@li1062-244.members.linode.com) has quit (Ping timeout: 264 seconds)
+2020-05-08 15:57:17	<--	Glassbox (~glassbox@2a00:23c4:e107:e901:1586:8e3:df86:b21b) has quit (Quit: Computer sleep)
+2020-05-08 15:57:22	iz	now everything is networked so it doesn't matter
+2020-05-08 15:57:22	<--	sangoma (~zeus@102.80.43.234) has quit (Ping timeout: 258 seconds)
+2020-05-08 15:57:52	<--	Maxattax (~max@50-195-160-193-static.hfc.comcastbusiness.net) has quit (Quit: WeeChat 2.8)
+2020-05-08 15:58:23	<--	az0re (~az0re@gateway/tor-sasl/az0re) has quit (Remote host closed the connection)
+2020-05-08 15:58:27	<--	nuclearg (~work@c-73-150-253-137.hsd1.nj.comcast.net) has quit (Ping timeout: 260 seconds)
+2020-05-08 16:01:26	-->	nuclearg (~work@c-73-150-253-137.hsd1.nj.comcast.net) has joined ##security
+2020-05-08 16:03:03	-->	loganX (~logan_tmi@gateway/tor-sasl/logantmio/x-82844474) has joined ##security
+2020-05-08 16:03:34	<--	verbose (~verbose@185.229.59.123) has quit (Quit: WeeChat 2.8)
+2020-05-08 16:04:54	jabberwock	https://twitter.com/defcon/status/1258831640270213121
+2020-05-08 16:05:02	jabberwock	Looks like it may actually be cancelled for real
+2020-05-24 20:57:14	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined ##security
+2020-05-24 20:57:14	--	Topic for ##security is "Welcome to Computer, Network & Physical ##Security | #coronavirus for your daily dose of virology/immunology | Please stay on topic | Jobs: https://bit.ly/2wU0YIh"
+2020-05-24 20:57:14	--	Topic set by nate on Wed, 25 Mar 2020 10:34:15
+2020-05-24 20:57:14	--	Channel ##security: 935 nicks (5 ops, 0 voices, 930 normals)
+2020-05-24 20:57:14	--	PvNotice(ChanServ): In line with freenode channel naming policy ( http://freenode.net/policy.shtml#channelnaming ), channel management of #security has moved to ##security .... please update your autojoins! Thanks.
+2020-05-24 20:57:22	--	Channel created on Wed, 19 Jul 2006 16:49:13
+2020-05-24 20:59:44	<--	DTZUZU (~DTZUZU@205.ip-149-56-132.net) has quit (Quit: WeeChat 2.8)
+2020-05-24 21:01:54	calmclam	:'{
+2020-05-24 21:05:07	-->	abenthy_ (~abenthy_@103.79.170.187) has joined ##security
+2020-05-24 21:06:30	-->	AugustusCaesar24 (~AugustusC@99-190-112-116.lightspeed.irvnca.sbcglobal.net) has joined ##security
+2020-05-24 21:06:45	<--	ackpacket (~ackpacket@unaffiliated/ackpacket) has quit (Quit: My puter has gone to sleep. ZZZzzz…)
+2020-05-24 21:09:14	<--	abenthy_ (~abenthy_@103.79.170.187) has quit (Ping timeout: 240 seconds)
+2020-05-24 21:10:43	<--	KindOne (kindone@freenode/father-christmas/kindone) has quit (Ping timeout: 272 seconds)
+2020-05-24 21:14:38	<--	Leonarbro (~Leonarbro@S01067824af93741c.cg.shawcable.net) has quit (Ping timeout: 264 seconds)
+2020-05-24 21:19:10	<--	kunningd (~qwe@unaffiliated/kunningd) has quit (Ping timeout: 265 seconds)
+2020-05-24 21:21:12	<--	xrogaan (~xrogaan@unaffiliated/xrogaan) has quit (Quit: Leaving)
+2020-05-24 21:22:41	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined ##security
+2020-05-24 21:23:45	-->	ThePortWhisperer (~ThePortWh@unaffiliated/theportwhisperer) has joined ##security
+2020-05-24 21:26:27	<--	larsson|w (~larsson|w@unaffiliated/larssonw/x-0219283) has quit (Remote host closed the connection)
+2020-05-24 21:26:54	<--	PlainWhiteTee (~plainwhit@192.158.233.216) has quit (Ping timeout: 265 seconds)
+2020-05-24 21:27:36	<--	kalieris (~Kalieris@176.113.72.212) has quit (Remote host closed the connection)
+2020-05-24 21:27:36	-->	ackpacket (~ackpacket@unaffiliated/ackpacket) has joined ##security
+2020-05-24 21:27:44	-->	larsson|w (~larsson|w@unaffiliated/larssonw/x-0219283) has joined ##security
+2020-05-24 21:29:08	-->	KindOne (kindone@freenode/father-christmas/kindone) has joined ##security
+2020-05-24 21:29:54	<--	ackpacket (~ackpacket@unaffiliated/ackpacket) has quit (Client Quit)
+2020-05-24 21:32:04	-->	impermanence (a5e13d46@gateway/web/cgi-irc/kiwiirc.com/ip.165.225.61.70) has joined ##security
+2020-05-24 21:32:38	-->	Leonarbro (~Leonarbro@S01067824af93741c.cg.shawcable.net) has joined ##security
+2020-05-24 21:37:44	<--	s0_iggie (~smuxi@unaffiliated/s0-iggie/x-8107719) has quit (Read error: Connection reset by peer)
+2020-05-24 21:37:53	-->	wordsToLiveBy (~wordsToLi@unaffiliated/wordstoliveby) has joined ##security
+2020-05-24 21:38:15	-->	gorditto (~conjo@220.240.46.139) has joined ##security
+2020-05-24 21:43:42	<--	electro33 (uid613@gateway/web/irccloud.com/x-wifjqvflyveqbsdh) has quit (Quit: Connection closed for inactivity)
+2020-05-24 21:44:00	--	E-Man is now known as CommentaryNick
+2020-05-24 21:45:35	<--	larsson|w (~larsson|w@unaffiliated/larssonw/x-0219283) has quit (Remote host closed the connection)
+2020-05-24 21:46:49	-->	larsson|w (~larsson|w@unaffiliated/larssonw/x-0219283) has joined ##security
+2020-05-24 21:48:34	gorditto	hi all id like to make my box as close to unhackable as possible-im an intermediate linux user-can anyone suggest any recommended reading that is up to date aimed at a hobbyist linux novice/intermediate user please? thanks to all that reply
+2020-05-24 21:48:49	gorditto	please dont suggest airgap
+2020-05-24 21:49:03	ajak	that is obviously the best option
+2020-05-24 21:49:31	gorditto	just want to harden my system and learn about what i might have overlooked
+2020-05-24 21:49:34	calmclam	the art of war - sun tzu
+2020-05-24 21:49:39	gorditto	read it
+2020-05-24 21:49:45	gorditto	lols
+2020-05-24 21:49:50	gorditto	nice retort
+2020-05-24 21:50:06	ajak	google "hardening $distro" maybe?
+2020-05-24 21:50:43	calmclam	all warfare is based on deception
+2020-05-24 21:50:48	gorditto	discerning quality from muck is hard when you don't know your ass from ur elbow
+2020-05-24 21:51:11	ajak	nice retort, but sounds like you should get to reading from that
+2020-05-24 21:51:22	ajak	what distro are you on?
+2020-05-24 21:51:28	@nate	gorditto: Literally keeping shit mostly secure is a few fundamentals; Keep things up to date, firewall the shit out of everything, don't be a stupid user (ie; don't run random shit, don't use insecure software/mechanisms/etc)
+2020-05-24 21:51:55	gorditto	cheers nate
+2020-05-24 21:52:01	gorditto	manjaro
+2020-05-24 21:52:06	calmclam	yikes
+2020-05-24 21:52:26	ghostbuster	what about defining a threat model?
+2020-05-24 21:52:44	catbeard	"who do you stand to piss off?"
+2020-05-24 21:52:44	@nate	There's not really much magic to it beyond that, if you look at most major breaches online it's because some derpy nerp was like "nah we're fine rolling this glaringly insecure remotely exploitable stuff until budget allows fixing"
+2020-05-24 21:52:46	@nate	lol
+2020-05-24 21:53:02	<--	derpadmin (~luciano@mail2.200013.net) has quit (Quit: Leaving)
+2020-05-25 06:44:10	--	irc: disconnected from server
+2020-05-25 06:44:38	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined ##security
+2020-05-25 06:44:38	--	Topic for ##security is "Welcome to Computer, Network & Physical ##Security | #coronavirus for your daily dose of virology/immunology | Please stay on topic | Jobs: https://bit.ly/2wU0YIh"
+2020-05-25 06:44:38	--	Topic set by nate on Wed, 25 Mar 2020 10:34:15
+2020-05-25 06:44:38	--	Channel ##security: 943 nicks (5 ops, 0 voices, 938 normals)
+2020-05-25 06:44:38	--	PvNotice(ChanServ): In line with freenode channel naming policy ( http://freenode.net/policy.shtml#channelnaming ), channel management of #security has moved to ##security .... please update your autojoins! Thanks.
+2020-05-25 06:44:52	--	Channel created on Wed, 19 Jul 2006 16:49:13
+2020-05-25 06:45:54	<--	theorangeone (~quassel@host81-143-201-103.in-addr.btopenworld.com) has quit (Read error: Connection reset by peer)
+2020-05-25 06:48:42	<--	SergioCabral (~SergioCab@104.208.247.58) has quit (Quit: Leaving)
+2020-05-25 06:50:16	<--	ijens (~ijens@unaffiliated/ijens) has quit (Remote host closed the connection)
+2020-05-25 06:50:29	-->	theorangeone (~quassel@host81-143-201-103.in-addr.btopenworld.com) has joined ##security
+2020-05-25 06:53:38	-->	sulex (~sulex@pdpc/supporter/professional/sulex) has joined ##security
+2020-05-25 06:54:04	-->	SergioCabral (~SergioCab@104.208.247.58) has joined ##security
+2020-05-25 06:54:55	<--	SergioCabral (~SergioCab@104.208.247.58) has quit (Remote host closed the connection)
+2020-05-25 06:55:18	-->	SergioCabral (~SergioCab@104.208.247.58) has joined ##security
+2020-05-25 06:58:45	<--	Intense (Intense@175.140.187.110) has quit (Remote host closed the connection)
+2020-05-25 06:59:22	<--	Y2kz (~Y2kz@2402:3a80:e3d:ab41:5f33:d705:a3be:3fe8) has quit (Ping timeout: 260 seconds)
+2020-05-25 07:00:52	-->	none_____ (~none@unaffiliated/none/x-4223007) has joined ##security
+2020-05-25 07:01:14	<--	SergioCabral (~SergioCab@104.208.247.58) has quit (Remote host closed the connection)
+2020-05-25 07:02:13	-->	SergioCabral (~SergioCab@104.208.247.58) has joined ##security
+2020-05-25 07:02:49	<--	Carolinamoon (none@gateway/vpn/protonvpn/none/x-59251314) has quit (Ping timeout: 246 seconds)
+2020-05-25 07:03:10	<--	electro33 (uid613@gateway/web/irccloud.com/x-imywswzkkdkaculr) has quit (Quit: Connection closed for inactivity)
+2020-05-26 19:15:57	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined ##security
+2020-05-26 19:15:57	--	Topic for ##security is "Welcome to Computer, Network & Physical ##Security | #coronavirus for your daily dose of virology/immunology | Please stay on topic | Jobs: https://bit.ly/2wU0YIh"
+2020-05-26 19:15:57	--	Topic set by nate on Wed, 25 Mar 2020 10:34:15
+2020-05-26 19:15:57	--	Channel ##security: 941 nicks (5 ops, 0 voices, 936 normals)
+2020-05-26 19:15:57	--	PvNotice(ChanServ): In line with freenode channel naming policy ( http://freenode.net/policy.shtml#channelnaming ), channel management of #security has moved to ##security .... please update your autojoins! Thanks.
+2020-05-26 19:16:04	--	Channel created on Wed, 19 Jul 2006 16:49:13
+2020-05-26 19:20:37	<--	ikka (~ident@185.128.25.230) has quit (Ping timeout: 264 seconds)
+2020-05-26 19:21:30	<--	abraxas (~abraxas@ip68-14-53-156.ri.ri.cox.net) has quit (Quit: abraxas)
+2020-05-26 19:21:31	-->	karstensrage (~karstensr@unaffiliated/karstensrage) has joined ##security
+2020-05-26 19:21:51	-->	ikka (~ident@185.128.25.230) has joined ##security
+2020-05-26 19:21:54	-->	trishul (~abhijital@pool-100-34-167-90.phlapa.fios.verizon.net) has joined ##security
+2020-05-26 19:23:27	<--	stryek (uid332574@gateway/web/irccloud.com/x-rvwctbtwqzdhwecj) has quit (Quit: Connection closed for inactivity)
+2020-05-26 19:24:29	<--	pinPoint (~pinPoint@about/windows/regular/pinpoint) has quit (Quit: Incoming fire has the right of way.)
+2020-05-26 19:25:24	<--	macc24 (~random@unaffiliated/maccraft) has quit (Quit: WeeChat 2.8)
+2020-05-26 19:25:26	<--	led_belly (led_belly@gateway/vpn/protonvpn/ledbelly/x-06903193) has quit (Ping timeout: 246 seconds)
+2020-05-26 19:26:44	<--	trishul (~abhijital@pool-100-34-167-90.phlapa.fios.verizon.net) has quit (Ping timeout: 265 seconds)
+2020-05-26 19:28:34	-->	pinPoint (~pinPoint@about/windows/regular/pinpoint) has joined ##security
+2020-05-26 19:30:22	<--	zulutango (~zulutango@d58-105-160-58.dsl.vic.optusnet.com.au) has quit (Ping timeout: 258 seconds)
+2020-05-26 19:31:12	flyback	anyone else notice in the last 6 months google changed their behavior
+2020-05-26 19:31:16	flyback	they must have lost a bad lawsuit
+2020-05-26 19:31:33	flyback	"it looks like there aren't any good search results for your inquery"
+2020-05-26 19:31:37	flyback	I almost dropped dead of shock
+2020-05-26 19:31:53	flyback	before it was assume im wrong and change my search query for me even if I put it in quotes
+2020-05-26 19:33:18	<--	larsson|w (~larsson|w@unaffiliated/larssonw/x-0219283) has quit (Remote host closed the connection)
+2020-05-26 19:34:33	-->	larsson|w (~larsson|w@unaffiliated/larssonw/x-0219283) has joined ##security
+2020-05-26 19:34:54	<--	sophrosyne (~quassel@cullen45.plus.com) has quit (Ping timeout: 260 seconds)

@@ -1,0 +1,892 @@
+2020-05-05 07:00:51	--	irc: connecting to server irc.geekshet.net/6697 (SSL)...
+2020-05-05 07:00:51	=!=	irc: address "irc.geekshet.net" not found
+2020-05-05 07:00:51	=!=	irc: error: Name or service not known
+2020-05-05 07:00:51	--	irc: reconnecting to server in 10 seconds
+2020-05-05 07:01:01	--	irc: reconnecting to server...
+2020-05-05 07:01:01	--	irc: connecting to server irc.geekshet.net/6697 (SSL)...
+2020-05-05 07:01:01	=!=	irc: address "irc.geekshet.net" not found
+2020-05-05 07:01:01	=!=	irc: error: Name or service not known
+2020-05-05 07:01:01	--	irc: reconnecting to server in 20 seconds
+2020-05-05 07:01:21	--	irc: reconnecting to server...
+2020-05-05 07:01:21	--	irc: connecting to server irc.geekshet.net/6697 (SSL)...
+2020-05-05 07:01:21	=!=	irc: address "irc.geekshet.net" not found
+2020-05-05 07:01:21	=!=	irc: error: Name or service not known
+2020-05-05 07:01:21	--	irc: reconnecting to server in 40 seconds
+2020-05-05 07:02:01	--	irc: reconnecting to server...
+2020-05-05 07:02:01	--	irc: connecting to server irc.geekshet.net/6697 (SSL)...
+2020-05-05 07:02:01	=!=	irc: address "irc.geekshet.net" not found
+2020-05-05 07:02:01	=!=	irc: error: Name or service not known
+2020-05-05 07:02:01	--	irc: reconnecting to server in 1 minute, 20 seconds
+2020-05-05 07:03:21	--	irc: reconnecting to server...
+2020-05-05 07:03:21	--	irc: connecting to server irc.geekshet.net/6697 (SSL)...
+2020-05-05 07:03:21	=!=	irc: address "irc.geekshet.net" not found
+2020-05-05 07:03:21	=!=	irc: error: Name or service not known
+2020-05-05 07:03:21	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2020-05-05 07:06:15	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-05 07:06:15	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-05 07:06:15	--	gnutls: receiving 3 certificates
+2020-05-05 07:06:15	--	 - certificate[1] info:
+2020-05-05 07:06:15	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-05 07:06:15	--	 - certificate[2] info:
+2020-05-05 07:06:15	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-05 07:06:15	--	 - certificate[3] info:
+2020-05-05 07:06:15	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-05 07:06:15	--	gnutls: peer's certificate is trusted
+2020-05-05 07:06:16	--	irc: connected to irc.geekshed.net/6697 (159.203.45.35)
+2020-05-05 07:06:16	--	Defiant.GeekShed.net: *** Looking up your hostname...
+2020-05-05 07:06:16	--	Defiant.GeekShed.net: *** Checking ident...
+2020-05-05 07:06:16	--	Defiant.GeekShed.net: *** No ident response; username prefixed with ~
+2020-05-05 07:06:16	--	Defiant.GeekShed.net: *** Found your hostname
+2020-05-05 07:06:16	--	irc: client capability, server supports: tls multi-prefix account-notify userhost-in-names away-notify
+2020-05-05 07:06:16	--	irc: client capability, requesting: account-notify away-notify multi-prefix
+2020-05-05 07:06:16	--	irc: client capability: SASL not supported
+2020-05-05 07:06:16	--	irc: client capability, enabled: account-notify away-notify multi-prefix
+2020-05-05 07:06:16	--	Welcome to the GeekShed IRC Network routingsparks!~sparky@pool-100-4-71-219.nrflva.fios.verizon.net
+2020-05-05 07:06:16	--	Your host is Defiant.GeekShed.net, running version Unreal3.2.10.3-gs
+2020-05-05 07:06:16	--	This server was created Sun Apr 17 2016 at 20:50:58 UTC
+2020-05-05 07:06:16	--	Defiant.GeekShed.net Unreal3.2.10.3-gs iowghraAsORTVSxNCWqBzvdHtGpIDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjUZ
+2020-05-05 07:06:16	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2020-05-05 07:06:16	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGUZ NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,qjncrRaT ELIST=MNUCT :are supported by this server
+2020-05-05 07:06:16	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2020-05-05 07:06:16	--	Defiant.GeekShed.net: *** You are connected to Defiant.GeekShed.net with TLSv1.2-AES256-GCM-SHA384-256bits
+2020-05-05 07:06:16	--	There are 113 users and 4381 invisible on 13 servers
+2020-05-05 07:06:16	--	27 :operator(s) online
+2020-05-05 07:06:16	--	420 :channels formed
+2020-05-05 07:06:16	--	I have 471 clients and 0 servers
+2020-05-05 07:06:16	--	471 6744 :Current local users 471, max 6744
+2020-05-05 07:06:16	--	4494 35034 :Current global users 4494, max 35034
+2020-05-05 07:06:16	--	- Defiant.GeekShed.net Message of the Day - 
+2020-05-05 07:06:16	--	- 28/11/2013 2:05
+2020-05-05 07:06:16	--	-   _____           _     _____ _              _ 
+2020-05-05 07:06:16	--	-  / ____|         | |   / ____| |            | |
+2020-05-05 07:06:16	--	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2020-05-05 07:06:16	--	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2020-05-05 07:06:16	--	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2020-05-05 07:06:16	--	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2020-05-05 07:06:16	--	-                                                
+2020-05-05 07:06:16	--	- 
+2020-05-05 07:06:16	--	- Before continuing please read the Geek Shed
+2020-05-05 07:06:16	--	- Terms Of Service: http://www.geekshed.net/tos/ 
+2020-05-05 07:06:16	--	- 
+2020-05-05 07:06:16	--	- By connecting and retaining a connection to any 
+2020-05-05 07:06:16	--	- part of Geek Shed you state that you have read, 
+2020-05-05 07:06:16	--	- understand, and hereby agree to comply with and accept 
+2020-05-05 07:06:16	--	- the Geek Shed Terms Of Service, disclaimers, 
+2020-05-05 07:06:16	--	- and rules stated in the document.
+2020-05-05 07:06:16	--	- 
+2020-05-05 07:06:16	--	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2020-05-05 07:06:16	--	- DO NOT RECONNECT!
+2020-05-05 07:06:16	--	- 
+2020-05-05 07:06:16	--	- -------------------------------------------------------
+2020-05-05 07:06:16	--	- 
+2020-05-05 07:06:16	--	- :: Our Site  http://www.geekshed.net/
+2020-05-05 07:06:16	--	- :: Free BNC  http://www.geekshed.net/bnc/ 
+2020-05-05 07:06:16	--	- :: Web Chat  http://www.geekshed.net/chat/
+2020-05-05 07:06:16	--	- :: Commands  http://www.geekshed.net/commands/
+2020-05-05 07:06:16	--	- :: Forums    http://www.geekshed.net/forum/
+2020-05-05 07:06:16	--	- :: Quotes    http://www.geekshed.net/qdb/
+2020-05-05 07:06:16	--	- :: Staff     http://www.geekshed.net/staff/
+2020-05-05 07:06:16	--	- :: Twitter   http://www.twitter.com/geekshed
+2020-05-05 07:06:16	--	- :: YouTube   http://www.youtube.com/geekshedirc
+2020-05-05 07:06:16	--	- 
+2020-05-05 07:06:16	--	- -------------------------------------------------------
+2020-05-05 07:06:16	--	End of /MOTD command.
+2020-05-05 07:06:16	--	User mode [+iRxz] by routingsparks
+2020-05-05 08:25:46	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-05 08:25:47	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-05 08:25:47	--	gnutls: receiving 3 certificates
+2020-05-05 08:25:47	--	 - certificate[1] info:
+2020-05-05 08:25:47	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-05 08:25:47	--	 - certificate[2] info:
+2020-05-05 08:25:47	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-05 08:25:47	--	 - certificate[3] info:
+2020-05-05 08:25:47	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-05 08:25:47	--	gnutls: peer's certificate is trusted
+2020-05-05 08:25:48	--	irc: connected to irc.geekshed.net/6697 (159.203.45.35)
+2020-05-05 08:25:48	--	Defiant.GeekShed.net: *** Looking up your hostname...
+2020-05-05 08:25:48	--	Defiant.GeekShed.net: *** Checking ident...
+2020-05-05 08:25:48	--	Defiant.GeekShed.net: *** No ident response; username prefixed with ~
+2020-05-05 08:25:48	--	Defiant.GeekShed.net: *** Found your hostname
+2020-05-05 08:25:48	--	irc: client capability, server supports: tls multi-prefix account-notify userhost-in-names away-notify
+2020-05-05 08:25:48	--	irc: client capability, requesting: account-notify away-notify multi-prefix
+2020-05-05 08:25:48	--	irc: client capability: SASL not supported
+2020-05-05 08:25:48	--	irc: client capability, enabled: account-notify away-notify multi-prefix
+2020-05-05 08:25:48	--	Welcome to the GeekShed IRC Network routingsparks!~sparky@pool-100-4-71-219.nrflva.fios.verizon.net
+2020-05-05 08:25:48	--	Your host is Defiant.GeekShed.net, running version Unreal3.2.10.3-gs
+2020-05-05 08:25:48	--	This server was created Sun Apr 17 2016 at 20:50:58 UTC
+2020-05-05 08:25:48	--	Defiant.GeekShed.net Unreal3.2.10.3-gs iowghraAsORTVSxNCWqBzvdHtGpIDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjUZ
+2020-05-05 08:25:48	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2020-05-05 08:25:48	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGUZ NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,qjncrRaT ELIST=MNUCT :are supported by this server
+2020-05-05 08:25:48	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2020-05-05 08:25:48	--	Defiant.GeekShed.net: *** You are connected to Defiant.GeekShed.net with TLSv1.2-AES256-GCM-SHA384-256bits
+2020-05-05 08:25:48	--	There are 113 users and 4811 invisible on 13 servers
+2020-05-05 08:25:48	--	27 :operator(s) online
+2020-05-05 08:25:48	--	1 :unknown connection(s)
+2020-05-05 08:25:48	--	419 :channels formed
+2020-05-05 08:25:48	--	I have 457 clients and 0 servers
+2020-05-05 08:25:48	--	457 6744 :Current local users 457, max 6744
+2020-05-05 08:25:48	--	4924 35034 :Current global users 4924, max 35034
+2020-05-05 08:25:48	--	- Defiant.GeekShed.net Message of the Day - 
+2020-05-05 08:25:48	--	- 28/11/2013 2:05
+2020-05-05 08:25:48	--	-   _____           _     _____ _              _ 
+2020-05-05 08:25:48	--	-  / ____|         | |   / ____| |            | |
+2020-05-05 08:25:48	--	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2020-05-05 08:25:48	--	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2020-05-05 08:25:48	--	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2020-05-05 08:25:48	--	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2020-05-05 08:25:48	--	-                                                
+2020-05-05 08:25:48	--	- 
+2020-05-05 08:25:48	--	- Before continuing please read the Geek Shed
+2020-05-05 08:25:48	--	- Terms Of Service: http://www.geekshed.net/tos/ 
+2020-05-05 08:25:48	--	- 
+2020-05-05 08:25:48	--	- By connecting and retaining a connection to any 
+2020-05-05 08:25:48	--	- part of Geek Shed you state that you have read, 
+2020-05-05 08:25:48	--	- understand, and hereby agree to comply with and accept 
+2020-05-05 08:25:48	--	- the Geek Shed Terms Of Service, disclaimers, 
+2020-05-05 08:25:48	--	- and rules stated in the document.
+2020-05-05 08:25:48	--	- 
+2020-05-05 08:25:48	--	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2020-05-05 08:25:48	--	- DO NOT RECONNECT!
+2020-05-05 08:25:48	--	- 
+2020-05-05 08:25:48	--	- -------------------------------------------------------
+2020-05-05 08:25:48	--	- 
+2020-05-05 08:25:48	--	- :: Our Site  http://www.geekshed.net/
+2020-05-05 08:25:48	--	- :: Free BNC  http://www.geekshed.net/bnc/ 
+2020-05-05 08:25:48	--	- :: Web Chat  http://www.geekshed.net/chat/
+2020-05-05 08:25:48	--	- :: Commands  http://www.geekshed.net/commands/
+2020-05-05 08:25:48	--	- :: Forums    http://www.geekshed.net/forum/
+2020-05-05 08:25:48	--	- :: Quotes    http://www.geekshed.net/qdb/
+2020-05-05 08:25:48	--	- :: Staff     http://www.geekshed.net/staff/
+2020-05-05 08:25:48	--	- :: Twitter   http://www.twitter.com/geekshed
+2020-05-05 08:25:48	--	- :: YouTube   http://www.youtube.com/geekshedirc
+2020-05-05 08:25:48	--	- 
+2020-05-05 08:25:48	--	- -------------------------------------------------------
+2020-05-05 08:25:48	--	End of /MOTD command.
+2020-05-05 08:25:48	--	User mode [+iRxz] by routingsparks
+2020-05-05 08:58:59	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-05 08:58:59	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-05 08:58:59	--	gnutls: receiving 3 certificates
+2020-05-05 08:58:59	--	 - certificate[1] info:
+2020-05-05 08:58:59	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-05 08:58:59	--	 - certificate[2] info:
+2020-05-05 08:58:59	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-05 08:58:59	--	 - certificate[3] info:
+2020-05-05 08:58:59	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-05 08:58:59	--	gnutls: peer's certificate is trusted
+2020-05-05 08:58:59	--	irc: connected to irc.geekshed.net/6697 (209.51.186.9)
+2020-05-05 08:59:00	--	DS9.GeekShed.net: *** Looking up your hostname...
+2020-05-05 08:59:00	--	DS9.GeekShed.net: *** Checking ident...
+2020-05-05 08:59:00	--	DS9.GeekShed.net: *** Found your hostname
+2020-05-05 08:59:03	--	DS9.GeekShed.net: *** No ident response; username prefixed with ~
+2020-05-05 08:59:03	--	irc: client capability, server supports: tls multi-prefix account-notify userhost-in-names away-notify
+2020-05-05 08:59:03	--	irc: client capability, requesting: account-notify away-notify multi-prefix
+2020-05-05 08:59:03	--	irc: client capability: SASL not supported
+2020-05-05 08:59:03	--	irc: client capability, enabled: account-notify away-notify multi-prefix
+2020-05-05 08:59:03	--	Welcome to the GeekShed IRC Network routingsparks!~sparky@pool-100-4-71-219.nrflva.fios.verizon.net
+2020-05-05 08:59:03	--	Your host is DS9.GeekShed.net, running version Unreal3.2.10.3-gs
+2020-05-05 08:59:03	--	This server was created Fri Mar 20 2020 at 22:11:12 UTC
+2020-05-05 08:59:03	--	DS9.GeekShed.net Unreal3.2.10.3-gs iowghraAsORTVSxNCWqBzvdHtGpIDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjUZ
+2020-05-05 08:59:03	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2020-05-05 08:59:03	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGUZ NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,qjncrRaT ELIST=MNUCT :are supported by this server
+2020-05-05 08:59:03	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2020-05-05 08:59:03	--	DS9.GeekShed.net: *** You are connected to DS9.GeekShed.net with TLSv1.3-TLS_AES_256_GCM_SHA384-256bits
+2020-05-05 08:59:03	--	There are 113 users and 4929 invisible on 13 servers
+2020-05-05 08:59:03	--	27 :operator(s) online
+2020-05-05 08:59:03	--	3 :unknown connection(s)
+2020-05-05 08:59:03	--	419 :channels formed
+2020-05-05 08:59:03	--	I have 417 clients and 0 servers
+2020-05-05 08:59:03	--	417 6584 :Current local users 417, max 6584
+2020-05-05 08:59:03	--	5042 35033 :Current global users 5042, max 35033
+2020-05-05 08:59:03	--	- DS9.GeekShed.net Message of the Day - 
+2020-05-05 08:59:03	--	- 28/11/2013 2:05
+2020-05-05 08:59:03	--	-   _____           _     _____ _              _ 
+2020-05-05 08:59:03	--	-  / ____|         | |   / ____| |            | |
+2020-05-05 08:59:03	--	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2020-05-05 08:59:03	--	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2020-05-05 08:59:03	--	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2020-05-05 08:59:03	--	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2020-05-05 08:59:03	--	-                                                
+2020-05-05 08:59:03	--	- 
+2020-05-05 08:59:03	--	- Before continuing please read the Geek Shed
+2020-05-05 08:59:03	--	- Terms Of Service: http://www.geekshed.net/tos/ 
+2020-05-05 08:59:03	--	- 
+2020-05-05 08:59:03	--	- By connecting and retaining a connection to any 
+2020-05-05 08:59:03	--	- part of Geek Shed you state that you have read, 
+2020-05-05 08:59:03	--	- understand, and hereby agree to comply with and accept 
+2020-05-05 08:59:03	--	- the Geek Shed Terms Of Service, disclaimers, 
+2020-05-05 08:59:03	--	- and rules stated in the document.
+2020-05-05 08:59:03	--	- 
+2020-05-05 08:59:03	--	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2020-05-05 08:59:03	--	- DO NOT RECONNECT!
+2020-05-05 08:59:03	--	- 
+2020-05-05 08:59:03	--	- -------------------------------------------------------
+2020-05-05 08:59:03	--	- 
+2020-05-05 08:59:03	--	- :: Our Site  http://www.geekshed.net/
+2020-05-05 08:59:03	--	- :: Free BNC  http://www.geekshed.net/bnc/ 
+2020-05-05 08:59:03	--	- :: Web Chat  http://www.geekshed.net/chat/
+2020-05-05 08:59:03	--	- :: Commands  http://www.geekshed.net/commands/
+2020-05-05 08:59:03	--	- :: Forums    http://www.geekshed.net/forum/
+2020-05-05 08:59:03	--	- :: Quotes    http://www.geekshed.net/qdb/
+2020-05-05 08:59:03	--	- :: Staff     http://www.geekshed.net/staff/
+2020-05-05 08:59:03	--	- :: Twitter   http://www.twitter.com/geekshed
+2020-05-05 08:59:03	--	- :: YouTube   http://www.youtube.com/geekshedirc
+2020-05-05 08:59:03	--	- 
+2020-05-05 08:59:03	--	- -------------------------------------------------------
+2020-05-05 08:59:03	--	End of /MOTD command.
+2020-05-05 08:59:03	--	User mode [+iRxz] by routingsparks
+2020-05-05 09:02:45	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-05 09:02:45	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-05 09:02:45	--	gnutls: receiving 3 certificates
+2020-05-05 09:02:45	--	 - certificate[1] info:
+2020-05-05 09:02:45	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-05 09:02:45	--	 - certificate[2] info:
+2020-05-05 09:02:45	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-05 09:02:45	--	 - certificate[3] info:
+2020-05-05 09:02:45	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-05 09:02:45	--	gnutls: peer's certificate is trusted
+2020-05-05 09:02:45	--	irc: connected to irc.geekshed.net/6697 (178.128.227.90)
+2020-05-05 09:02:45	--	Rubicon.GeekShed.net: *** Looking up your hostname...
+2020-05-05 09:02:45	--	Rubicon.GeekShed.net: *** Checking ident...
+2020-05-05 09:02:45	--	Rubicon.GeekShed.net: *** Found your hostname
+2020-05-05 09:02:48	--	Rubicon.GeekShed.net: *** No ident response; username prefixed with ~
+2020-05-05 09:02:48	--	irc: client capability, server supports: tls multi-prefix account-notify userhost-in-names away-notify
+2020-05-05 09:02:48	--	irc: client capability, requesting: account-notify away-notify multi-prefix
+2020-05-05 09:02:48	--	irc: client capability: SASL not supported
+2020-05-05 09:02:48	--	irc: client capability, enabled: account-notify away-notify multi-prefix
+2020-05-05 09:02:48	--	Welcome to the GeekShed IRC Network routingsparks!~sparky@pool-100-4-71-219.nrflva.fios.verizon.net
+2020-05-05 09:02:48	--	Your host is Rubicon.GeekShed.net, running version Unreal3.2.10.3-gs
+2020-05-05 09:02:48	--	This server was created Sat Mar 21 2020 at 20:06:40 UTC
+2020-05-05 09:02:48	--	Rubicon.GeekShed.net Unreal3.2.10.3-gs iowghraAsORTVSxNCWqBzvdHtGpIDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjUZ
+2020-05-05 09:02:48	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2020-05-05 09:02:48	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGUZ NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,qjncrRaT ELIST=MNUCT :are supported by this server
+2020-05-05 09:02:48	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2020-05-05 09:02:48	--	Rubicon.GeekShed.net: *** You are connected to Rubicon.GeekShed.net with TLSv1.2-AES256-GCM-SHA384-256bits
+2020-05-05 09:02:48	--	There are 113 users and 4934 invisible on 13 servers
+2020-05-05 09:02:48	--	27 :operator(s) online
+2020-05-05 09:02:48	--	3 :unknown connection(s)
+2020-05-05 09:02:48	--	419 :channels formed
+2020-05-05 09:02:48	--	I have 386 clients and 0 servers
+2020-05-05 09:02:48	--	386 6609 :Current local users 386, max 6609
+2020-05-05 09:02:48	--	5047 35033 :Current global users 5047, max 35033
+2020-05-05 09:02:48	--	- Rubicon.GeekShed.net Message of the Day - 
+2020-05-05 09:02:48	--	- 28/11/2013 2:05
+2020-05-05 09:02:48	--	-   _____           _     _____ _              _ 
+2020-05-05 09:02:48	--	-  / ____|         | |   / ____| |            | |
+2020-05-05 09:02:48	--	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2020-05-05 09:02:48	--	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2020-05-05 09:02:48	--	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2020-05-05 09:02:48	--	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2020-05-05 09:02:48	--	-                                                
+2020-05-05 09:02:48	--	- 
+2020-05-05 09:02:48	--	- Before continuing please read the Geek Shed
+2020-05-05 09:02:48	--	- Terms Of Service: http://www.geekshed.net/tos/ 
+2020-05-05 09:02:48	--	- 
+2020-05-05 09:02:48	--	- By connecting and retaining a connection to any 
+2020-05-05 09:02:48	--	- part of Geek Shed you state that you have read, 
+2020-05-05 09:02:48	--	- understand, and hereby agree to comply with and accept 
+2020-05-05 09:02:48	--	- the Geek Shed Terms Of Service, disclaimers, 
+2020-05-05 09:02:48	--	- and rules stated in the document.
+2020-05-05 09:02:48	--	- 
+2020-05-05 09:02:48	--	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2020-05-05 09:02:48	--	- DO NOT RECONNECT!
+2020-05-05 09:02:48	--	- 
+2020-05-05 09:02:48	--	- -------------------------------------------------------
+2020-05-05 09:02:48	--	- 
+2020-05-05 09:02:48	--	- :: Our Site  http://www.geekshed.net/
+2020-05-05 09:02:48	--	- :: Free BNC  http://www.geekshed.net/bnc/ 
+2020-05-05 09:02:48	--	- :: Web Chat  http://www.geekshed.net/chat/
+2020-05-05 09:02:48	--	- :: Commands  http://www.geekshed.net/commands/
+2020-05-05 09:02:48	--	- :: Forums    http://www.geekshed.net/forum/
+2020-05-05 09:02:48	--	- :: Quotes    http://www.geekshed.net/qdb/
+2020-05-05 09:02:48	--	- :: Staff     http://www.geekshed.net/staff/
+2020-05-05 09:02:48	--	- :: Twitter   http://www.twitter.com/geekshed
+2020-05-05 09:02:48	--	- :: YouTube   http://www.youtube.com/geekshedirc
+2020-05-05 09:02:48	--	- 
+2020-05-05 09:02:48	--	- -------------------------------------------------------
+2020-05-05 09:02:48	--	End of /MOTD command.
+2020-05-05 09:02:48	--	User mode [+iRxz] by routingsparks
+2020-05-05 09:15:07	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-05 09:15:07	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-05 09:15:07	--	gnutls: receiving 3 certificates
+2020-05-05 09:15:07	--	 - certificate[1] info:
+2020-05-05 09:15:07	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-05 09:15:07	--	 - certificate[2] info:
+2020-05-05 09:15:07	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-05 09:15:07	--	 - certificate[3] info:
+2020-05-05 09:15:07	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-05 09:15:07	--	gnutls: peer's certificate is trusted
+2020-05-05 09:15:08	--	irc: connected to irc.geekshed.net/6697 (178.128.227.90)
+2020-05-05 09:15:08	--	Rubicon.GeekShed.net: *** Looking up your hostname...
+2020-05-05 09:15:08	--	Rubicon.GeekShed.net: *** Checking ident...
+2020-05-05 09:15:08	--	Rubicon.GeekShed.net: *** Found your hostname
+2020-05-05 09:15:10	--	Rubicon.GeekShed.net: *** No ident response; username prefixed with ~
+2020-05-05 09:15:10	--	irc: client capability, server supports: tls multi-prefix account-notify userhost-in-names away-notify
+2020-05-05 09:15:10	--	irc: client capability, requesting: account-notify away-notify multi-prefix
+2020-05-05 09:15:10	--	irc: client capability: SASL not supported
+2020-05-05 09:15:10	--	irc: client capability, enabled: account-notify away-notify multi-prefix
+2020-05-05 09:15:10	--	Welcome to the GeekShed IRC Network routingsparks!~sparky@pool-100-4-71-219.nrflva.fios.verizon.net
+2020-05-05 09:15:10	--	Your host is Rubicon.GeekShed.net, running version Unreal3.2.10.3-gs
+2020-05-05 09:15:10	--	This server was created Sat Mar 21 2020 at 20:06:40 UTC
+2020-05-05 09:15:10	--	Rubicon.GeekShed.net Unreal3.2.10.3-gs iowghraAsORTVSxNCWqBzvdHtGpIDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjUZ
+2020-05-05 09:15:10	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2020-05-05 09:15:10	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGUZ NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,qjncrRaT ELIST=MNUCT :are supported by this server
+2020-05-05 09:15:10	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2020-05-05 09:15:10	--	Rubicon.GeekShed.net: *** You are connected to Rubicon.GeekShed.net with TLSv1.2-AES256-GCM-SHA384-256bits
+2020-05-05 09:15:10	--	There are 114 users and 5022 invisible on 13 servers
+2020-05-05 09:15:10	--	27 :operator(s) online
+2020-05-05 09:15:10	--	5 :unknown connection(s)
+2020-05-05 09:15:10	--	420 :channels formed
+2020-05-05 09:15:10	--	I have 396 clients and 0 servers
+2020-05-05 09:15:10	--	396 6609 :Current local users 396, max 6609
+2020-05-05 09:15:10	--	5136 35033 :Current global users 5136, max 35033
+2020-05-05 09:15:10	--	- Rubicon.GeekShed.net Message of the Day - 
+2020-05-05 09:15:10	--	- 28/11/2013 2:05
+2020-05-05 09:15:10	--	-   _____           _     _____ _              _ 
+2020-05-05 09:15:10	--	-  / ____|         | |   / ____| |            | |
+2020-05-05 09:15:10	--	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2020-05-05 09:15:10	--	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2020-05-05 09:15:10	--	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2020-05-05 09:15:10	--	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2020-05-05 09:15:10	--	-                                                
+2020-05-05 09:15:10	--	- 
+2020-05-05 09:15:10	--	- Before continuing please read the Geek Shed
+2020-05-05 09:15:10	--	- Terms Of Service: http://www.geekshed.net/tos/ 
+2020-05-05 09:15:10	--	- 
+2020-05-05 09:15:10	--	- By connecting and retaining a connection to any 
+2020-05-05 09:15:10	--	- part of Geek Shed you state that you have read, 
+2020-05-05 09:15:10	--	- understand, and hereby agree to comply with and accept 
+2020-05-05 09:15:10	--	- the Geek Shed Terms Of Service, disclaimers, 
+2020-05-05 09:15:10	--	- and rules stated in the document.
+2020-05-05 09:15:10	--	- 
+2020-05-05 09:15:10	--	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2020-05-05 09:15:10	--	- DO NOT RECONNECT!
+2020-05-05 09:15:10	--	- 
+2020-05-05 09:15:10	--	- -------------------------------------------------------
+2020-05-05 09:15:10	--	- 
+2020-05-05 09:15:10	--	- :: Our Site  http://www.geekshed.net/
+2020-05-05 09:15:10	--	- :: Free BNC  http://www.geekshed.net/bnc/ 
+2020-05-05 09:15:10	--	- :: Web Chat  http://www.geekshed.net/chat/
+2020-05-05 09:15:10	--	- :: Commands  http://www.geekshed.net/commands/
+2020-05-05 09:15:10	--	- :: Forums    http://www.geekshed.net/forum/
+2020-05-05 09:15:10	--	- :: Quotes    http://www.geekshed.net/qdb/
+2020-05-05 09:15:10	--	- :: Staff     http://www.geekshed.net/staff/
+2020-05-05 09:15:10	--	- :: Twitter   http://www.twitter.com/geekshed
+2020-05-05 09:15:10	--	- :: YouTube   http://www.youtube.com/geekshedirc
+2020-05-05 09:15:10	--	- 
+2020-05-05 09:15:10	--	- -------------------------------------------------------
+2020-05-05 09:15:10	--	End of /MOTD command.
+2020-05-05 09:15:10	--	User mode [+iRxz] by routingsparks
+2020-05-05 10:30:53	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-05 10:30:53	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-05 10:30:53	--	gnutls: receiving 3 certificates
+2020-05-05 10:30:53	--	 - certificate[1] info:
+2020-05-05 10:30:53	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-05 10:30:53	--	 - certificate[2] info:
+2020-05-05 10:30:53	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-05 10:30:53	--	 - certificate[3] info:
+2020-05-05 10:30:53	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-05 10:30:53	--	gnutls: peer's certificate is trusted
+2020-05-05 10:30:53	--	irc: connected to irc.geekshed.net/6697 (159.203.45.35)
+2020-05-05 10:30:53	--	Defiant.GeekShed.net: *** Looking up your hostname...
+2020-05-05 10:30:53	--	Defiant.GeekShed.net: *** Checking ident...
+2020-05-05 10:30:53	--	Defiant.GeekShed.net: *** No ident response; username prefixed with ~
+2020-05-05 10:30:54	--	Defiant.GeekShed.net: *** Found your hostname
+2020-05-05 10:30:54	--	irc: client capability, server supports: tls multi-prefix account-notify userhost-in-names away-notify
+2020-05-05 10:30:54	--	irc: client capability, requesting: account-notify away-notify multi-prefix
+2020-05-05 10:30:54	--	irc: client capability: SASL not supported
+2020-05-05 10:30:54	--	irc: client capability, enabled: account-notify away-notify multi-prefix
+2020-05-05 10:30:54	--	Welcome to the GeekShed IRC Network routingsparks!~sparky@pool-100-4-71-219.nrflva.fios.verizon.net
+2020-05-05 10:30:54	--	Your host is Defiant.GeekShed.net, running version Unreal3.2.10.3-gs
+2020-05-05 10:30:54	--	This server was created Sun Apr 17 2016 at 20:50:58 UTC
+2020-05-05 10:30:54	--	Defiant.GeekShed.net Unreal3.2.10.3-gs iowghraAsORTVSxNCWqBzvdHtGpIDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjUZ
+2020-05-05 10:30:54	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2020-05-05 10:30:54	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGUZ NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,qjncrRaT ELIST=MNUCT :are supported by this server
+2020-05-05 10:30:54	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2020-05-05 10:30:54	--	Defiant.GeekShed.net: *** You are connected to Defiant.GeekShed.net with TLSv1.2-AES256-GCM-SHA384-256bits
+2020-05-05 10:30:54	--	There are 113 users and 5604 invisible on 13 servers
+2020-05-05 10:30:54	--	27 :operator(s) online
+2020-05-05 10:30:54	--	420 :channels formed
+2020-05-05 10:30:54	--	I have 552 clients and 0 servers
+2020-05-05 10:30:54	--	552 6744 :Current local users 552, max 6744
+2020-05-05 10:30:54	--	5717 35034 :Current global users 5717, max 35034
+2020-05-05 10:30:54	--	- Defiant.GeekShed.net Message of the Day - 
+2020-05-05 10:30:54	--	- 28/11/2013 2:05
+2020-05-05 10:30:54	--	-   _____           _     _____ _              _ 
+2020-05-05 10:30:54	--	-  / ____|         | |   / ____| |            | |
+2020-05-05 10:30:54	--	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2020-05-05 10:30:54	--	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2020-05-05 10:30:54	--	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2020-05-05 10:30:54	--	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2020-05-05 10:30:54	--	-                                                
+2020-05-05 10:30:54	--	- 
+2020-05-05 10:30:54	--	- Before continuing please read the Geek Shed
+2020-05-05 10:30:54	--	- Terms Of Service: http://www.geekshed.net/tos/ 
+2020-05-05 10:30:54	--	- 
+2020-05-05 10:30:54	--	- By connecting and retaining a connection to any 
+2020-05-05 10:30:54	--	- part of Geek Shed you state that you have read, 
+2020-05-05 10:30:54	--	- understand, and hereby agree to comply with and accept 
+2020-05-05 10:30:54	--	- the Geek Shed Terms Of Service, disclaimers, 
+2020-05-05 10:30:54	--	- and rules stated in the document.
+2020-05-05 10:30:54	--	- 
+2020-05-05 10:30:54	--	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2020-05-05 10:30:54	--	- DO NOT RECONNECT!
+2020-05-05 10:30:54	--	- 
+2020-05-05 10:30:54	--	- -------------------------------------------------------
+2020-05-05 10:30:54	--	- 
+2020-05-05 10:30:54	--	- :: Our Site  http://www.geekshed.net/
+2020-05-05 10:30:54	--	- :: Free BNC  http://www.geekshed.net/bnc/ 
+2020-05-05 10:30:54	--	- :: Web Chat  http://www.geekshed.net/chat/
+2020-05-05 10:30:54	--	- :: Commands  http://www.geekshed.net/commands/
+2020-05-05 10:30:54	--	- :: Forums    http://www.geekshed.net/forum/
+2020-05-05 10:30:54	--	- :: Quotes    http://www.geekshed.net/qdb/
+2020-05-05 10:30:54	--	- :: Staff     http://www.geekshed.net/staff/
+2020-05-05 10:30:54	--	- :: Twitter   http://www.twitter.com/geekshed
+2020-05-05 10:30:54	--	- :: YouTube   http://www.youtube.com/geekshedirc
+2020-05-05 10:30:54	--	- 
+2020-05-05 10:30:54	--	- -------------------------------------------------------
+2020-05-05 10:30:54	--	End of /MOTD command.
+2020-05-05 10:30:54	--	User mode [+iRxz] by routingsparks
+2020-05-05 19:19:39	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-05 19:19:39	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-05 19:19:39	--	gnutls: receiving 3 certificates
+2020-05-05 19:19:39	--	 - certificate[1] info:
+2020-05-05 19:19:39	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-05 19:19:39	--	 - certificate[2] info:
+2020-05-05 19:19:39	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-05 19:19:39	--	 - certificate[3] info:
+2020-05-05 19:19:39	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-05 19:19:39	--	gnutls: peer's certificate is trusted
+2020-05-05 19:19:39	--	irc: connected to irc.geekshed.net/6697 (159.203.45.35)
+2020-05-05 19:19:39	--	Defiant.GeekShed.net: *** Looking up your hostname...
+2020-05-05 19:19:39	--	Defiant.GeekShed.net: *** Checking ident...
+2020-05-05 19:19:39	--	Defiant.GeekShed.net: *** No ident response; username prefixed with ~
+2020-05-05 19:19:39	--	Defiant.GeekShed.net: *** Found your hostname
+2020-05-05 19:19:39	--	irc: client capability, server supports: tls multi-prefix account-notify userhost-in-names away-notify
+2020-05-05 19:19:39	--	irc: client capability, requesting: account-notify away-notify multi-prefix
+2020-05-05 19:19:39	--	irc: client capability: SASL not supported
+2020-05-05 19:19:39	--	irc: client capability, enabled: account-notify away-notify multi-prefix
+2020-05-05 19:19:39	--	Welcome to the GeekShed IRC Network routingsparks!~sparky@pool-100-4-71-219.nrflva.fios.verizon.net
+2020-05-05 19:19:39	--	Your host is Defiant.GeekShed.net, running version Unreal3.2.10.3-gs
+2020-05-05 19:19:39	--	This server was created Sun Apr 17 2016 at 20:50:58 UTC
+2020-05-05 19:19:39	--	Defiant.GeekShed.net Unreal3.2.10.3-gs iowghraAsORTVSxNCWqBzvdHtGpIDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjUZ
+2020-05-05 19:19:39	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2020-05-05 19:19:39	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGUZ NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,qjncrRaT ELIST=MNUCT :are supported by this server
+2020-05-05 19:19:39	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2020-05-05 19:19:39	--	Defiant.GeekShed.net: *** You are connected to Defiant.GeekShed.net with TLSv1.2-AES256-GCM-SHA384-256bits
+2020-05-05 19:19:39	--	There are 116 users and 8454 invisible on 13 servers
+2020-05-05 19:19:39	--	28 :operator(s) online
+2020-05-05 19:19:39	--	3 :unknown connection(s)
+2020-05-05 19:19:39	--	417 :channels formed
+2020-05-05 19:19:39	--	I have 1600 clients and 0 servers
+2020-05-05 19:19:39	--	1600 6744 :Current local users 1600, max 6744
+2020-05-05 19:19:39	--	8570 35034 :Current global users 8570, max 35034
+2020-05-05 19:19:39	--	- Defiant.GeekShed.net Message of the Day - 
+2020-05-05 19:19:39	--	- 28/11/2013 2:05
+2020-05-05 19:19:39	--	-   _____           _     _____ _              _ 
+2020-05-05 19:19:39	--	-  / ____|         | |   / ____| |            | |
+2020-05-05 19:19:39	--	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2020-05-05 19:19:39	--	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2020-05-05 19:19:39	--	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2020-05-05 19:19:39	--	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2020-05-05 19:19:39	--	-                                                
+2020-05-05 19:19:39	--	- 
+2020-05-05 19:19:39	--	- Before continuing please read the Geek Shed
+2020-05-05 19:19:39	--	- Terms Of Service: http://www.geekshed.net/tos/ 
+2020-05-05 19:19:39	--	- 
+2020-05-05 19:19:39	--	- By connecting and retaining a connection to any 
+2020-05-05 19:19:39	--	- part of Geek Shed you state that you have read, 
+2020-05-05 19:19:39	--	- understand, and hereby agree to comply with and accept 
+2020-05-05 19:19:39	--	- the Geek Shed Terms Of Service, disclaimers, 
+2020-05-05 19:19:39	--	- and rules stated in the document.
+2020-05-05 19:19:39	--	- 
+2020-05-05 19:19:39	--	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2020-05-05 19:19:39	--	- DO NOT RECONNECT!
+2020-05-05 19:19:39	--	- 
+2020-05-05 19:19:39	--	- -------------------------------------------------------
+2020-05-05 19:19:39	--	- 
+2020-05-05 19:19:39	--	- :: Our Site  http://www.geekshed.net/
+2020-05-05 19:19:39	--	- :: Free BNC  http://www.geekshed.net/bnc/ 
+2020-05-05 19:19:39	--	- :: Web Chat  http://www.geekshed.net/chat/
+2020-05-05 19:19:39	--	- :: Commands  http://www.geekshed.net/commands/
+2020-05-05 19:19:39	--	- :: Forums    http://www.geekshed.net/forum/
+2020-05-05 19:19:39	--	- :: Quotes    http://www.geekshed.net/qdb/
+2020-05-05 19:19:39	--	- :: Staff     http://www.geekshed.net/staff/
+2020-05-05 19:19:39	--	- :: Twitter   http://www.twitter.com/geekshed
+2020-05-05 19:19:39	--	- :: YouTube   http://www.youtube.com/geekshedirc
+2020-05-05 19:19:39	--	- 
+2020-05-05 19:19:39	--	- -------------------------------------------------------
+2020-05-05 19:19:39	--	End of /MOTD command.
+2020-05-05 19:19:39	--	User mode [+iRxz] by routingsparks
+2020-05-05 19:22:35	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-05 19:22:35	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-05 19:22:35	--	gnutls: receiving 3 certificates
+2020-05-05 19:22:35	--	 - certificate[1] info:
+2020-05-05 19:22:35	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-05 19:22:35	--	 - certificate[2] info:
+2020-05-05 19:22:35	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-05 19:22:35	--	 - certificate[3] info:
+2020-05-05 19:22:35	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-05 19:22:35	--	gnutls: peer's certificate is trusted
+2020-05-05 19:22:35	--	irc: connected to irc.geekshed.net/6697 (209.51.186.9)
+2020-05-05 19:22:35	--	DS9.GeekShed.net: *** Looking up your hostname...
+2020-05-05 19:22:35	--	DS9.GeekShed.net: *** Checking ident...
+2020-05-05 19:22:35	--	DS9.GeekShed.net: *** Found your hostname
+2020-05-06 19:52:00	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-06 19:52:01	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-06 19:52:01	--	gnutls: receiving 3 certificates
+2020-05-06 19:52:01	--	 - certificate[1] info:
+2020-05-06 19:52:01	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-06 19:52:01	--	 - certificate[2] info:
+2020-05-06 19:52:01	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-06 19:52:01	--	 - certificate[3] info:
+2020-05-06 19:52:01	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-06 19:52:01	--	gnutls: peer's certificate is trusted
+2020-05-06 19:52:01	--	irc: connected to irc.geekshed.net/6697 (192.241.228.170)
+2020-05-06 19:52:01	--	fe-00106.GeekShed.net: *** Looking up your hostname...
+2020-05-06 19:52:01	--	fe-00106.GeekShed.net: *** Checking ident...
+2020-05-06 19:52:01	--	fe-00106.GeekShed.net: *** Found your hostname
+2020-05-06 19:52:05	--	fe-00106.GeekShed.net: *** No ident response; username prefixed with ~
+2020-05-06 19:52:05	--	irc: client capability, server supports: tls multi-prefix account-notify userhost-in-names away-notify
+2020-05-06 19:52:05	--	irc: client capability, requesting: account-notify away-notify multi-prefix
+2020-05-06 19:52:05	--	irc: client capability: SASL not supported
+2020-05-06 19:52:05	--	irc: client capability, enabled: account-notify away-notify multi-prefix
+2020-05-06 19:52:05	--	Welcome to the GeekShed IRC Network routingsparks!~sparky@pool-100-4-71-219.nrflva.fios.verizon.net
+2020-05-06 19:52:05	--	Your host is fe-00106.GeekShed.net, running version Unreal3.2.10.3-gs
+2020-05-06 19:52:05	--	This server was created Tue Sep 22 2015 at 00:43:46 UTC
+2020-05-06 19:52:05	--	fe-00106.GeekShed.net Unreal3.2.10.3-gs iowghraAsORTVSxNCWqBzvdHtGpIDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjUZ
+2020-05-06 19:52:05	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2020-05-06 19:52:05	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGUZ NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,qjncrRaT ELIST=MNUCT :are supported by this server
+2020-05-06 19:52:05	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2020-05-06 19:52:05	--	fe-00106.GeekShed.net: *** You are connected to fe-00106.GeekShed.net with TLSv1.2-AES256-GCM-SHA384-256bits
+2020-05-06 19:52:05	--	There are 113 users and 10469 invisible on 13 servers
+2020-05-06 19:52:05	--	28 :operator(s) online
+2020-05-06 19:52:05	--	1 :unknown connection(s)
+2020-05-06 19:52:05	--	420 :channels formed
+2020-05-06 19:52:05	--	I have 1926 clients and 0 servers
+2020-05-06 19:52:05	--	1926 7029 :Current local users 1926, max 7029
+2020-05-06 19:52:05	--	10582 35033 :Current global users 10582, max 35033
+2020-05-06 19:52:05	--	- fe-00106.GeekShed.net Message of the Day - 
+2020-05-06 19:52:05	--	- 28/11/2013 2:05
+2020-05-06 19:52:05	--	-   _____           _     _____ _              _ 
+2020-05-06 19:52:05	--	-  / ____|         | |   / ____| |            | |
+2020-05-06 19:52:05	--	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2020-05-06 19:52:05	--	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2020-05-06 19:52:05	--	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2020-05-06 19:52:05	--	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2020-05-06 19:52:05	--	-                                                
+2020-05-06 19:52:05	--	- 
+2020-05-06 19:52:05	--	- Before continuing please read the Geek Shed
+2020-05-06 19:52:05	--	- Terms Of Service: http://www.geekshed.net/tos/ 
+2020-05-06 19:52:05	--	- 
+2020-05-06 19:52:05	--	- By connecting and retaining a connection to any 
+2020-05-06 19:52:05	--	- part of Geek Shed you state that you have read, 
+2020-05-06 19:52:05	--	- understand, and hereby agree to comply with and accept 
+2020-05-06 19:52:05	--	- the Geek Shed Terms Of Service, disclaimers, 
+2020-05-06 19:52:05	--	- and rules stated in the document.
+2020-05-06 19:52:05	--	- 
+2020-05-06 19:52:05	--	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2020-05-06 19:52:05	--	- DO NOT RECONNECT!
+2020-05-06 19:52:05	--	- 
+2020-05-06 19:52:05	--	- -------------------------------------------------------
+2020-05-06 19:52:05	--	- 
+2020-05-06 19:52:05	--	- :: Our Site  http://www.geekshed.net/
+2020-05-06 19:52:05	--	- :: Free BNC  http://www.geekshed.net/bnc/ 
+2020-05-06 19:52:05	--	- :: Web Chat  http://www.geekshed.net/chat/
+2020-05-06 19:52:05	--	- :: Commands  http://www.geekshed.net/commands/
+2020-05-06 19:52:05	--	- :: Forums    http://www.geekshed.net/forum/
+2020-05-06 19:52:05	--	- :: Quotes    http://www.geekshed.net/qdb/
+2020-05-06 19:52:05	--	- :: Staff     http://www.geekshed.net/staff/
+2020-05-06 19:52:05	--	- :: Twitter   http://www.twitter.com/geekshed
+2020-05-06 19:52:05	--	- :: YouTube   http://www.youtube.com/geekshedirc
+2020-05-06 19:52:05	--	- 
+2020-05-06 19:52:05	--	- -------------------------------------------------------
+2020-05-06 19:52:05	--	End of /MOTD command.
+2020-05-06 19:52:05	--	User mode [+iRxz] by routingsparks
+2020-05-08 15:38:53	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-08 15:38:53	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-08 15:38:53	--	gnutls: receiving 3 certificates
+2020-05-08 15:38:53	--	 - certificate[1] info:
+2020-05-08 15:38:53	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-08 15:38:53	--	 - certificate[2] info:
+2020-05-08 15:38:53	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-08 15:38:53	--	 - certificate[3] info:
+2020-05-08 15:38:53	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-08 15:38:53	--	gnutls: peer's certificate is trusted
+2020-05-08 15:38:53	--	irc: connected to irc.geekshed.net/6697 (192.241.228.170)
+2020-05-08 15:38:53	--	fe-00106.GeekShed.net: *** Looking up your hostname...
+2020-05-08 15:38:53	--	fe-00106.GeekShed.net: *** Checking ident...
+2020-05-08 15:38:53	--	fe-00106.GeekShed.net: *** Found your hostname
+2020-05-08 15:38:56	--	fe-00106.GeekShed.net: *** No ident response; username prefixed with ~
+2020-05-08 15:38:56	--	irc: client capability, server supports: tls multi-prefix account-notify userhost-in-names away-notify
+2020-05-08 15:38:56	--	irc: client capability, requesting: account-notify away-notify multi-prefix
+2020-05-08 15:38:56	--	irc: client capability: SASL not supported
+2020-05-08 15:38:56	--	irc: client capability, enabled: account-notify away-notify multi-prefix
+2020-05-08 15:38:56	--	Welcome to the GeekShed IRC Network routingsparks!~sparky@pool-100-4-71-219.nrflva.fios.verizon.net
+2020-05-08 15:38:56	--	Your host is fe-00106.GeekShed.net, running version Unreal3.2.10.3-gs
+2020-05-08 15:38:56	--	This server was created Tue Sep 22 2015 at 00:43:46 UTC
+2020-05-08 15:38:56	--	fe-00106.GeekShed.net Unreal3.2.10.3-gs iowghraAsORTVSxNCWqBzvdHtGpIDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjUZ
+2020-05-08 15:38:56	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2020-05-08 15:38:56	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGUZ NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,qjncrRaT ELIST=MNUCT :are supported by this server
+2020-05-08 15:38:56	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2020-05-08 15:38:56	--	fe-00106.GeekShed.net: *** You are connected to fe-00106.GeekShed.net with TLSv1.2-AES256-GCM-SHA384-256bits
+2020-05-08 15:38:56	--	There are 115 users and 16333 invisible on 13 servers
+2020-05-08 15:38:56	--	28 :operator(s) online
+2020-05-08 15:38:56	--	4 :unknown connection(s)
+2020-05-08 15:38:56	--	422 :channels formed
+2020-05-08 15:38:56	--	I have 3344 clients and 0 servers
+2020-05-08 15:38:56	--	3344 7029 :Current local users 3344, max 7029
+2020-05-08 15:38:56	--	16448 35033 :Current global users 16448, max 35033
+2020-05-08 15:38:56	--	- fe-00106.GeekShed.net Message of the Day - 
+2020-05-08 15:38:56	--	- 28/11/2013 2:05
+2020-05-08 15:38:56	--	-   _____           _     _____ _              _ 
+2020-05-08 15:38:56	--	-  / ____|         | |   / ____| |            | |
+2020-05-08 15:38:56	--	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2020-05-08 15:38:56	--	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2020-05-08 15:38:56	--	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2020-05-08 15:38:56	--	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2020-05-08 15:38:56	--	-                                                
+2020-05-08 15:38:56	--	- 
+2020-05-08 15:38:56	--	- Before continuing please read the Geek Shed
+2020-05-08 15:38:56	--	- Terms Of Service: http://www.geekshed.net/tos/ 
+2020-05-08 15:38:56	--	- 
+2020-05-08 15:38:56	--	- By connecting and retaining a connection to any 
+2020-05-08 15:38:56	--	- part of Geek Shed you state that you have read, 
+2020-05-08 15:38:56	--	- understand, and hereby agree to comply with and accept 
+2020-05-08 15:38:56	--	- the Geek Shed Terms Of Service, disclaimers, 
+2020-05-08 15:38:56	--	- and rules stated in the document.
+2020-05-08 15:38:56	--	- 
+2020-05-08 15:38:56	--	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2020-05-08 15:38:56	--	- DO NOT RECONNECT!
+2020-05-08 15:38:56	--	- 
+2020-05-08 15:38:56	--	- -------------------------------------------------------
+2020-05-08 15:38:56	--	- 
+2020-05-08 15:38:56	--	- :: Our Site  http://www.geekshed.net/
+2020-05-08 15:38:56	--	- :: Free BNC  http://www.geekshed.net/bnc/ 
+2020-05-08 15:38:56	--	- :: Web Chat  http://www.geekshed.net/chat/
+2020-05-08 15:38:56	--	- :: Commands  http://www.geekshed.net/commands/
+2020-05-08 15:38:56	--	- :: Forums    http://www.geekshed.net/forum/
+2020-05-08 15:38:56	--	- :: Quotes    http://www.geekshed.net/qdb/
+2020-05-08 15:38:56	--	- :: Staff     http://www.geekshed.net/staff/
+2020-05-08 15:38:56	--	- :: Twitter   http://www.twitter.com/geekshed
+2020-05-08 15:38:56	--	- :: YouTube   http://www.youtube.com/geekshedirc
+2020-05-08 15:38:56	--	- 
+2020-05-08 15:38:56	--	- -------------------------------------------------------
+2020-05-08 15:38:56	--	End of /MOTD command.
+2020-05-08 15:38:56	--	User mode [+iRxz] by routingsparks
+2020-05-24 20:56:59	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-24 20:56:59	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-24 20:56:59	--	gnutls: receiving 3 certificates
+2020-05-24 20:56:59	--	 - certificate[1] info:
+2020-05-24 20:56:59	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-24 20:56:59	--	 - certificate[2] info:
+2020-05-24 20:56:59	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-24 20:56:59	--	 - certificate[3] info:
+2020-05-24 20:56:59	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-24 20:56:59	--	gnutls: peer's certificate is trusted
+2020-05-24 20:56:59	--	irc: connected to irc.geekshed.net/6697 (209.51.186.9)
+2020-05-24 20:57:00	--	DS9.GeekShed.net: *** Looking up your hostname...
+2020-05-24 20:57:00	--	DS9.GeekShed.net: *** Checking ident...
+2020-05-24 20:57:00	--	DS9.GeekShed.net: *** Found your hostname
+2020-05-24 20:57:03	--	DS9.GeekShed.net: *** No ident response; username prefixed with ~
+2020-05-24 20:57:03	--	irc: client capability, server supports: tls multi-prefix account-notify userhost-in-names away-notify
+2020-05-24 20:57:03	--	irc: client capability, requesting: account-notify away-notify multi-prefix
+2020-05-24 20:57:03	--	irc: client capability: SASL not supported
+2020-05-24 20:57:03	--	irc: client capability, enabled: account-notify away-notify multi-prefix
+2020-05-24 20:57:03	--	Welcome to the GeekShed IRC Network routingsparks!~sparky@pool-100-4-71-219.nrflva.fios.verizon.net
+2020-05-24 20:57:03	--	Your host is DS9.GeekShed.net, running version Unreal3.2.10.3-gs
+2020-05-24 20:57:03	--	This server was created Fri Mar 20 2020 at 22:11:12 UTC
+2020-05-24 20:57:03	--	DS9.GeekShed.net Unreal3.2.10.3-gs iowghraAsORTVSxNCWqBzvdHtGpIDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjUZ
+2020-05-24 20:57:03	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2020-05-24 20:57:03	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGUZ NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,qjncrRaT ELIST=MNUCT :are supported by this server
+2020-05-24 20:57:03	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2020-05-24 20:57:03	--	DS9.GeekShed.net: *** You are connected to DS9.GeekShed.net with TLSv1.3-TLS_AES_256_GCM_SHA384-256bits
+2020-05-24 20:57:03	--	There are 113 users and 13376 invisible on 13 servers
+2020-05-24 20:57:03	--	26 :operator(s) online
+2020-05-24 20:57:03	--	4 :unknown connection(s)
+2020-05-24 20:57:03	--	427 :channels formed
+2020-05-24 20:57:03	--	I have 2807 clients and 0 servers
+2020-05-24 20:57:03	--	2807 6584 :Current local users 2807, max 6584
+2020-05-24 20:57:03	--	13489 35033 :Current global users 13489, max 35033
+2020-05-24 20:57:03	--	- DS9.GeekShed.net Message of the Day - 
+2020-05-24 20:57:03	--	- 28/11/2013 2:05
+2020-05-24 20:57:03	--	-   _____           _     _____ _              _ 
+2020-05-24 20:57:03	--	-  / ____|         | |   / ____| |            | |
+2020-05-24 20:57:03	--	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2020-05-24 20:57:03	--	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2020-05-24 20:57:03	--	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2020-05-24 20:57:03	--	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2020-05-24 20:57:03	--	-                                                
+2020-05-24 20:57:03	--	- 
+2020-05-24 20:57:03	--	- Before continuing please read the Geek Shed
+2020-05-24 20:57:03	--	- Terms Of Service: http://www.geekshed.net/tos/ 
+2020-05-24 20:57:03	--	- 
+2020-05-24 20:57:03	--	- By connecting and retaining a connection to any 
+2020-05-24 20:57:03	--	- part of Geek Shed you state that you have read, 
+2020-05-24 20:57:03	--	- understand, and hereby agree to comply with and accept 
+2020-05-24 20:57:03	--	- the Geek Shed Terms Of Service, disclaimers, 
+2020-05-24 20:57:03	--	- and rules stated in the document.
+2020-05-24 20:57:03	--	- 
+2020-05-24 20:57:03	--	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2020-05-24 20:57:03	--	- DO NOT RECONNECT!
+2020-05-24 20:57:03	--	- 
+2020-05-24 20:57:03	--	- -------------------------------------------------------
+2020-05-24 20:57:03	--	- 
+2020-05-24 20:57:03	--	- :: Our Site  http://www.geekshed.net/
+2020-05-24 20:57:03	--	- :: Free BNC  http://www.geekshed.net/bnc/ 
+2020-05-24 20:57:03	--	- :: Web Chat  http://www.geekshed.net/chat/
+2020-05-24 20:57:03	--	- :: Commands  http://www.geekshed.net/commands/
+2020-05-24 20:57:03	--	- :: Forums    http://www.geekshed.net/forum/
+2020-05-24 20:57:03	--	- :: Quotes    http://www.geekshed.net/qdb/
+2020-05-24 20:57:03	--	- :: Staff     http://www.geekshed.net/staff/
+2020-05-24 20:57:03	--	- :: Twitter   http://www.twitter.com/geekshed
+2020-05-24 20:57:03	--	- :: YouTube   http://www.youtube.com/geekshedirc
+2020-05-24 20:57:03	--	- 
+2020-05-24 20:57:03	--	- -------------------------------------------------------
+2020-05-24 20:57:03	--	End of /MOTD command.
+2020-05-24 20:57:03	--	User mode [+iRxz] by routingsparks
+2020-05-25 06:44:10	--	irc: lag is high, reconnecting to server geekshed
+2020-05-25 06:44:10	--	irc: disconnected from server
+2020-05-25 06:44:10	--	irc: reconnecting to server in 10 seconds
+2020-05-25 06:44:20	--	irc: reconnecting to server...
+2020-05-25 06:44:20	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-25 06:44:21	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-25 06:44:21	--	gnutls: receiving 3 certificates
+2020-05-25 06:44:21	--	 - certificate[1] info:
+2020-05-25 06:44:21	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-25 06:44:21	--	 - certificate[2] info:
+2020-05-25 06:44:21	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-25 06:44:21	--	 - certificate[3] info:
+2020-05-25 06:44:21	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-25 06:44:21	--	gnutls: peer's certificate is trusted
+2020-05-25 06:44:21	--	irc: connected to irc.geekshed.net/6697 (192.241.228.170)
+2020-05-25 06:44:21	--	fe-00106.GeekShed.net: *** Looking up your hostname...
+2020-05-25 06:44:21	--	fe-00106.GeekShed.net: *** Checking ident...
+2020-05-25 06:44:21	--	fe-00106.GeekShed.net: *** Found your hostname
+2020-05-25 06:44:25	--	fe-00106.GeekShed.net: *** No ident response; username prefixed with ~
+2020-05-25 06:44:25	--	irc: client capability, server supports: tls multi-prefix account-notify userhost-in-names away-notify
+2020-05-25 06:44:25	--	irc: client capability, requesting: account-notify away-notify multi-prefix
+2020-05-25 06:44:25	--	irc: client capability: SASL not supported
+2020-05-25 06:44:25	--	irc: client capability, enabled: account-notify away-notify multi-prefix
+2020-05-25 06:44:25	--	Welcome to the GeekShed IRC Network routingsparks!~sparky@pool-100-4-71-219.nrflva.fios.verizon.net
+2020-05-25 06:44:25	--	Your host is fe-00106.GeekShed.net, running version Unreal3.2.10.3-gs
+2020-05-25 06:44:25	--	This server was created Tue Sep 22 2015 at 00:43:46 UTC
+2020-05-25 06:44:25	--	fe-00106.GeekShed.net Unreal3.2.10.3-gs iowghraAsORTVSxNCWqBzvdHtGpIDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjUZ
+2020-05-25 06:44:25	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2020-05-25 06:44:25	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGUZ NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,qjncrRaT ELIST=MNUCT :are supported by this server
+2020-05-25 06:44:25	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2020-05-25 06:44:25	--	fe-00106.GeekShed.net: *** You are connected to fe-00106.GeekShed.net with TLSv1.2-AES256-GCM-SHA384-256bits
+2020-05-25 06:44:25	--	There are 113 users and 3551 invisible on 13 servers
+2020-05-25 06:44:25	--	26 :operator(s) online
+2020-05-25 06:44:25	--	1 :unknown connection(s)
+2020-05-25 06:44:25	--	425 :channels formed
+2020-05-25 06:44:25	--	I have 585 clients and 0 servers
+2020-05-25 06:44:25	--	585 7029 :Current local users 585, max 7029
+2020-05-25 06:44:25	--	3664 35034 :Current global users 3664, max 35034
+2020-05-25 06:44:25	--	- fe-00106.GeekShed.net Message of the Day - 
+2020-05-25 06:44:25	--	- 28/11/2013 2:05
+2020-05-25 06:44:25	--	-   _____           _     _____ _              _ 
+2020-05-25 06:44:25	--	-  / ____|         | |   / ____| |            | |
+2020-05-25 06:44:25	--	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2020-05-25 06:44:25	--	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2020-05-25 06:44:25	--	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2020-05-25 06:44:25	--	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2020-05-25 06:44:25	--	-                                                
+2020-05-25 06:44:25	--	- 
+2020-05-25 06:44:25	--	- Before continuing please read the Geek Shed
+2020-05-25 06:44:25	--	- Terms Of Service: http://www.geekshed.net/tos/ 
+2020-05-25 06:44:25	--	- 
+2020-05-25 06:44:25	--	- By connecting and retaining a connection to any 
+2020-05-25 06:44:25	--	- part of Geek Shed you state that you have read, 
+2020-05-25 06:44:25	--	- understand, and hereby agree to comply with and accept 
+2020-05-25 06:44:25	--	- the Geek Shed Terms Of Service, disclaimers, 
+2020-05-25 06:44:25	--	- and rules stated in the document.
+2020-05-25 06:44:25	--	- 
+2020-05-25 06:44:25	--	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2020-05-25 06:44:25	--	- DO NOT RECONNECT!
+2020-05-25 06:44:25	--	- 
+2020-05-25 06:44:25	--	- -------------------------------------------------------
+2020-05-25 06:44:25	--	- 
+2020-05-25 06:44:25	--	- :: Our Site  http://www.geekshed.net/
+2020-05-25 06:44:25	--	- :: Free BNC  http://www.geekshed.net/bnc/ 
+2020-05-25 06:44:25	--	- :: Web Chat  http://www.geekshed.net/chat/
+2020-05-25 06:44:25	--	- :: Commands  http://www.geekshed.net/commands/
+2020-05-25 06:44:25	--	- :: Forums    http://www.geekshed.net/forum/
+2020-05-25 06:44:25	--	- :: Quotes    http://www.geekshed.net/qdb/
+2020-05-25 06:44:25	--	- :: Staff     http://www.geekshed.net/staff/
+2020-05-25 06:44:25	--	- :: Twitter   http://www.twitter.com/geekshed
+2020-05-25 06:44:25	--	- :: YouTube   http://www.youtube.com/geekshedirc
+2020-05-25 06:44:25	--	- 
+2020-05-25 06:44:25	--	- -------------------------------------------------------
+2020-05-25 06:44:25	--	End of /MOTD command.
+2020-05-25 06:44:25	--	User mode [+iRxz] by routingsparks
+2020-05-26 19:15:39	--	irc: connecting to server irc.geekshed.net/6697 (SSL)...
+2020-05-26 19:15:40	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-05-26 19:15:40	--	gnutls: receiving 3 certificates
+2020-05-26 19:15:40	--	 - certificate[1] info:
+2020-05-26 19:15:40	--	   - subject `CN=*.geekshed.net', issuer `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', serial 0x00cb23df7a45adf2a1aa380415e44128b7, RSA key 4096 bits, signed using RSA-SHA256, activated `2020-01-08 00:00:00 UTC', expires `2022-01-07 23:59:59 UTC', pin-sha256="oHCFyQmTV6LzQ7B9EInVKuy21uyzbavNdbvnUn/0GQ4="
+2020-05-26 19:15:40	--	 - certificate[2] info:
+2020-05-26 19:15:40	--	   - subject `CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB', issuer `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', serial 0x7d5b5126b476ba11db74160bbc530da7, RSA key 2048 bits, signed using RSA-SHA384, activated `2018-11-02 00:00:00 UTC', expires `2030-12-31 23:59:59 UTC', pin-sha256="4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng="
+2020-05-26 19:15:40	--	 - certificate[3] info:
+2020-05-26 19:15:40	--	   - subject `CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US', issuer `CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE', serial 0x13ea28705bf4eced0c36630980614336, RSA key 4096 bits, signed using RSA-SHA384, activated `2000-05-30 10:48:38 UTC', expires `2020-05-30 10:48:38 UTC', pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="
+2020-05-26 19:15:40	--	gnutls: peer's certificate is trusted
+2020-05-26 19:15:40	--	irc: connected to irc.geekshed.net/6697 (178.128.227.90)
+2020-05-26 19:15:40	--	Rubicon.GeekShed.net: *** Looking up your hostname...
+2020-05-26 19:15:40	--	Rubicon.GeekShed.net: *** Checking ident...
+2020-05-26 19:15:40	--	Rubicon.GeekShed.net: *** Found your hostname
+2020-05-26 19:15:43	--	Rubicon.GeekShed.net: *** No ident response; username prefixed with ~
+2020-05-26 19:15:43	--	irc: client capability, server supports: tls multi-prefix account-notify userhost-in-names away-notify
+2020-05-26 19:15:43	--	irc: client capability, requesting: account-notify away-notify multi-prefix
+2020-05-26 19:15:43	--	irc: client capability: SASL not supported
+2020-05-26 19:15:44	--	irc: client capability, enabled: account-notify away-notify multi-prefix
+2020-05-26 19:15:44	--	Welcome to the GeekShed IRC Network routingsparks!~sparky@pool-100-4-71-219.nrflva.fios.verizon.net
+2020-05-26 19:15:44	--	Your host is Rubicon.GeekShed.net, running version Unreal3.2.10.3-gs
+2020-05-26 19:15:44	--	This server was created Sat Mar 21 2020 at 20:06:40 UTC
+2020-05-26 19:15:44	--	Rubicon.GeekShed.net Unreal3.2.10.3-gs iowghraAsORTVSxNCWqBzvdHtGpIDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjUZ
+2020-05-26 19:15:44	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2020-05-26 19:15:44	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGUZ NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,qjncrRaT ELIST=MNUCT :are supported by this server
+2020-05-26 19:15:44	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2020-05-26 19:15:44	--	Rubicon.GeekShed.net: *** You are connected to Rubicon.GeekShed.net with TLSv1.2-AES256-GCM-SHA384-256bits
+2020-05-26 19:15:44	--	There are 114 users and 7297 invisible on 13 servers
+2020-05-26 19:15:44	--	26 :operator(s) online
+2020-05-26 19:15:44	--	2 :unknown connection(s)
+2020-05-26 19:15:44	--	435 :channels formed
+2020-05-26 19:15:44	--	I have 1306 clients and 0 servers
+2020-05-26 19:15:44	--	1306 6609 :Current local users 1306, max 6609
+2020-05-26 19:15:44	--	7411 35034 :Current global users 7411, max 35034
+2020-05-26 19:15:44	--	- Rubicon.GeekShed.net Message of the Day - 
+2020-05-26 19:15:44	--	- 28/11/2013 2:05
+2020-05-26 19:15:44	--	-   _____           _     _____ _              _ 
+2020-05-26 19:15:44	--	-  / ____|         | |   / ____| |            | |
+2020-05-26 19:15:44	--	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2020-05-26 19:15:44	--	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2020-05-26 19:15:44	--	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2020-05-26 19:15:44	--	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2020-05-26 19:15:44	--	-                                                
+2020-05-26 19:15:44	--	- 
+2020-05-26 19:15:44	--	- Before continuing please read the Geek Shed
+2020-05-26 19:15:44	--	- Terms Of Service: http://www.geekshed.net/tos/ 
+2020-05-26 19:15:44	--	- 
+2020-05-26 19:15:44	--	- By connecting and retaining a connection to any 
+2020-05-26 19:15:44	--	- part of Geek Shed you state that you have read, 
+2020-05-26 19:15:44	--	- understand, and hereby agree to comply with and accept 
+2020-05-26 19:15:44	--	- the Geek Shed Terms Of Service, disclaimers, 
+2020-05-26 19:15:44	--	- and rules stated in the document.
+2020-05-26 19:15:44	--	- 
+2020-05-26 19:15:44	--	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2020-05-26 19:15:44	--	- DO NOT RECONNECT!
+2020-05-26 19:15:44	--	- 
+2020-05-26 19:15:44	--	- -------------------------------------------------------
+2020-05-26 19:15:44	--	- 
+2020-05-26 19:15:44	--	- :: Our Site  http://www.geekshed.net/
+2020-05-26 19:15:44	--	- :: Free BNC  http://www.geekshed.net/bnc/ 
+2020-05-26 19:15:44	--	- :: Web Chat  http://www.geekshed.net/chat/
+2020-05-26 19:15:44	--	- :: Commands  http://www.geekshed.net/commands/
+2020-05-26 19:15:44	--	- :: Forums    http://www.geekshed.net/forum/
+2020-05-26 19:15:44	--	- :: Quotes    http://www.geekshed.net/qdb/
+2020-05-26 19:15:44	--	- :: Staff     http://www.geekshed.net/staff/
+2020-05-26 19:15:44	--	- :: Twitter   http://www.twitter.com/geekshed
+2020-05-26 19:15:44	--	- :: YouTube   http://www.youtube.com/geekshedirc
+2020-05-26 19:15:44	--	- 
+2020-05-26 19:15:44	--	- -------------------------------------------------------
+2020-05-26 19:15:44	--	End of /MOTD command.
+2020-05-26 19:15:44	--	User mode [+iRxz] by routingsparks

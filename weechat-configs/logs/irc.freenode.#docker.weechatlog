@@ -1,0 +1,281 @@
+2020-05-05 19:19:55	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #docker
+2020-05-05 19:19:55	--	Topic for #docker is "Docker: Open platform for distributed applications | http://docker.com | Certifications https://success.docker.com/certification | http://github.com/moby/moby | Current Status: http://status.docker.com/ | https://forums.docker.com/ | Registration with NickServ required: https://freenode.net/kb/answer/registration"
+2020-05-05 19:19:55	--	Topic set by programmerq (~jeff@unaffiliated/programmerq) on Fri, 07 Dec 2018 14:42:52
+2020-05-05 19:19:55	--	Channel #docker: 852 nicks (4 ops, 0 voices, 848 normals)
+2020-05-05 19:20:11	--	Channel created on Mon, 14 Jan 2013 21:32:16
+2020-05-06 19:52:16	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #docker
+2020-05-06 19:52:16	--	Topic for #docker is "Docker: Open platform for distributed applications | http://docker.com | Certifications https://success.docker.com/certification | http://github.com/moby/moby | Current Status: http://status.docker.com/ | https://forums.docker.com/ | Registration with NickServ required: https://freenode.net/kb/answer/registration"
+2020-05-06 19:52:16	--	Topic set by programmerq (~jeff@unaffiliated/programmerq) on Fri, 07 Dec 2018 14:42:52
+2020-05-06 19:52:16	--	Channel #docker: 859 nicks (4 ops, 0 voices, 855 normals)
+2020-05-06 19:52:32	--	Channel created on Mon, 14 Jan 2013 21:32:16
+2020-05-06 19:52:40	sangy	mazula: you probably want to put mysql in another container and set things up with docker-compose
+2020-05-06 19:52:59	tabakhase	mazula https://docs.docker.com/compose/wordpress/ look at this example, thats how things are done in dockerland
+2020-05-06 19:52:59	sangy	remember: containers need to have just one job. If this is your webapp it should just do web stuffs
+2020-05-06 19:53:06	<--	tomkralidis (~tomkralid@osgeo/member/tomkralidis) has quit (Ping timeout: 240 seconds)
+2020-05-06 19:53:21	<--	zuritat (~zuritat@pool-96-231-55-141.washdc.fios.verizon.net) has quit (Ping timeout: 272 seconds)
+2020-05-06 19:53:29	mazula	my app doesn't need mysql but my test need mysql
+2020-05-06 19:53:53	tang^	then use docker-compose with your test containier
+2020-05-06 19:54:44	-->	zuritat (~zuritat@pool-96-231-55-141.washdc.fios.verizon.net) has joined #docker
+2020-05-06 19:54:45	sangy	mazula: some test harnesses already have docker plugins to spin up containers for testing :)
+2020-05-06 19:55:58	-->	jkwnki (~jkwnki@p200300CD472B60001E1BB5FFFE7A47F7.dip0.t-ipconnect.de) has joined #docker
+2020-05-06 19:56:31	-->	cixx__ (~user@176.43.170.191) has joined #docker
+2020-05-06 19:56:38	sangy	anybody knows where I can get docker  17.05.0-ce for debian?
+2020-05-06 19:57:29	sangy	ah nvm, their ppa already has it
+2020-05-06 19:57:41	<--	Nomad_ (~nomad@ipv6.rdlg.net) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:39:08	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #docker
+2020-05-08 15:39:08	--	Topic for #docker is "Docker: Open platform for distributed applications | http://docker.com | Certifications https://success.docker.com/certification | http://github.com/moby/moby | Current Status: http://status.docker.com/ | https://forums.docker.com/ | Registration with NickServ required: https://freenode.net/kb/answer/registration"
+2020-05-08 15:39:08	--	Topic set by programmerq (~jeff@unaffiliated/programmerq) on Fri, 07 Dec 2018 14:42:52
+2020-05-08 15:39:08	--	Channel #docker: 876 nicks (4 ops, 0 voices, 872 normals)
+2020-05-08 15:39:10	-->	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #docker
+2020-05-08 15:39:24	--	Channel created on Mon, 14 Jan 2013 21:32:16
+2020-05-08 15:39:39	--	kreyren_ is now known as kreyren
+2020-05-08 15:39:59	-->	jimmyb (~jimmyb@apps.linuxbox.ninja) has joined #docker
+2020-05-08 15:40:17	<--	stnly (~stnly@ns558423.ip-139-99-122.net) has quit (Quit: Ping timeout (120 seconds))
+2020-05-08 15:40:23	-->	tiin57 (~tiin57@ec2-3-94-63-186.compute-1.amazonaws.com) has joined #docker
+2020-05-08 15:40:59	-->	stnly (~stnly@ns558423.ip-139-99-122.net) has joined #docker
+2020-05-08 15:41:05	<--	jimmyb (~jimmyb@apps.linuxbox.ninja) has quit (Client Quit)
+2020-05-08 15:41:25	-->	jimmyb (~jimmyb@apps.linuxbox.ninja) has joined #docker
+2020-05-08 15:42:04	<--	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has quit (Client Quit)
+2020-05-08 15:42:09	-->	cheekyHippie (~cheekyHip@host-37-190-203-80.dynamic.mm.pl) has joined #docker
+2020-05-08 15:42:42	-->	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #docker
+2020-05-08 15:42:57	<--	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has quit (Client Quit)
+2020-05-08 15:43:06	<--	artificial_unint (~nate@162.218.217.134) has quit (Quit: Leaving.)
+2020-05-08 15:43:11	-->	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #docker
+2020-05-08 15:43:41	-->	abannon (abannon@gateway/vpn/mullvad/abannon) has joined #docker
+2020-05-08 15:44:26	-->	abannon_ (abannon@gateway/vpn/mullvad/abannon) has joined #docker
+2020-05-08 15:44:41	<--	abannon (abannon@gateway/vpn/mullvad/abannon) has quit (Client Quit)
+2020-05-08 15:44:41	<--	abannon_ (abannon@gateway/vpn/mullvad/abannon) has quit (Remote host closed the connection)
+2020-05-08 15:45:00	-->	whyz (~e@217-210-95-149-no79.tbcn.telia.com) has joined #docker
+2020-05-08 15:48:07	<--	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has quit (Quit: WeeChat 2.8)
+2020-05-08 15:49:13	<--	stnly (~stnly@ns558423.ip-139-99-122.net) has quit (Ping timeout: 240 seconds)
+2020-05-08 15:50:17	<--	jkwnki (~jkwnki@2a02:908:1216:f00:1e1b:b5ff:fe7a:47f7) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:50:38	-->	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #docker
+2020-05-08 15:50:47	-->	stnly (~stnly@ns558423.ip-139-99-122.net) has joined #docker
+2020-05-08 15:51:05	<--	f0rs3ti (~f0rs3ti@pivpn/maintainer/f0rs3ti) has quit (Quit: I've been here, a long long time ago in a far far away ... whatever  .. i am gone)
+2020-05-08 15:51:54	-->	f0rs3ti (~f0rs3ti@pivpn/maintainer/f0rs3ti) has joined #docker
+2020-05-08 15:53:18	<--	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has quit (Client Quit)
+2020-05-08 15:53:41	<--	conta (~Thunderbi@193.32.127.162) has quit (Quit: conta)
+2020-05-08 15:55:04	-->	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #docker
+2020-05-08 15:55:28	-->	kleptog (~kleptog@83-84-24-73.cable.dynamic.v4.ziggo.nl) has joined #docker
+2020-05-08 15:55:28	<--	Kamilion (kamilion@botters/Kamilion) has quit (Ping timeout: 258 seconds)
+2020-05-08 15:56:25	<--	Forkk (forkk@2600:3c00::f03c:91ff:fe84:de4d) has quit (Ping timeout: 240 seconds)
+2020-05-08 15:56:40	<--	zopsi (~zopsi@irc.dir.ac) has quit (Ping timeout: 256 seconds)
+2020-05-08 15:56:45	<--	jgornick (~jgornick@li373-224.members.linode.com) has quit (Ping timeout: 265 seconds)
+2020-05-08 15:56:49	<--	mattmcc (~matt@li807-33.members.linode.com) has quit (Ping timeout: 256 seconds)
+2020-05-08 15:56:54	<--	LouWestin (~LouWestin@hanelltech.com) has quit (Ping timeout: 272 seconds)
+2020-05-08 15:57:02	<--	f0rs3ti (~f0rs3ti@pivpn/maintainer/f0rs3ti) has quit (Quit: I've been here, a long long time ago in a far far away ... whatever  .. i am gone)
+2020-05-08 15:57:09	<--	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has quit (Client Quit)
+2020-05-08 15:57:10	<--	sadbox (jmcguire@sadbox.org) has quit (Ping timeout: 272 seconds)
+2020-05-08 15:57:12	<--	Lymia (lymia@magical.girl.lyrical.lymia.moe) has quit (Ping timeout: 244 seconds)
+2020-05-08 15:57:13	<--	petris (~quassel@docker01.dallas.linode.host.petris.net) has quit (Ping timeout: 264 seconds)
+2020-05-08 15:57:13	<--	smkelly (~smkelly@mykonos.smkelly.org) has quit (Ping timeout: 264 seconds)
+2020-05-08 15:57:52	<--	Maxattax (~max@50-195-160-193-static.hfc.comcastbusiness.net) has quit (Quit: WeeChat 2.8)
+2020-05-08 15:58:45	-->	eoli3n__ (~user@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #docker
+2020-05-08 16:01:00	<--	Ignacy (~Ignacy@84-52-246.143.3p.ntebredband.no) has quit (Read error: Connection reset by peer)
+2020-05-08 16:03:34	<--	verbose (~verbose@185.229.59.123) has quit (Quit: WeeChat 2.8)
+2020-05-24 20:57:14	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #docker
+2020-05-24 20:57:14	--	Topic for #docker is "Docker: Open platform for distributed applications | http://docker.com | Certifications https://success.docker.com/certification | http://github.com/moby/moby | Current Status: http://status.docker.com/ | https://forums.docker.com/ | Registration with NickServ required: https://freenode.net/kb/answer/registration"
+2020-05-24 20:57:14	--	Topic set by programmerq (~jeff@unaffiliated/programmerq) on Fri, 07 Dec 2018 14:42:52
+2020-05-24 20:57:14	--	Channel #docker: 864 nicks (4 ops, 0 voices, 860 normals)
+2020-05-24 20:57:22	-->	fission6 (~textual@cpe-72-231-0-7.nyc.res.rr.com) has joined #docker
+2020-05-24 20:57:22	<--	ur5us (~ur5us@2406:e002:6b0e:b201:c3cc:aab9:86ab:c0b0) has quit (Ping timeout: 260 seconds)
+2020-05-24 20:57:30	--	Channel created on Mon, 14 Jan 2013 21:32:16
+2020-05-24 20:58:44	<--	bdonnahue3 (~bdonnahue@207.181.203.71) has quit (Read error: Connection reset by peer)
+2020-05-24 20:58:57	-->	bdonnahue1 (~bdonnahue@207.181.203.71) has joined #docker
+2020-05-24 21:01:00	-->	BSaboia (~bsaboia@177.206.173.152.dynamic.adsl.gvt.net.br) has joined #docker
+2020-05-24 21:02:07	-->	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has joined #docker
+2020-05-24 21:04:23	<--	Night-Shade (~TimF@2a02:8109:9a80:6d80:d554:d1c3:d24c:9aa2) has quit (Ping timeout: 272 seconds)
+2020-05-24 21:06:18	<--	bdonnahue1 (~bdonnahue@207.181.203.71) has quit (Remote host closed the connection)
+2020-05-24 21:06:41	-->	bdonnahue1 (~bdonnahue@207.181.203.71) has joined #docker
+2020-05-24 21:06:43	<--	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has quit (Ping timeout: 240 seconds)
+2020-05-24 21:07:50	<--	bdonnahue1 (~bdonnahue@207.181.203.71) has quit (Read error: Connection reset by peer)
+2020-05-24 21:09:09	-->	bdonnahue1 (~bdonnahue@207.181.203.71) has joined #docker
+2020-05-24 21:11:05	<--	darkstardevx (darkstarde@gateway/vpn/privateinternetaccess/darkstardevx) has quit (Remote host closed the connection)
+2020-05-24 21:17:13	-->	darkstardevx (darkstarde@gateway/vpn/privateinternetaccess/darkstardevx) has joined #docker
+2020-05-24 21:17:26	<--	bizarro_1 (~bizarro_1@0.red-83-52-162.dynamicip.rima-tde.net) has quit (Ping timeout: 256 seconds)
+2020-05-24 21:17:44	<--	fission6 (~textual@cpe-72-231-0-7.nyc.res.rr.com) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-05-24 21:18:59	@ada	Smashcat: the container's lifecycle is tied to the CMD/ENTRYPOINT
+2020-05-24 21:19:42	@ada	Smashcat: the intent is that one long-running process is the PID1 for that container, and when it exits the container exits
+2020-05-24 21:20:13	Smashcat	ada: In my case I just want to run a linux image, which will be running other processes. But docker just exits immediately. I don't need a shell, or command to run when it starts
+2020-05-24 21:20:24	@ada	Smashcat: that sounds like the "VM model"
+2020-05-24 21:20:37	@ada	which is the opposite of the intent for Docker's brand of containers, at least
+2020-05-24 21:21:04	@ada	if you really really need to do this, you could run a terminal with the --interactive and --tty flags like docker run -it ubuntu
+2020-05-24 21:21:04	<--	tiin57 (~tiin57@ec2-3-94-63-186.compute-1.amazonaws.com) has quit (Read error: Connection reset by peer)
+2020-05-24 21:21:06	Smashcat	Oh, I thought docker could be used to create images to deploy on cloud servers. I'll take a look at VMs instead
+2020-05-24 21:21:13	@ada	it can, but not VMs
+2020-05-24 21:21:25	@ada	you deploy containers, and a container is written for 1 process
+2020-05-24 21:21:35	@ada	you might deploy a set of related containers that talk to each other to deploy a whole app
+2020-05-24 21:21:40	@ada	but there is not a whole OS inside that container,
+2020-05-24 21:21:58	@ada	only the libs required to run your process and the process itself, at a basic level
+2020-05-24 21:22:10	Smashcat	So I should create 1 container for apache, another for mysql, another for mail, andother for node etc. Instead of a single server with all of them?
+2020-05-24 21:22:24	@ada	you would, yes
+2020-05-24 21:22:26	-->	indigaz (~indigaz@unaffiliated/indigaz) has joined #docker
+2020-05-24 21:22:45	Smashcat	That seems like a massive overhead. Probably better for me to use a VM I guess.
+2020-05-24 21:23:42	-->	bdonnahue2 (~bdonnahue@207.181.203.71) has joined #docker
+2020-05-24 21:24:30	enderandpeter	Smashcat: It is perfectly fine to use docker to run any of those services. Docker does not need to always run one-off scripts and exit. For a web application with many services, you will be best served by managing them with docker-compose
+2020-05-24 21:24:44	-->	tiin57 (~tiin57@ec2-3-94-63-186.compute-1.amazonaws.com) has joined #docker
+2020-05-24 21:25:56	<--	wymillerlinux (~wymillerl@097-084-004-094.res.spectrum.com) has quit (Ping timeout: 256 seconds)
+2020-05-24 21:26:00	@ada	Smashcat: there is some upfront learning, I wont lie
+2020-05-24 21:26:10	<--	bdonnahue1 (~bdonnahue@207.181.203.71) has quit (Ping timeout: 260 seconds)
+2020-05-24 21:26:13	@ada	Smashcat: nowadays I prefer the container model to rolling VMs, but they are still fine
+2020-05-24 21:26:33	enderandpeter	A single server could have all the containers for those services, or the containers could be on different host machines. Yes, to manage a number of services via docker, I would first get a handle of managing any one of them, and then tie them together with docker-compose.
+2020-05-24 21:26:40	@ada	Smashcat: idk exactly what seems like "massive overhead" to running a group of processes together
+2020-05-24 21:26:45	-->	ur5us (~ur5us@2406:e002:6b0e:b201:c3cc:aab9:86ab:c0b0) has joined #docker
+2020-05-24 21:27:04	@ada	Smashcat: that is what you're trying to achieve with a VM, in docker we just separate the concerns
+2020-05-24 21:27:20	@ada	Smashcat: you don't need to "build" the images yourself, for the most part; there is a very well supported set of them on dockerhub for re-use
+2020-05-24 21:27:36	<--	kalieris (~Kalieris@176.113.72.212) has quit (Remote host closed the connection)
+2020-05-24 21:27:36	@ada	Smashcat: you don't need to figure out how to put apache into a container, just get your site code mounted and you're good to go
+2020-05-24 21:27:52	@ada	Smashcat: mysql is already containerized, too, you just provide your passwords and feed data into it
+2020-05-24 21:27:56	Smashcat	I think the overhead is the aded layer of isolation between processes that don't need to be isolated. For example, mysql is much faster using a socket on the filesystem, instead of a network port. So having apache/php/mysql in the same machien is faster than isolating them all
+2020-05-24 21:28:09	@ada	Smashcat: you could still use a socket for IPC
+2020-05-24 21:28:13	enderandpeter	Smashcat: Yeah, totally. You should find images on docker hub for those services and then get used to how to interact with them independently to get a feel for how you'd tie them together.
+2020-05-24 21:28:18	@ada	Smashcat: I am just giving you the broad strokes
+2020-05-24 21:28:34	<--	chandoo (~chandoo@pool-100-1-166-161.nwrknj.fios.verizon.net) has quit (Quit: Leaving)
+2020-05-24 21:28:53	Smashcat	I see, so the individual containers can share a common file system?
+2020-05-24 21:28:57	@ada	Smashcat: nothing about containers means they aren't on tyhe same machine
+2020-05-24 21:29:02	@ada	Smashcat: its just a process isolation technique
+2020-05-24 21:29:09	@ada	Smashcat: you could run docker containers in a VM environment for instance
+2020-05-24 21:29:14	@ada	Smashcat: it's just a fancy way to run a process
+2020-05-24 21:29:34	enderandpeter	Smashcat: There are definitely pros and cons to different approaches. Having your DB and web app on the same instance comes with some issues that a separate DB instance alleviates.
+2020-05-24 21:29:37	@ada	Smashcat: no they have isolated filesystems by nature, but there is a sharing mechanism
+2020-05-24 21:29:49	Shaun	overhead is unintuitive - it's really worth trying rather than assuming
+2020-05-24 21:30:00	enderandpeter	Smashcat, yes they can share a common filesystem with volumes
+2020-05-24 21:30:03	@ada	well I admit that there is a learning curve
+2020-05-24 21:30:26	Smashcat	Ok cool - I've only started looking at it today. I'm a hardware developer (C/C++/ASM) but just need to get a server up for testing some devices I'm working on. This seems like overkill though for what I need :)
+2020-05-24 21:30:27	@ada	there is a mental overhead of learning all these things
+2020-05-24 21:30:34	@ada	Smashcat: maybe, maybe not
+2020-05-24 21:30:38	@ada	Smashcat: I don't really know your needs
+2020-05-24 21:30:43	-->	_mstrbee (~masterbee@kntaon1617w-grc-01-76-69-9-0.dsl.bell.ca) has joined #docker
+2020-05-24 21:30:43	@ada	Smashcat: gcc runs in a container, though
+2020-05-24 21:30:56	enderandpeter	Smashcat: Yes, there is a learning curve for sure. I strongly recommend that you keep reading the docs because you will see many examples of the kind of thing you are talking about.
+2020-05-24 21:31:02	@ada	Smashcat: for your use case, the better user-story might be what if you want to run 12 different versions of teh C++ compiler at teh same time
+2020-05-24 21:31:08	@ada	Smashcat: without having to install dependencies on your host
+2020-05-24 21:31:55	@ada	Smashcat: you could do that with containers pretty easily and spit out a binary compiled from various versions, without having anything "installed" on your host. the container could just be used as a way to deliver you the tools that you need
+2020-05-24 21:32:01	-->	impermanence (a5e13d46@gateway/web/cgi-irc/kiwiirc.com/ip.165.225.61.70) has joined #docker
+2020-05-24 21:32:10	Smashcat	One compiler can cause more than enough trouble :)
+2020-05-24 21:32:12	@ada	Smashcat: python, for instance, you could run both py2 and py3 runtimes at teh same time without having to install either on the host
+2020-05-24 21:32:20	@ada	Smashcat: same for ruby
+2020-05-24 21:32:30	impermanence	https://bpa.st/LEEA
+2020-05-24 21:32:40	impermanence	the COPY is failing; no idea why?
+2020-05-24 21:33:01	impermanence	COPY failed: stat /var/lib/docker/tmp/docker-builder518397807/etc/lighttpd: no such file or directory
+2020-05-24 21:33:29	@ada	maybe /etc/lighttpd does not exist yet?
+2020-05-24 21:33:38	impermanence	it does
+2020-05-24 21:33:42	Smashcat	Cool, I see it as version/process management. Allowing many instances of the same software to exist in isolation.
+2020-05-24 21:33:52	impermanence	I verified via a simple ls
+2020-05-24 21:34:04	@ada	impermanence: you have to show that data
+2020-05-24 21:34:14	impermanence	i will i will lol
+2020-05-24 21:34:16	-->	ovnicraft (~ovnicraft@corp-179-49-42-7.uio.puntonet.ec) has joined #docker
+2020-05-24 21:34:16	impermanence	one sec
+2020-05-24 21:34:17	@ada	impermanence: or I will keep guessing and you'll ahve to say "i did that" or "i didn't do that"
+2020-05-24 21:34:18	@ada	lol
+2020-05-24 21:34:26	<--	oxum (~oxum@122.172.223.220) has quit (Ping timeout: 246 seconds)
+2020-05-24 21:34:27	impermanence	I know how irc works; one sec
+2020-05-24 21:34:43	@ada	i have to repeat myself a lot its not personal
+2020-05-24 21:34:46	enderandpeter	impermanence: Are you absolutely sure that /etc/lighttpd is a directory?
+2020-05-24 21:34:58	impermanence	about to be; one sec
+2020-05-24 21:35:39	@ada	I would have assumed that the copy will take a dir and just re-use the same name, but is there an appreciable difference if you provide a full path to a filename in the copy line
+2020-05-24 21:36:02	@ada	i wonder what the amazonlinux image looks like too
+2020-05-24 21:36:31	impermanence	it's there
+2020-05-24 21:36:31	impermanence	https://bpa.st/47DA
+2020-05-24 21:36:38	-->	s3nd1v0g1us (~patr0clus@unaffiliated/patr0clus) has joined #docker
+2020-05-24 21:36:44	impermanence	I was providing the full path name
+2020-05-24 21:36:50	impermanence	and it was telling me the same thing
+2020-05-24 21:36:54	-->	firecat53 (~firecat53@c-67-183-10-134.hsd1.wa.comcast.net) has joined #docker
+2020-05-24 21:36:59	@ada	impermanence: what did you run and/or exec into
+2020-05-24 21:37:00	@ada	impermanence: what image
+2020-05-24 21:37:16	@ada	when you did the test using ls
+2020-05-24 21:37:42	impermanence	I built an image up to *just prior* to the COPY break
+2020-05-24 21:37:48	impermanence	basically I install lighttpd
+2020-05-24 21:37:54	impermanence	I just hopped on that image
+2020-05-24 21:38:09	@ada	k
+2020-05-24 21:39:17	impermanence	here's the file locally:
+2020-05-24 21:39:18	impermanence	https://bpa.st/2GUA
+2020-05-24 21:39:35	impermanence	in other words the filepaths I am copying to and from are both present
+2020-05-24 21:40:40	impermanence	and the /etc/lighttpd dir is owned by root
+2020-05-24 21:40:48	impermanence	and the container is currently running as root lol
+2020-05-24 21:40:50	<--	bdonnahue2 (~bdonnahue@207.181.203.71) has quit (Ping timeout: 272 seconds)
+2020-05-24 21:41:58	<--	s3nd1v0g1us (~patr0clus@unaffiliated/patr0clus) has quit (Quit: WeeChat 2.6)
+2020-05-24 21:42:05	impermanence	okay just got it passing
+2020-05-24 21:42:25	-->	darkstardev13 (darkstarde@gateway/vpn/privateinternetaccess/darkstardevx) has joined #docker
+2020-05-24 21:42:31	@ada	was doing some testing on my machine
+2020-05-24 21:42:36	impermanence	changing the name to build/lighttpd.conf.tmp /etc/lighttpd/
+2020-05-24 21:42:46	@ada	wat
+2020-05-24 21:42:52	impermanence	word
+2020-05-24 21:42:54	@ada	im stumped
+2020-05-24 21:43:18	impermanence	it apparently will not let me write over the alraedy present /etc/lighttpd/lighttpd.conf file
+2020-05-24 21:43:29	@ada	you changed the _destination_ name?
+2020-05-24 21:43:34	impermanence	nope
+2020-05-24 21:43:39	impermanence	origin filename
+2020-05-24 21:43:44	impermanence	to .tmp
+2020-05-24 21:43:59	@ada	over the already-present .conf file - already present _where_?
+2020-05-24 21:44:03	@ada	in the image?
+2020-05-24 21:44:13	impermanence	yep
+2020-05-24 21:44:27	impermanence	is that normal docker behavior?  can't write over an already existing file?
+2020-05-24 21:44:35	impermanence	"cuz immutable" or something...?
+2020-05-24 21:44:40	@ada	no
+2020-05-24 21:44:45	impermanence	didn't think so
+2020-05-24 21:44:48	@ada	I can't explain this yet
+2020-05-24 21:44:51	impermanence	guess it's a perms thing
+2020-05-24 21:44:57	impermanence	which makes no sense because I thought I was root
+2020-05-24 21:45:01	@ada	it wouldn't be that
+2020-05-24 21:45:07	impermanence	there is no user specified in the Dockerfile
+2020-05-24 21:46:24	impermanence	k now I've added back in my &&'s for the additional commands but no joy
+2020-05-24 21:46:27	impermanence	so maybe that's relevant
+2020-05-24 21:46:29	impermanence	one sec here
+2020-05-24 21:47:12	impermanence	is this broken? https://bpa.st/Z2PQ
+2020-05-24 21:47:48	impermanence	oh snap
+2020-05-24 21:47:49	impermanence	got it
+2020-05-24 21:47:53	impermanence	hadolint to the rescue lol
+2020-05-24 21:47:58	ZenWalker	hi all, when docker will update fedora latest to 32?
+2020-05-24 21:49:39	<--	darkstardevx (darkstarde@gateway/vpn/privateinternetaccess/darkstardevx) has quit (Remote host closed the connection)
+2020-05-24 21:49:49	<--	darkstardev13 (darkstarde@gateway/vpn/privateinternetaccess/darkstardevx) has quit (Remote host closed the connection)
+2020-05-24 21:49:51	impermanence	maybe not lol
+2020-05-24 21:50:14	-->	royal_screwup21 (522565dc@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.101.220) has joined #docker
+2020-05-24 21:51:02	<--	tiin57 (~tiin57@ec2-3-94-63-186.compute-1.amazonaws.com) has quit (Read error: Connection reset by peer)
+2020-05-24 21:52:06	-->	wymillerlinux (~wymillerl@097-084-004-094.res.spectrum.com) has joined #docker
+2020-05-24 21:52:36	<--	venmx (~bertie@host86-130-218-210.range86-130.btcentralplus.com) has quit (Ping timeout: 258 seconds)
+2020-05-24 21:53:02	<--	derpadmin (~luciano@mail2.200013.net) has quit (Quit: Leaving)
+2020-05-25 06:44:10	--	irc: disconnected from server
+2020-05-25 06:44:42	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #docker
+2020-05-25 06:44:42	--	Topic for #docker is "Docker: Open platform for distributed applications | http://docker.com | Certifications https://success.docker.com/certification | http://github.com/moby/moby | Current Status: http://status.docker.com/ | https://forums.docker.com/ | Registration with NickServ required: https://freenode.net/kb/answer/registration"
+2020-05-25 06:44:42	--	Topic set by programmerq (~jeff@unaffiliated/programmerq) on Fri, 07 Dec 2018 14:42:52
+2020-05-25 06:44:42	--	Channel #docker: 872 nicks (4 ops, 0 voices, 868 normals)
+2020-05-25 06:45:00	--	Channel created on Mon, 14 Jan 2013 21:32:16
+2020-05-25 06:45:03	<--	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has quit (Ping timeout: 240 seconds)
+2020-05-25 06:46:35	-->	oxum (~oxum@122.172.223.220) has joined #docker
+2020-05-25 06:49:20	<--	sharktamer (~sharktame@cpc157207-watf11-2-0-cust5.15-2.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2020-05-25 06:50:20	-->	sharktamer (~sharktame@cpc157207-watf11-2-0-cust5.15-2.cable.virginm.net) has joined #docker
+2020-05-25 06:50:54	<--	tiin57 (~tiin57@ec2-3-94-63-186.compute-1.amazonaws.com) has quit (Read error: Connection reset by peer)
+2020-05-25 06:51:13	<--	oxum (~oxum@122.172.223.220) has quit (Ping timeout: 264 seconds)
+2020-05-25 06:51:31	-->	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has joined #docker
+2020-05-25 06:53:34	-->	zumba_addict (~zumba_add@108-197-162-97.lightspeed.cicril.sbcglobal.net) has joined #docker
+2020-05-25 06:53:43	<--	geste (~geste@b2b-78-94-126-138.unitymedia.biz) has quit (Remote host closed the connection)
+2020-05-25 06:54:45	-->	tiin57 (~tiin57@ec2-3-94-63-186.compute-1.amazonaws.com) has joined #docker
+2020-05-25 06:54:51	-->	koniu (~koniu@gateway/tor-sasl/koniu) has joined #docker
+2020-05-25 06:55:43	<--	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has quit (Ping timeout: 240 seconds)
+2020-05-25 06:56:36	-->	geste (~geste@b2b-78-94-126-138.unitymedia.biz) has joined #docker
+2020-05-25 06:58:10	<--	zumba_addict (~zumba_add@108-197-162-97.lightspeed.cicril.sbcglobal.net) has quit (Ping timeout: 272 seconds)
+2020-05-25 07:00:02	<--	Nomad_ (~nomad@ipv6.rdlg.net) has quit (Remote host closed the connection)
+2020-05-26 19:15:57	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #docker
+2020-05-26 19:15:57	--	Topic for #docker is "Docker: Open platform for distributed applications | http://docker.com | Certifications https://success.docker.com/certification | http://github.com/moby/moby | Current Status: http://status.docker.com/ | https://forums.docker.com/ | Registration with NickServ required: https://freenode.net/kb/answer/registration"
+2020-05-26 19:15:57	--	Topic set by programmerq (~jeff@unaffiliated/programmerq) on Fri, 07 Dec 2018 14:42:52
+2020-05-26 19:15:57	--	Channel #docker: 877 nicks (4 ops, 0 voices, 873 normals)
+2020-05-26 19:16:12	--	Channel created on Mon, 14 Jan 2013 21:32:16
+2020-05-26 19:19:43	-->	dacod (~dacod@138.97.34.59) has joined #docker
+2020-05-26 19:20:31	<--	tiin57 (~tiin57@ec2-3-94-63-186.compute-1.amazonaws.com) has quit (Read error: Connection reset by peer)
+2020-05-26 19:20:31	-->	dsadr (~jzeus@66-90-153-14.dyn.grandenetworks.net) has joined #docker
+2020-05-26 19:20:57	<--	spiral (uid262507@gateway/web/irccloud.com/x-wxqwlikiinadhnmz) has quit (Quit: Connection closed for inactivity)
+2020-05-26 19:22:36	-->	theandromedan (~pfranz@c-73-52-100-108.hsd1.pa.comcast.net) has joined #docker
+2020-05-26 19:23:27	<--	stryek (uid332574@gateway/web/irccloud.com/x-rvwctbtwqzdhwecj) has quit (Quit: Connection closed for inactivity)
+2020-05-26 19:23:46	-->	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has joined #docker
+2020-05-26 19:24:15	-->	tiin57 (~tiin57@ec2-3-94-63-186.compute-1.amazonaws.com) has joined #docker
+2020-05-26 19:24:21	<--	spacefrog (uid388336@gateway/web/irccloud.com/x-tejpqxgrkbcyskot) has quit (Quit: Connection closed for inactivity)
+2020-05-26 19:25:37	-->	IonTau (~IonTau@124-171-136-14.dyn.iinet.net.au) has joined #docker
+2020-05-26 19:27:32	-->	DeltaHeavy (~DeltaHeav@unaffiliated/deltaheavy) has joined #docker
+2020-05-26 19:28:23	<--	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has quit (Ping timeout: 240 seconds)
+2020-05-26 19:30:31	-->	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has joined #docker
+2020-05-26 19:30:36	<--	Forsaken87 (~quassel@2a02:908:186c:a6a0:c121:c8f9:5ae8:2899) has quit (Ping timeout: 246 seconds)
+2020-05-26 19:31:38	<--	venmx (~bertie@5ec1cd80.skybroadband.com) has quit (Quit: leaving)
+2020-05-26 19:32:01	-->	venmx (~bertie@5ec1cd80.skybroadband.com) has joined #docker
+2020-05-26 19:33:06	<--	venmx (~bertie@5ec1cd80.skybroadband.com) has quit (Client Quit)
+2020-05-26 19:35:19	<--	osiem (~osiem@demeter.boscard.pl) has quit (Ping timeout: 256 seconds)

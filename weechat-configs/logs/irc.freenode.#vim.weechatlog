@@ -1,0 +1,374 @@
+2020-05-05 10:37:05	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #vim
+2020-05-05 10:37:05	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.2 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2020-05-05 10:37:05	--	Topic set by jamessan on Thu, 12 Dec 2019 22:14:14
+2020-05-05 10:37:05	--	Channel #vim: 1082 nicks (0 ops, 0 voices, 1082 normals)
+2020-05-05 10:37:05	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2020-05-05 10:37:05	--	URL for #vim: http://vi-improved.org
+2020-05-05 10:37:07	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2020-05-05 10:38:01	<--	Guest20_ (~textual@103.215.168.1) has quit (Quit: ZZZzzz…)
+2020-05-05 10:38:58	-->	jsoft (~jsoft@unaffiliated/jsoft) has joined #vim
+2020-05-05 10:39:34	-->	novasenco (~novasenco@gateway/tor-sasl/novasenco) has joined #vim
+2020-05-05 10:39:46	crose	try to replace this line:
+2020-05-05 10:39:48	crose	syntax region Test start=/^--$/ end=/\n\n/
+2020-05-05 10:39:52	crose	with:
+2020-05-05 10:39:54	crose	syntax region Test start=/^--$/ end=/^$/
+2020-05-05 10:41:07	<--	pagios___ (~pagios@91.232.101.39) has quit (Remote host closed the connection)
+2020-05-05 10:41:54	<--	treehug88 (~textual@pool-71-105-170-196.nycmny.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2020-05-05 10:43:01	malorie	that seems to work
+2020-05-05 10:43:08	crose	https://0x0.st/i2xt.txt
+2020-05-05 10:43:32	--	novasenco is now known as |\|_[]_\|_|\
+2020-05-05 10:43:35	-->	pagios (~pagios@178.135.93.53) has joined #vim
+2020-05-05 10:43:44	|\|_[]_\|_|\	/ nickserv group
+2020-05-05 10:43:49	|\|_[]_\|_|\	shit
+2020-05-05 10:45:08	lopid	/claim |\|_[]_\|_|\
+2020-05-05 10:45:24	malorie	crose: thanks for your help, again!
+2020-05-05 10:45:43	malorie	this seems to work now
+2020-05-05 10:45:49	<--	chunkhang (~chunkhang@210.195.11.68) has quit (Quit: Goodbye world)
+2020-05-05 10:46:11	|\|_[]_\|_|\	lopid, what :D that's not a command. :(
+2020-05-05 10:46:17	-->	Guest20 (~textual@192.146.154.3) has joined #vim
+2020-05-05 10:46:40	-->	causasui (~causasui@wikipedia/causa-sui) has joined #vim
+2020-05-05 10:47:54	steven	not for mortals like you and I, lopid can do that stuff though.
+2020-05-05 10:48:21	<--	dedowsdi (~dedowsdi@183.192.228.63) has quit (Quit: WeeChat 1.9.1)
+2020-05-05 10:48:28	-->	Guest20_ (~textual@103.215.168.1) has joined #vim
+2020-05-05 10:48:30	<--	pagios (~pagios@178.135.93.53) has quit (Ping timeout: 260 seconds)
+2020-05-05 10:48:53	 *	|\|_[]_\|_|\ bows repeatedly to lopid. please, ma'am or sir. I am just a boy. spare me.
+2020-05-05 10:50:59	<--	Guest20 (~textual@192.146.154.3) has quit (Ping timeout: 256 seconds)
+2020-05-05 10:51:31	-->	cgundersson (~christian@195.216.38.78) has joined #vim
+2020-05-05 10:56:23	<--	jkwnki (~jkwnki@p200300CD472B60001E1BB5FFFE7A47F7.dip0.t-ipconnect.de) has quit (Ping timeout: 272 seconds)
+2020-05-05 10:57:04	<--	evangeline (~evangelin@178.79.113.14) has quit (Ping timeout: 265 seconds)
+2020-05-05 11:00:40	-->	Haudegen (~quassel@91.114.49.10) has joined #vim
+2020-05-05 11:04:06	<--	punknroll (~Thunderbi@p83-219-165-60.snwdip.snw.at) has quit (Quit: punknroll)
+2020-05-05 11:07:06	-->	saint- (~saint@ktnron060mw-grc-10-70-53-8-223.dsl.bell.ca) has joined #vim
+2020-05-05 11:08:31	<--	HashMap (~HashMap@193.86.125.80) has quit (Quit: WeeChat 2.6)
+2020-05-05 11:08:44	<--	haydenh (~haydenh@77.68.91.186) has quit (Quit: leaving)
+2020-05-05 11:09:40	-->	haydenh (~haydenh@77.68.91.186) has joined #vim
+2020-05-05 11:11:55	<--	Elodin (~weechat@unaffiliated/padawan) has quit (Quit: WeeChat 2.8)
+2020-05-05 11:11:59	<--	markopasha (~cc@88.230.227.134) has quit (Quit: WeeChat 2.8)
+2020-05-05 11:12:51	-->	cadderly (~~@unaffiliated/knotwurk) has joined #vim
+2020-05-05 11:16:23	<--	geodb27 (~quassel@cp-outside.ac-rouen.fr) has quit (Ping timeout: 272 seconds)
+2020-05-05 11:17:52	<--	a_west (~a_west@82-183-13-131.customers.ownit.se) has quit (Quit: Bye!)
+2020-05-05 11:18:11	-->	a_west (~a_west@2a01:3b8:1aaf:fe00:2a53:bee2:bf2b:355a) has joined #vim
+2020-05-05 11:18:31	<--	brtastic (~Thunderbi@ip-158-255-92-146.nette.pl) has quit (Remote host closed the connection)
+2020-05-05 11:20:55	-->	markopasha (~cc@88.230.227.134) has joined #vim
+2020-05-05 11:21:40	-->	ccolorado (~ccolorado@199.167.30.135) has joined #vim
+2020-05-05 11:22:14	<--	simbioz (~simbioz@unaffiliated/simbioz) has quit (Ping timeout: 240 seconds)
+2020-05-05 11:22:32	<--	markopasha (~cc@88.230.227.134) has quit (Client Quit)
+2020-05-05 11:24:38	-->	evangeline (~evangelin@178.79.113.14) has joined #vim
+2020-05-05 11:24:42	<--	_jrjsmrtn (~jrjsmrtn@193.121.14.214) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:25:48	-->	__jrjsmrtn__ (~jrjsmrtn@193.121.14.214) has joined #vim
+2020-05-05 11:25:58	<--	jtle (~quassel@jtle.dk) has quit (Quit: jtle)
+2020-05-05 11:27:53	-->	jtle (~quassel@jtle.dk) has joined #vim
+2020-05-05 11:28:21	-->	Elodin (~weechat@unaffiliated/padawan) has joined #vim
+2020-05-05 11:28:40	<--	tonymec|away (~chatzilla@unaffiliated/tonymec) has quit (Read error: Connection reset by peer)
+2020-05-05 11:28:41	<--	Elodin (~weechat@unaffiliated/padawan) has quit (Client Quit)
+2020-05-05 11:28:44	-->	diniwed (~gavron@ool-44c21938.dyn.optonline.net) has joined #vim
+2020-05-05 11:29:31	-->	Elodin (~weechat@unaffiliated/padawan) has joined #vim
+2020-05-05 11:30:39	-->	neo4 (~Thunderbi@212-247-92-178.pool.ukrtel.net) has joined #vim
+2020-05-05 11:31:00	-->	tonymec|away (~chatzilla@unaffiliated/tonymec) has joined #vim
+2020-05-05 11:31:11	<--	ejr (~ejr@178.165.131.56.wireless.dyn.drei.com) has quit (Quit: leaving)
+2020-05-05 11:38:04	-->	rodolfo (~rodolfo@2806:10ae:c:5f01:a119:f57f:450:a54f) has joined #vim
+2020-05-05 11:38:16	<--	cadderly (~~@unaffiliated/knotwurk) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:39:20	<--	Guest20_ (~textual@103.215.168.1) has quit (Quit: ZZZzzz…)
+2020-05-05 11:39:43	<--	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:40:35	-->	Guest20 (~textual@103.215.168.1) has joined #vim
+2020-05-05 11:41:40	-->	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has joined #vim
+2020-05-05 11:44:38	<--	razvand (~razvand@62.121.83.2) has quit (Ping timeout: 264 seconds)
+2020-05-05 11:44:51	-->	brtastic (~Thunderbi@2a02:a315:413a:7580:879e:25b4:92ae:7858) has joined #vim
+2020-05-05 11:45:32	<--	Guest20 (~textual@103.215.168.1) has quit (Ping timeout: 256 seconds)
+2020-05-05 11:46:04	-->	akiva (~akiva@d50-92-125-120.bchsia.telus.net) has joined #vim
+2020-05-05 11:46:08	-->	yonder (~yonder@unaffiliated/yonder) has joined #vim
+2020-05-05 11:46:46	<--	cotko (~cotko@93-103-115-77.dynamic.t-2.net) has quit (Read error: Connection reset by peer)
+2020-05-05 11:48:03	<--	cgundersson (~christian@195.216.38.78) has quit (Ping timeout: 272 seconds)
+2020-05-05 11:48:04	<--	cd (~cd@unaffiliated/cd) has quit (Quit: cd)
+2020-05-05 11:48:22	-->	cotko (~cotko@93-103-115-77.dynamic.t-2.net) has joined #vim
+2020-05-05 11:49:56	-->	cadderly (~~@unaffiliated/knotwurk) has joined #vim
+2020-05-05 11:50:04	<--	chimbles (~colin@071-045-064-020.res.spectrum.com) has left #vim ("WeeChat 2.3")
+2020-05-05 11:52:21	<--	sphenxes (~sphenxes@5.180.62.49) has quit (Quit: Leaving)
+2020-05-05 11:55:25	<--	rodolfo (~rodolfo@2806:10ae:c:5f01:a119:f57f:450:a54f) has left #vim
+2020-05-05 11:55:59	<--	malorie (506d19a8@unaffiliated/malorie) has quit (Remote host closed the connection)
+2020-05-05 11:56:29	-->	pressure679 (~naamik@194.177.250.82) has joined #vim
+2020-05-05 11:57:23	<--	mirk0 (~mirko@unaffiliated/-mirko-/x-2946915) has quit (Ping timeout: 260 seconds)
+2020-05-05 11:57:29	-->	polyphem (~p0lyph3m@ip5f5ac3c7.dynamic.kabel-deutschland.de) has joined #vim
+2020-05-05 11:59:50	--	maccraft is now known as macc24
+2020-05-05 12:00:16	<--	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has quit (Ping timeout: 256 seconds)
+2020-05-05 12:01:57	-->	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has joined #vim
+2020-05-05 12:02:45	-->	audiofile (~notanaudi@unaffiliated/audiofile) has joined #vim
+2020-05-05 12:04:10	audiofile	can someone help me figure out what this error means in my vim-latex compilation log? I use latexmk on windows with sumatrapdf https://pastebin.com/73tstLzk
+2020-05-05 12:04:30	-->	dunningk (~qwe@unaffiliated/kunningd) has joined #vim
+2020-05-05 12:05:11	<--	kunningd (~qwe@unaffiliated/kunningd) has quit (Ping timeout: 260 seconds)
+2020-05-05 12:06:04	-->	Guest20 (~textual@103.215.168.1) has joined #vim
+2020-05-05 12:07:18	<--	copypasteque0030 (~copypaste@fon77-2-78-242-88-37.fbx.proxad.net) has quit (Read error: Connection reset by peer)
+2020-05-05 12:07:47	-->	copypasteque0030 (~copypaste@fon77-2-78-242-88-37.fbx.proxad.net) has joined #vim
+2020-05-05 12:07:58	leah2	i have a file with a very long line. how can i navigate pagewise?
+2020-05-05 12:08:38	<--	katie_- (~katie_@c-va-bc1c2fc474-50822-1.tingfiber.com) has quit (Quit: \o)
+2020-05-05 12:08:42	-->	pagios (~pagios@178.135.93.53) has joined #vim
+2020-05-05 12:08:57	-->	katie_ (~katie_@c-va-bc1c2fc474-50822-1.tingfiber.com) has joined #vim
+2020-05-05 12:09:26	audiofile	set wrap and then use pagewise bindings?
+2020-05-05 12:09:26	<--	dunningk (~qwe@unaffiliated/kunningd) has quit (Quit: WeeChat 2.8)
+2020-05-05 12:09:49	<--	KnoP (~KnoP@business-176-095-149-105.static.arcor-ip.net) has quit (Ping timeout: 264 seconds)
+2020-05-05 12:10:05	leah2	that will skip the whole line
+2020-05-05 12:10:12	-->	kunningd (~qwe@unaffiliated/kunningd) has joined #vim
+2020-05-05 12:10:14	osse	gj and gk isntead of j and k
+2020-05-05 12:10:20	leah2	like, pgup/pgdown or ^d/^u
+2020-05-05 12:10:25	leah2	osse: by lines is slow tho
+2020-05-05 12:11:09	audiofile	path issue -- fixed
+2020-05-05 12:11:12	osse	yes
+2020-05-05 12:11:22	osse	map them to soemthing
+2020-05-05 12:11:23	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:a1ee:697a:26b1:e99d) has quit (Ping timeout: 260 seconds)
+2020-05-05 12:11:27	leah2	i guess i can use 20gj
+2020-05-05 12:11:38	audiofile	20goodjob
+2020-05-05 12:12:10	audiofile	i have an autocommand tied to wrap value so when wrap is set, jk etc becom gj, gk
+2020-05-05 12:12:18	audiofile	super handy
+2020-05-05 12:13:01	leah2	dunno, i often have shorter yet wrapping lines and prefer normal jk there
+2020-05-05 12:13:08	leah2	this file is an outlier
+2020-05-05 12:13:31	audiofile	vim cant read our minds yet sadly
+2020-05-05 12:13:44	osse	autocmd BufRead /this/file nnoremap <buffer> j gk
+2020-05-05 12:14:06	audiofile	you could write a function that checks for line length and changes mappings accordingly hmm
+2020-05-05 12:14:06	-->	cgundersson (~christian@195.216.38.78) has joined #vim
+2020-05-05 12:15:13	|\|_[]_\|_|\	use /search or 4gj to get close to the right line, use a buffer local mapping...
+2020-05-05 12:15:26	|\|_[]_\|_|\	lots of options
+2020-05-05 12:15:31	audiofile	your username makes my eyes itchy
+2020-05-05 12:15:43	audiofile	i want to pluck my eyes out >_>
+2020-05-05 12:16:09	|\|_[]_\|_|\	How it feels to chew 5 gum.
+2020-05-05 12:16:43	|\|_[]_\|_|\	Stimulate your senses.
+2020-05-05 12:17:03	audiofile	x_x
+2020-05-05 12:17:13	<--	copypasteque0030 (~copypaste@fon77-2-78-242-88-37.fbx.proxad.net) has quit (Read error: Connection reset by peer)
+2020-05-05 12:17:34	-->	razvand (~razvand@62.121.83.2) has joined #vim
+2020-05-05 12:20:25	-->	copypasteque0030 (~copypaste@fon77-2-78-242-88-37.fbx.proxad.net) has joined #vim
+2020-05-05 12:20:59	<--	cgundersson (~christian@195.216.38.78) has quit (Ping timeout: 272 seconds)
+2020-05-05 12:21:33	-->	cgundersson (~christian@195.216.38.78) has joined #vim
+2020-05-05 12:21:53	<--	brtastic (~Thunderbi@2a02:a315:413a:7580:879e:25b4:92ae:7858) has quit (Ping timeout: 260 seconds)
+2020-05-05 19:19:55	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #vim
+2020-05-05 19:19:55	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.2 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2020-05-05 19:19:55	--	Topic set by jamessan on Thu, 12 Dec 2019 22:14:14
+2020-05-05 19:19:55	--	Channel #vim: 1053 nicks (0 ops, 0 voices, 1053 normals)
+2020-05-05 19:19:55	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2020-05-05 19:19:55	--	URL for #vim: http://vi-improved.org
+2020-05-05 19:20:07	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2020-05-06 19:52:16	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #vim
+2020-05-06 19:52:16	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.2 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2020-05-06 19:52:16	--	Topic set by jamessan on Thu, 12 Dec 2019 22:14:14
+2020-05-06 19:52:16	--	Channel #vim: 1050 nicks (0 ops, 0 voices, 1050 normals)
+2020-05-06 19:52:16	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2020-05-06 19:52:16	--	URL for #vim: http://vi-improved.org
+2020-05-06 19:52:24	nedbat	davis: i recommend not trying to set these yourself
+2020-05-06 19:52:28	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2020-05-06 19:53:06	davis	i vim three pyhton files at once. :verb set et? and it says noexpandtab, and a tab will insert as a tab
+2020-05-06 19:53:33	nedbat	davis: what does three files have to do with it?
+2020-05-06 19:53:51	davis	close editor, reopen .vimrc, remove " so that set expandtab is enabled. wq
+2020-05-06 19:54:14	davis	nedbat: i was just saying in case, it is a problem. vim foo.py goo.py loo.py as an example.
+2020-05-06 19:55:01	nedbat	davis: if you don't mind me asking, why are you setting any of these settings? Doesn't vim work properly for python files already?
+2020-05-06 19:55:22	davis	reopen the py hton file and it now :verb set et? says noexpandtab Last set form ~/.vimrc line 24, when I uncommented out set expandtab
+2020-05-06 19:56:18	-->	jkwnki (~jkwnki@p200300CD472B60001E1BB5FFFE7A47F7.dip0.t-ipconnect.de) has joined #vim
+2020-05-06 19:56:26	-->	mnflshdq (~mnflshdq@36.83.203.81) has joined #vim
+2020-05-06 19:56:37	davis	vi .vimrc and do / et or /expand and only line 24 shows up. i wonder why set expandtab is interpeted as noexpandtab
+2020-05-06 19:57:53	davis	hmm. just for kicks, i changed vimrc to set noexpandtab and then in vim python it says same thing when usig verb set
+2020-05-06 19:58:29	-->	u_u (~owo@137.118.221.173) has joined #vim
+2020-05-06 19:59:23	<--	Raichvent (~Raichvent@sb-217-129-112-18.netvisao.pt) has quit (Quit: Out)
+2020-05-06 19:59:40	-->	forgon (~forgon@unaffiliated/commander-cody/x-9618197) has joined #vim
+2020-05-08 15:39:08	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #vim
+2020-05-08 15:39:08	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.2 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2020-05-08 15:39:08	--	Topic set by jamessan on Thu, 12 Dec 2019 22:14:14
+2020-05-08 15:39:08	--	Channel #vim: 1094 nicks (0 ops, 0 voices, 1094 normals)
+2020-05-08 15:39:08	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2020-05-08 15:39:08	--	URL for #vim: http://vi-improved.org
+2020-05-08 15:39:20	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2020-05-08 15:40:24	<--	Cone930 (~tom@84.64.154.219) has quit (Quit: Cone930)
+2020-05-08 15:44:24	<--	pepper_chico (~pepper_ch@gateway/tor-sasl/pepperchico/x-70212520) has quit (Quit: WeeChat 2.8)
+2020-05-08 15:45:09	<--	berndl (5f5bd21c@ip5f5bd21c.dynamic.kabel-deutschland.de) has quit (Remote host closed the connection)
+2020-05-08 15:45:40	-->	pepper_chico (~pepper_ch@gateway/tor-sasl/pepperchico/x-70212520) has joined #vim
+2020-05-08 15:48:06	<--	ilkerthinks (~user@2a00:23c5:cf87:3501:d131:4f68:2dcc:c0bc) has quit (Ping timeout: 240 seconds)
+2020-05-08 15:48:54	-->	brtastic (~Thunderbi@2a02:a315:413a:7580:879e:25b4:92ae:7858) has joined #vim
+2020-05-08 15:49:36	mingdao	pepper_chico: Show me a screenshot when you settle on a good font.
+2020-05-08 15:49:53	<--	Morfio (~thorsten@205-051-082-212.ip-addr.vsenet.de) has quit (Quit: Konversation terminated!)
+2020-05-08 15:50:17	<--	jkwnki (~jkwnki@2a02:908:1216:f00:1e1b:b5ff:fe7a:47f7) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:50:26	<--	nokdoot (~nokdoot@14.138.192.107) has quit (Ping timeout: 256 seconds)
+2020-05-08 15:50:47	<--	Longbottom (~torsten@ppp-93-104-17-233.dynamic.mnet-online.de) has quit (Quit: Leaving.)
+2020-05-08 15:51:00	<--	causasui (~causasui@wikipedia/causa-sui) has quit (Ping timeout: 256 seconds)
+2020-05-08 15:51:05	<--	f0rs3ti (~f0rs3ti@pivpn/maintainer/f0rs3ti) has quit (Quit: I've been here, a long long time ago in a far far away ... whatever  .. i am gone)
+2020-05-08 15:51:07	-->	nokdoot (~nokdoot@14.138.192.107) has joined #vim
+2020-05-08 15:51:35	pepper_chico	mingdao: I've been using Monoid Nerd Font for a while
+2020-05-08 15:51:54	-->	f0rs3ti (~f0rs3ti@pivpn/maintainer/f0rs3ti) has joined #vim
+2020-05-08 15:52:01	-->	operateur (~operateur@89.110.227.199) has joined #vim
+2020-05-08 15:52:26	-->	causasui (~causasui@wikipedia/causa-sui) has joined #vim
+2020-05-08 15:53:20	mingdao	pepper_chico: I just wanted to see a screenshot. If someone has something my old eyes can handle better for 10h+/day, I'd swap.
+2020-05-08 15:55:04	<--	timthowtdi (~timthowtd@li705-13.members.linode.com) has quit (Ping timeout: 258 seconds)
+2020-05-08 15:55:30	<--	rindolf (~rindolf@inkscape/contributor/rindolf) has quit (Remote host closed the connection)
+2020-05-08 15:56:02	pepper_chico	mingdao: https://i.imgur.com/UhXiI3p.png
+2020-05-08 15:56:05	<--	batrick (batrick@nmap/developer/batrick) has quit (Ping timeout: 246 seconds)
+2020-05-08 15:56:15	<--	dayid (~dayid@unaffiliated/dayid) has quit (Ping timeout: 256 seconds)
+2020-05-08 15:56:26	<--	cheers (user@unaffiliated/cheers) has quit (Ping timeout: 246 seconds)
+2020-05-08 15:56:40	mingdao	Thanks for the screenshot pepper_chico
+2020-05-08 15:56:49	pepper_chico	np
+2020-05-08 15:56:54	<--	LouWestin (~LouWestin@hanelltech.com) has quit (Ping timeout: 272 seconds)
+2020-05-08 15:57:02	<--	trn (jhj@prone.ws) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:57:02	<--	f0rs3ti (~f0rs3ti@pivpn/maintainer/f0rs3ti) has quit (Quit: I've been here, a long long time ago in a far far away ... whatever  .. i am gone)
+2020-05-08 15:57:03	<--	maschinenhans (~maschinen@200116b82a833c00c97daf4a7d1881f2.dip.versatel-1u1.de) has quit (Quit: Leaving)
+2020-05-08 15:57:13	<--	arooni (~arooni@li1062-244.members.linode.com) has quit (Ping timeout: 264 seconds)
+2020-05-08 15:57:17	<--	operateur (~operateur@89.110.227.199) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:57:17	<--	Spads (quassel@unaffiliated/spads) has quit (Ping timeout: 260 seconds)
+2020-05-08 15:57:52	<--	Maxattax (~max@50-195-160-193-static.hfc.comcastbusiness.net) has quit (Quit: WeeChat 2.8)
+2020-05-08 16:00:55	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:8095:3716:fb34:7cb5) has joined #vim
+2020-05-08 16:01:35	pepper_chico	mingdao: another one I liked before this was monofur
+2020-05-08 16:01:44	-->	dayid (~dayid@unaffiliated/dayid) has joined #vim
+2020-05-08 16:01:51	<--	habamax (~Thunderbi@broadband-188-32-165-50.ip.moscow.rt.ru) has quit (Quit: habamax)
+2020-05-24 20:57:14	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #vim
+2020-05-24 20:57:14	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.2 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2020-05-24 20:57:14	--	Topic set by jamessan on Thu, 12 Dec 2019 22:14:14
+2020-05-24 20:57:14	--	Channel #vim: 1076 nicks (0 ops, 0 voices, 1076 normals)
+2020-05-24 20:57:14	<--	flokuehn (~flokuehn@mue-88-130-50-003.dsl.tropolys.de) has quit (Ping timeout: 264 seconds)
+2020-05-24 20:57:14	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2020-05-24 20:57:14	--	URL for #vim: http://vi-improved.org
+2020-05-24 20:57:19	Intelo	oh you made mapping of : to be \?
+2020-05-24 20:57:26	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2020-05-24 20:57:27	Intelo	and use \ everywhere : is used?
+2020-05-24 20:57:38	nedbat	Intelo: no.
+2020-05-24 20:58:18	nedbat	Intelo: i just mapped <leader>q to :quit
+2020-05-24 20:59:01	Intelo	Whats :q! :wa :w shortcuts
+2020-05-24 20:59:04	Intelo	nedbat, oh
+2020-05-24 20:59:05	-->	flokuehn (~flokuehn@mue-88-130-50-122.dsl.tropolys.de) has joined #vim
+2020-05-24 20:59:36	-->	akiva (~akiva@d50-92-125-120.bchsia.telus.net) has joined #vim
+2020-05-24 20:59:50	Intelo	nedbat, space makes more sence as leader. ' hkkl' goes for :wincmd hjkl
+2020-05-24 21:00:16	-->	jalalsfs (~jalalsfs@unaffiliated/jalalsfs) has joined #vim
+2020-05-24 21:00:31	<--	mnrmnaugh (~mnrmnaugh@unaffiliated/mnrmnaugh) has quit (Ping timeout: 256 seconds)
+2020-05-24 21:00:57	nedbat	Intelo: everyone has to find a way that works for them
+2020-05-24 21:01:20	-->	yue-lan (~lanyue___@43.250.200.2) has joined #vim
+2020-05-24 21:01:27	<--	m1cl_ (~m1cl@2a02:8109:b6c0:1b94::25bf) has quit (Ping timeout: 260 seconds)
+2020-05-24 21:01:28	Elodin	^ that's what vim is all about
+2020-05-24 21:02:00	-->	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has joined #vim
+2020-05-24 21:02:05	-->	r3dux (~r3dux@2600:8802:1800:e2f:19c9:d3d6:eac9:7b2e) has joined #vim
+2020-05-24 21:04:22	Intelo	Elodin, nedbat will that be sane to map Leader:space  to :?
+2020-05-24 21:04:23	<--	Night-Shade (~TimF@2a02:8109:9a80:6d80:d554:d1c3:d24c:9aa2) has quit (Ping timeout: 272 seconds)
+2020-05-24 21:04:35	Intelo	then all commands with : will be done with <space>?
+2020-05-24 21:05:16	Intelo	nedbat, Elodin yes, that raises another point. Is there some standardization or best practices (open for all to adapt) and also used by most IDEs and best practices?
+2020-05-24 21:05:23	<--	cebolla (uid443296@gateway/web/irccloud.com/x-mugvvkfiyimkjpxu) has quit (Quit: Connection closed for inactivity)
+2020-05-24 21:05:33	nedbat	Intelo: no, it doesn't make sense to "map space to colon" or something
+2020-05-24 21:06:43	<--	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has quit (Ping timeout: 240 seconds)
+2020-05-24 21:06:45	<--	ackpacket (~ackpacket@unaffiliated/ackpacket) has quit (Quit: My puter has gone to sleep. ZZZzzz…)
+2020-05-24 21:08:24	Intelo	nedbat, ok
+2020-05-24 21:10:02	-->	Kryptron_ (~Kryptron@unaffiliated/kryptron) has joined #vim
+2020-05-24 21:12:41	 *	Intelo is impressed with vim. Wonders why other IDEs even existed for 'programmers'
+2020-05-24 21:12:44	<--	Kryptron (~Kryptron@unaffiliated/kryptron) has quit (Ping timeout: 258 seconds)
+2020-05-24 21:15:57	-->	thelounge37 (~nof8@cpe-75-82-147-21.socal.res.rr.com) has joined #vim
+2020-05-24 21:17:41	Elodin	The same way apples exist despite bananas, they are diff things and provide diff values.
+2020-05-24 21:19:10	<--	kunningd (~qwe@unaffiliated/kunningd) has quit (Ping timeout: 265 seconds)
+2020-05-24 21:20:34	<--	thelounge37 (~nof8@cpe-75-82-147-21.socal.res.rr.com) has quit (Ping timeout: 260 seconds)
+2020-05-24 21:22:17	-->	dedowsdi (~dedowsdi@183.192.228.75) has joined #vim
+2020-05-24 21:22:30	-->	hpt (~hpt@114.250.225.22) has joined #vim
+2020-05-24 21:23:06	<--	sand_dull (~theuser@45.141.153.199) has quit (Ping timeout: 256 seconds)
+2020-05-24 21:23:46	-->	lanyue_ (~lanyue___@2408:84f2:282:af68:f17f:5224:86e:d226) has joined #vim
+2020-05-24 21:24:09	<--	yue-lan (~lanyue___@43.250.200.2) has quit (Read error: Connection reset by peer)
+2020-05-24 21:25:00	Intelo	Elodin,  maybe I should follow shortcuts of vscode?
+2020-05-24 21:25:29	Intelo	Elodin, as its derived from vim (I heard) and a good fall back? but hey, who would ever fallback to vscode
+2020-05-24 21:25:42	Intelo	don't know about neovim or gvim though
+2020-05-24 21:25:56	<--	wymillerlinux (~wymillerl@097-084-004-094.res.spectrum.com) has quit (Ping timeout: 256 seconds)
+2020-05-24 21:26:40	nedbat	Intelo: what does it mean to follow the shortcuts of vscode?
+2020-05-24 21:27:06	Intelo	nedbat, IDEs have shortcuts, so have vim
+2020-05-24 21:27:10	Elodin	Neovim is a fork of vim and Gvim is just vim with a gui over it as fas as i know
+2020-05-24 21:27:27	nedbat	Intelo: it doesn't make sense to apply vscode shortcuts in vim. they work very differently
+2020-05-24 21:27:36	<--	kalieris (~Kalieris@176.113.72.212) has quit (Remote host closed the connection)
+2020-05-24 21:27:40	-->	ackpacket (~ackpacket@unaffiliated/ackpacket) has joined #vim
+2020-05-24 21:28:34	<--	chandoo (~chandoo@pool-100-1-166-161.nwrknj.fios.verizon.net) has quit (Quit: Leaving)
+2020-05-24 21:29:54	<--	ackpacket (~ackpacket@unaffiliated/ackpacket) has quit (Client Quit)
+2020-05-24 21:30:29	sab110	I wish I had been using Vim earlier -- Vim is so much more efficient for text editing than Emacs.
+2020-05-24 21:30:56	Intelo	hm
+2020-05-24 21:31:00	Intelo	nedbat, ya
+2020-05-24 21:31:13	-->	floatingman (~dnewman@c-69-139-119-74.hsd1.tn.comcast.net) has joined #vim
+2020-05-24 21:31:55	-->	Ferus (~anonymous@qutebrowser/user/Ferus) has joined #vim
+2020-05-24 21:36:38	-->	s3nd1v0g1us (~patr0clus@unaffiliated/patr0clus) has joined #vim
+2020-05-24 21:38:47	<--	r3dux (~r3dux@2600:8802:1800:e2f:19c9:d3d6:eac9:7b2e) has quit (Ping timeout: 260 seconds)
+2020-05-24 21:39:47	-->	r3dux (~r3dux@2600:8802:1800:e2f:19c9:d3d6:eac9:7b2e) has joined #vim
+2020-05-24 21:41:58	<--	s3nd1v0g1us (~patr0clus@unaffiliated/patr0clus) has quit (Quit: WeeChat 2.6)
+2020-05-24 21:42:25	-->	darkstardev13 (darkstarde@gateway/vpn/privateinternetaccess/darkstardevx) has joined #vim
+2020-05-24 21:45:33	<--	Acacia (~Acacia@unaffiliated/acacia) has quit (Ping timeout: 272 seconds)
+2020-05-24 21:46:34	<--	sab110 (~sbaig14@pool-100-35-37-28.nwrknj.fios.verizon.net) has quit (Ping timeout: 240 seconds)
+2020-05-24 21:47:17	-->	yunhao94 (~yunhao94@183.197.160.13) has joined #vim
+2020-05-24 21:49:49	<--	darkstardev13 (darkstarde@gateway/vpn/privateinternetaccess/darkstardevx) has quit (Remote host closed the connection)
+2020-05-24 21:50:49	<--	onoketa (~onoketa@52.229.165.156) has quit (Remote host closed the connection)
+2020-05-24 21:52:04	-->	wymillerlinux (~wymillerl@097-084-004-094.res.spectrum.com) has joined #vim
+2020-05-24 21:52:23	-->	Acacia (~Acacia@unaffiliated/acacia) has joined #vim
+2020-05-24 21:52:36	<--	venmx (~bertie@host86-130-218-210.range86-130.btcentralplus.com) has quit (Ping timeout: 258 seconds)
+2020-05-25 06:44:10	--	irc: disconnected from server
+2020-05-25 06:44:40	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #vim
+2020-05-25 06:44:40	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.2 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2020-05-25 06:44:40	--	Topic set by jamessan on Thu, 12 Dec 2019 22:14:14
+2020-05-25 06:44:40	--	Channel #vim: 1101 nicks (0 ops, 0 voices, 1101 normals)
+2020-05-25 06:44:40	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2020-05-25 06:44:40	--	URL for #vim: http://vi-improved.org
+2020-05-25 06:44:56	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2020-05-25 06:45:03	<--	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has quit (Ping timeout: 240 seconds)
+2020-05-25 06:45:39	-->	gouf (~arch@2a02:ed1:f000:5cd4:2643:b286:6099:7f0d) has joined #vim
+2020-05-25 06:48:38	-->	whereistejas (~sanapteja@106.193.99.216) has joined #vim
+2020-05-25 06:48:42	<--	SergioCabral (~SergioCab@104.208.247.58) has quit (Quit: Leaving)
+2020-05-25 06:49:15	whereistejas	hey, folks! how can I set the compiler from my vimrc for a filetype? I can't figure out what the syntax should be...
+2020-05-25 06:51:25	-->	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has joined #vim
+2020-05-25 06:51:38	lopid	autocmd filetype foo setlocal makeprg bar
+2020-05-25 06:54:04	-->	SergioCabral (~SergioCab@104.208.247.58) has joined #vim
+2020-05-25 06:54:52	-->	akemrir (~akemrir@user-5-173-29-173.play-internet.pl) has joined #vim
+2020-05-25 06:54:55	<--	SergioCabral (~SergioCab@104.208.247.58) has quit (Remote host closed the connection)
+2020-05-25 06:55:18	-->	SergioCabral (~SergioCab@104.208.247.58) has joined #vim
+2020-05-25 06:55:21	whereistejas	I have set the makeprg
+2020-05-25 06:55:29	whereistejas	I want to choose :compiler
+2020-05-25 06:55:43	<--	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has quit (Ping timeout: 240 seconds)
+2020-05-25 06:56:13	lopid	put the commands into ~/.vim/after/ftplugin/foo.vim instead
+2020-05-25 06:56:48	-->	igemnace (~igemnace@112.202.193.163) has joined #vim
+2020-05-25 06:58:15	whereistejas	okay
+2020-05-25 06:58:25	whereistejas	lopid: thank you :)
+2020-05-25 07:01:14	<--	SergioCabral (~SergioCab@104.208.247.58) has quit (Remote host closed the connection)
+2020-05-25 07:02:06	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Quit: YuGiOhJCJ)
+2020-05-25 07:02:13	-->	SergioCabral (~SergioCab@104.208.247.58) has joined #vim
+2020-05-25 07:04:08	-->	irumat (~irumat@2a00:23c8:1187:1e00:b4ca:85b6:b158:32b8) has joined #vim
+2020-05-25 07:05:05	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:e935:b71c:6e89:6389) has joined #vim
+2020-05-25 07:06:39	<--	Technodrome (~textual@unaffiliated/technodrome) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-05-26 19:15:57	-->	routingsparks (~sparky@pool-100-4-71-219.nrflva.fios.verizon.net) has joined #vim
+2020-05-26 19:15:57	--	Topic for #vim is "Can't talk? Register https://freenode.net/kb/answer/registration | Vim 8.2 http://www.vim.org | Don't ask to ask! | Use :help and :helpgrep | WIKI: http://vim.wikia.com | PASTE: http://vpaste.net/?ft=vim | https://www.vi-improved.org"
+2020-05-26 19:15:57	--	Topic set by jamessan on Thu, 12 Dec 2019 22:14:14
+2020-05-26 19:15:57	--	Channel #vim: 1082 nicks (0 ops, 0 voices, 1082 normals)
+2020-05-26 19:15:57	--	PvNotice(ChanServ): vim discussion .. www.vim.org, vim.sf.net, :help
+2020-05-26 19:15:57	--	URL for #vim: http://vi-improved.org
+2020-05-26 19:16:08	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2020-05-26 19:17:15	Intelo	Is it a good idea to use set wildignore+=*/node_modules/*,*/.git/*,*/vendor/*,*/tmp/*,*/dist/*,*/coverage/* ?   a) will all plugins ignore these? b) well some times I might need to browse node_modules or dist. In that case, Nerdtree or any won't work. Right? Whats the best approace?
+2020-05-26 19:17:20	Intelo	approach*
+2020-05-26 19:17:22	<--	xelra (~xelra@unaffiliated/xelra) has quit (Remote host closed the connection)
+2020-05-26 19:18:07	-->	xelra (~xelra@unaffiliated/xelra) has joined #vim
+2020-05-26 19:18:14	nickspoon	It is a good idea
+2020-05-26 19:18:57	nickspoon	And reading up on where wildignore applies is also a good idea
+2020-05-26 19:21:04	<--	flex14 (~flex14@c-75-70-155-244.hsd1.co.comcast.net) has quit (Remote host closed the connection)
+2020-05-26 19:21:21	nickspoon	I don't use nerdtree, but just tried it out and it still displays node_modules
+2020-05-26 19:21:33	-->	cchristiansen (~christian@n110-33-12-79.sbr3.nsw.optusnet.com.au) has joined #vim
+2020-05-26 19:21:52	-->	dedowsdi (~dedowsdi@183.192.228.75) has joined #vim
+2020-05-26 19:21:56	<--	Kundry_W_ (~Kundry_Wa@200.186.213.10) has quit (Ping timeout: 246 seconds)
+2020-05-26 19:22:19	nedbat	nerdtree has its own ignore list: g:NERDTreeIgnore
+2020-05-26 19:22:33	nickspoon	ah
+2020-05-26 19:22:55	crose	I don't think adding `.git` to 'wildignore' is a good idea
+2020-05-26 19:23:04	-->	thegala (~mirko@93-143-34-220.adsl.net.t-com.hr) has joined #vim
+2020-05-26 19:23:22	crose	https://github.com/tpope/vim-fugitive/issues/121#issuecomment-38720847
+2020-05-26 19:23:39	-->	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has joined #vim
+2020-05-26 19:25:05	<--	brj (~hogfather@123.201.77.114) has quit (Ping timeout: 246 seconds)
+2020-05-26 19:25:24	<--	macc24 (~random@unaffiliated/maccraft) has quit (Quit: WeeChat 2.8)
+2020-05-26 19:26:37	Intelo	crose, a) will all plugins ignore these?
+2020-05-26 19:26:38	<--	FreEm1nD (~freemindm@189.114.92.77) has quit
+2020-05-26 19:26:41	Intelo	nickspoon, ok
+2020-05-26 19:26:47	Intelo	nedbat, nice tip
+2020-05-26 19:26:49	<--	drocan (~drocan@176.43.216.10) has quit (Ping timeout: 256 seconds)
+2020-05-26 19:27:09	-->	brj (~hogfather@123.201.77.114) has joined #vim
+2020-05-26 19:27:21	-->	wildtrees (wildtrees@gateway/vpn/protonvpn/wildtrees) has joined #vim
+2020-05-26 19:27:44	-->	chalkmonster (~chalkmons@unaffiliated/chalkmonster) has joined #vim
+2020-05-26 19:27:54	crose	i don't know; I just know that adding .git to 'wildignore' caused me too many weird issues in the past, so I don't add it anymore
+2020-05-26 19:28:23	<--	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has quit (Ping timeout: 240 seconds)
+2020-05-26 19:29:23	Intelo	crose, nickspoon nedbat I just added wildignore and suddenly Nerdtree starts showing trailing slashes /
+2020-05-26 19:30:13	nickspoon	Hmm, I don't actually have .git in my wildignore, but I don't really see tpope's point there - you can just :e .git/config and it will work fine, wildignore doesn't affect that
+2020-05-26 19:30:22	<--	wildtrees_ (wildtrees@gateway/vpn/protonvpn/wildtrees) has quit (Ping timeout: 256 seconds)
+2020-05-26 19:30:22	-->	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has joined #vim
+2020-05-26 19:30:27	<--	Technodrome (~textual@unaffiliated/technodrome) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-05-26 19:30:37	nickspoon	But fugitive does all kinds of stuff inside .git which I imagine wildignore would mess with
+2020-05-26 19:31:08	crose	for example, :drop honors 'wildignore'
+2020-05-26 19:31:38	<--	venmx (~bertie@5ec1cd80.skybroadband.com) has quit (Quit: leaving)
+2020-05-26 19:32:01	-->	venmx (~bertie@5ec1cd80.skybroadband.com) has joined #vim
+2020-05-26 19:32:27	-->	igemnace (~igemnace@112.202.193.163) has joined #vim
+2020-05-26 19:33:06	<--	venmx (~bertie@5ec1cd80.skybroadband.com) has quit (Client Quit)
+2020-05-26 19:34:24	nickspoon	crose: https://github.com/lacygoill/config/blob/1cca5180354bd00d58d9514aded350745e700991/.vim/vimrc#L2598 ?
+2020-05-26 19:34:32	-->	wildtrees_ (~wildtrees@unaffiliated/wildtrees) has joined #vim
+2020-05-26 19:34:36	-->	Technodrome (~textual@unaffiliated/technodrome) has joined #vim
+2020-05-26 19:34:48	crose	yes, I've removed it
+2020-05-26 19:35:27	nickspoon	I wish I kept as good notes as you do

@@ -124,6 +124,7 @@ alias ytdl-music='youtube-dl --output "%(title)s.%(ext)s" -x --audio-format mp3 
 ########################################
 # vimwiki aliases
 ########################################
+alias vimwiki-documentation='vim $HOME/vimwiki/documentation-md/index.md'
 alias vimwiki-personal='vim $HOME/vimwiki/personal-md/index.md'
 alias vimwiki-work='vim $HOME/vimwiki/work-md/index.md'
 

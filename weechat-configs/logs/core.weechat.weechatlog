@@ -1,0 +1,188 @@
+2020-05-05 06:50:33		New key binding (context "default"): meta2-1;5P => /bar scroll buflist * -100%
+2020-05-05 06:50:33		New key binding (context "default"): meta2-1;5Q => /bar scroll buflist * +100%
+2020-05-05 06:50:33		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
+2020-05-05 06:50:33		New key binding (context "default"): meta2-1;3Q => /bar scroll buflist * e
+2020-05-05 06:50:33		New key binding (context "default"): meta2-1;3P => /bar scroll buflist * b
+2020-05-05 06:50:33		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
+2020-05-05 06:50:33		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
+2020-05-05 06:50:33		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
+2020-05-05 06:50:33		New key binding (context "default"): meta-meta2-12~ => /bar scroll buflist * e
+2020-05-05 06:50:33		New key binding (context "default"): meta-meta2-11~ => /bar scroll buflist * b
+2020-05-05 06:50:33		New key binding (context "default"): meta2-12^ => /bar scroll buflist * +100%
+2020-05-05 06:50:33		New key binding (context "default"): meta2-12~ => /bar scroll buflist * +100%
+2020-05-05 06:50:33		New key binding (context "default"): meta2-11^ => /bar scroll buflist * -100%
+2020-05-05 06:50:33		New key binding (context "default"): meta2-11~ => /bar scroll buflist * -100%
+2020-05-05 06:50:33		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-05 06:56:04		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-05 06:56:12		Passphrase added
+2020-05-05 06:56:22		Secured data "freenodepass" set
+2020-05-05 06:56:22		Options saved to sec.conf
+2020-05-05 06:56:43		Secured data "geekshedpass" set
+2020-05-05 06:56:43		Options saved to sec.conf
+2020-05-05 06:57:08		Option changed: irc.server_default.sasl_mechanism = plain
+2020-05-05 06:57:19		Option changed: irc.server_default.sasl_username = "routingsparks"  (default: "")
+2020-05-05 06:57:33		Option changed: irc.server_default.nicks = "routingsparks"  (default: "")
+2020-05-05 06:58:17		Option changed: irc.server_default.capabilities = "account-notify,away-notify,cap-notify,multi-prefix,server-time"  (default: "")
+2020-05-05 06:58:39		irc: server added: freenode
+2020-05-05 06:59:02		Option changed: irc.server.freenode.sasl_password = "${sec.data.freenodepass}"  (default if null: "")
+2020-05-05 07:00:10		irc: server added: geekshed
+2020-05-05 07:00:38		Option changed: irc.server.geekshed.sasl_password = "${sec.data.geekshedpass}"  (default if null: "")
+2020-05-05 07:01:30		Mouse enabled
+2020-05-05 07:05:56		irc: server geekshed has been deleted
+2020-05-05 07:06:05		irc: server added: geekshed
+2020-05-05 07:06:11		Option changed: irc.server.geekshed.sasl_password = "************************"  (default if null: "")
+2020-05-05 08:25:46		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-05 08:44:33		List of bar items:
+2020-05-05 08:44:33		  input_paste (plugin: -)
+2020-05-05 08:44:33		  input_prompt (plugin: -)
+2020-05-05 08:44:33		  input_search (plugin: -)
+2020-05-05 08:44:33		  input_text (plugin: -)
+2020-05-05 08:44:33		  time (plugin: -)
+2020-05-05 08:44:33		  buffer_count (plugin: -)
+2020-05-05 08:44:33		  buffer_last_number (plugin: -)
+2020-05-05 08:44:33		  buffer_plugin (plugin: -)
+2020-05-05 08:44:33		  buffer_number (plugin: -)
+2020-05-05 08:44:33		  buffer_name (plugin: -)
+2020-05-05 08:44:33		  buffer_short_name (plugin: -)
+2020-05-05 08:44:33		  buffer_modes (plugin: -)
+2020-05-05 08:44:33		  buffer_filter (plugin: -)
+2020-05-05 08:44:33		  buffer_zoom (plugin: -)
+2020-05-05 08:44:33		  buffer_nicklist_count (plugin: -)
+2020-05-05 08:44:33		  scroll (plugin: -)
+2020-05-05 08:44:33		  hotlist (plugin: -)
+2020-05-05 08:44:33		  completion (plugin: -)
+2020-05-05 08:44:33		  buffer_title (plugin: -)
+2020-05-05 08:44:33		  buffer_nicklist (plugin: -)
+2020-05-05 08:44:33		  window_number (plugin: -)
+2020-05-05 08:44:33		  mouse_status (plugin: -)
+2020-05-05 08:44:33		  away (plugin: -)
+2020-05-05 08:44:33		  spell_dict (plugin: spell)
+2020-05-05 08:44:33		  spell_suggest (plugin: spell)
+2020-05-05 08:44:33		  buflist (plugin: buflist)
+2020-05-05 08:44:33		  buflist2 (plugin: buflist)
+2020-05-05 08:44:33		  buflist3 (plugin: buflist)
+2020-05-05 08:44:33		  buffer_plugin (plugin: irc)
+2020-05-05 08:44:33		  buffer_name (plugin: irc)
+2020-05-05 08:44:33		  buffer_short_name (plugin: irc)
+2020-05-05 08:44:33		  buffer_modes (plugin: irc)
+2020-05-05 08:44:33		  irc_channel (plugin: irc)
+2020-05-05 08:44:33		  irc_nick (plugin: irc)
+2020-05-05 08:44:33		  irc_host (plugin: irc)
+2020-05-05 08:44:33		  irc_nick_host (plugin: irc)
+2020-05-05 08:44:33		  lag (plugin: irc)
+2020-05-05 08:44:33		  input_prompt (plugin: irc)
+2020-05-05 08:44:33		  irc_nick_modes (plugin: irc)
+2020-05-05 08:44:33		  fset (plugin: fset)
+2020-05-05 08:46:41		Buffers list:
+2020-05-05 08:46:41		  [1] core.weechat (notify: all)
+2020-05-05 08:46:41		  [1] irc.server.freenode (notify: all)
+2020-05-05 08:46:41		  [1] irc.server.geekshed (notify: all)
+2020-05-05 08:55:48		Mouse disabled
+2020-05-05 08:58:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-05 08:59:17		Mouse enabled
+2020-05-05 09:00:01		Option changed: weechat.bar.status.position = top  (default: bottom)
+2020-05-05 09:00:04		Option changed: weechat.bar.status.position = bottom
+2020-05-05 09:00:24		Option changed: weechat.bar.status.position = bottom
+2020-05-05 09:00:26		Option changed: weechat.bar.status.position = top  (default: bottom)
+2020-05-05 09:00:33		Option changed: weechat.bar.status.position = bottom
+2020-05-05 09:00:47		All bars have been deleted
+2020-05-05 09:00:47		Bar "input" created
+2020-05-05 09:00:52		Bar "title" created
+2020-05-05 09:00:52		Bar "status" created
+2020-05-05 09:00:52		Bar "nicklist" created
+2020-05-05 09:01:01		List of bars:
+2020-05-05 09:01:01		  input: window, bottom, height: 1
+2020-05-05 09:01:01		  status: window, bottom, height: 1
+2020-05-05 09:01:01		  title: window, top, height: 1
+2020-05-05 09:01:01		  nicklist: window, right, width: auto
+2020-05-05 09:02:45		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-05 09:15:07		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-05 09:38:52		Option changed: irc.look.server_buffer = independent  (default: merge_with_core)
+2020-05-05 09:39:20		Option changed: buflist.look.sort = "number"  (default: "number,-active")
+2020-05-05 09:41:26		Key "meta-b" unbound (context: "default")
+2020-05-05 09:41:26		New key binding (context "default"): meta-b => /bar toggle-buffers
+2020-05-05 09:41:29	=!=	Error with command "/bar toggle-buffers" (help on command: /help bar)
+2020-05-05 09:41:31	=!=	Error with command "/bar toggle-buffers" (help on command: /help bar)
+2020-05-05 09:41:35	=!=	Error with command "/bar toggle-buffers" (help on command: /help bar)
+2020-05-05 09:41:35	=!=	Error with command "/bar toggle-buffers" (help on command: /help bar)
+2020-05-05 09:41:38	=!=	Error with command "/bar toggle-buffers" (help on command: /help bar)
+2020-05-05 09:41:38	=!=	Error with command "/bar toggle-buffers" (help on command: /help bar)
+2020-05-05 09:42:04	=!=	Error with command "/bar toggle-buffers" (help on command: /help bar)
+2020-05-05 09:42:13	=!=	Error with command "/bar toggle-buffers" (help on command: /help bar)
+2020-05-05 09:42:14	=!=	Error with command "/bar toggle-buffers" (help on command: /help bar)
+2020-05-05 09:42:14	=!=	Error with command "/bar toggle-buffers" (help on command: /help bar)
+2020-05-05 09:44:06		Option changed: weechat.look.buffer_time_format = "%H:%M"  (default: "%H:%M:%S")
+2020-05-05 10:06:17		Option changed: weechat.plugin.autoload = "*, !guile, !javascript, !lua, !php, !tcl, !perl, !fio, !xfer"  (default: "*")
+2020-05-05 10:07:33		script: downloading list of scripts...
+2020-05-05 10:07:34		script: 364 scripts for WeeChat 2.8
+2020-05-05 10:07:34		python: loading script "/home/sparky/.config/weechat/python/buffer_autoset.py"
+2020-05-05 10:07:34		python: registered script "buffer_autoset", version 1.1 (Auto-set buffer properties when a buffer is opened)
+2020-05-05 10:07:35		python: loading script "/home/sparky/.config/weechat/python/autosort.py"
+2020-05-05 10:07:35		python: registered script "autosort", version 3.8 (Flexible automatic (or manual) buffer sorting based on eval expressions.)
+2020-05-05 10:07:36		python: loading script "/home/sparky/.config/weechat/python/grep.py"
+2020-05-05 10:07:36		python: registered script "grep", version 0.8.2 (Search in buffers and logs)
+2020-05-05 10:10:46		Bar "status" deleted
+2020-05-05 10:10:53		Bar "status" created
+2020-05-05 10:14:48		Option changed: spell.check.default_dict = "en"  (default: "")
+2020-05-05 10:15:02		Option changed: spell.check.suggestions = 3  (default: -1)
+2020-05-05 10:15:17		Option changed: spell.color.suggestion = *green  (default: default)
+2020-05-05 10:15:22		Spell checker enabled
+2020-05-05 10:15:22	=!=	spell: error: No word lists can be found for the language "en".
+2020-05-05 10:20:10		Spell checker enabled
+2020-05-05 10:20:15	=!=	spell: error: No word lists can be found for the language "en".
+2020-05-05 10:20:15	=!=	spell: error: No word lists can be found for the language "en".
+2020-05-05 10:22:17		Bar "rootstatus" created
+2020-05-05 10:23:24		Bar "status" deleted
+2020-05-05 10:24:00	=!=	spell: error: No word lists can be found for the language "en".
+2020-05-05 10:24:04	=!=	spell: error: No word lists can be found for the language "en".
+2020-05-05 10:26:52		Bar "rootinput" created
+2020-05-05 10:27:15		Bar "input" deleted
+2020-05-05 10:30:46		python: scripts unloaded
+2020-05-05 10:30:53		python scripts loaded: autosort, buffer_autoset, grep
+2020-05-05 10:30:53		script: 364 scripts for WeeChat 2.8
+2020-05-05 10:30:53		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-05 10:33:26	=!=	Error with command "/bar toggle-buffers" (help on command: /help bar)
+2020-05-05 10:33:26	=!=	Error with command "/bar toggle-buffers" (help on command: /help bar)
+2020-05-05 10:36:19		Option changed: irc.server.freenode.autojoin = "#archlinux,#python,##security,#vim,#docker"  (default if null: "")
+2020-05-05 10:38:05		Option changed: irc.server.geekshed.autojoin = "#RedditNet"  (default if null: "")
+2020-05-05 10:39:47	=!=	Error with command "/buflist toggle" (help on command: /help buflist)
+2020-05-05 10:42:05		List of bars:
+2020-05-05 10:42:05		  input: root, bottom, height: 1
+2020-05-05 10:42:05		  title: window, top, height: 1
+2020-05-05 10:42:05		  status: root, bottom, height: 1
+2020-05-05 10:42:05		  nicklist: window, right, width: auto
+2020-05-05 10:42:05		  fset: window, top, height: 3
+2020-05-05 10:42:05		  buflist: root, left, width: auto
+2020-05-05 10:42:43		Bar "title" deleted
+2020-05-05 10:43:01		Bar "titlenosep" created
+2020-05-05 10:43:46	=!=	Error: unknown bar "title"
+2020-05-05 10:43:51		Bar "titlenosep" deleted
+2020-05-05 10:44:04		Bar "titlenosep" created
+2020-05-05 10:44:59		Bar "titlesep" created
+2020-05-05 10:45:15		Bar "titlesep" deleted
+2020-05-05 10:52:45		Option changed: weechat.color.chat_nick_colors = "cyan,magenta,green,brown,lightblue,lightcyan,lightmagenta,lightgreen,blue"  (default: "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue")
+2020-05-05 10:54:13		Option changed: weechat.color.chat_read_marker = 46  (default: magenta)
+2020-05-05 12:23:34		python: scripts unloaded
+2020-05-05 19:19:39		python scripts loaded: autosort, buffer_autoset, grep
+2020-05-05 19:19:39		script: 364 scripts for WeeChat 2.8
+2020-05-05 19:19:39		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-05 19:20:59		python: scripts unloaded
+2020-05-05 19:22:35		python scripts loaded: autosort, buffer_autoset, grep
+2020-05-05 19:22:35		script: 364 scripts for WeeChat 2.8
+2020-05-05 19:22:35		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-05 19:22:38		python: scripts unloaded
+2020-05-06 19:52:00		python scripts loaded: autosort, buffer_autoset, grep
+2020-05-06 19:52:00		script: downloading list of scripts...
+2020-05-06 19:52:00		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-06 19:52:01		script: 364 scripts for WeeChat 2.8
+2020-05-06 20:00:09		python: scripts unloaded
+2020-05-08 15:38:53		python scripts loaded: autosort, buffer_autoset, grep
+2020-05-08 15:38:53		script: downloading list of scripts...
+2020-05-08 15:38:53		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-08 15:38:54		script: 364 scripts for WeeChat 2.8
+2020-05-08 16:05:24		python: scripts unloaded
+2020-05-24 20:56:59		script: 364 scripts for WeeChat 2.8
+2020-05-24 20:56:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-26 19:15:39		script: downloading list of scripts...
+2020-05-26 19:15:39		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-05-26 19:15:41		script: 364 scripts for WeeChat 2.8
