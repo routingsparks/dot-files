@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1594146836,,"q"
+|2,0,1594146958,,"q"
 :quit
 |2,0,1594145863,,"quit"
 :PlugInstall
@@ -343,231 +343,260 @@ $
 |3,0,36,0,1,0,1590253439,"*"
 
 # File marks:
-'0  1  0  ~/.bashrc
-|4,48,1,0,1594146824,"~/.bashrc"
-'1  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,49,1,0,1591722849,"~/development/test-repo/.git/MERGE_MSG"
-'2  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,50,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
-'3  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,51,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
-'4  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,52,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
-'5  1  5  ~/development/test-repo/v1.txt
-|4,53,1,5,1591722732,"~/development/test-repo/v1.txt"
-'6  1  0  ~/development/test-repo/.git/TAG_EDITMSG
-|4,54,1,0,1591722711,"~/development/test-repo/.git/TAG_EDITMSG"
-'7  1  0  ~/development/test-repo/.git/TAG_EDITMSG
-|4,55,1,0,1591722711,"~/development/test-repo/.git/TAG_EDITMSG"
-'8  24  5  ~/development/vimwiki/documentation-md/index.md
-|4,56,24,5,1590534895,"~/development/vimwiki/documentation-md/index.md"
-'9  24  5  ~/development/vimwiki/documentation-md/index.md
-|4,57,24,5,1590367579,"~/development/vimwiki/documentation-md/index.md"
+'0  1  0  ~/development/dot-files/vim-configs/vim/r
+|4,48,1,0,1594146958,"~/development/dot-files/vim-configs/vim/r"
+'1  155  0  ~/development/dot-files/vim-configs/vim/vimrc
+|4,49,155,0,1594146951,"~/development/dot-files/vim-configs/vim/vimrc"
+'2  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
+|4,50,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
+'3  1  2  ~/NERD_tree_1
+|4,51,1,2,1594146913,"~/NERD_tree_1"
+'4  1  0  ~/.bashrc
+|4,52,1,0,1594146909,"~/.bashrc"
+'5  1  0  ~/.bash
+|4,53,1,0,1594146903,"~/.bash"
+'6  1  0  ~/.bashrc
+|4,54,1,0,1594146824,"~/.bashrc"
+'7  1  0  ~/development/test-repo/.git/MERGE_MSG
+|4,55,1,0,1591722849,"~/development/test-repo/.git/MERGE_MSG"
+'8  1  4  ~/development/test-repo/.git/TAG_EDITMSG
+|4,56,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
+'9  1  0  ~/development/test-repo/.git/MERGE_MSG
+|4,57,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
 
 # Jumplist (newest first):
+-'  1  0  ~/development/dot-files/vim-configs/vim/r
+|4,39,1,0,1594146958,"~/development/dot-files/vim-configs/vim/r"
+-'  155  0  ~/development/dot-files/vim-configs/vim/vimrc
+|4,39,155,0,1594146951,"~/development/dot-files/vim-configs/vim/vimrc"
+-'  155  0  ~/development/dot-files/vim-configs/vim/vimrc
+|4,39,155,0,1594146951,"~/development/dot-files/vim-configs/vim/vimrc"
+-'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
+|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
+-'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
+|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
+-'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
+|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
+-'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
+|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
+-'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
+|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
+-'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
+|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
+-'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
+|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
+-'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
+|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  1  2  ~/NERD_tree_1
+|4,39,1,2,1594146913,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1594146911,"~/NERD_tree_1"
 -'  1  0  ~/.bashrc
-|4,39,1,0,1594146824,"~/.bashrc"
+|4,39,1,0,1594146909,"~/.bashrc"
 -'  1  0  ~/.bashrc
-|4,39,1,0,1594146824,"~/.bashrc"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722849,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722849,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722849,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722849,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722849,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722849,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722849,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722849,"~/development/test-repo/.git/MERGE_MSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,39,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  6  ~/development/test-repo/.git/TAG_EDITMSG
-|4,39,1,6,1591722750,"~/development/test-repo/.git/TAG_EDITMSG"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
--'  1  5  ~/development/test-repo/v1.txt
-|4,39,1,5,1591722732,"~/development/test-repo/v1.txt"
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1594146909,"~/.bashrc"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594146903,"~/.bash"
 
 # History of marks within files (newest to oldest):
 
+> ~/development/dot-files/vim-configs/vim/r
+	*	1594146957	0
+	"	1	0
+
+> ~/development/dot-files/vim-configs/vim/vimrc
+	*	1594146950	0
+	"	155	0
+	^	155	10
+	.	154	9
+	+	150	0
+	+	152	40
+	+	156	43
+	+	151	9
+	+	152	9
+	+	153	9
+	+	154	9
+
+> ~/development/dot-files/vim-configs/vim/.vimrc
+	*	1594146924	0
+	"	1	0
+
+> ~/NERD_tree_1
+	*	1594146913	0
+	"	1	2
+	.	1	0
+	+	1	0
+
 > ~/.bashrc
-	*	1594146823	0
+	*	1594146908	0
 	"	1	0
 	.	127	0
 	+	73	7
@@ -667,6 +696,10 @@ $
 	+	90	36
 	+	130	0
 	+	127	0
+
+> ~/.bash
+	*	1594146902	0
+	"	1	0
 
 > ~/development/test-repo/.git/MERGE_MSG
 	*	1591722848	0
@@ -783,19 +816,6 @@ $
 > ~/development/vimwiki/personal-md/technology/tools/automation.md
 	*	1590233420	0
 	"	1	0
-
-> ~/development/dot-files/vim-configs/vim/vimrc
-	*	1590233339	0
-	"	155	9
-	^	155	10
-	.	154	9
-	+	150	0
-	+	152	40
-	+	156	43
-	+	151	9
-	+	152	9
-	+	153	9
-	+	154	9
 
 > ~/.bashe
 	*	1590233099	0
@@ -2068,36 +2088,3 @@ $
 > ~/git-repos/vimwiki/personal-md/technology/languages/python/python-index.md
 	*	1584291733	0
 	"	3	6
-
-> ~/git-repos/vimwiki/personal-md/todo-list-main.md
-	*	1584291715	0
-	"	1	0
-
-> ~/git-repos/vimwiki/personal-md/technology/software.md
-	*	1584291709	0
-	"	1	0
-
-> ~/git-repos/vimwiki/personal-md/school/classes/classes-index.md
-	*	1584291667	0
-	"	4	4
-	^	9	6
-	.	9	6
-	+	4	26
-	+	5	0
-	+	4	42
-	+	5	0
-	+	4	17
-	+	5	41
-	+	6	40
-	+	6	42
-	+	7	0
-	+	8	13
-	+	9	5
-	+	4	11
-	+	5	11
-	+	6	11
-	+	9	6
-
-> ~/git-repos/vimwiki/personal-md/school/va-information.md
-	*	1584291659	0
-	"	1	0
