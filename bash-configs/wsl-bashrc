@@ -1,9 +1,7 @@
-# .bashrc
-
 ###############################################################################
 # sparky's .bashrc
 # created:  20190204
-# modified: 20200208
+# modified: 20200712
 ###############################################################################
 
 # Source global definitions
@@ -26,7 +24,6 @@ fi
 #        tmux attach-session -t "$ID" # if available attach to it
 #    fi
 #fi
-
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
@@ -61,19 +58,42 @@ export EDITOR=vim
 ###############################################################################
 # Define functions
 ###############################################################################
-function task_count {
+task_count() {
     if [[ `task +in +PENDING count` -gt '0' ]]; then
-        echo "[" `task +in +PENDING count` " task(s) ]:"
-   else
-        echo "$:"
+        #echo "[" `task +in +PENDING count` " task(s) ]$: "
+        echo "[" `task +in +PENDING count` " task(s) ] "
+#   else
+#        echo "$:"
     fi
 }
 
+git_branch() {
+    if [[ -a ".git" ]]; then
+        #echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'` "$: "
+        echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'` ""
+    else
+        #echo "$: "
+        echo ""
+    fi
+}
+
+#show_git_branch() {
+#     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+#}
 ###############################################################################
 # Set PS1
 ###############################################################################
 #export PS1="\[\033[38;5;10m\][\u\[\]\[\033[38;5;15m\]@\[\]\[\033[38;5;10m\]\h\[\]\[\033[38;5;15m\] \[\]\[\033[38;5;13m\]\W\[\]\[\033[38;5;10m\]]\[\]\[\033[38;5;15m\]\$ \[\]"
-export PS1="\[\033[38;5;10m\][\u\[\]\[\033[38;5;15m\]@\[\]\[\033[38;5;10m\]\h\[\]\[\033[38;5;15m\] \[\]\[\033[38;5;13m\]\W\[\]\[\033[38;5;10m\]]\[\]\[\033[38;5;15m\]\$(task_count) \[\]"
+#export PS1="\[\033[38;5;10m\][\u\[\]\[\033[38;5;15m\]@\[\]\[\033[38;5;10m\]\h\[\]\[\033[38;5;15m\] \[\]\[\033[38;5;13m\]\W\[\]\[\033[38;5;10m\]]\[\]\[\033[38;5;15m\]\$(task_count) \[\]"
+#export PS1='$(git_branch) $(task_count)'
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\][\u]\[\033[00m\] \[\033[01;32m\][\h]\[\033[00m\] \[\033[01;34m\][\W] \[\033[01;33m\]$(task_count)\[\033[00m\]\[\033[01;32m\]$(git_branch)\[\033[00m\]$: '
+#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\][\u]\[\033[00m\] \[\033[01;32m\][\h]\[\033[00m\] \[\033[01;34m\][\W] \[\033[01;32m\]$(show_git_branch)\[\033[00m\]\$: ' 
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$(show_git_branch)\$: '
+fi
+unset color_prompt force_color_prompt
 
 ##############################################################################
 # Configure Python VirtualEnvWrapper
@@ -84,7 +104,7 @@ export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
 ########################################
 # Enable this on Fedora
 ########################################
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 ########################################
 # Enable this on Arch
 ########################################
@@ -127,12 +147,6 @@ alias gp='git push'
 alias gs='git status'
 
 ########################################
-# audio-output aliases
-########################################
-alias audio-hdmi="pactl set-card-profile 0 output:hdmi-stereo-extra1"
-alias audio-laptop="pactl set-card-profile 0 output:analog-stereo"
-
-########################################
 # weechat aliases
 ########################################
 WEECHAT_HOME=$HOME/.config/
@@ -159,3 +173,54 @@ alias ti='task in'
 alias tl='task list'
 alias td='task +DUE'
 alias tod='task +OVERDUE'
+
+########################################
+# wsl specific aliases
+########################################
+HISTCONTROL=ignoreboth
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+shopt -s histappend
+shopt -s checkwinsize
+shopt -s globstar
+
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+	color_prompt=yes
+    else
+	color_prompt=
+    fi
+fi
+
+
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi

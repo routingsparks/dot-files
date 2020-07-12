@@ -20,20 +20,22 @@
 $
 
 # Command Line History (newest to oldest):
+:wq!
+|2,0,1594577852,,"wq!"
+:q!
+|2,0,1594577335,,"q!"
 :q
-|2,0,1594146958,,"q"
+|2,0,1594576543,,"q"
+:Wq!
+|2,0,1594552375,,"Wq!"
+:PlugInstall
+|2,0,1594381431,,"PlugInstall"
+:PlugClean
+|2,0,1594381426,,"PlugClean"
 :quit
 |2,0,1594145863,,"quit"
-:PlugInstall
-|2,0,1594145860,,"PlugInstall"
-:PlugClean
-|2,0,1594145844,,"PlugClean"
-:wq!
-|2,0,1591722849,,"wq!"
 :w
 |2,0,1590255784,,"w"
-:q!
-|2,0,1590254337,,"q!"
 :noh
 |2,0,1590232655,,"noh"
 :w!
@@ -287,7 +289,7 @@ $
 
 # Input Line History (newest to oldest):
 @y
-|2,3,1594145855,,"y"
+|2,3,1594381427,,"y"
 @:y
 |2,3,1588721643,,":y"
 @yes
@@ -308,265 +310,376 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	fedora-svr-01,192.168.122.15 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH4Ndnae2kE+jowtXJCjYkINtyT5e1ybFwelJRwXEruvwmMk3ULBg8xHg2qgSOAzg0ZfHR6VSwYZ6AVZt1tVIDw=
-|3,1,0,1,1,0,1590233435,"fedora-svr-01,192.168.122.15 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH4Ndnae2kE+jowtXJCjYkINtyT5e1ybFwelJRwXEruvwmMk3ULBg8xHg2qgSOAzg0ZfHR6VSwYZ6AVZt1tVIDw="
-"1	LINE	0
-	alias vimwiki-documentation='vim $HOME/vimwiki/documentation-md/index.md'
-|3,0,1,1,1,0,1590233386,"alias vimwiki-documentation='vim $HOME/vimwiki/documentation-md/index.md'"
+"0	LINE	0
+	        echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'` "$: "
+|3,0,0,1,1,0,1594577633,"        echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/(\\1)/'` \"$: \""
+""1	LINE	0
+	    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\][\u]\[\033[00m\] \[\033[01;32m\][\h]\[\033[00m\] \[\033[01;34m\][\W] \[\033[01;32m\]$(task_count) $(show_git_branch)\[\033[00m\]\$: ' 
+|3,1,1,1,1,0,1594577811,"    #PS1='${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\][\\u]\\[\\033[00m\\] \\[\\033[01;32m\\][\\h]\\[\\033[00m\\] \\[\\033[01;34m\\][\\W] \\[\\033[01;32m\\]$(task_count) $(show_git_branch)\\[\\033[00m\\]\\$: ' "
 "2	LINE	0
-	
-|3,0,2,1,1,0,1590233358,""
+	    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\][\u@\h]\[\033[00m\] \[\033[01;34m\][\W] \$(show_git_branch)\$: '
+|3,0,2,1,1,0,1594577518,"    #PS1='${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\][\\u@\\h]\\[\\033[00m\\] \\[\\033[01;34m\\][\\W] \\$(show_git_branch)\\$: '"
 "3	LINE	0
-	fedora-svr-01,192.168.122.15 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH4Ndnae2kE+jowtXJCjYkINtyT5e1ybFwelJRwXEruvwmMk3ULBg8xHg2qgSOAzg0ZfHR6VSwYZ6AVZt1tVIDw=
-|3,0,3,1,1,0,1590020257,"fedora-svr-01,192.168.122.15 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH4Ndnae2kE+jowtXJCjYkINtyT5e1ybFwelJRwXEruvwmMk3ULBg8xHg2qgSOAzg0ZfHR6VSwYZ6AVZt1tVIDw="
+	        echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'`
+|3,0,3,1,1,0,1594577413,"        echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/(\\1)/'`"
 "4	LINE	0
-	        #blog_id = input (f'Which blog is this for: ')
-|3,0,4,1,1,0,1589762789,"        #blog_id = input (f'Which blog is this for: ')"
+	        echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'`  "
+|3,0,4,1,1,0,1594577262,"        echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/(\\1)/'`  \""
 "5	LINE	0
-	        ##
-|3,0,5,1,1,0,1589762777,"        ##"
+	
+|3,0,5,1,1,0,1594553464,""
 "6	LINE	0
-	"""
-|3,0,6,1,1,0,1589762736,"\"\"\""
+	}
+|3,0,6,1,1,0,1594553462,"}"
 "7	LINE	0
-	    # check to make sure directory exists, otherwise create
-|3,0,7,1,1,0,1589762733,"    # check to make sure directory exists, otherwise create"
+	    fi
+|3,0,7,1,1,0,1594553462,"    fi"
 "8	LINE	0
-	    proj_topic = input (f'What is the {proj_category} topic: ')
-|3,0,8,1,1,0,1589762031,"    proj_topic = input (f'What is the {proj_category} topic: ')"
+	        echo "$: "
+|3,0,8,1,1,0,1594553461,"        echo \"$: \""
 "9	LINE	0
-	    blogdd_id = input (f'Which blog is this for: ')
-|3,0,9,1,1,0,1589761602,"    blogdd_id = input (f'Which blog is this for: ')"
+	    else
+|3,0,9,1,1,0,1594553461,"    else"
 "-	CHAR	0
-	*
-|3,0,36,0,1,0,1590253439,"*"
+	 
+|3,0,36,0,1,0,1594577593," "
 
 # File marks:
-'0  1  0  ~/development/dot-files/vim-configs/vim/r
-|4,48,1,0,1594146958,"~/development/dot-files/vim-configs/vim/r"
-'1  155  0  ~/development/dot-files/vim-configs/vim/vimrc
-|4,49,155,0,1594146951,"~/development/dot-files/vim-configs/vim/vimrc"
-'2  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
-|4,50,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
-'3  1  2  ~/NERD_tree_1
-|4,51,1,2,1594146913,"~/NERD_tree_1"
-'4  1  0  ~/.bashrc
-|4,52,1,0,1594146909,"~/.bashrc"
-'5  1  0  ~/.bash
-|4,53,1,0,1594146903,"~/.bash"
-'6  1  0  ~/.bashrc
-|4,54,1,0,1594146824,"~/.bashrc"
-'7  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,55,1,0,1591722849,"~/development/test-repo/.git/MERGE_MSG"
-'8  1  4  ~/development/test-repo/.git/TAG_EDITMSG
-|4,56,1,4,1591722835,"~/development/test-repo/.git/TAG_EDITMSG"
-'9  1  0  ~/development/test-repo/.git/MERGE_MSG
-|4,57,1,0,1591722816,"~/development/test-repo/.git/MERGE_MSG"
+'0  82  0  ~/.bashrc
+|4,48,82,0,1594577852,"~/.bashrc"
+'1  93  0  ~/.bashrc
+|4,49,93,0,1594577814,"~/.bashrc"
+'2  93  0  ~/.bashrc
+|4,50,93,0,1594577814,"~/.bashrc"
+'3  91  209  ~/.bashrc
+|4,51,91,209,1594577731,"~/.bashrc"
+'4  91  209  ~/.bashrc
+|4,52,91,209,1594577731,"~/.bashrc"
+'5  91  209  ~/.bashrc
+|4,53,91,209,1594577731,"~/.bashrc"
+'6  91  209  ~/.bashrc
+|4,54,91,209,1594577731,"~/.bashrc"
+'7  73  82  ~/.bashrc
+|4,55,73,82,1594577688,"~/.bashrc"
+'8  73  82  ~/.bashrc
+|4,56,73,82,1594577688,"~/.bashrc"
+'9  73  82  ~/.bashrc
+|4,57,73,82,1594577688,"~/.bashrc"
 
 # Jumplist (newest first):
--'  1  0  ~/development/dot-files/vim-configs/vim/r
-|4,39,1,0,1594146958,"~/development/dot-files/vim-configs/vim/r"
--'  155  0  ~/development/dot-files/vim-configs/vim/vimrc
-|4,39,155,0,1594146951,"~/development/dot-files/vim-configs/vim/vimrc"
--'  155  0  ~/development/dot-files/vim-configs/vim/vimrc
-|4,39,155,0,1594146951,"~/development/dot-files/vim-configs/vim/vimrc"
--'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
-|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
--'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
-|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
--'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
-|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
--'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
-|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
--'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
-|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
--'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
-|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
--'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
-|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
--'  1  0  ~/development/dot-files/vim-configs/vim/.vimrc
-|4,39,1,0,1594146925,"~/development/dot-files/vim-configs/vim/.vimrc"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  1  2  ~/NERD_tree_1
-|4,39,1,2,1594146913,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1594146911,"~/NERD_tree_1"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1594146909,"~/.bashrc"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1594146903,"~/.bash"
+-'  82  0  ~/.bashrc
+|4,39,82,0,1594577852,"~/.bashrc"
+-'  93  0  ~/.bashrc
+|4,39,93,0,1594577819,"~/.bashrc"
+-'  93  0  ~/.bashrc
+|4,39,93,0,1594577814,"~/.bashrc"
+-'  91  4  ~/.bashrc
+|4,39,91,4,1594577790,"~/.bashrc"
+-'  91  4  ~/.bashrc
+|4,39,91,4,1594577790,"~/.bashrc"
+-'  91  209  ~/.bashrc
+|4,39,91,209,1594577731,"~/.bashrc"
+-'  73  8  ~/.bashrc
+|4,39,73,8,1594577715,"~/.bashrc"
+-'  73  8  ~/.bashrc
+|4,39,73,8,1594577715,"~/.bashrc"
+-'  73  8  ~/.bashrc
+|4,39,73,8,1594577715,"~/.bashrc"
+-'  73  82  ~/.bashrc
+|4,39,73,82,1594577688,"~/.bashrc"
+-'  73  79  ~/.bashrc
+|4,39,73,79,1594577642,"~/.bashrc"
+-'  75  8  ~/.bashrc
+|4,39,75,8,1594577626,"~/.bashrc"
+-'  75  8  ~/.bashrc
+|4,39,75,8,1594577626,"~/.bashrc"
+-'  75  8  ~/.bashrc
+|4,39,75,8,1594577626,"~/.bashrc"
+-'  75  8  ~/.bashrc
+|4,39,75,8,1594577626,"~/.bashrc"
+-'  75  8  ~/.bashrc
+|4,39,75,8,1594577626,"~/.bashrc"
+-'  74  18  ~/.bashrc
+|4,39,74,18,1594577615,"~/.bashrc"
+-'  74  18  ~/.bashrc
+|4,39,74,18,1594577615,"~/.bashrc"
+-'  74  18  ~/.bashrc
+|4,39,74,18,1594577615,"~/.bashrc"
+-'  74  18  ~/.bashrc
+|4,39,74,18,1594577615,"~/.bashrc"
+-'  74  18  ~/.bashrc
+|4,39,74,18,1594577615,"~/.bashrc"
+-'  64  8  ~/.bashrc
+|4,39,64,8,1594577598,"~/.bashrc"
+-'  64  8  ~/.bashrc
+|4,39,64,8,1594577598,"~/.bashrc"
+-'  64  8  ~/.bashrc
+|4,39,64,8,1594577598,"~/.bashrc"
+-'  64  8  ~/.bashrc
+|4,39,64,8,1594577598,"~/.bashrc"
+-'  64  8  ~/.bashrc
+|4,39,64,8,1594577598,"~/.bashrc"
+-'  64  8  ~/.bashrc
+|4,39,64,8,1594577598,"~/.bashrc"
+-'  64  54  ~/.bashrc
+|4,39,64,54,1594577594,"~/.bashrc"
+-'  76  8  ~/.bashrc
+|4,39,76,8,1594577587,"~/.bashrc"
+-'  76  8  ~/.bashrc
+|4,39,76,8,1594577587,"~/.bashrc"
+-'  76  8  ~/.bashrc
+|4,39,76,8,1594577587,"~/.bashrc"
+-'  76  8  ~/.bashrc
+|4,39,76,8,1594577587,"~/.bashrc"
+-'  76  8  ~/.bashrc
+|4,39,76,8,1594577587,"~/.bashrc"
+-'  75  8  ~/.bashrc
+|4,39,75,8,1594577587,"~/.bashrc"
+-'  75  8  ~/.bashrc
+|4,39,75,8,1594577587,"~/.bashrc"
+-'  75  13  ~/.bashrc
+|4,39,75,13,1594577582,"~/.bashrc"
+-'  88  0  ~/.bashrc
+|4,39,88,0,1594577541,"~/.bashrc"
+-'  87  0  ~/.bashrc
+|4,39,87,0,1594577541,"~/.bashrc"
+-'  88  0  ~/.bashrc
+|4,39,88,0,1594577541,"~/.bashrc"
+-'  87  0  ~/.bashrc
+|4,39,87,0,1594577541,"~/.bashrc"
+-'  88  0  ~/.bashrc
+|4,39,88,0,1594577541,"~/.bashrc"
+-'  87  0  ~/.bashrc
+|4,39,87,0,1594577541,"~/.bashrc"
+-'  88  0  ~/.bashrc
+|4,39,88,0,1594577541,"~/.bashrc"
+-'  87  0  ~/.bashrc
+|4,39,87,0,1594577541,"~/.bashrc"
+-'  88  0  ~/.bashrc
+|4,39,88,0,1594577541,"~/.bashrc"
+-'  87  0  ~/.bashrc
+|4,39,87,0,1594577541,"~/.bashrc"
+-'  87  0  ~/.bashrc
+|4,39,87,0,1594577541,"~/.bashrc"
+-'  87  0  ~/.bashrc
+|4,39,87,0,1594577541,"~/.bashrc"
+-'  86  0  ~/.bashrc
+|4,39,86,0,1594577526,"~/.bashrc"
+-'  86  0  ~/.bashrc
+|4,39,86,0,1594577526,"~/.bashrc"
+-'  86  0  ~/.bashrc
+|4,39,86,0,1594577526,"~/.bashrc"
+-'  86  0  ~/.bashrc
+|4,39,86,0,1594577526,"~/.bashrc"
+-'  87  0  ~/.bashrc
+|4,39,87,0,1594577526,"~/.bashrc"
+-'  86  0  ~/.bashrc
+|4,39,86,0,1594577526,"~/.bashrc"
+-'  86  0  ~/.bashrc
+|4,39,86,0,1594577526,"~/.bashrc"
+-'  86  0  ~/.bashrc
+|4,39,86,0,1594577526,"~/.bashrc"
+-'  79  0  ~/.bashrc
+|4,39,79,0,1594577478,"~/.bashrc"
+-'  78  0  ~/.bashrc
+|4,39,78,0,1594577478,"~/.bashrc"
+-'  77  0  ~/.bashrc
+|4,39,77,0,1594577478,"~/.bashrc"
+-'  79  0  ~/.bashrc
+|4,39,79,0,1594577478,"~/.bashrc"
+-'  78  0  ~/.bashrc
+|4,39,78,0,1594577478,"~/.bashrc"
+-'  77  0  ~/.bashrc
+|4,39,77,0,1594577478,"~/.bashrc"
+-'  79  0  ~/.bashrc
+|4,39,79,0,1594577478,"~/.bashrc"
+-'  78  0  ~/.bashrc
+|4,39,78,0,1594577478,"~/.bashrc"
+-'  77  0  ~/.bashrc
+|4,39,77,0,1594577478,"~/.bashrc"
+-'  79  0  ~/.bashrc
+|4,39,79,0,1594577478,"~/.bashrc"
+-'  78  0  ~/.bashrc
+|4,39,78,0,1594577478,"~/.bashrc"
+-'  77  0  ~/.bashrc
+|4,39,77,0,1594577478,"~/.bashrc"
+-'  79  0  ~/.bashrc
+|4,39,79,0,1594577478,"~/.bashrc"
+-'  78  0  ~/.bashrc
+|4,39,78,0,1594577478,"~/.bashrc"
+-'  78  0  ~/.bashrc
+|4,39,78,0,1594577478,"~/.bashrc"
+-'  77  0  ~/.bashrc
+|4,39,77,0,1594577478,"~/.bashrc"
+-'  78  0  ~/.bashrc
+|4,39,78,0,1594577478,"~/.bashrc"
+-'  77  0  ~/.bashrc
+|4,39,77,0,1594577478,"~/.bashrc"
+-'  78  0  ~/.bashrc
+|4,39,78,0,1594577478,"~/.bashrc"
+-'  77  0  ~/.bashrc
+|4,39,77,0,1594577478,"~/.bashrc"
+-'  77  0  ~/.bashrc
+|4,39,77,0,1594577443,"~/.bashrc"
+-'  92  0  ~/.bashrc
+|4,39,92,0,1594577402,"~/.bashrc"
+-'  90  0  ~/.bashrc
+|4,39,90,0,1594577402,"~/.bashrc"
+-'  92  0  ~/.bashrc
+|4,39,92,0,1594577402,"~/.bashrc"
+-'  90  0  ~/.bashrc
+|4,39,90,0,1594577402,"~/.bashrc"
+-'  92  0  ~/.bashrc
+|4,39,92,0,1594577402,"~/.bashrc"
+-'  90  0  ~/.bashrc
+|4,39,90,0,1594577402,"~/.bashrc"
+-'  92  0  ~/.bashrc
+|4,39,92,0,1594577402,"~/.bashrc"
+-'  91  0  ~/.bashrc
+|4,39,91,0,1594577402,"~/.bashrc"
+-'  90  0  ~/.bashrc
+|4,39,90,0,1594577402,"~/.bashrc"
+-'  92  0  ~/.bashrc
+|4,39,92,0,1594577402,"~/.bashrc"
+-'  91  0  ~/.bashrc
+|4,39,91,0,1594577402,"~/.bashrc"
+-'  91  0  ~/.bashrc
+|4,39,91,0,1594577402,"~/.bashrc"
+-'  90  0  ~/.bashrc
+|4,39,90,0,1594577402,"~/.bashrc"
+-'  91  0  ~/.bashrc
+|4,39,91,0,1594577402,"~/.bashrc"
+-'  90  0  ~/.bashrc
+|4,39,90,0,1594577402,"~/.bashrc"
+-'  91  0  ~/.bashrc
+|4,39,91,0,1594577402,"~/.bashrc"
+-'  90  0  ~/.bashrc
+|4,39,90,0,1594577402,"~/.bashrc"
+-'  90  0  ~/.bashrc
+|4,39,90,0,1594577402,"~/.bashrc"
+-'  93  4  ~/.bashrc
+|4,39,93,4,1594577369,"~/.bashrc"
+-'  93  4  ~/.bashrc
+|4,39,93,4,1594577369,"~/.bashrc"
+-'  93  4  ~/.bashrc
+|4,39,93,4,1594577369,"~/.bashrc"
+-'  92  4  ~/.bashrc
+|4,39,92,4,1594577369,"~/.bashrc"
+-'  92  4  ~/.bashrc
+|4,39,92,4,1594577369,"~/.bashrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.bashrc
+	*	1594577852	0
+	"	82	0
+	^	82	1
+	.	82	0
+	+	92	340
+	+	92	0
+	+	92	354
+	+	92	351
+	+	93	0
+	+	92	0
+	+	92	142
+	+	93	0
+	+	93	155
+	+	92	4
+	+	93	156
+	+	81	0
+	+	82	0
+	+	83	0
+	+	81	93
+	+	81	105
+	+	81	76
+	+	81	153
+	+	81	94
+	+	81	73
+	+	81	0
+	+	82	0
+	+	83	0
+	+	93	4
+	+	92	4
+	+	91	0
+	+	92	0
+	+	94	0
+	+	96	0
+	+	88	0
+	+	95	0
+	+	70	14
+	+	79	0
+	+	71	94
+	+	71	164
+	+	78	0
+	+	77	16
+	+	71	28
+	+	88	0
+	+	89	11
+	+	71	11
+	+	89	38
+	+	75	0
+	+	77	0
+	+	65	0
+	+	66	0
+	+	77	0
+	+	75	0
+	+	63	56
+	+	92	0
+	+	94	0
+	+	95	0
+	+	96	0
+	+	91	0
+	+	93	0
+	+	92	142
+	+	92	0
+	+	92	167
+	+	77	16
+	+	71	28
+	+	72	82
+	+	92	155
+	+	64	0
+	+	63	8
+	+	64	54
+	+	92	157
+	+	75	0
+	+	72	8
+	+	75	81
+	+	75	0
+	+	72	8
+	+	74	0
+	+	72	8
+	+	74	80
+	+	74	0
+	+	72	8
+	+	74	0
+	+	72	8
+	+	74	80
+	+	74	4
+	+	75	4
+	+	72	8
+	+	74	4
+	+	75	4
+	+	93	0
+	+	88	0
+	+	76	0
+	+	75	8
+	+	76	14
+	+	64	54
+	+	73	0
+	+	72	8
+	+	73	80
+	+	91	209
+	+	73	82
+	+	91	211
+	+	93	0
+	+	80	0
+	+	81	0
+	+	82	0
+	z	72	8
+
+> ~/.bashrc.orig
+	*	1594382493	0
+	"	2	0
 
 > ~/development/dot-files/vim-configs/vim/r
 	*	1594146957	0
@@ -594,108 +707,6 @@ $
 	"	1	2
 	.	1	0
 	+	1	0
-
-> ~/.bashrc
-	*	1594146908	0
-	"	1	0
-	.	127	0
-	+	73	7
-	+	74	0
-	+	73	0
-	+	73	56
-	+	73	0
-	+	90	0
-	+	92	24
-	+	90	26
-	+	150	47
-	+	155	0
-	+	176	0
-	+	115	43
-	+	116	0
-	+	115	43
-	+	72	0
-	+	73	0
-	+	74	0
-	+	75	0
-	+	76	0
-	+	77	0
-	+	78	0
-	+	138	20
-	+	150	0
-	+	132	0
-	+	131	0
-	+	116	34
-	+	17	0
-	+	18	0
-	+	19	0
-	+	92	0
-	+	72	0
-	+	73	0
-	+	74	0
-	+	75	0
-	+	76	0
-	+	77	0
-	+	78	0
-	+	159	0
-	+	160	0
-	+	161	0
-	+	162	0
-	+	163	0
-	+	164	0
-	+	165	0
-	+	166	0
-	+	167	0
-	+	168	0
-	+	169	0
-	+	170	0
-	+	171	0
-	+	255	0
-	+	92	0
-	+	59	0
-	+	63	0
-	+	62	6
-	+	60	22
-	+	17	0
-	+	18	0
-	+	19	0
-	+	14	0
-	+	15	13
-	+	172	0
-	+	173	0
-	+	174	18
-	+	176	60
-	+	108	30
-	+	92	55
-	+	17	0
-	+	18	0
-	+	19	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	84	0
-	+	95	67
-	+	97	65
-	+	97	0
-	+	97	4
-	+	97	54
-	+	97	10
-	+	99	0
-	+	97	0
-	+	93	0
-	+	95	1
-	+	92	0
-	+	93	63
-	+	94	0
-	+	95	0
-	+	92	0
-	+	95	69
-	+	96	0
-	+	97	0
-	+	92	0
-	+	100	0
-	+	90	36
-	+	130	0
-	+	127	0
 
 > ~/.bash
 	*	1594146902	0
@@ -2084,7 +2095,3 @@ $
 > ~/git-repos/vimwiki/personal-md/productivity/gtd/reference/someday-maybe.md
 	*	1584291833	0
 	"	1	0
-
-> ~/git-repos/vimwiki/personal-md/technology/languages/python/python-index.md
-	*	1584291733	0
-	"	3	6
