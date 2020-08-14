@@ -21,11 +21,13 @@ $
 
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1594578233,,"wq!"
-:q
-|2,0,1594578150,,"q"
+|2,0,1594899981,,"wq!"
+:weq!
+|2,0,1594899979,,"weq!"
 :q!
-|2,0,1594577335,,"q!"
+|2,0,1594579158,,"q!"
+:q
+|2,0,1594579131,,"q"
 :Wq!
 |2,0,1594552375,,"Wq!"
 :PlugInstall
@@ -345,36 +347,154 @@ $
 |3,0,36,0,1,0,1594577593," "
 
 # File marks:
-'0  151  0  ~/.bashrc
-|4,48,151,0,1594578233,"~/.bashrc"
-'1  1  0  ~/.bash
-|4,49,1,0,1594578150,"~/.bash"
-'2  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
-|4,50,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
-'3  1  0  ~/development/dot-files/NERD_tree_1
-|4,51,1,0,1594578115,"~/development/dot-files/NERD_tree_1"
-'4  82  0  ~/.bashrc
-|4,52,82,0,1594577852,"~/.bashrc"
-'5  82  0  ~/.bashrc
-|4,53,82,0,1594577852,"~/.bashrc"
-'6  93  0  ~/.bashrc
-|4,54,93,0,1594577814,"~/.bashrc"
-'7  93  0  ~/.bashrc
-|4,55,93,0,1594577814,"~/.bashrc"
-'8  93  0  ~/.bashrc
-|4,56,93,0,1594577814,"~/.bashrc"
-'9  93  0  ~/.bashrc
-|4,57,93,0,1594577814,"~/.bashrc"
+'0  228  5  ~/.bashrc
+|4,48,228,5,1594899981,"~/.bashrc"
+'1  1  0  ~/development/vimwiki/personal-md/school/classes/classes-index.md
+|4,49,1,0,1594579158,"~/development/vimwiki/personal-md/school/classes/classes-index.md"
+'2  1  0  ~/vimwiki/personal-md/index.md
+|4,50,1,0,1594579131,"~/vimwiki/personal-md/index.md"
+'3  151  0  ~/.bashrc
+|4,51,151,0,1594578233,"~/.bashrc"
+'4  151  0  ~/.bashrc
+|4,52,151,0,1594578233,"~/.bashrc"
+'5  1  0  ~/.bash
+|4,53,1,0,1594578150,"~/.bash"
+'6  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,54,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+'7  1  0  ~/development/dot-files/NERD_tree_1
+|4,55,1,0,1594578115,"~/development/dot-files/NERD_tree_1"
+'8  82  0  ~/.bashrc
+|4,56,82,0,1594577852,"~/.bashrc"
+'9  82  0  ~/.bashrc
+|4,57,82,0,1594577852,"~/.bashrc"
 
 # Jumplist (newest first):
+-'  228  5  ~/.bashrc
+|4,39,228,5,1594899981,"~/.bashrc"
+-'  151  0  ~/.bashrc
+|4,39,151,0,1594899973,"~/.bashrc"
+-'  1  0  ~/development/vimwiki/personal-md/school/classes/classes-index.md
+|4,39,1,0,1594579158,"~/development/vimwiki/personal-md/school/classes/classes-index.md"
+-'  1  0  ~/development/vimwiki/personal-md/school/classes/classes-index.md
+|4,39,1,0,1594579158,"~/development/vimwiki/personal-md/school/classes/classes-index.md"
+-'  7  6  ~/development/vimwiki/personal-md/index.md
+|4,39,7,6,1594579155,"~/development/vimwiki/personal-md/index.md"
+-'  7  6  ~/development/vimwiki/personal-md/index.md
+|4,39,7,6,1594579155,"~/development/vimwiki/personal-md/index.md"
+-'  1  0  ~/vimwiki/personal-md/index.md
+|4,39,1,0,1594579131,"~/vimwiki/personal-md/index.md"
+-'  1  0  ~/vimwiki/personal-md/index.md
+|4,39,1,0,1594579131,"~/vimwiki/personal-md/index.md"
+-'  1  0  ~/vimwiki/personal-md/index.md
+|4,39,1,0,1594579131,"~/vimwiki/personal-md/index.md"
+-'  1  0  ~/vimwiki/personal-md/index.md
+|4,39,1,0,1594579131,"~/vimwiki/personal-md/index.md"
 -'  151  0  ~/.bashrc
 |4,39,151,0,1594578233,"~/.bashrc"
+-'  151  0  ~/.bashrc
+|4,39,151,0,1594578233,"~/.bashrc"
+-'  151  0  ~/.bashrc
+|4,39,151,0,1594578233,"~/.bashrc"
+-'  151  0  ~/.bashrc
+|4,39,151,0,1594578233,"~/.bashrc"
+-'  82  0  ~/.bashrc
+|4,39,82,0,1594578152,"~/.bashrc"
+-'  82  0  ~/.bashrc
+|4,39,82,0,1594578152,"~/.bashrc"
+-'  82  0  ~/.bashrc
+|4,39,82,0,1594578152,"~/.bashrc"
+-'  82  0  ~/.bashrc
+|4,39,82,0,1594578152,"~/.bashrc"
 -'  82  0  ~/.bashrc
 |4,39,82,0,1594578152,"~/.bashrc"
 -'  1  0  ~/.bash
 |4,39,1,0,1594578150,"~/.bash"
 -'  1  0  ~/.bash
 |4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1594578150,"~/.bash"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
 -'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
 |4,39,168,0,1594578138,"~/development/dot-files/bash-configs/wsl-bashrc"
 -'  168  0  ~/development/dot-files/bash-configs/wsl-bashrc
@@ -391,191 +511,72 @@ $
 |4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
 -'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
 |4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
+-'  1  0  ~/development/dot-files/bash-configs/wsl-bashrc
+|4,39,1,0,1594578119,"~/development/dot-files/bash-configs/wsl-bashrc"
 -'  1  0  ~/development/dot-files/NERD_tree_1
 |4,39,1,0,1594578115,"~/development/dot-files/NERD_tree_1"
--'  1  0  ~/development/dot-files/NERD_tree_1
-|4,39,1,0,1594578115,"~/development/dot-files/NERD_tree_1"
--'  1  0  ~/development/dot-files/NERD_tree_1
-|4,39,1,0,1594578115,"~/development/dot-files/NERD_tree_1"
--'  1  0  ~/development/dot-files/NERD_tree_1
-|4,39,1,0,1594578115,"~/development/dot-files/NERD_tree_1"
--'  1  0  ~/development/dot-files/NERD_tree_1
-|4,39,1,0,1594578115,"~/development/dot-files/NERD_tree_1"
--'  1  0  ~/development/dot-files/NERD_tree_1
-|4,39,1,0,1594578115,"~/development/dot-files/NERD_tree_1"
--'  1  0  ~/development/dot-files/NERD_tree_1
-|4,39,1,0,1594578115,"~/development/dot-files/NERD_tree_1"
--'  1  0  ~/development/dot-files/NERD_tree_1
-|4,39,1,0,1594578115,"~/development/dot-files/NERD_tree_1"
--'  30  2  ~/development/dot-files/NERD_tree_1
-|4,39,30,2,1594578114,"~/development/dot-files/NERD_tree_1"
--'  30  2  ~/development/dot-files/NERD_tree_1
-|4,39,30,2,1594578114,"~/development/dot-files/NERD_tree_1"
--'  30  2  ~/development/dot-files/NERD_tree_1
-|4,39,30,2,1594578114,"~/development/dot-files/NERD_tree_1"
--'  30  2  ~/development/dot-files/NERD_tree_1
-|4,39,30,2,1594578114,"~/development/dot-files/NERD_tree_1"
--'  30  2  ~/development/dot-files/NERD_tree_1
-|4,39,30,2,1594578114,"~/development/dot-files/NERD_tree_1"
--'  30  2  ~/development/dot-files/NERD_tree_1
-|4,39,30,2,1594578114,"~/development/dot-files/NERD_tree_1"
--'  30  2  ~/development/dot-files/NERD_tree_1
-|4,39,30,2,1594578114,"~/development/dot-files/NERD_tree_1"
--'  30  2  ~/development/dot-files/NERD_tree_1
-|4,39,30,2,1594578114,"~/development/dot-files/NERD_tree_1"
--'  82  0  ~/.bashrc
-|4,39,82,0,1594577852,"~/.bashrc"
--'  82  0  ~/.bashrc
-|4,39,82,0,1594577852,"~/.bashrc"
--'  82  0  ~/.bashrc
-|4,39,82,0,1594577852,"~/.bashrc"
--'  82  0  ~/.bashrc
-|4,39,82,0,1594577852,"~/.bashrc"
--'  82  0  ~/.bashrc
-|4,39,82,0,1594577852,"~/.bashrc"
--'  82  0  ~/.bashrc
-|4,39,82,0,1594577852,"~/.bashrc"
--'  82  0  ~/.bashrc
-|4,39,82,0,1594577852,"~/.bashrc"
--'  82  0  ~/.bashrc
-|4,39,82,0,1594577852,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577819,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577819,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577819,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577819,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577819,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577819,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577819,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577819,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577819,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577814,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577814,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577814,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577814,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577814,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577814,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577814,"~/.bashrc"
--'  93  0  ~/.bashrc
-|4,39,93,0,1594577814,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  4  ~/.bashrc
-|4,39,91,4,1594577790,"~/.bashrc"
--'  91  209  ~/.bashrc
-|4,39,91,209,1594577731,"~/.bashrc"
--'  91  209  ~/.bashrc
-|4,39,91,209,1594577731,"~/.bashrc"
--'  91  209  ~/.bashrc
-|4,39,91,209,1594577731,"~/.bashrc"
--'  91  209  ~/.bashrc
-|4,39,91,209,1594577731,"~/.bashrc"
--'  91  209  ~/.bashrc
-|4,39,91,209,1594577731,"~/.bashrc"
--'  91  209  ~/.bashrc
-|4,39,91,209,1594577731,"~/.bashrc"
--'  91  209  ~/.bashrc
-|4,39,91,209,1594577731,"~/.bashrc"
--'  91  209  ~/.bashrc
-|4,39,91,209,1594577731,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
--'  73  8  ~/.bashrc
-|4,39,73,8,1594577715,"~/.bashrc"
 
 # History of marks within files (newest to oldest):
 
 > ~/.bashrc
-	*	1594578232	0
-	"	151	0
-	^	151	0
-	.	152	0
-	+	92	354
+	*	1594899980	0
+	"	228	5
+	^	228	6
+	.	228	5
 	+	92	351
 	+	93	0
 	+	92	0
@@ -675,7 +676,20 @@ $
 	+	82	0
 	+	150	139
 	+	152	0
+	+	228	5
 	z	72	8
+
+> ~/development/vimwiki/personal-md/school/classes/classes-index.md
+	*	1594579156	0
+	"	1	0
+
+> ~/development/vimwiki/personal-md/index.md
+	*	1594579154	0
+	"	7	6
+
+> ~/vimwiki/personal-md/index.md
+	*	1594579130	0
+	"	1	0
 
 > ~/.bash
 	*	1594578149	0
@@ -817,10 +831,6 @@ $
 > ~/development/vimwiki/documentation-md/infrastructure/wireless-access.md
 	*	1590254190	0
 	"	1	0
-
-> ~/development/vimwiki/personal-md/index.md
-	*	1590253624	0
-	"	7	6
 
 > ~/vimwiki/documentation-md/index.md
 	*	1590253440	0
@@ -2067,20 +2077,3 @@ $
 	+	9	37
 	+	9	0
 	+	8	47
-
-> /tmp/crontab.KtaJMq
-	*	1584316570	0
-	"	1	0
-
-> ~/git-repos/vimwiki/personal-md/blog/topics.md
-	*	1584294202	0
-	"	46	18
-	^	46	19
-	.	46	18
-	+	40	0
-	+	41	22
-	+	42	30
-	+	43	21
-	+	44	15
-	+	45	15
-	+	46	18
