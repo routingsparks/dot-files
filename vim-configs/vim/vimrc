@@ -165,3 +165,4 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown'
 autocmd FileType yaml setlocal et ts=2 ai sw=2 nu sts=0
 autocmd FileType yml setlocal et ts=2 ai sw=2 nu sts=0
 
+set t_u7=
