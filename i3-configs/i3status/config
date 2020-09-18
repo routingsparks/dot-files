@@ -31,7 +31,7 @@ order += "tztime local"
 #order += "run_watch VPN"
 
 volume master {
-    device = "pulse:0"
+    device = "pulse:1"
 	mixer = "Master"
 	mixer_idx = 0
 	format = "vol: %volume "

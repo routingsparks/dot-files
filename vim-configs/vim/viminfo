@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<mode\>
+~MSle0~/timeout
 
 # Last Substitute Search Pattern:
 ~MSle0&{{ domain }}
@@ -20,12 +20,22 @@
 ${{ fqdn }}
 
 # Command Line History (newest to oldest):
-:wq!
-|2,0,1598092692,,"wq!"
 :q
-|2,0,1598092109,,"q"
+|2,0,1600440991,,"q"
+:wq!
+|2,0,1600440914,,"wq!"
 :q!
-|2,0,1598090665,,"q!"
+|2,0,1600440240,,"q!"
+:w
+|2,0,1599996173,,"w"
+:%s/fqdn/domain_krb5/g
+|2,0,1599995573,,"%s/fqdn/domain_krb5/g"
+:!
+|2,0,1599994401,,"!"
+:PlugInstall
+|2,0,1599606074,,"PlugInstall"
+:PlugClean
+|2,0,1599606069,,"PlugClean"
 ::noh
 |2,0,1598030987,,":noh"
 :%s/{{ domain }}/{{ fqdn }}/g
@@ -34,14 +44,8 @@ ${{ fqdn }}
 |2,0,1598017235,,"noh"
 :u
 |2,0,1598005588,,"u"
-:w
-|2,0,1598003595,,"w"
-:PlugInstall
-|2,0,1597947463,,"PlugInstall"
 :PlugSnapshot
 |2,0,1597947452,,"PlugSnapshot"
-:PlugClean
-|2,0,1597947447,,"PlugClean"
 :q1
 |2,0,1597946633,,"q1"
 :weq!
@@ -222,6 +226,10 @@ ${{ fqdn }}
 |2,0,1576682436,,"tabmove                \" moves tabs,tm"
 
 # Search String History (newest to oldest):
+? fqdn
+|2,1,1599995573,,"fqdn"
+?/timeout
+|2,1,1599745822,47,"timeout"
 ? \<mode\>
 |2,1,1598030984,,"\\<mode\\>"
 ? {{ domain }}
@@ -307,7 +315,7 @@ ${{ fqdn }}
 
 # Input Line History (newest to oldest):
 @y
-|2,3,1597946619,,"y"
+|2,3,1599606071,,"y"
 @:y
 |2,3,1588721643,,":y"
 @yes
@@ -329,394 +337,530 @@ ${{ fqdn }}
 
 # Registers:
 "0	LINE	0
-	- name: Join Active Directory domain
-	  shell: |
-	    #realm join --user={{ ad_user}} {{ fqdn }}
-	    #expect "Password for {{ ad_user }}:"
-	    #send "{{ ad_pass }}"
-	    #args:
-	      #executable: /usr/bin/expect
-|3,0,0,1,7,0,1598092165,"- name: Join Active Directory domain","  shell: |","    #realm join --user={{ ad_user}} {{ fqdn }}","    #expect \"Password for {{ ad_user }}:\"","    #send \"{{ ad_pass }}\"","    #args:","      #executable: /usr/bin/expect"
+	267
+<xrandr --output eDP-1 --off --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off --output DP-1-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-2 --off --output DP-1-3 --mode 1920x1080 --pos 0x0 --rotate normal
+|3,0,0,1,1,0,1599782035,"xrandr --output eDP-1 --off --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off --output DP-1-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-2 --off --output DP-1-3 --mode 1920x1080 --pos 0x0 --rotate normal"
 "1	LINE	0
-	      Password for *: "{{ ad_pass }}"
-|3,0,1,1,1,0,1598092670,"      Password for *: \"{{ ad_pass }}\""
+	ldap_autofs_
+	ldap_autofs_
+|3,0,1,1,2,0,1599997338,"ldap_autofs_","ldap_autofs_"
 "2	LINE	0
-	    responses:
-|3,0,2,1,1,0,1598092670,"    responses:"
+	
+|3,0,2,1,1,0,1599997257,""
 "3	LINE	0
-	    command: /bin/bash -c "/usr/sbin/realm join --user=ADMINISTRATOR sparky.net}"
-|3,0,3,1,1,0,1598092670,"    command: /bin/bash -c \"/usr/sbin/realm join --user=ADMINISTRATOR sparky.net}\""
+	ldap_autofs_
+|3,0,3,1,1,0,1599997243,"ldap_autofs_"
 "4	LINE	0
-	  expect:
-|3,0,4,1,1,0,1598092669,"  expect:"
+	
+|3,0,4,1,1,0,1599997187,""
 "5	LINE	0
-	- name: Join Active Directory Domain
-|3,0,5,1,1,0,1598092669,"- name: Join Active Directory Domain"
+	
+|3,0,5,1,1,0,1599997187,""
 "6	LINE	0
-	      executable: /usr/bin/expect
-|3,0,6,1,1,0,1598092236,"      executable: /usr/bin/expect"
+	dyndns_update = true
+	dyndns_refresh_interval = 43200
+	dyndns_update_ptr = true
+	dyndns_ttl = 3600
+|3,0,6,1,4,0,1599997131,"dyndns_update = true","dyndns_refresh_interval = 43200","dyndns_update_ptr = true","dyndns_ttl = 3600"
 "7	LINE	0
-	    args:
-|3,0,7,1,1,0,1598092235,"    args:"
+	ldap_schema = ad
+|3,0,7,1,1,0,1599997130,"ldap_schema = ad"
 "8	LINE	0
-	    send "N3wP@$$w0rd12!"
-|3,0,8,1,1,0,1598092235,"    send \"N3wP@$$w0rd12!\""
+	ldap_schema = ad
+|3,0,8,1,1,0,1599997123,"ldap_schema = ad"
 "9	LINE	0
-	    expect "Password for ad.admin:"
-|3,0,9,1,1,0,1598092235,"    expect \"Password for ad.admin:\""
+	access_provider = ldap
+|3,0,9,1,1,0,1599997123,"access_provider = ldap"
 ""-	CHAR	0
-	#
-|3,1,36,0,1,0,1598092675,"#"
+	.
+|3,1,36,0,1,0,1600018781,"."
 
 # File marks:
-'0  33  5  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,48,33,5,1598092692,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
-'1  42  80  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,49,42,80,1598092449,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
-'2  44  80  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,50,44,80,1598092449,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
-'3  42  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,51,42,4,1598092180,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
-'4  42  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,52,42,4,1598092180,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
-'5  42  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,53,42,4,1598092180,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
-'6  44  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,54,44,4,1598092180,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
-'7  42  15  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,55,42,15,1598092109,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
-'8  42  15  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,56,42,15,1598092109,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
-'9  42  15  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,57,42,15,1598092109,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
+'0  52  0  ~/.xinitrc
+|4,48,52,0,1600440991,"~/.xinitrc"
+'1  89  22  ~/.Xresources
+|4,49,89,22,1600440914,"~/.Xresources"
+'2  1  0  ~/.Xresources
+|4,50,1,0,1600440823,"~/.Xresources"
+'3  1  0  ~/.Xresources
+|4,51,1,0,1600440823,"~/.Xresources"
+'4  52  0  ~/.xinitrc
+|4,52,52,0,1600440795,"~/.xinitrc"
+'5  1  0  /etc/dockd/undocked.confdocked.conf
+|4,53,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+'6  1  0  /etc/dockd/docked.conf
+|4,54,1,0,1600440234,"/etc/dockd/docked.conf"
+'7  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,55,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+'8  55  0  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/sssd.conf.j2
+|4,56,55,0,1600014276,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/sssd.conf.j2"
+'9  19  24  ~/.ansible/tmp/ansible-local-1135901ppe5jl/tmp18obe471.yml
+|4,57,19,24,1600014266,"~/.ansible/tmp/ansible-local-1135901ppe5jl/tmp18obe471.yml"
 
 # Jumplist (newest first):
--'  33  5  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,33,5,1598092692,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  42  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,42,4,1598092654,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  44  80  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,44,80,1598092449,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  42  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,42,4,1598092214,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  44  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,44,4,1598092180,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  42  15  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,42,15,1598092109,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  46  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,46,4,1598092085,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  44  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,44,4,1598092085,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  44  23  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,44,23,1598092038,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  45  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,45,4,1598091978,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  43  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,43,4,1598091978,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  43  4  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,43,4,1598091978,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  1  0  ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-|4,39,1,0,1598091952,"~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml"
--'  38  5  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,38,5,1598091831,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  38  5  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,38,5,1598091831,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  38  5  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,38,5,1598091831,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  38  5  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,38,5,1598091831,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  38  5  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,38,5,1598091831,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  44  6  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,44,6,1598091668,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  49  6  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,49,6,1598091668,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  47  6  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,47,6,1598091668,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  47  6  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,47,6,1598091668,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  42  6  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,42,6,1598091668,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  42  6  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,42,6,1598091668,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  45  36  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,45,36,1598091637,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  43  36  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,43,36,1598091637,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  47  36  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,47,36,1598091637,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  50  36  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,50,36,1598091637,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  48  36  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,48,36,1598091637,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  52  36  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,52,36,1598091637,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  47  36  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,47,36,1598091637,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  50  36  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,50,36,1598091637,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  45  36  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,45,36,1598091637,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  50  36  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,50,36,1598091637,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  45  36  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,45,36,1598091637,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  45  36  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,45,36,1598091637,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  40  52  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,40,52,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  41  43  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,41,43,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  40  52  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,40,52,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  41  43  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,41,43,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  48  43  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,48,43,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  46  43  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,46,43,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  40  52  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,40,52,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  41  43  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,41,43,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  45  52  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,45,52,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  46  43  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,46,43,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  40  52  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,40,52,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  41  43  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,41,43,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  40  52  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,40,52,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  41  43  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,41,43,1598091516,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  50  24  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,50,24,1598091394,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  48  24  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,48,24,1598091394,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  48  24  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,48,24,1598091394,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  43  24  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,43,24,1598091394,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  43  24  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,43,24,1598091394,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  35  45  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,35,45,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  36  18  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,36,18,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  37  8  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,37,8,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  35  45  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,35,45,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  36  18  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,36,18,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  43  9  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,43,9,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  36  9  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,36,9,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  37  8  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,37,8,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  36  9  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,36,9,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  37  8  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,37,8,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  36  9  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,36,9,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  37  8  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,37,8,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  36  9  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,36,9,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
--'  37  8  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-|4,39,37,8,1598091363,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml"
+-'  52  0  ~/.xinitrc
+|4,39,52,0,1600440991,"~/.xinitrc"
+-'  89  22  ~/.Xresources
+|4,39,89,22,1600440914,"~/.Xresources"
+-'  89  22  ~/.Xresources
+|4,39,89,22,1600440914,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1600440868,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1600440868,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1600440823,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1600440823,"~/.Xresources"
+-'  52  0  ~/.xinitrc
+|4,39,52,0,1600440795,"~/.xinitrc"
+-'  52  0  ~/.xinitrc
+|4,39,52,0,1600440795,"~/.xinitrc"
+-'  52  0  ~/.xinitrc
+|4,39,52,0,1600440795,"~/.xinitrc"
+-'  52  0  ~/.xinitrc
+|4,39,52,0,1600440795,"~/.xinitrc"
+-'  1  0  ~/.xinitrc
+|4,39,1,0,1600440788,"~/.xinitrc"
+-'  1  0  ~/.xinitrc
+|4,39,1,0,1600440788,"~/.xinitrc"
+-'  1  0  ~/.xinitrc
+|4,39,1,0,1600440788,"~/.xinitrc"
+-'  1  0  ~/.xinitrc
+|4,39,1,0,1600440788,"~/.xinitrc"
+-'  1  0  ~/.xinitrc
+|4,39,1,0,1600440788,"~/.xinitrc"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/undocked.confdocked.conf
+|4,39,1,0,1600440240,"/etc/dockd/undocked.confdocked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  1  0  /etc/dockd/docked.conf
+|4,39,1,0,1600440234,"/etc/dockd/docked.conf"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
+-'  30  14  ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+|4,39,30,14,1600018793,"~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2"
 
 # History of marks within files (newest to oldest):
 
-> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
-	*	1598092691	0
-	"	33	5
-	^	33	6
-	.	33	0
-	+	27	0
-	+	15	11
-	+	27	33
-	+	27	0
-	+	27	70
-	+	44	30
-	+	10	13
-	+	30	0
-	+	28	10
-	+	27	28
-	+	26	0
-	+	43	65
-	+	27	36
-	+	18	33
-	+	13	30
-	+	3	66
-	+	45	96
-	+	46	0
-	+	45	42
-	+	47	0
-	+	47	18
-	+	49	36
-	+	50	24
-	+	53	13
-	+	64	0
-	+	28	10
-	+	53	4
-	+	54	12
-	+	27	0
-	+	27	37
-	+	28	10
-	+	30	0
-	+	31	0
-	+	32	0
-	+	32	9
-	+	42	44
-	+	42	55
-	+	42	41
-	+	42	44
-	+	42	10
-	+	42	32
-	+	42	7
-	+	42	13
-	+	42	0
-	+	42	44
-	+	42	53
-	+	42	68
-	+	42	2
-	+	42	0
-	+	42	4
-	+	42	9
-	+	42	28
-	+	42	44
-	+	42	0
-	+	42	79
-	+	42	17
-	+	42	79
-	+	42	36
-	+	42	0
-	+	42	2
-	+	42	4
-	+	42	9
-	+	42	0
-	+	42	4
-	+	42	0
-	+	42	4
-	+	42	6
-	+	42	36
-	+	42	32
-	+	42	23
-	+	35	0
-	+	35	36
-	+	42	0
-	+	35	0
-	+	35	36
-	+	36	0
-	+	37	0
-	+	38	4
-	+	39	4
-	+	40	4
-	+	41	6
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	39	0
-	+	40	0
-	+	41	0
-	+	42	0
-	+	42	80
-	+	42	0
-	+	27	0
-	+	27	37
-	+	28	0
-	+	29	0
-	+	30	4
-	+	31	4
-	+	32	4
-	+	33	0
+> ~/.xinitrc
+	*	1600440991	0
+	"	52	0
 
-> ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
-	*	1598091951	0
+> ~/.Xresources
+	*	1600440914	0
+	"	89	22
+	^	89	23
+	.	89	22
+	+	89	22
+
+> /etc/dockd/undocked.confdocked.conf
+	*	1600440240	0
 	"	1	0
 
-> ~/.ansible/tmp/ansible-local-144376w4w_qh6/tmp8h9yvhp8.yml
-	*	1598090664	0
-	"	8	8
-	^	8	9
-	.	8	9
-	+	8	0
-	+	7	0
-	+	9	0
-	+	8	9
+> /etc/dockd/docked.conf
+	*	1600440233	0
+	"	1	0
+
+> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
+	*	1600018791	0
+	"	30	14
+	^	27	1
+	.	30	14
+	+	2	44
+	+	12	32
+	+	13	23
+	+	12	13
+	+	14	21
+	+	19	23
+	+	24	11
+	+	25	29
+	+	26	29
+	+	25	0
+	+	26	0
+	+	27	0
+	+	26	0
+	+	25	0
+	+	27	0
+	+	31	26
+	+	32	0
+	+	21	0
+	+	2	42
+	+	12	0
+	+	26	24
+	+	12	31
+	+	24	0
+	+	12	19
+	+	19	4
+	+	24	0
+	+	30	3
+	+	24	2
+	+	30	19
+	+	31	2
+	+	12	17
+	+	24	0
+	+	30	1
+	+	31	0
+	+	30	14
+
+> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/sssd.conf.j2
+	*	1600014275	0
+	"	55	0
+	.	26	0
+	+	5	23
+	+	48	0
+	+	40	16
+	+	47	4
+	+	4	24
+	+	54	74
+	+	54	28
+	+	54	23
+	+	54	19
+	+	54	24
+	+	6	16
+	+	8	14
+	+	54	32
+	+	54	0
+	+	54	28
+	+	54	0
+	+	54	36
+	+	41	14
+	+	41	16
+	+	41	18
+	+	41	33
+	+	48	29
+	+	4	24
+	+	6	12
+	+	54	0
+	+	54	7
+	+	6	10
+	+	54	0
+	+	54	23
+	+	54	0
+	+	55	0
+	+	54	0
+	+	48	0
+	+	41	0
+	+	40	0
+	+	40	22
+	+	40	23
+	+	40	32
+	+	40	16
+	+	55	0
+	+	4	26
+	+	8	21
+	+	40	17
+	+	40	18
+	+	40	21
+	+	40	33
+	+	40	31
+	+	6	12
+	+	8	29
+	+	10	30
+	+	11	13
+	+	41	25
+	+	40	0
+	+	13	0
+	+	27	12
+	+	38	27
+	+	19	38
+	+	16	18
+	+	40	0
+	+	45	33
+	+	40	0
+	+	51	0
+	+	50	29
+	+	21	0
+	+	27	0
+	+	26	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	21	25
+	+	20	17
+	+	21	51
+	+	22	42
+	+	23	39
+	+	24	23
+	+	23	32
+	+	24	35
+	+	25	45
+	+	26	0
+
+> ~/.ansible/tmp/ansible-local-1135901ppe5jl/tmp18obe471.yml
+	*	1600014266	0
+	"	19	24
+	^	19	25
+	.	19	24
+	+	19	24
+
+> ~/.ansible/tmp/ansible-local-8677gotg9ra4/tmpcujxlos3.yml
+	*	1599995696	0
+	"	1	0
+
+> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/asset_config.yml
+	*	1599995375	0
+	"	48	10
+	^	48	11
+	.	48	10
+	+	36	0
+	+	36	79
+	+	36	17
+	+	36	79
+	+	36	36
+	+	36	0
+	+	36	2
+	+	36	4
+	+	36	9
+	+	36	0
+	+	36	4
+	+	36	0
+	+	36	4
+	+	36	6
+	+	36	36
+	+	36	32
+	+	36	23
+	+	31	0
+	+	31	36
+	+	36	0
+	+	31	0
+	+	31	36
+	+	31	10
+	+	31	4
+	+	31	15
+	+	31	0
+	+	31	36
+	+	31	10
+	+	31	0
+	+	31	9
+	+	36	0
+	+	36	80
+	+	36	0
+	+	31	0
+	+	31	37
+	+	31	0
+	+	31	4
+	+	31	0
+	+	31	4
+	+	31	0
+	+	31	48
+	+	31	39
+	+	31	45
+	+	31	25
+	+	31	8
+	+	31	4
+	+	31	0
+	+	36	109
+	+	36	0
+	+	36	149
+	+	36	0
+	+	36	2
+	+	36	140
+	+	36	32
+	+	36	0
+	+	31	0
+	+	31	46
+	+	31	36
+	+	31	61
+	+	31	68
+	+	36	0
+	+	31	101
+	+	31	36
+	+	31	78
+	+	31	36
+	+	35	0
+	+	31	32
+	+	31	0
+	+	32	86
+	+	31	0
+	+	39	9
+	+	31	0
+	+	32	0
+	+	31	0
+	+	32	2
+	+	27	58
+	+	30	0
+	+	34	9
+	+	32	88
+	+	28	20
+	+	48	10
+
+> ~/.ansible/tmp/ansible-local-750277pegvdy/tmpcvakfvv0.yml
+	*	1599994484	0
+	"	1	2
+	^	1	3
+	.	4	18
+	+	18	20
+	+	11	0
+	+	12	30
+	+	16	0
+	+	4	18
 
 > ~/development/ansible/playbooks/ad-integration/site.yml
-	*	1598035115	0
-	"	6	4
-	^	8	5
+	*	1599994427	0
+	"	8	4
+	^	7	5
 	.	8	4
 	+	8	140
 	+	2	0
@@ -801,9 +945,312 @@ ${{ fqdn }}
 	+	4	0
 	+	5	13
 	+	8	4
+	+	7	4
+	+	8	4
+
+> ~/.ansible/tmp/ansible-local-7478h2jjsssm/tmppyfej_ym.yml
+	*	1599993316	0
+	"	8	47
+	^	8	48
+	.	8	47
+	+	9	22
+	+	8	47
+
+> ~/.ansible/tmp/ansible-local-6689cqnk1l1c/tmp8lh0biov.yml
+	*	1599993163	0
+	"	11	18
+	^	11	19
+	.	11	33
+	+	11	33
+
+> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/sudoers.j2
+	*	1599992654	0
+	"	120	0
+	^	108	32
+	.	108	31
+	+	108	31
+
+> ~/.ansible/tmp/ansible-local-6666zih4se1a/tmpbnhx18fu.yml
+	*	1599992563	0
+	"	10	0
+	^	1	0
+
+> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
+	*	1599992490	0
+	"	8	2
+	^	8	27
+	.	8	26
+	+	4	8
+	+	6	57
+	+	7	0
+	+	9	37
+	+	9	14
+	+	9	16
+	+	11	0
+	+	2	24
+	+	4	66
+	+	5	31
+	+	8	26
+
+> ~/.ansible/tmp/ansible-local-5855513hyi3k/tmpz1myoeot.yml
+	*	1599992302	0
+	"	1	0
+
+> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/sudoers.yml
+	*	1599991974	0
+	"	11	28
+	^	11	29
+	.	11	28
+	+	2	0
+	+	3	0
+	+	9	13
+	+	5	36
+	+	6	19
+	+	3	18
+	+	13	0
+	+	3	26
+	+	5	39
+	+	6	21
+	+	9	12
+	+	11	28
+
+> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/nsswitch.conf.j2
+	*	1599991785	0
+	"	51	0
+	.	45	0
+	+	45	0
+
+> ~/development/ansible/playbooks/ad-integration/production
+	*	1599990286	0
+	"	3	0
+	^	3	1
+	.	3	0
+	+	2	12
+	+	2	0
+	+	3	0
+	+	4	0
+	+	3	0
+
+> ~/development/dot-files/i3-configs/config
+	*	1599989687	0
+	"	298	0
+	.	298	0
+	+	297	49
+	+	260	88
+	+	298	0
+
+> ~/.ansible/tmp/ansible-local-21525qc1dmqiw/tmp2pndn94i.yml
+	*	1599853067	0
+	"	1	0
+
+> ~/.ansible/tmp/ansible-local-14676m4mqegcp/tmp_pt8iqg4.yml
+	*	1599851132	0
+	"	8	19
+	^	8	20
+	.	8	20
+	+	8	20
+
+> ~/bin/thinkpad-dock.sh
+	*	1599820396	0
+	"	77	0
+	^	8	16
+	.	3	0
+	+	87	3
+	+	11	13
+	+	88	0
+	+	72	14
+	+	72	0
+	+	71	6
+	+	65	0
+	+	65	27
+	+	66	29
+	+	67	27
+	+	68	29
+	+	69	79
+	+	62	0
+	+	89	0
+	+	43	28
+	+	43	5
+	+	43	28
+	+	43	65
+	+	44	27
+	+	45	29
+	+	46	27
+	+	47	29
+	+	48	29
+	+	49	29
+	+	40	70
+	+	60	67
+	+	40	44
+	+	60	38
+	+	72	16
+	+	3	0
+
+> ~/.ansible/tmp/ansible-local-385138qu5z06r/tmp2qxkjbne.yml
+	*	1599767201	0
+	"	1	0
+
+> ~/.ansible/tmp/ansible-local-36063v9myhl9d/tmpssgaxb0b.yml
+	*	1599767130	0
+	"	7	0
+
+> ~/development/ansible/playbooks/ad-integration/roles/common/tasks/asset_config.yml
+	*	1599762515	0
+	"	42	9
+	^	44	20
+	.	44	19
+	+	28	7
+	+	28	16
+	+	28	0
+	+	28	4
+	+	28	7
+	+	28	15
+	+	28	9
+	+	28	17
+	+	28	18
+	+	28	13
+	+	28	4
+	+	28	19
+	+	28	5
+	+	28	25
+	+	28	17
+	+	3	0
+	+	4	0
+	+	4	11
+	+	5	0
+	+	6	2
+	+	7	2
+	+	8	2
+	+	9	2
+	+	10	2
+	+	11	2
+	+	12	2
+	+	13	2
+	+	14	2
+	+	15	2
+	+	16	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	4
+	+	22	4
+	+	23	4
+	+	24	4
+	+	25	4
+	+	26	4
+	+	26	13
+	+	26	2
+	+	27	0
+	+	28	4
+	+	28	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	2
+	+	7	2
+	+	8	2
+	+	9	2
+	+	10	2
+	+	11	2
+	+	12	2
+	+	13	2
+	+	14	2
+	+	15	2
+	+	16	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	27	20
+	+	39	0
+	+	35	0
+	+	33	17
+	+	35	6
+	+	34	47
+	+	39	23
+	+	35	6
+	+	35	14
+	+	35	6
+	+	35	16
+	+	36	18
+	+	35	8
+	+	36	8
+	+	35	0
+	+	38	22
+	+	30	0
+	+	39	24
+	+	39	0
+	+	38	2
+	+	39	0
+	+	29	1
+	+	40	0
+	+	39	9
+	+	29	0
+	+	40	9
+	+	39	4
+	+	40	6
+	+	39	2
+	+	40	4
+	+	39	0
+	+	40	0
+	+	44	19
+
+> ~/development/ansible/playbooks/ad-integration/roles/common/handlers/main.yml
+	*	1599761704	0
+	"	4	17
+	^	4	18
+	.	4	17
+	+	2	0
+	+	2	26
+	+	3	1
+	+	7	19
+	+	4	17
+
+> ~/development/ansible/playbooks/ad-integration/roles/common/defaults/main.yml
+	*	1599760950	0
+	"	11	0
+	^	11	19
+	.	11	18
+	+	2	0
+	+	13	1
+	+	13	0
+	+	17	11
+	+	16	9
+	+	17	17
+	+	16	22
+	+	17	28
+	+	18	23
+	+	19	27
+	+	16	2
+	+	17	3
+	+	18	3
+	+	19	3
+	+	6	1
+	+	7	13
+	+	7	33
+	+	8	22
+	+	9	0
+	+	12	0
+	+	10	0
+	+	11	0
+	+	10	3
+	+	11	3
+	+	7	27
+	+	10	19
+	+	11	19
+	+	10	18
+	+	11	19
+	+	7	42
+	+	10	20
+	+	11	18
 
 > ~/development/ansible/playbooks/ad-integration/roles/common/templates/resolv.conf.j2
-	*	1598032265	0
+	*	1599749717	0
 	"	6	0
 	.	7	0
 	+	4	23
@@ -816,39 +1263,9 @@ ${{ fqdn }}
 	+	6	0
 	+	7	0
 
-> ~/development/ansible/playbooks/ad-integration/roles/common/tasks/asset_config.yml
-	*	1598032256	0
-	"	27	0
-	^	27	4
-	.	3	0
-	+	3	46
-	+	3	28
-	+	3	31
-	+	3	24
-	+	3	28
-	+	3	25
-	+	3	21
-	+	3	17
-	+	3	46
-	+	3	6
-	+	3	0
-	+	3	2
-	+	3	0
-	+	3	4
-	+	3	0
-	+	3	2
-	+	3	0
-	+	3	4
-	+	3	0
-	+	3	51
-	+	16	0
-	+	20	46
-	+	27	14
-	+	3	0
-
 > ~/development/ansible/playbooks/ad-integration/roles/common/tasks/asset_update.yml
-	*	1598032238	0
-	"	2	0
+	*	1599749517	0
+	"	12	2
 	^	2	0
 	.	3	36
 	+	17	82
@@ -874,289 +1291,42 @@ ${{ fqdn }}
 	+	8	67
 	+	3	36
 
-> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/sssd.conf.j2
-	*	1598031743	0
-	"	46	0
-	^	46	1
-	.	46	0
-	+	5	23
-	+	24	0
-	+	9	16
-	+	20	4
-	+	4	24
-	+	31	74
-	+	41	28
-	+	38	23
-	+	37	19
-	+	30	24
-	+	6	16
-	+	8	14
-	+	41	32
-	+	42	0
-	+	46	28
-	+	41	0
-	+	31	0
-	+	32	0
-	+	33	36
-	+	15	14
-	+	14	16
-	+	16	18
-	+	15	18
-	+	18	33
-	+	23	29
-	+	4	24
-	+	6	12
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	39	0
-	+	40	0
-	+	41	0
-	+	42	0
-	+	43	0
-	+	44	0
-	+	45	0
-	+	46	0
+> ~/development/ansible/playbooks/ad-integration/ansible.cfg
+	*	1599749448	0
+	"	103	11
+	^	103	12
+	.	103	11
+	+	12	0
+	+	103	11
+
+> ~/.ansible/tmp/ansible-local-14126isutvhz7/tmp8_mpqlxn.yml
+	*	1599748253	0
+	"	10	0
 
 > ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/nsswitch.conf
-	*	1598030497	0
-	"	60	17
+	*	1599747954	0
+	"	68	0
 	^	60	18
 	.	62	17
 	+	40	20
 	+	39	0
 	+	62	17
 
-> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/sudoers.j2
-	*	1598030208	0
-	"	108	31
-	^	108	32
-	.	108	31
-	+	108	31
+> ~/.ansible/tmp/ansible-local-132302h2blpnt/tmprrlsezt4.yml
+	*	1599747790	0
+	"	6	12
+	^	6	13
+	.	6	12
+	+	6	12
 
-> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/templates/krb5.conf.j2
-	*	1598030192	0
-	"	31	0
-	^	2	42
-	.	12	0
-	+	2	44
-	+	12	32
-	+	13	23
-	+	12	13
-	+	14	21
-	+	19	23
-	+	24	11
-	+	25	29
-	+	26	29
-	+	25	0
-	+	26	0
-	+	27	0
-	+	26	0
-	+	25	0
-	+	27	0
-	+	31	26
-	+	32	0
-	+	21	0
-	+	2	42
-	+	12	0
-
-> ~/.ansible/tmp/ansible-local-12506wee850bh/tmpte2p5z9g.yml
-	*	1598030141	0
-	"	6	3
-	^	6	4
-	.	6	3
-	+	6	3
-
-> ~/.ansible/tmp/ansible-local-12491m0mjdktl/tmpu0skwos_.yml
-	*	1598029729	0
-	"	1	0
-
-> ~/.ansible/tmp/ansible-local-12460slu2yd55/tmp3h7688f4.yml
-	*	1598029545	0
-	"	9	23
-	^	9	24
-	.	9	23
-	+	9	23
-
-> ~/.ansible/tmp/ansible-local-12448wficd87g/tmpsp1i6r9z.yml
-	*	1598029513	0
-	"	9	29
-	^	9	30
-	.	9	29
-	+	9	29
-
-> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/sudoers.yml
-	*	1598029370	0
-	"	10	14
-	^	10	15
-	.	9	12
-	+	2	0
-	+	3	0
-	+	9	13
-	+	5	36
-	+	6	19
-	+	3	18
-	+	12	0
-	+	3	26
-	+	5	39
-	+	6	21
-	+	9	12
-
-> ~/.ansible/tmp/ansible-local-119412geffoj4/tmpppp04160.yml
-	*	1598028580	0
-	"	5	18
-	^	5	19
-	.	5	18
-	+	5	18
-
-> /usr/share/vim/vim82/doc/help.txt
-	*	1598018576	0
-	"	1	0
-
-> ~/development/ansible/playbooks/ad-integration/ansible.cfg
-	*	1598015933	0
-	"	12	0
-	^	12	0
-	.	12	0
-	+	12	0
-
-> ~/development/ansible/playbooks/ad-integration/production
-	*	1598015837	0
-	"	3	0
-	.	4	0
-	+	2	12
-	+	2	0
-	+	3	0
-	+	4	0
-
-> ~/.ansible/tmp/ansible-local-6804efm672ia/tmpqawlin6q.yml
-	*	1598009867	0
-	"	4	0
-
-> ~/.ansible/tmp/ansible-local-678059enpkep/tmpv53z8kpr.yml
-	*	1598009821	0
-	"	1	0
-
-> ~/.ansible/tmp/ansible-local-6769_aoz8o_e/tmphsa3a2wj.yml
-	*	1598009796	0
-	"	6	16
-	^	6	17
-	.	6	17
-	+	5	9
-	+	6	17
-
-> ~/development/ansible/playbooks/ad-integration/roles/common/defaults/main.yml
-	*	1598008949	0
-	"	11	3
-	^	11	4
-	.	11	3
-	+	2	0
-	+	13	1
-	+	13	0
-	+	17	11
-	+	16	9
-	+	17	17
-	+	16	22
-	+	17	28
-	+	18	23
-	+	19	27
-	+	16	2
-	+	17	3
-	+	18	3
-	+	19	3
-	+	6	1
-	+	7	13
-	+	7	33
-	+	8	22
-	+	9	0
-	+	12	0
-	+	10	0
-	+	11	0
-	+	10	3
-	+	11	3
-
-> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/defaults/main.yml
-	*	1598005918	0
-	"	4	0
-	^	4	18
-	.	4	17
-	+	2	27
-	+	3	0
-	+	2	0
-	+	4	17
-
-> ~/.ansible/tmp/ansible-local-5975_c0fbomk/tmpm8rldh06.yml
-	*	1598005906	0
-	"	6	21
-	^	6	22
-	.	6	21
-	+	6	21
-
-> ~/development/dot-files/vim-configs/vim/vimrc
-	*	1598005573	0
-	"	168	0
-	^	168	1
-	.	168	0
-	+	150	0
-	+	152	40
-	+	156	43
-	+	151	9
-	+	152	9
-	+	153	9
-	+	154	9
-	+	167	0
-	+	168	0
-
-> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/main.yml
-	*	1598005075	0
-	"	5	31
-	^	5	32
-	.	5	31
-	+	4	8
-	+	6	57
-	+	7	0
-	+	9	37
-	+	9	14
-	+	9	16
-	+	11	0
-	+	2	24
-	+	4	66
-	+	5	31
-
-> ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
-	*	1598004570	0
-	"	8	1
-	^	8	2
-	.	8	21
-	+	6	0
-	+	8	32
-	+	5	27
-	+	8	21
-
-> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/asset_config.yml
-	*	1598004336	0
+> ~/.ansible/tmp/ansible-local-126816urg6hvb/tmpzinmmj5l.yml
+	*	1599747130	0
 	"	5	0
-	^	5	0
-	.	4	0
-	+	4	0
-
-> ~/development/ansible/playbooks/ad-integration/roles/common/handlers/main.yml
-	*	1598003614	0
-	"	7	18
-	^	7	19
-	.	7	18
-	+	2	0
-	+	2	26
-	+	3	1
-	+	7	18
 
 > ~/.bashrc
-	*	1597948077	0
-	"	64	0
-	^	64	0
-	.	64	0
-	+	82	105
+	*	1599745792	0
+	"	183	0
+	.	184	0
 	+	82	76
 	+	82	153
 	+	82	94
@@ -1243,7 +1413,7 @@ ${{ fqdn }}
 	+	83	0
 	+	152	139
 	+	154	0
-	+	229	5
+	+	227	5
 	+	85	0
 	+	62	0
 	+	99	4
@@ -1256,7 +1426,179 @@ ${{ fqdn }}
 	+	93	178
 	+	93	0
 	+	64	0
+	+	184	0
 	z	73	8
+
+> ~/.ssh/known_hosts
+	*	1599744937	0
+	"	3	0
+	.	4	0
+	+	7	0
+	+	4	0
+
+> ~/development/dot-files/i3-configs/i3status/config
+	*	1599696097	0
+	"	34	20
+	^	34	21
+	.	34	20
+	+	34	20
+
+> ~/.profile
+	*	1599609395	0
+	"	1	35
+	^	1	36
+	.	1	35
+	+	1	35
+
+> ~/NERD_tree_1
+	*	1599609322	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.bash_profile
+	*	1599609288	0
+	"	8	0
+	.	9	0
+	+	9	0
+
+> /mnt/usbstick/test.txt
+	*	1599607489	0
+	"	1	5
+	^	1	6
+	.	1	5
+	+	1	5
+
+> ~/development/scripts/bash/personal-system-maintenance/setup-softlinks.sh
+	*	1599606390	0
+	"	88	24
+	^	15	25
+	.	15	24
+	+	15	24
+
+> ~/bin/repo-clone.sh
+	*	1599591500	0
+	"	20	14
+	^	20	15
+	.	20	15
+	+	24	3
+	+	2	0
+	+	20	15
+
+> ~/.ansible/tmp/ansible-local-15071neeog4yo/tmpp24izdqm.yml
+	*	1598091951	0
+	"	1	0
+
+> ~/.ansible/tmp/ansible-local-144376w4w_qh6/tmp8h9yvhp8.yml
+	*	1598090664	0
+	"	8	8
+	^	8	9
+	.	8	9
+	+	8	0
+	+	7	0
+	+	9	0
+	+	8	9
+
+> ~/.ansible/tmp/ansible-local-12506wee850bh/tmpte2p5z9g.yml
+	*	1598030141	0
+	"	6	3
+	^	6	4
+	.	6	3
+	+	6	3
+
+> ~/.ansible/tmp/ansible-local-12491m0mjdktl/tmpu0skwos_.yml
+	*	1598029729	0
+	"	1	0
+
+> ~/.ansible/tmp/ansible-local-12460slu2yd55/tmp3h7688f4.yml
+	*	1598029545	0
+	"	9	23
+	^	9	24
+	.	9	23
+	+	9	23
+
+> ~/.ansible/tmp/ansible-local-12448wficd87g/tmpsp1i6r9z.yml
+	*	1598029513	0
+	"	9	29
+	^	9	30
+	.	9	29
+	+	9	29
+
+> ~/.ansible/tmp/ansible-local-119412geffoj4/tmpppp04160.yml
+	*	1598028580	0
+	"	5	18
+	^	5	19
+	.	5	18
+	+	5	18
+
+> /usr/share/vim/vim82/doc/help.txt
+	*	1598018576	0
+	"	1	0
+
+> ~/.ansible/tmp/ansible-local-6804efm672ia/tmpqawlin6q.yml
+	*	1598009867	0
+	"	4	0
+
+> ~/.ansible/tmp/ansible-local-678059enpkep/tmpv53z8kpr.yml
+	*	1598009821	0
+	"	1	0
+
+> ~/.ansible/tmp/ansible-local-6769_aoz8o_e/tmphsa3a2wj.yml
+	*	1598009796	0
+	"	6	16
+	^	6	17
+	.	6	17
+	+	5	9
+	+	6	17
+
+> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/defaults/main.yml
+	*	1598005918	0
+	"	4	0
+	^	4	18
+	.	4	17
+	+	2	27
+	+	3	0
+	+	2	0
+	+	4	17
+
+> ~/.ansible/tmp/ansible-local-5975_c0fbomk/tmpm8rldh06.yml
+	*	1598005906	0
+	"	6	21
+	^	6	22
+	.	6	21
+	+	6	21
+
+> ~/development/dot-files/vim-configs/vim/vimrc
+	*	1598005573	0
+	"	168	0
+	^	168	1
+	.	168	0
+	+	150	0
+	+	152	40
+	+	156	43
+	+	151	9
+	+	152	9
+	+	153	9
+	+	154	9
+	+	167	0
+	+	168	0
+
+> ~/development/ansible/playbooks/ad-integration/roles/common/tasks/main.yml
+	*	1598004570	0
+	"	8	1
+	^	8	2
+	.	8	21
+	+	6	0
+	+	8	32
+	+	5	27
+	+	8	21
+
+> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/asset_config.yml
+	*	1598004336	0
+	"	5	0
+	^	5	0
+	.	4	0
+	+	4	0
 
 > ~/development/dot-files/bash-configs/bashrc
 	*	1597946910	0
@@ -1318,12 +1660,6 @@ ${{ fqdn }}
 > ~/development/dot-files/vim-configs/vim/.vimrc
 	*	1594146924	0
 	"	1	0
-
-> ~/NERD_tree_1
-	*	1594146913	0
-	"	1	2
-	.	1	0
-	+	1	0
 
 > ~/development/test-repo/.git/MERGE_MSG
 	*	1591722848	0
@@ -1474,12 +1810,6 @@ ${{ fqdn }}
 	+	17	49
 	+	18	30
 	+	15	46
-
-> ~/.ssh/known_hosts
-	*	1590020258	0
-	"	8	0
-	.	9	0
-	+	9	0
 
 > ~/bin/config-backup.sh
 	*	1589927300	0
@@ -1954,316 +2284,3 @@ ${{ fqdn }}
 	+	11	13
 	+	10	0
 	+	11	39
-
-> ~/polybar-themes/polybar-7/config.ini
-	*	1589360281	0
-	"	1	0
-
-> ~/.config/polybar/config
-	*	1589360189	0
-	"	2	0
-	^	2	0
-	.	1	56
-	+	722	15
-	+	722	0
-	+	314	15
-	+	1	11
-	+	315	11
-	+	315	0
-	+	307	0
-	+	315	0
-	+	310	9
-	+	310	0
-	+	308	0
-	+	307	0
-	+	310	0
-	+	309	12
-	+	307	0
-	+	308	1
-	+	307	1
-	+	305	0
-	+	304	40
-	+	306	10
-	+	598	26
-	+	318	0
-	+	317	0
-	+	302	0
-	+	316	0
-	+	302	0
-	+	300	0
-	+	299	26
-	+	13	0
-	+	11	0
-	+	1	0
-	+	9	0
-	+	7	13
-	+	6	4
-	+	13	0
-	+	13	1
-	+	14	1
-	+	15	1
-	+	5	0
-	+	3	0
-	+	1	56
-
-> ~/polybar-themes/polybar-7/config
-	*	1589359234	0
-	"	1	0
-
-> ~/.config/polybar/colors.ini
-	*	1589332611	0
-	"	1	76
-	^	1	77
-	.	1	76
-	+	246	17
-	+	2	0
-	+	1	76
-
-> ~/.config/polybar/config.bak
-	*	1589332528	0
-	"	1	0
-
-> ~/development/projects/LICENSE
-	*	1589310838	0
-	"	16	16
-
-> ~/.config/rofi/config.rasi
-	*	1589310694	0
-	"	6	17
-	^	6	17
-	.	6	0
-	+	6	0
-
-> ~/bin/test.sh
-	*	1589295135	0
-	"	5	0
-	^	5	56
-	.	5	54
-	+	3	24
-	+	3	0
-	+	5	0
-	+	5	4
-	+	5	64
-	+	9	0
-	+	3	19
-	+	5	22
-	+	3	27
-	+	5	29
-	+	3	44
-	+	5	43
-	+	10	1
-	+	3	48
-	+	5	103
-	+	5	49
-	+	3	58
-	+	6	19
-	+	10	0
-	+	5	54
-
-> /tmp/crontab.KvDkP8
-	*	1589290039	0
-	"	13	28
-	^	13	29
-	.	13	28
-	+	12	28
-	+	13	28
-
-> /tmp/crontab.AbHxI1
-	*	1589287102	0
-	"	1	0
-
-> /media/usb/test.txt
-	*	1589282695	0
-	"	1	3
-	^	1	4
-	.	1	3
-	+	1	3
-
-> ~/development/dot-files/i3-configs/i3status/config
-	*	1589281433	0
-	"	1	0
-
-> ~/development/dot-files/weechat-configs/NERD_tree_1
-	*	1589016760	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/development/dot-files/weechat-configs/README.md
-	*	1589016753	0
-	"	4	0
-	^	4	0
-	.	4	0
-	+	1	42
-	+	2	52
-	+	3	0
-	+	4	0
-
-> ~/development/ansible/playbooks/ad-integration/roles/rhel_ad/tasks/rhel7_config.yml
-	*	1588957397	0
-	"	6	6
-	^	6	75
-	.	6	74
-	+	6	74
-
-> ~/development/ansible/playbooks/fresh-install/site.yml
-	*	1588951175	0
-	"	29	2
-	^	9	2
-
-> ~/development/ansible/playbooks/awx/site.yml
-	*	1588951147	0
-	"	1	0
-
-> ~/development/ansible/playbooks/spacewalk-installation/site.yml
-	*	1588949696	0
-	"	1	0
-
-> ~/development/ansible/playbooks/spacewalk-installation/production
-	*	1588949664	0
-	"	1	0
-
-> ~/development/ansible/playbooks/spacewalk-installation/hosts
-	*	1588949650	0
-	"	1	0
-
-> ~/development/ansible/playbooks/fresh-install/hosts
-	*	1588949599	0
-	"	1	0
-
-> ~/development/ansible/scripts/playbook-create.sh
-	*	1588759127	0
-	"	8	61
-	^	8	62
-	.	8	61
-	+	42	123
-	+	42	8
-	+	42	41
-	+	16	7
-	+	17	0
-	+	14	6
-	+	42	49
-	+	42	4
-	+	42	0
-	+	42	43
-	+	42	0
-	+	42	4
-	+	42	0
-	+	42	41
-	+	42	0
-	+	42	1
-	+	13	0
-	+	42	0
-	+	21	21
-	+	13	45
-	+	21	34
-	+	13	45
-	+	21	0
-	+	21	30
-	+	21	0
-	+	21	10
-	+	21	0
-	+	21	27
-	+	21	0
-	+	21	28
-	+	17	49
-	+	21	0
-	+	21	24
-	+	22	38
-	+	26	0
-	+	25	32
-	+	27	0
-	+	26	26
-	+	23	42
-	+	32	0
-	+	28	38
-	+	29	0
-	+	29	108
-	+	30	0
-	+	31	0
-	+	32	1
-	+	29	32
-	+	34	0
-	+	34	29
-	+	35	0
-	+	37	0
-	+	38	0
-	+	39	0
-	+	14	0
-	+	17	0
-	+	18	0
-	+	21	0
-	+	19	31
-	+	14	0
-	+	17	0
-	+	18	37
-	+	42	0
-	+	41	0
-	+	42	0
-	+	37	0
-	+	36	0
-	+	42	0
-	+	36	29
-	+	42	0
-	+	21	0
-	+	26	0
-	+	42	35
-	+	41	6
-	+	39	2
-	+	42	0
-	+	40	0
-	+	41	0
-	+	8	61
-
-> ~/development/ansible/scripts/playbook-symlink.sh
-	*	1588754261	0
-	"	17	34
-	^	17	87
-	.	17	86
-	+	3	52
-	+	15	0
-	+	9	0
-	+	3	69
-	+	8	0
-	+	12	0
-	+	14	0
-	+	3	0
-	+	6	21
-	+	5	11
-	+	7	59
-	+	13	10
-	+	15	12
-	+	4	11
-	+	20	10
-	+	15	6
-	+	18	0
-	+	15	41
-	+	17	70
-	+	16	77
-	+	17	89
-	+	22	8
-	+	20	52
-	+	22	43
-	+	31	66
-	+	24	56
-	+	21	26
-	+	28	26
-	+	32	0
-	+	16	66
-	+	17	86
-
-> ~/development/scripts/bash/personal-system-maintenance/setup-softlinks.sh
-	*	1588754180	0
-	"	1	0
-
-> ~/development/scripts/bash/system/playbook-create.sh
-	*	1588754095	0
-	"	14	0
-
-> ~/development/projects/python/ansible-playbook-prep/playbook-create.py
-	*	1588754037	0
-	"	2	0
-
-> ~/development/scripts/bash/system/create-ansible-playbook.sh
-	*	1588753220	0
-	"	34	0

@@ -257,7 +257,7 @@ bindsym $mod+Ctrl+less move workspace to output left
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 #bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
@@ -294,6 +294,7 @@ exec --no-startup-id picom -b
 exec --no-startup-id numlockx on
 #exec --no-startup-id redshift
 #exec --no-startup-id xautolock -time 1 -locker "i3lock -nk"
+exec --no-startup-id $HOME/.screenlayout/docked.sh
 
 ###################################################
 # Define the lock screen function

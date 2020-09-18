@@ -181,5 +181,3 @@ alias tod='task +OVERDUE'
 # directory aliases
 ########################################
 alias ansible-directory='cd $HOME/documents/ansible/playbooks'
-
-

@@ -1,0 +1,21 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/mapper/arch-root
+UUID=1ec8b36c-e81f-4720-b490-439ed49cf241	/         	xfs       	rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota	0 1
+
+# /dev/mapper/arch-boot
+UUID=a5983a63-be51-417a-b170-5893744ae24a	/boot     	xfs       	rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota	0 2
+
+# /dev/nvme0n1p2
+UUID=8844-8A7B      	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/mapper/arch-home
+UUID=82cadf42-11e1-42ef-8dcd-dca4d4d6739e	/home     	xfs       	rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota	0 2
+
+# /dev/mapper/arch-swap
+UUID=39d6ce39-d43e-4251-8456-db0d9e34eb8e	none      	swap      	defaults  	0 0
+
+# /mnt/usbstick
+UUID=8272-BC34	/mnt/usbstick	vfat	defaults,user,umask=000,dmask=027,fmask=137,uid=1000,gid=1000	0 0
